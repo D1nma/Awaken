@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>D:\Awaken Projet\Awaken - Copie\Awaken_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Awaken Projet\Awaken - Copie\Awaken_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Awaken Projet\Awaken - Copie\Awaken_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Awaken Projet\Awaken - Copie\Awaken_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2953616821">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1866025847" Language="SFX" Hash="3196959535">
+			<ObjectPath>\SoundBanks\Default Work Unit\Footstep</ObjectPath>
+			<ShortName>Footstep</ShortName>
+			<Path>Footstep.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2981377429" Language="SFX" Hash="47198181">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ambiance</ObjectPath>
+			<ShortName>Ambiance</ShortName>
+			<Path>Ambiance.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2981377429" Name="Ambiance" ObjectPath="\Events\Default Work Unit\Ambiance" DurationType="OneShot" DurationMin="219.207596" DurationMax="219.207596">
+					<IncludedMemoryFiles>
+						<File Id="229910191" Language="SFX">
+							<ShortName>musique_ambience_001.wav</ShortName>
+							<Path>SFX\musique_ambience_001_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
