@@ -1,0 +1,49 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using @namespace@;
+
+
+public class @class@ : CharacterState
+{
+
+    // Write the name of your state here (returned string)
+    public override string Name
+    {
+        get
+        {
+            return "@name@";
+        }
+    }
+
+    // Write your initialization code here
+    protected override void Awake()
+    {
+        base.Awake();
+    }
+
+    // Write your transitions here
+	public override CharacterState CheckExitTransition()
+    {
+        return null;
+	}
+
+    // Write your transitions here
+	public override bool CheckEnterTransition( CharacterState fromState )
+    {
+        return true;
+	}
+
+    // Write your update code here
+	public override void UpdateBehaviour( float dt )
+    {
+        
+	}
+
+    // Describe your state here
+	public override string GetInfo()
+	{
+		return "Describe your state here!";
+	}
+
+}
