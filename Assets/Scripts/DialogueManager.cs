@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
     private float timer, timerlimit = 2;
     private bool Xquestion = false, Yquestion = false, WaitAnswer = false;
+    public bool canMove = false;
     private bool dialogueEnd = false, dialogueAvecQuestionEnd = false, display = false, timerStart = false;
     private Queue<string> sentences; //mieux qu'un tableau pour le dialogue (FIFO collection)
     private string questions;
@@ -89,7 +90,10 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
-        PlayersController.canControl = false;
+        if(!canMove)
+        {
+            PlayersController.canControl = false;
+        }
         timer += Time.deltaTime;
         nameAlyx.gameObject.SetActive(false);
         for (int i = 0; i < Boutons.Length; i++)
