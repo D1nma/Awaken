@@ -180,6 +180,7 @@ public class LampeHuile : MonoBehaviour
             {
                 currentHuile -= consume;
                 huileBar.value = currentHuile;
+                lightUp();
 
             }
             else { StopHuile(); lightDown(); }
