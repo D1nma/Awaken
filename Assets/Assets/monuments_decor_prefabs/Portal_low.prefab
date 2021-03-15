@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 1974100530625416805}
   - component: {fileID: 3227588261649678784}
   - component: {fileID: 805657410756244746}
+  - component: {fileID: 3546904395405164470}
   m_Layer: 0
-  m_Name: Portal_low 1
+  m_Name: Portal_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3546904395405164470
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166073131285533919}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.556126, y: 5.1110353, z: 0.25000027}
+  m_Center: {x: -0.0000009536743, y: 2.5553246, z: -0.00023081526}
