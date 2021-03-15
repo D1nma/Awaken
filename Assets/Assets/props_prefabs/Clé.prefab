@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 7238720032652022900}
   - component: {fileID: 6042355229024148433}
   - component: {fileID: 8376191012294733595}
+  - component: {fileID: 6718804987726108331}
+  - component: {fileID: 7950056683969943943}
   m_Layer: 0
-  m_Name: "Cl\xE9_V1_low"
+  m_Name: "Cl\xE9"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,3 +83,32 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6718804987726108331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016065564496236238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903eef1310d59984a9056960a1f8fec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectType: 1
+  invent: {fileID: 0}
+  InteragirText: {fileID: 0}
+  dispo: 0
+--- !u!135 &7950056683969943943
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016065564496236238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.58
+  m_Center: {x: 0.0006147139, y: 0, z: -0.00005458854}

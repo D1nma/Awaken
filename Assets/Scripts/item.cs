@@ -44,6 +44,14 @@ public class item : MonoBehaviour
                 Debug.Log("C'est une canne!");
                 invent.canne =true;
             }
+            if(objectType == ObjectType.Appat){
+                Debug.Log("C'est un Appat!");
+                invent.boite =true;
+            }
+            if(objectType == ObjectType.Champi){
+                Debug.Log("C'est un champi!");
+                invent.champi =true;
+            }
         }
         if (InteragirText == null)
         {
