@@ -170,9 +170,6 @@ public class LampeHuile : MonoBehaviour
         {
             lightDown();
             StopHuile();
-            Tips.gameObject.GetComponent<Text>().text = "Vous n'avez plus d'huile !";
-            Tips.SetActive(true);
-            startTiming = true;
         }
         if (consomme)
         {
