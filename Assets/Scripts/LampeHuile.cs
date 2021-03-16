@@ -19,7 +19,7 @@ public class LampeHuile : MonoBehaviour
 
     public float currentHuile = 25;
     private int tipInt = 0;
-    private float consume = 0.01f;
+    private float consume = 0.005f;
     [HideInInspector]
     public bool use;
     float time;
