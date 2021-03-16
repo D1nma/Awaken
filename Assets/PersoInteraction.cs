@@ -17,7 +17,7 @@ public class PersoInteraction : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter(Collider other)
+   /** private void OnTriggerEnter(Collider other)
     {
         if (player.tag == "Player")
         {
@@ -27,5 +27,5 @@ public class PersoInteraction : MonoBehaviour
                 InteragirText.SetActive(true);             
             }
         }
-    }
+    } **/
 }
