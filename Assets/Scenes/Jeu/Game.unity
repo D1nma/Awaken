@@ -332,6 +332,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Third Person Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 5324693828447490338, guid: c3f53fa5f56e77d46b84dcb42a92c2b5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3f53fa5f56e77d46b84dcb42a92c2b5, type: 3}
 --- !u!1 &515117495
@@ -515,6 +520,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728908659011876219, guid: 8e2cee56642f8924894ad2205d40867c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6728908659011876222, guid: 8e2cee56642f8924894ad2205d40867c,
         type: 3}
@@ -916,6 +926,36 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2058928873}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1197157402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1197157403}
+  m_Layer: 0
+  m_Name: "v\xE9g\xE9"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1197157403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197157402}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 559.5399, y: 123.06191, z: 26.468513}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1215950968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1249,6 +1289,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5580832418039937517, guid: d51378e3b0050fe409be1675221af344,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6760521393631954518, guid: d51378e3b0050fe409be1675221af344,
         type: 3}
