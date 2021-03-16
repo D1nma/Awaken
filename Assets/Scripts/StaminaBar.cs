@@ -11,7 +11,7 @@ public class StaminaBar : MonoBehaviour
 
     public Slider staminaBar;
 
-    private int maxStamina = 100;
+    private int maxStamina = 200;
     public int currentStamina;
     private int energie = 1;
 
@@ -81,6 +81,10 @@ public class StaminaBar : MonoBehaviour
         if (!ui)
         {
             ui = GameObject.Find("Canvas").GetComponent<UIManager>();
+        }
+        if(currentStamina>maxStamina)
+        {
+            currentStamina = maxStamina;
         }
         if (currentStamina == maxStamina)
         {
