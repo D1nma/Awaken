@@ -44,7 +44,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.1
-  m_Range: 2
+  m_Range: 13.25
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -353,7 +353,6 @@ GameObject:
   - component: {fileID: 9171767057529172439}
   - component: {fileID: 5103778287434578210}
   - component: {fileID: 4263125819624014849}
-  - component: {fileID: 3186674218230807115}
   m_Layer: 8
   m_Name: Player parent 1
   m_TagString: Player
@@ -453,24 +452,6 @@ MonoBehaviour:
   spawnOk: 0
   spawnTime: 10
   spawn: 1
---- !u!114 &3186674218230807115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9171767057529172434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa80d772051216b4a8f0bf1da4c8a520, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pole: {fileID: 1954475141605561862}
-  lineStart: {fileID: 1030903002380670219}
-  minFishingDistance: 1
-  maxFishingDistance: 28
-  wasInterrupted: 0
-  fishJumpingSpeed: 2
 --- !u!1 &9171767057593077650
 GameObject:
   m_ObjectHideFlags: 0
