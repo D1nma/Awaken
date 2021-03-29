@@ -30,7 +30,7 @@ public class Tips : MonoBehaviour
             startTiming = false;
             Destroy(this.gameObject);
         }
-        Debug.Log(time);
+        //Debug.Log(time);
 
     }
     void OnTriggerEnter(Collider player)
