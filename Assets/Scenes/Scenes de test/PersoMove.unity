@@ -6952,7 +6952,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 4
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &606171380
 MonoBehaviour:
@@ -6967,6 +6967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteragirText: {fileID: 1570914878}
+  player: {fileID: 0}
   speed: 1
   invent: {fileID: 0}
   Tips: {fileID: 1132539337}
