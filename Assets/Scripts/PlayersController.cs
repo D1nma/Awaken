@@ -11,7 +11,6 @@ public class PlayersController : MonoBehaviour
     public float jumpSpeed = 2; //Pas de saut pour l'instant
     public float gravity = -19.62f;
     float h, v;
-
     public Transform groundCheck; //crée un empty et le mettre au bas du personnage pour que la sphere crée détecte le sol correctement
     public float groundDistance = 0.4f; //Check le ground pour reset la velocity
     public LayerMask groundMask;
@@ -22,6 +21,7 @@ public class PlayersController : MonoBehaviour
     float turnSmoothVelocity;
     public Transform cam;
     Camera m_MainCamera;
+    private bool accroupir = false;
     public static bool canControl = true;
     public bool courrir = true;
 
@@ -62,7 +62,7 @@ public class PlayersController : MonoBehaviour
             Vector3 direction = new Vector3(h, 0f, v).normalized; //normalized pour appuyer sur 2 touches et pas que ca aille plus vite
             if (direction.magnitude >= 0.1)
             {
-                if (Input.GetButtonDown("Sprint"))
+                if (Input.GetButtonDown("Sprint") && !accroupir)
                 {
 
 
@@ -82,7 +82,7 @@ public class PlayersController : MonoBehaviour
                     }
 
                 }
-                if (Input.GetButtonUp("Sprint"))
+                if (Input.GetButtonUp("Sprint") && !accroupir)
                 {
                     StaminaBar.instance.StopStamina();
                     moveSpeed = 5;
@@ -98,6 +98,22 @@ public class PlayersController : MonoBehaviour
             if (Input.GetButtonDown("Jump") && isGrounded)
             {
                 velocity.y = Mathf.Sqrt(jumpSpeed * -2f * gravity);
+            }
+            if (Input.GetKeyDown(KeyCode.C) && isGrounded)
+            {
+                
+                if (!accroupir)
+                {
+                    cc.height = 0.50f;
+                    moveSpeed = 2.5f;
+                    accroupir = true;
+                }else
+                {
+                    cc.height = 1.25f;
+                    moveSpeed = 5;
+                    accroupir = false;
+                }
+
             }
             velocity.y += gravity * Time.deltaTime;
             cc.Move(velocity * Time.deltaTime);

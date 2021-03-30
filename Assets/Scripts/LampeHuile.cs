@@ -65,7 +65,6 @@ public class LampeHuile : MonoBehaviour
                 ObjNbRecharges.SetActive(true);
             }
             useHuile();
-            InteragirText.SetActive(false);
             if (currentHuile == 0)
             {
                 ui.Etathuile[0].SetActive(true);
@@ -114,6 +113,7 @@ public class LampeHuile : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && dispo)
         {
             LAlampe();
+            InteragirText.SetActive(false);
         }
         if (startTiming)
         {

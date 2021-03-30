@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class PersoInteraction : MonoBehaviour
 {
     public GameObject InteragirText, player;
-    private bool fait = false, canInteract = false, startTiming = false, bouge=false,setup=false;
-    float time=0f,oldDistance=0f;
+    private bool fait = false, canInteract = false, startTiming = false, bouge = false, setup = false;
+    float time = 0f, oldDistance = 0f;
     private Vector3 target;
     public float speed = 1.0f;
     public Inventaire invent;
@@ -45,7 +45,7 @@ public class PersoInteraction : MonoBehaviour
         {
             player = GameObject.FindGameObjectWithTag("Player");
         }
-        
+
         if (!invent)
         {
             invent = GameObject.Find("Inventaire").GetComponent<Inventaire>();
@@ -56,17 +56,21 @@ public class PersoInteraction : MonoBehaviour
             {
                 playerPos = player.transform.position;
                 target = new Vector3(transform.position.x, playerPos.y, transform.position.z);
-                Debug.Log(target);
+                Vector3 direction = (transform.position - player.transform.position); //.normalized
+                Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+                player.transform.rotation = Quaternion.Slerp(player.transform.rotation, lookRotation, Time.deltaTime * 50f);
+                //Debug.Log(target);
                 setup = true;
             }
             float step = speed * Time.deltaTime;
             player.transform.position = Vector3.MoveTowards(player.transform.position, target, step);
             float distance = Vector3.Distance(player.transform.position, transform.position);
-            
-            if(distance == oldDistance)
+
+            if (distance == oldDistance)
             {
                 bouge = false;
                 PlayersController.canControl = true;
+                invent.canne = false;
             }
             oldDistance = distance;
         }
