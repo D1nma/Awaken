@@ -8,7 +8,7 @@ public class OutOfPosition : MonoBehaviour
     private GameManager gm;
     private UIManager ui;
     private bool show = false;
-    private bool enter=false;
+    public static bool enter=false;
     private float time = 0;
 
     void Start()
@@ -56,7 +56,7 @@ public class OutOfPosition : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            enter = false;
+            
         }
     }
 

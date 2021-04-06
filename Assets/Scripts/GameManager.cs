@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
     public Vector3 lastCheckPointPos;
     public Transform[] spawnPosition;
     public GameObject playerInstance;
-    public GameObject prefabLH;
     private LampeHuile LH;
     public GameObject Player;
     public UIManager ui;
@@ -69,13 +68,18 @@ public class GameManager : MonoBehaviour
 
     }
     public void Replace()
-    {        
-        if(Player.transform.position == lastCheckPointPos)
+    {
+        
+        if (Player.transform.position == lastCheckPointPos)
         {
             PlayersController.canControl = true;
+            OutOfPosition.enter = false;
+            ui.transition.SetTrigger("End");
         }
         else
         {
+            ui.transition.SetTrigger("Start");
+            //Player.GetComponent<CharacterController>().
             Player.transform.position = lastCheckPointPos;
         }
     }

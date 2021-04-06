@@ -14,7 +14,6 @@ public class LampeHuile : MonoBehaviour
     public GameObject lumiere;
     public GameObject main;
     public GameObject ObjNbRecharges;
-    public GameObject LAmoi;
     public GameObject prefab;
     public int nbRecharges = 1;
     private int maxHuile = 100;
@@ -33,7 +32,16 @@ public class LampeHuile : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        if(instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(instance);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        
     }
     // Start is called before the first frame update
     void Start()
@@ -50,7 +58,6 @@ public class LampeHuile : MonoBehaviour
         huileBar.maxValue = maxHuile;
         huileBar.value = currentHuile;
         ui.huile.SetActive(false);
-        LAmoi = this.gameObject;
     }
 
     // Update is called once per frame

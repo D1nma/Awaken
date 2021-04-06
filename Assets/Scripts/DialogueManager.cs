@@ -58,7 +58,7 @@ public class DialogueManager : MonoBehaviour
         }
         if (WaitAnswer && Yquestion)
         {
-            if (Input.GetMouseButtonDown(0) && canClick || Input.GetButtonDown("Fire1")&& canClick)
+            if (Input.GetMouseButtonDown(0) && canClick || Input.GetButtonDown("Fire1") && canClick)
             {
                 timer = 100;
                 WaitAnswer = false;
@@ -91,7 +91,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
-        if(!canMove)
+        if (!canMove)
         {
             PlayersController.canControl = false;
         }
@@ -138,7 +138,7 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
-        
+
         DisplayNextSentence();
     }
 
@@ -166,7 +166,7 @@ public class DialogueManager : MonoBehaviour
             string sentence = sentences.Dequeue();
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));
-            
+
         }
 
     }
