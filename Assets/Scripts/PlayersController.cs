@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayersController : MonoBehaviour
 {
+    Animator animator;
     private GameManager gm;
     CharacterController cc;
     public float moveSpeed = 5;
@@ -27,6 +28,7 @@ public class PlayersController : MonoBehaviour
 
     void Start()
     {
+        animator = GetComponent<Animator>();
         cc = GetComponent<CharacterController>();
         m_MainCamera = Camera.main;
         cam = m_MainCamera.transform;
@@ -62,6 +64,7 @@ public class PlayersController : MonoBehaviour
             Vector3 direction = new Vector3(h, 0f, v).normalized; //normalized pour appuyer sur 2 touches et pas que ca aille plus vite
             if (direction.magnitude >= 0.1)
             {
+                animator.SetBool("IsWalking", true);
                 if (Input.GetButtonDown("Sprint") && !accroupir)
                 {
 
@@ -95,8 +98,13 @@ public class PlayersController : MonoBehaviour
 
 
             }
+            if (direction.magnitude <= 0.1)
+            {
+                animator.SetBool("IsWalking", false);
+            }
             if (Input.GetButtonDown("Jump") && isGrounded)
             {
+                animator.SetTrigger("jump");
                 velocity.y = Mathf.Sqrt(jumpSpeed * -2f * gravity);
             }
             if (Input.GetKeyDown(KeyCode.C) && isGrounded)
