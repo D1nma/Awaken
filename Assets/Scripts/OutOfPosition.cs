@@ -8,12 +8,14 @@ public class OutOfPosition : MonoBehaviour
     private GameManager gm;
     private UIManager ui;
     private bool show = false;
+    private bool enter=false;
     private float time = 0;
 
     void Start()
     {
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         ui = GameObject.Find("Canvas").GetComponent<UIManager>();
+        enter = false;
     }
 
 
@@ -29,6 +31,12 @@ public class OutOfPosition : MonoBehaviour
             show = false;
             ui.Respawn.SetActive(false);
             time = 0;
+            enter = false;
+        }
+        if (enter)
+        {
+            PlayersController.canControl = false;
+            gm.Replace();
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -36,8 +44,9 @@ public class OutOfPosition : MonoBehaviour
         if (other.tag == "Player")
         {
             show = true;
-            Destroy(gm.Player);
-            gm.SpawnPlayer();
+            enter = true;
+            /*Destroy(gm.Player);
+            gm.SpawnPlayer();*/
         }
         if (other.tag == null) { return; }
     }
@@ -45,7 +54,10 @@ public class OutOfPosition : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-
+        if (other.tag == "Player")
+        {
+            enter = false;
+        }
     }
 
 }

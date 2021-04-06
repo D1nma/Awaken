@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public Vector3 lastCheckPointPos;
     public Transform[] spawnPosition;
     public GameObject playerInstance;
+    public GameObject prefabLH;
     private LampeHuile LH;
     public GameObject Player;
     public UIManager ui;
@@ -58,16 +59,25 @@ public class GameManager : MonoBehaviour
 
         if (!gameOver)
         {
-
             if (!Player)
                 Player = Instantiate(playerInstance, spawnPos.position, spawnPos.rotation);
             cam.Follow = Player.transform;
             cam.LookAt = Player.transform;
             if (warning.warningText)
                 warning.warningText.SetActive(false);
-
         }
 
+    }
+    public void Replace()
+    {        
+        if(Player.transform.position == lastCheckPointPos)
+        {
+            PlayersController.canControl = true;
+        }
+        else
+        {
+            Player.transform.position = lastCheckPointPos;
+        }
     }
 
 
@@ -79,7 +89,7 @@ public class GameManager : MonoBehaviour
             spawnPos.position = lastCheckPointPos;
             cam = GameObject.Find("Third Person Camera").GetComponent<CinemachineFreeLook>();
             SpawnPlayer();
-            
+
         }
         time += Time.deltaTime;
         ui.UpdateTime((int)time);

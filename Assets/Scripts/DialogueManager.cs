@@ -11,7 +11,7 @@ public class DialogueManager : MonoBehaviour
     public Text nameAlyx;
     public Animator animator;
     private float timer, timerlimit = 2;
-    private bool Xquestion = false, Yquestion = false, WaitAnswer = false;
+    private bool Xquestion = false, Yquestion = false, WaitAnswer = false, canClick = false;
     public bool canMove = false;
     private bool dialogueEnd = false, dialogueAvecQuestionEnd = false, display = false, timerStart = false;
     private Queue<string> sentences; //mieux qu'un tableau pour le dialogue (FIFO collection)
@@ -31,6 +31,7 @@ public class DialogueManager : MonoBehaviour
         display = false;
         Yquestion = false;
         timerStart = false;
+        canClick = false;
         WaitAnswer = false;
     }
     void Awake()
@@ -50,14 +51,14 @@ public class DialogueManager : MonoBehaviour
     {
         if (WaitAnswer == false)
         {
-            if (Input.GetMouseButtonDown(0) || Input.GetButtonDown("Fire1"))
+            if (Input.GetMouseButtonDown(0) && canClick || Input.GetButtonDown("Fire1") && canClick)
             {
                 DisplayNextSentence();
             }
         }
         if (WaitAnswer && Yquestion)
         {
-            if (Input.GetMouseButtonDown(0) || Input.GetButtonDown("Fire1"))
+            if (Input.GetMouseButtonDown(0) && canClick || Input.GetButtonDown("Fire1")&& canClick)
             {
                 timer = 100;
                 WaitAnswer = false;
@@ -113,6 +114,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartQuestion(Dialogue dialogue, Question question)
     {
+        Cursor.visible = true;
         question1 = question;
         taille = question.choices.Length;
         questions = question.text;
@@ -136,6 +138,7 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
+        
         DisplayNextSentence();
     }
 
@@ -143,6 +146,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences != null)
         {
+            canClick = false;
             if (sentences.Count == 0 && Xquestion == false && Yquestion == false)
             {
                 EndDialogue();
@@ -162,6 +166,7 @@ public class DialogueManager : MonoBehaviour
             string sentence = sentences.Dequeue();
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));
+            
         }
 
     }
@@ -174,6 +179,7 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text += letter;
             yield return null;
         }
+        canClick = true;
     }
     IEnumerator TypeQuestion(string question)
     {
@@ -183,6 +189,7 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text += letter;
             yield return null;
         }
+        canClick = true;
     }
 
     void EndDialogue()
@@ -195,6 +202,7 @@ public class DialogueManager : MonoBehaviour
     void EndDialogueForQuestion()
     {
         //Debug.Log("Fin du dialogue avec question en attente");
+        dialogueEnd = true;
         dialogueAvecQuestionEnd = true;
         //animator.SetBool("IsOpen", false);
     }
@@ -209,6 +217,7 @@ public class DialogueManager : MonoBehaviour
         display = false;
         WaitAnswer = false;
         PlayersController.canControl = true;
+        Cursor.visible = false;
         return;
     }
 

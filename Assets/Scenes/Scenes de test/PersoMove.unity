@@ -6242,7 +6242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tips: {fileID: 1132539337}
-  text: "chercher la boite \xE0 appat"
+  text: "Chercher la boite \xE0 appat"
 --- !u!135 &510287326
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10676,6 +10676,12 @@ PrefabInstance:
       propertyPath: lastCheckPointPos.z
       value: -24.4
       objectReference: {fileID: 0}
+    - target: {fileID: 117436045221306703, guid: 2262e39b5991a134084a5ca0c01690c5,
+        type: 3}
+      propertyPath: prefabLH
+      value: 
+      objectReference: {fileID: 3499077791175705267, guid: f955e18aa7205f24e80b108871030f90,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2262e39b5991a134084a5ca0c01690c5, type: 3}
 --- !u!1001 &277233261727844277
@@ -10764,10 +10770,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 437834314576857728, guid: 965280e35c22190419e029d01ec86c79,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.6
+      objectReference: {fileID: 0}
     - target: {fileID: 437834314576857729, guid: 965280e35c22190419e029d01ec86c79,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 46.9
+      value: 48.24
       objectReference: {fileID: 0}
     - target: {fileID: 437834314576857729, guid: 965280e35c22190419e029d01ec86c79,
         type: 3}
@@ -13128,6 +13139,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5580832418690735344, guid: d51378e3b0050fe409be1675221af344,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5580832418690735350, guid: d51378e3b0050fe409be1675221af344,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -13138,11 +13154,31 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1646328801}
+    - target: {fileID: 5580832418988984231, guid: d51378e3b0050fe409be1675221af344,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5580832419107270279, guid: d51378e3b0050fe409be1675221af344,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5580832419193867725, guid: d51378e3b0050fe409be1675221af344,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1646328801}
+    - target: {fileID: 5580832419193867727, guid: d51378e3b0050fe409be1675221af344,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5580832419255895329, guid: d51378e3b0050fe409be1675221af344,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5580832419255895335, guid: d51378e3b0050fe409be1675221af344,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -13153,6 +13189,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1646328801}
+    - target: {fileID: 5580832419748376051, guid: d51378e3b0050fe409be1675221af344,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6760521393631954518, guid: d51378e3b0050fe409be1675221af344,
         type: 3}
       propertyPath: m_AnchorMax.y

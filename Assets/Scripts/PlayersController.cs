@@ -66,7 +66,7 @@ public class PlayersController : MonoBehaviour
                 {
 
 
-                    if (StaminaBar.instance.currentStamina > 0 && courrir)
+                    if (StaminaBar.instance.currentStamina > 0 && courrir && isGrounded)
                     {
                         StaminaBar.instance.UseStamina(true);
                         if (StaminaBar.instance.use)
