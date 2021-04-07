@@ -81,6 +81,10 @@ public class GameManager : MonoBehaviour
             cc.enabled = true;
             OutOfPosition.enter = false;
             ui.transition.SetTrigger("End");
+            RenderSettings.fogEndDistance = Warning.oldValue;
+            Warning.StartFog = false;
+            if (warning.warningText)
+                warning.warningText.SetActive(false);
         }
         else
         {
