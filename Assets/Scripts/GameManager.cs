@@ -50,7 +50,9 @@ public class GameManager : MonoBehaviour
         {
             warning = GameObject.Find("Warning").GetComponent<Warning>();
         }
+        Debug.Log(lastCheckPointPos);
         lastCheckPointPos = spawnPos.transform.position;
+        Debug.Log(lastCheckPointPos);
         SpawnPlayer();
     }
 
