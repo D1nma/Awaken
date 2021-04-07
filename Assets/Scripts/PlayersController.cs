@@ -7,7 +7,7 @@ public class PlayersController : MonoBehaviour
     Animator animator;
     private GameManager gm;
     CharacterController cc;
-    public float moveSpeed = 5;
+    public float moveSpeed = 5,oldMoveSpeed;
     //public float rotateSpeed = 180f;
     public float jumpSpeed = 2; //Pas de saut pour l'instant
     public float gravity = -19.62f;
@@ -34,6 +34,7 @@ public class PlayersController : MonoBehaviour
         cam = m_MainCamera.transform;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         transform.position = gm.lastCheckPointPos;
+        oldMoveSpeed = moveSpeed;
     }
 
     void Update()
@@ -67,28 +68,30 @@ public class PlayersController : MonoBehaviour
                 animator.SetBool("IsWalking", true);
                 if (Input.GetButtonDown("Sprint") && !accroupir)
                 {
-
+                    animator.SetBool("IsRunning", true);
 
                     if (StaminaBar.instance.currentStamina > 0 && courrir && isGrounded)
                     {
                         StaminaBar.instance.UseStamina(true);
                         if (StaminaBar.instance.use)
                         {
-                            moveSpeed = moveSpeed * 1.6f;
+                            moveSpeed = moveSpeed * 1.4f;
                         }
 
                     }
                     else
                     {
+                        animator.SetBool("IsRunning", false);
                         StaminaBar.instance.StopStamina();
-                        moveSpeed = 5;
+                        moveSpeed = oldMoveSpeed;
                     }
 
                 }
                 if (Input.GetButtonUp("Sprint") && !accroupir)
                 {
+                    animator.SetBool("IsRunning", false);
                     StaminaBar.instance.StopStamina();
-                    moveSpeed = 5;
+                    moveSpeed = oldMoveSpeed;
                 }
                 float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y; //Atan2 méthode math retourne l'angle entre 0° et x
                 float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
@@ -113,12 +116,12 @@ public class PlayersController : MonoBehaviour
                 if (!accroupir)
                 {
                     cc.height = 0.50f;
-                    moveSpeed = 2.5f;
+                    moveSpeed = oldMoveSpeed/2;
                     accroupir = true;
                 }else
                 {
                     cc.height = 1.25f;
-                    moveSpeed = 5;
+                    moveSpeed = oldMoveSpeed;
                     accroupir = false;
                 }
 

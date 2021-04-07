@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public Vector3 lastCheckPointPos;
     public Transform[] spawnPosition;
     public GameObject playerInstance;
+    CharacterController cc;
     private LampeHuile LH;
     public GameObject Player;
     public UIManager ui;
@@ -65,6 +66,7 @@ public class GameManager : MonoBehaviour
                 Player = Instantiate(playerInstance, spawnPos.position, spawnPos.rotation);
             cam.Follow = Player.transform;
             cam.LookAt = Player.transform;
+            cc = Player.GetComponent<CharacterController>();
             if (warning.warningText)
                 warning.warningText.SetActive(false);
         }
@@ -76,13 +78,14 @@ public class GameManager : MonoBehaviour
         if (Player.transform.position == lastCheckPointPos)
         {
             PlayersController.canControl = true;
+            cc.enabled = true;
             OutOfPosition.enter = false;
             ui.transition.SetTrigger("End");
         }
         else
         {
             ui.transition.SetTrigger("Start");
-            //Player.GetComponent<CharacterController>().
+            cc.enabled = false;
             Player.transform.position = lastCheckPointPos;
         }
     }
