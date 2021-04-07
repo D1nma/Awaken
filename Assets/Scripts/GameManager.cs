@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        
         spawnPos = spawnPosition[0];
         if (!ui)
         {
@@ -49,7 +50,7 @@ public class GameManager : MonoBehaviour
         {
             warning = GameObject.Find("Warning").GetComponent<Warning>();
         }
-
+        lastCheckPointPos = spawnPos.transform.position;
         SpawnPlayer();
     }
 
