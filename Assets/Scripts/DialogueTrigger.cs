@@ -21,10 +21,10 @@ public class DialogueTrigger : MonoBehaviour
         if (dialogue.isQuestion == true)
         {
             //Debug.Log("Y'a une question");
-            FindObjectOfType<DialogueManager>().StartQuestion(dialogue,question);
+            FindObjectOfType<DialogueManager>().StartQuestion(dialogue, question);
             InteragirText.SetActive(false);
         }
-        
+
     }
     private void Start()
     {
@@ -37,14 +37,15 @@ public class DialogueTrigger : MonoBehaviour
             TriggerDialogue();
             start = false;
         }
-        if(InteragirText == null){
+        if (InteragirText == null)
+        {
             InteragirText = GameObject.Find("interagirText");
         }
-        
+
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if (other.tag == "Player")
         {
             if (dialogue.isQuestion == true)
             {
@@ -57,7 +58,7 @@ public class DialogueTrigger : MonoBehaviour
                 {
                     Debug.LogWarning("Pas de text pour interagir");
                 }
-                
+
             }
             else
             {
@@ -69,7 +70,7 @@ public class DialogueTrigger : MonoBehaviour
     //When the Primitive exits the collision, it will change Color
     private void OnTriggerExit(Collider other)
     {
-        if(InteragirText != null)
+        if (InteragirText != null)
         {
             InteragirText.SetActive(false);
         }
@@ -77,6 +78,8 @@ public class DialogueTrigger : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if (other.tag == "Player")
+        { start = false; }
     }
 
-    }
+}

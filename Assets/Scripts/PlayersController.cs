@@ -7,7 +7,7 @@ public class PlayersController : MonoBehaviour
     Animator animator;
     private GameManager gm;
     CharacterController cc;
-    public float moveSpeed = 5,oldMoveSpeed,oldColliderHeight;
+    public float moveSpeed = 5, oldMoveSpeed, oldColliderHeight;
     //public float rotateSpeed = 180f;
     public float jumpSpeed = 2; //Pas de saut pour l'instant
     public float gravity = -19.62f;
@@ -24,7 +24,7 @@ public class PlayersController : MonoBehaviour
     Camera m_MainCamera;
     private bool accroupir = false;
     public static bool canControl = true, wakeUp = false;
-    public float animationLenghtWakeUp = 1f;
+    public float animationLenghtWakeUp = f;
     public bool courrir = true;
 
     void Start()
@@ -37,13 +37,19 @@ public class PlayersController : MonoBehaviour
         transform.position = gm.lastCheckPointPos;
         oldMoveSpeed = moveSpeed;
         oldColliderHeight = cc.height;
-        animator.SetTrigger("WakeUp");
         canControl = false;
         StartCoroutine(AnimatorSetWakeUp(animationLenghtWakeUp));
     }
 
     void Update()
     {
+
+        if (!canControl)
+        {
+            animator.SetBool("IsRunning", false);
+            animator.SetBool("IsWalking", false);
+            animator.SetBool("jump", false);
+        }
         if (canControl)
         {
             if (!courrir)
@@ -119,13 +125,14 @@ public class PlayersController : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.C) && isGrounded)
             {
-                
+
                 if (!accroupir)
                 {
-                    cc.height = oldColliderHeight/2;
-                    moveSpeed = oldMoveSpeed/2;
+                    cc.height = oldColliderHeight / 2;
+                    moveSpeed = oldMoveSpeed / 2;
                     accroupir = true;
                     animator.SetBool("Accroupi", true);
+                    animator.SetBool("IsRunning", false);
                 }
                 else
                 {
@@ -136,15 +143,17 @@ public class PlayersController : MonoBehaviour
                 }
 
             }
-            velocity.y += gravity * Time.deltaTime;
-            cc.Move(velocity * Time.deltaTime);
         }
+        velocity.y += gravity * Time.deltaTime;
+        cc.Move(velocity * Time.deltaTime);
+
 
     }
     private IEnumerator AnimatorSetWakeUp(float animationLength)
     {
-       yield return new WaitForSeconds(animationLength);
-
+        animator.SetBool("WakeUp", true);
+        yield return new WaitForSeconds(animationLenghtWakeUp);
+        animator.SetBool("WakeUp", false);
         canControl = true;
     }
 }

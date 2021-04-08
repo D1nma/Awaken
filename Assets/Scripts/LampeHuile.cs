@@ -18,6 +18,7 @@ public class LampeHuile : MonoBehaviour
     public int nbRecharges = 1;
     private int maxHuile = 100;
     float oldValueFog;
+    public float FogStartDistance=50f;
     public float currentHuile = 25;
     private int tipInt = 0;
     private float consume = 0.005f;
@@ -72,7 +73,7 @@ public class LampeHuile : MonoBehaviour
         }
         if (EnMain)
         {
-            RenderSettings.fogStartDistance = 50f;
+            RenderSettings.fogStartDistance = FogStartDistance;
             if (ObjNbRecharges != null){
                 ObjNbRecharges.SetActive(true);
             }

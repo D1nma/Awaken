@@ -8,21 +8,22 @@ public class Warning : MonoBehaviour
     public string warning;
     public GameObject warningText;
     public static float oldValue;
-    public float fogEndValue = 50f;
+    public float fogEndValue = 60f;
     public static bool StartFog;
 
     void Start()
     {
         warningText.GetComponent<Text>().text = warning.ToString();
-        oldValue = RenderSettings.fogEndDistance; ;
+        oldValue = RenderSettings.fogEndDistance;
     }
 
 
     void Update()
     {
+        //Debug.Log(RenderSettings.fogEndDistance);
         if (StartFog)
         {
-            if(RenderSettings.fogEndDistance >= fogEndValue)
+            if(RenderSettings.fogEndDistance > fogEndValue)
             {
                 RenderSettings.fogEndDistance -= 2;
             }
@@ -33,7 +34,7 @@ public class Warning : MonoBehaviour
         }
         else
         {
-            if(RenderSettings.fogEndDistance <= oldValue)
+            if(RenderSettings.fogEndDistance < oldValue)
             {
                 RenderSettings.fogEndDistance += 2;
             }
