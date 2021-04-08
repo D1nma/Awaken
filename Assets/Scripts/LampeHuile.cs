@@ -17,7 +17,7 @@ public class LampeHuile : MonoBehaviour
     public GameObject prefab;
     public int nbRecharges = 1;
     private int maxHuile = 100;
-
+    float oldValueFog;
     public float currentHuile = 25;
     private int tipInt = 0;
     private float consume = 0.005f;
@@ -58,6 +58,7 @@ public class LampeHuile : MonoBehaviour
         huileBar.maxValue = maxHuile;
         huileBar.value = currentHuile;
         ui.huile.SetActive(false);
+        oldValueFog = RenderSettings.fogStartDistance;
     }
 
     // Update is called once per frame
@@ -71,7 +72,8 @@ public class LampeHuile : MonoBehaviour
         }
         if (EnMain)
         {
-            if(ObjNbRecharges != null){
+            RenderSettings.fogStartDistance = 50f;
+            if (ObjNbRecharges != null){
                 ObjNbRecharges.SetActive(true);
             }
             useHuile();
@@ -112,6 +114,7 @@ public class LampeHuile : MonoBehaviour
         }
         if (!EnMain)
         {
+            RenderSettings.fogStartDistance = oldValueFog;
             ui.huile.SetActive(false);
             ui.Etathuile[0].SetActive(false);
             ui.Etathuile[1].SetActive(false);

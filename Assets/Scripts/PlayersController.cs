@@ -23,7 +23,8 @@ public class PlayersController : MonoBehaviour
     public Transform cam;
     Camera m_MainCamera;
     private bool accroupir = false;
-    public static bool canControl = true;
+    public static bool canControl = true, wakeUp = false;
+    public float animationLenghtWakeUp = 1f;
     public bool courrir = true;
 
     void Start()
@@ -36,6 +37,9 @@ public class PlayersController : MonoBehaviour
         transform.position = gm.lastCheckPointPos;
         oldMoveSpeed = moveSpeed;
         oldColliderHeight = cc.height;
+        animator.SetTrigger("WakeUp");
+        canControl = false;
+        StartCoroutine(AnimatorSetWakeUp(animationLenghtWakeUp));
     }
 
     void Update()
@@ -44,6 +48,7 @@ public class PlayersController : MonoBehaviour
         {
             if (!courrir)
             {
+                animator.SetBool("IsRunning", false);
                 moveSpeed = 5;
             }
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
@@ -120,16 +125,26 @@ public class PlayersController : MonoBehaviour
                     cc.height = oldColliderHeight/2;
                     moveSpeed = oldMoveSpeed/2;
                     accroupir = true;
-                }else
+                    animator.SetBool("Accroupi", true);
+                }
+                else
                 {
                     cc.height = oldColliderHeight;
                     moveSpeed = oldMoveSpeed;
                     accroupir = false;
+                    animator.SetBool("Accroupi", false);
                 }
 
             }
             velocity.y += gravity * Time.deltaTime;
             cc.Move(velocity * Time.deltaTime);
         }
+
+    }
+    private IEnumerator AnimatorSetWakeUp(float animationLength)
+    {
+       yield return new WaitForSeconds(animationLength);
+
+        canControl = true;
     }
 }
