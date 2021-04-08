@@ -7,7 +7,7 @@ public class PlayersController : MonoBehaviour
     Animator animator;
     private GameManager gm;
     CharacterController cc;
-    public float moveSpeed = 5,oldMoveSpeed;
+    public float moveSpeed = 5,oldMoveSpeed,oldColliderHeight;
     //public float rotateSpeed = 180f;
     public float jumpSpeed = 2; //Pas de saut pour l'instant
     public float gravity = -19.62f;
@@ -35,6 +35,7 @@ public class PlayersController : MonoBehaviour
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         transform.position = gm.lastCheckPointPos;
         oldMoveSpeed = moveSpeed;
+        oldColliderHeight = cc.height;
     }
 
     void Update()
@@ -104,6 +105,7 @@ public class PlayersController : MonoBehaviour
             if (direction.magnitude <= 0.1)
             {
                 animator.SetBool("IsWalking", false);
+                animator.SetBool("IsRunning", false);
             }
             if (Input.GetButtonDown("Jump") && isGrounded)
             {
@@ -115,12 +117,12 @@ public class PlayersController : MonoBehaviour
                 
                 if (!accroupir)
                 {
-                    cc.height = 0.50f;
+                    cc.height = oldColliderHeight/2;
                     moveSpeed = oldMoveSpeed/2;
                     accroupir = true;
                 }else
                 {
-                    cc.height = 1.25f;
+                    cc.height = oldColliderHeight;
                     moveSpeed = oldMoveSpeed;
                     accroupir = false;
                 }
