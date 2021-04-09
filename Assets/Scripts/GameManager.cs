@@ -51,15 +51,12 @@ public class GameManager : MonoBehaviour
         {
             warning = GameObject.Find("Warning").GetComponent<Warning>();
         }
-        Debug.Log(lastCheckPointPos);
         lastCheckPointPos = spawnPos.transform.position;
-        Debug.Log(lastCheckPointPos);
         SpawnPlayer();
     }
 
     public void SpawnPlayer() //Début, Mort ou sorti de map, spawn sur checkpoint le plus proche
     {
-
         if (!gameOver)
         {
             if (!Player)
@@ -74,7 +71,6 @@ public class GameManager : MonoBehaviour
     }
     public void Replace()
     {
-        
         if (Player.transform.position == lastCheckPointPos)
         {
             PlayersController.canControl = true;
@@ -103,7 +99,6 @@ public class GameManager : MonoBehaviour
             spawnPos.position = lastCheckPointPos;
             cam = GameObject.Find("Third Person Camera").GetComponent<CinemachineFreeLook>();
             SpawnPlayer();
-
         }
         time += Time.deltaTime;
         ui.UpdateTime((int)time);
@@ -117,7 +112,6 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
-
         ui.DeadMenu();
         gameOver = false;
     }
