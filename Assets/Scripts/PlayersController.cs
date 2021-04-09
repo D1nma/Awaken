@@ -24,7 +24,7 @@ public class PlayersController : MonoBehaviour
     Camera m_MainCamera;
     private bool accroupir = false;
     public static bool canControl = true, wakeUp = false;
-    public float animationLenghtWakeUp = f;
+    public float animationLenghtWakeUp = 11f;
     public bool courrir = true;
 
     void Start()
