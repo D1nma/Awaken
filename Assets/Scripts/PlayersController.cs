@@ -133,6 +133,7 @@ public class PlayersController : MonoBehaviour
                     accroupir = true;
                     animator.SetBool("Accroupi", true);
                     animator.SetBool("IsRunning", false);
+                    courrir = false;
                 }
                 else
                 {
