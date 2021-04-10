@@ -52,13 +52,15 @@ public class PnjSpider : MonoBehaviour
             _agent.SetDestination(newPos);
         }*/
         //Debug.Log(_agent.destination);
-        Debug.Log(_agent.isStopped);
+        //Debug.Log(_agent.isStopped);
         if (player)
         {
             float distance = Vector3.Distance(transform.position, player.transform.position);
 
             if (distance < PnjDistanceRun)
             {
+                _agent.speed = _agent.speed * 2;
+                _animator.SetFloat("Speed", speedNav * 2);
                 _animator.SetBool("Walk", true);
                 Vector3 dirToPlayer = transform.position - player.transform.position;
                 Vector3 newPos = transform.position + dirToPlayer;
@@ -66,26 +68,31 @@ public class PnjSpider : MonoBehaviour
                 _agent.SetDestination(newPos);
                 _agent.isStopped = false;
             }
+            else
+            {
+                _agent.speed = oldSpeed;
+                _animator.SetFloat("Speed", speedNav / 2);
+            }
             if (distance < PnjDistanceRun / 4)
             {
-                _agent.speed = _agent.speed * 2;
-                _animator.SetFloat("Speed",speedNav *2);
+                _agent.speed = _agent.speed * 4;
+                _animator.SetFloat("Speed",speedNav *4);
             }
             else
             {
                 _agent.speed = oldSpeed;
-                _animator.SetFloat("Speed", speedNav /2);
+                _animator.SetFloat("Speed", speedNav /4);
             }
         }
         if (timeGo)
         {
-            Debug.Log("le temps tourne");
+            //Debug.Log("le temps tourne");
             time += Time.deltaTime;
-            Debug.Log(timeAlea);
+            //Debug.Log(timeAlea);
         }
         if(time >= timeAlea)
         {
-            Debug.Log("Pause fini");
+            //Debug.Log("Pause fini");
             _animator.SetBool("Walk", false);
             timeGo = false;
             time = 0;
@@ -101,7 +108,7 @@ public class PnjSpider : MonoBehaviour
         }
         if (Destination)
         {
-            Debug.Log("je trouve une destination");
+            //Debug.Log("je trouve une destination");
             x = Random.Range(transform.position.x -10, transform.position.x + 10);
             z = Random.Range(transform.position.z - 10, transform.position.z +10);
             randomPosition = new Vector3(x, transform.position.y, z);
@@ -117,7 +124,7 @@ public class PnjSpider : MonoBehaviour
         }
         else
         {
-            Debug.Log("Je suis proche");
+            //Debug.Log("Je suis proche");
             _animator.SetBool("Walk", false);
             _agent.isStopped = true;   
         }
