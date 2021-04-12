@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PingPong : MonoBehaviour
 {
+    public float speed=0.1f, valueMax=0.2f,valueMin=0.1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +17,8 @@ public class PingPong : MonoBehaviour
         Renderer renderer = GetComponent<Renderer>();
         Material mat = renderer.material;
 
-        float emission = Mathf.PingPong(Time.time*0.1f, 0.2f);
-        Color baseColor = Color.white; //Replace this with whatever you want for your base color at emission level '1'
+        float emission = valueMin + Mathf.PingPong(Time.time*speed, valueMax-valueMin);
+        Color baseColor = Color.white;
 
         Color finalColor = baseColor * Mathf.LinearToGammaSpace(emission);
 
