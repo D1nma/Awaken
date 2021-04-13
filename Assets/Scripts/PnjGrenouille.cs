@@ -27,7 +27,6 @@ public class PnjGrenouille : MonoBehaviour
         time = 0;
         timeAlea = Random.Range(4f, 15f);
         setTime = true;
-        Debug.Log(oldSpeed+" "+speedNav);
     }
     IEnumerator AfterInstance()
     {
