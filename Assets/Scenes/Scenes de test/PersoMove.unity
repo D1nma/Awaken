@@ -121,7 +121,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: b3a539299447b1f4c948c89970070241, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!1 &29910017
 GameObject:
   m_ObjectHideFlags: 0
@@ -6537,7 +6537,8 @@ GameObject:
   - component: {fileID: 517033120}
   - component: {fileID: 517033119}
   - component: {fileID: 517033118}
-  m_Layer: 9
+  - component: {fileID: 517033122}
+  m_Layer: 11
   m_Name: ramp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6618,6 +6619,35 @@ Transform:
   m_Father: {fileID: 511994802}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -16.381}
+--- !u!114 &517033122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517033117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  m_UseGeometry: 0
+  m_DefaultArea: 3
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.043333333
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: db68425ee07a1b94ea4a8348cc3e7b47, type: 2}
 --- !u!4 &517104356
 Transform:
   m_ObjectHideFlags: 0
@@ -6966,6 +6996,7 @@ GameObject:
   - component: {fileID: 592286237}
   - component: {fileID: 592286236}
   - component: {fileID: 592286235}
+  - component: {fileID: 592286239}
   m_Layer: 9
   m_Name: sol
   m_TagString: Untagged
@@ -7047,6 +7078,35 @@ Transform:
   m_Father: {fileID: 511994802}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &592286239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592286234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 1847
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.043333333
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: 405060cf27bd25b4d886b1f7786341b7, type: 2}
 --- !u!114 &594147883 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3823880368932805875, guid: d51378e3b0050fe409be1675221af344,
@@ -7842,7 +7902,7 @@ NavMeshAgent:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041321362}
   m_Enabled: 1
-  m_AgentTypeID: -334000983
+  m_AgentTypeID: 0
   m_Radius: 0.72
   m_Speed: 3.5
   m_Acceleration: 8
@@ -14717,7 +14777,7 @@ PrefabInstance:
     - target: {fileID: 8316891838523312642, guid: 7bc248843261a7a489ca8f39f5c9c7c1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0527
+      value: 0.549
       objectReference: {fileID: 0}
     - target: {fileID: 8316891838523312642, guid: 7bc248843261a7a489ca8f39f5c9c7c1,
         type: 3}
@@ -14767,7 +14827,22 @@ PrefabInstance:
     - target: {fileID: 8422066048159458336, guid: 7bc248843261a7a489ca8f39f5c9c7c1,
         type: 3}
       propertyPath: m_Radius
-      value: 0.05
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422066048159458336, guid: 7bc248843261a7a489ca8f39f5c9c7c1,
+        type: 3}
+      propertyPath: m_Height
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422066048159458336, guid: 7bc248843261a7a489ca8f39f5c9c7c1,
+        type: 3}
+      propertyPath: m_AgentTypeID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422066048159458336, guid: 7bc248843261a7a489ca8f39f5c9c7c1,
+        type: 3}
+      propertyPath: m_WalkableMask
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8656017042236199096, guid: 7bc248843261a7a489ca8f39f5c9c7c1,
         type: 3}

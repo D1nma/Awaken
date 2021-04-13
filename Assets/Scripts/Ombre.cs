@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Ombre : MonoBehaviour
 {
-
+    Animator _animator;
     GameObject player;
     NavMeshAgent enemy;
     public float LifeTime = 3000f;
@@ -30,7 +30,7 @@ public class Ombre : MonoBehaviour
 
     void Start()
     {
-
+        _animator = GetComponent<Animator>();
         StartCoroutine(AfterInstance());
         enemy = GetComponent<NavMeshAgent>();
         if (pathPoints.Length != 0)

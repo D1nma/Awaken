@@ -10,7 +10,7 @@ public class PnjGrenouille : MonoBehaviour
     public GameObject player;
     public float PnjDistanceRun = 4f;
     float oldSpeed, x, z, time, timeAlea;
-    float speedNav;
+    public float speedNav = 3f,oldSpeedNav;
     bool timeGo, Destination, setTime = false;
     Vector3 randomPosition;
     // Start is called before the first frame update
@@ -21,11 +21,13 @@ public class PnjGrenouille : MonoBehaviour
         StartCoroutine(AfterInstance());
         oldSpeed = _agent.speed;
         _agent.isStopped = true;
-        speedNav = _animator.GetFloat("Speed");
+        _animator.SetFloat("Speed",speedNav);
+        oldSpeedNav = speedNav;
         timeGo = false;
         time = 0;
-        timeAlea = Random.Range(4f, 10f);
+        timeAlea = Random.Range(4f, 15f);
         setTime = true;
+        Debug.Log(oldSpeed+" "+speedNav);
     }
     IEnumerator AfterInstance()
     {
@@ -58,7 +60,8 @@ public class PnjGrenouille : MonoBehaviour
             else
             {
                 _agent.speed = oldSpeed;
-                _animator.SetFloat("Speed", speedNav / 2);
+                speedNav = oldSpeedNav;
+                _animator.SetFloat("Speed", speedNav);
             }
             if (distance < PnjDistanceRun / 2)
             {
@@ -68,7 +71,8 @@ public class PnjGrenouille : MonoBehaviour
             else
             {
                 _agent.speed = oldSpeed;
-                _animator.SetFloat("Speed", speedNav / 4);
+                speedNav = oldSpeedNav;
+                _animator.SetFloat("Speed", speedNav);
             }
         }
         if (timeGo)
@@ -120,7 +124,7 @@ public class PnjGrenouille : MonoBehaviour
     {
         if (!setTime)
         {
-            timeAlea = Random.Range(2f, 6f);
+            timeAlea = Random.Range(4f, 15f);
             setTime = true;
         }
 
