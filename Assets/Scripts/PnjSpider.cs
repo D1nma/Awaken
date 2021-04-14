@@ -10,7 +10,7 @@ public class PnjSpider : MonoBehaviour
     public GameObject player;
     public float PnjDistanceRun = 4f;
     float oldSpeed, x, z, time, timeAlea;
-    float speedNav;
+    float speedNav,oldSpeedNav;
     bool timeGo,Destination, setTime = false;
     Vector3 randomPosition;
     // Start is called before the first frame update
@@ -22,6 +22,7 @@ public class PnjSpider : MonoBehaviour
         oldSpeed = _agent.speed;
         _agent.isStopped = true;
         speedNav = _animator.GetFloat("Speed");
+        oldSpeedNav = speedNav;
         timeGo = false;
         time = 0;
         timeAlea = Random.Range(2f, 6f);
@@ -71,9 +72,10 @@ public class PnjSpider : MonoBehaviour
             else
             {
                 _agent.speed = oldSpeed;
-                _animator.SetFloat("Speed", speedNav / 2);
+                speedNav = oldSpeedNav;
+                _animator.SetFloat("Speed", speedNav);
             }
-            if (distance < PnjDistanceRun / 4)
+            if (distance < PnjDistanceRun / 2)
             {
                 _agent.speed = _agent.speed * 4;
                 _animator.SetFloat("Speed",speedNav *4);
@@ -81,7 +83,8 @@ public class PnjSpider : MonoBehaviour
             else
             {
                 _agent.speed = oldSpeed;
-                _animator.SetFloat("Speed", speedNav /4);
+                speedNav = oldSpeedNav;
+                _animator.SetFloat("Speed", speedNav);
             }
         }
         if (timeGo)
