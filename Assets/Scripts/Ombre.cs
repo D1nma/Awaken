@@ -20,8 +20,9 @@ public class Ombre : MonoBehaviour
     public int degat = 10;
     public float MaxDist = 0.1f;
     public float MinDist = 5;
-    public float lookRadius = 10f;
+    public float lookRadius = 10f,offsetRay=1;
     private float time;
+    Vector3 trait;
 
     public Transform[] pathPoints;
     int currentDestinationIndex = 0, attaque = 0;
@@ -34,8 +35,6 @@ public class Ombre : MonoBehaviour
         StartCoroutine(AfterInstance());
         enemy = GetComponent<NavMeshAgent>();
         _animator.SetBool("Chasing", false);
-        attaque = Random.Range(0, 1);
-        _animator.SetInteger("Attaque", attaque);
         if (pathPoints.Length != 0)
         {
             currentDestinationIndex = (currentDestinationIndex + 1) % pathPoints.Length;
@@ -63,8 +62,10 @@ public class Ombre : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var ray = new Ray(this.transform.position, this.transform.forward);
-        Debug.DrawRay(this.transform.position, this.transform.forward * 2, Color.white);
+        trait = this.transform.position;
+        trait.y = this.transform.position.y + offsetRay;
+        var ray = new Ray(trait, this.transform.forward);
+        Debug.DrawRay(trait, this.transform.forward * 2, Color.white);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, 30f))
         {
@@ -116,11 +117,13 @@ public class Ombre : MonoBehaviour
             {
                 //transform.LookAt(player.transform);
                 enemy.destination = player.transform.position;
+                FaceTarget();
                 if (distance <= enemy.stoppingDistance)
                 {
                     if (canHurt)
                     {
-                        FaceTarget();
+                        attaque = Random.Range(0, 1);
+                        _animator.SetInteger("Attaque", attaque);
                         Debug.Log("touché");
                         _animator.SetBool("Chasing", true);
                     }
