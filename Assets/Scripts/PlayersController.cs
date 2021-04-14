@@ -34,11 +34,14 @@ public class PlayersController : MonoBehaviour
         m_MainCamera = Camera.main;
         cam = m_MainCamera.transform;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
-        transform.position = gm.lastCheckPointPos;
+        if(gm.testeur == false)
+        {
+            transform.position = gm.lastCheckPointPos;
+            canControl = false;
+            StartCoroutine(AnimatorSetWakeUp(animationLenghtWakeUp));
+        }
         oldMoveSpeed = moveSpeed;
         oldColliderHeight = cc.height;
-        canControl = false;
-        StartCoroutine(AnimatorSetWakeUp(animationLenghtWakeUp));
     }
 
     void Update()

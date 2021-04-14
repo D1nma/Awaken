@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 1433874893}
   - component: {fileID: 1433874890}
   m_Layer: 0
-  m_Name: Ombre
+  m_Name: Ombre 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -386,12 +386,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LifeTime: 1500
-  idleOne: 0
+  idleOne: 1
   degat: 10
   MaxDist: 10
   MinDist: 5
   lookRadius: 10
-  pathPoints: []
+  pathPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &2421175590199851819
 GameObject:
   m_ObjectHideFlags: 0
