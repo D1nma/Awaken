@@ -51,6 +51,10 @@ public class GameManager : MonoBehaviour
         {
             warning = GameObject.Find("Warning").GetComponent<Warning>();
         }
+        if (!Player)
+        {
+            Player = GameObject.FindGameObjectWithTag("Player");
+        }
         lastCheckPointPos = spawnPos.transform.position;
         SpawnPlayer();
     }
