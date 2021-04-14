@@ -24,7 +24,7 @@ public class Ombre : MonoBehaviour
     private float time;
 
     public Transform[] pathPoints;
-    int currentDestinationIndex = 0;
+    int currentDestinationIndex = 0, attaque = 0;
 
 
 
@@ -33,6 +33,9 @@ public class Ombre : MonoBehaviour
         _animator = GetComponent<Animator>();
         StartCoroutine(AfterInstance());
         enemy = GetComponent<NavMeshAgent>();
+        _animator.SetBool("Chasing", false);
+        attaque = Random.Range(0, 1);
+        _animator.SetInteger("Attaque", attaque);
         if (pathPoints.Length != 0)
         {
             currentDestinationIndex = (currentDestinationIndex + 1) % pathPoints.Length;
@@ -51,8 +54,10 @@ public class Ombre : MonoBehaviour
     }
     IEnumerator Recommence()
     {
-        yield return new WaitForSeconds(1);
-        enemy.isStopped =false;
+        yield return new WaitForSeconds(2);
+        _animator.SetBool("Chasing", false);
+        enemy.isStopped = false;
+        follow = true;
     }
 
     // Update is called once per frame
@@ -80,7 +85,7 @@ public class Ombre : MonoBehaviour
                 {
                     Debug.Log("Je devrais voir ailleur..");
                     follow = false;
-                    enemy.isStopped =true;
+                    enemy.isStopped = true;
                     StartCoroutine(Recommence());
                 }
             }
@@ -89,7 +94,7 @@ public class Ombre : MonoBehaviour
         time += Time.deltaTime;
 
         if (LifeTime > 0 && !immortal) { LifeTime -= time; }
-        if (idleOne)
+        if (idleOne && follow)
         {
             immortal = true;
             if (pathPoints.Length > 1)
@@ -113,11 +118,16 @@ public class Ombre : MonoBehaviour
                 enemy.destination = player.transform.position;
                 if (distance <= enemy.stoppingDistance)
                 {
-                    FaceTarget();
-                    Debug.Log("touché");
+                    if (canHurt)
+                    {
+                        FaceTarget();
+                        Debug.Log("touché");
+                        _animator.SetBool("Chasing", true);
+                    }
+                    enemy.ResetPath();
                     enemy.isStopped = true;
+                    follow = false;
                     StartCoroutine(Recommence());
-
                 }
 
             }
