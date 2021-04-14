@@ -69,6 +69,10 @@ public class GameManager : MonoBehaviour
         {
             if (!Player && !testeur)
                 Player = Instantiate(playerInstance, spawnPos.position, spawnPos.rotation);
+            if(!Player && testeur)
+            {
+                Debug.LogWarning("Pose le joueur où tu veux avant de jouer..");
+            }
             cam.Follow = Player.transform;
             cam.LookAt = Player.transform;
             cc = Player.GetComponent<CharacterController>();
