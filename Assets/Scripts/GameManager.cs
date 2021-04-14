@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public float deadDelay = 2f; //un delay l'animation de la mort?
     public CinemachineFreeLook cam;
     public Transform spawnPos;
+    public bool testeur = false;
 
     void Awake()
     {
@@ -37,7 +38,10 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        
+        if (!cam)
+        {
+            cam = GameObject.Find("Third Person Camera").GetComponent<CinemachineFreeLook>();
+        }
         spawnPos = spawnPosition[0];
         if (!ui)
         {
@@ -63,7 +67,7 @@ public class GameManager : MonoBehaviour
     {
         if (!gameOver)
         {
-            if (!Player)
+            if (!Player && !testeur)
                 Player = Instantiate(playerInstance, spawnPos.position, spawnPos.rotation);
             cam.Follow = Player.transform;
             cam.LookAt = Player.transform;
@@ -101,7 +105,6 @@ public class GameManager : MonoBehaviour
         {
             spawnPos = GameObject.Find("SpawnPlayer").transform;
             spawnPos.position = lastCheckPointPos;
-            cam = GameObject.Find("Third Person Camera").GetComponent<CinemachineFreeLook>();
             SpawnPlayer();
         }
         time += Time.deltaTime;
