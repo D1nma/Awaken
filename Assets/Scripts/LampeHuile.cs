@@ -178,7 +178,7 @@ public class LampeHuile : MonoBehaviour
         }
         if (!EnMain)
         {
-            lightDown();
+            //lightDown();
         }
         if (currentHuile <= 0)
         {
@@ -226,7 +226,7 @@ public class LampeHuile : MonoBehaviour
         {
             if (InteragirText != null)
             {
-                InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur E pour intéragir ("+this.gameObject.name+")";
+                InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur “E” ou “Triangle” pour intéragir (" + this.gameObject.name+")"; //pour prendre/interagir avec un objet “E” ou “△”
                 InteragirText.SetActive(true);
                 dispo = true;
             }

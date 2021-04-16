@@ -8,6 +8,7 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public Question question;
     public GameObject InteragirText;
+    public bool Interagir;
     private bool start;
 
 
@@ -22,7 +23,11 @@ public class DialogueTrigger : MonoBehaviour
         {
             //Debug.Log("Y'a une question");
             FindObjectOfType<DialogueManager>().StartQuestion(dialogue, question);
-            InteragirText.SetActive(false);
+            if(InteragirText != null)
+            {
+                InteragirText.SetActive(false);
+            }
+            
         }
 
     }
@@ -32,7 +37,7 @@ public class DialogueTrigger : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && start)
+        if (Input.GetKeyDown(KeyCode.E) && start && Interagir)
         {
             TriggerDialogue();
             start = false;
@@ -49,7 +54,11 @@ public class DialogueTrigger : MonoBehaviour
         {
             if (dialogue.isQuestion == true)
             {
-                if (InteragirText != null)
+                if (!Interagir)
+                {
+                    TriggerDialogue();
+                }
+                if (InteragirText != null && Interagir)
                 {
                     InteragirText.SetActive(true);
                     start = true;

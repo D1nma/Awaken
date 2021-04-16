@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
     public Text nameText;
     public Text dialogueText;
     public GameObject[] Boutons;
+    Tips tips;
     public Text nameAlyx;
     public Animator animator;
     private float timer, timerlimit = 2;
@@ -49,11 +50,16 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
+        if (!tips)
+        {
+            tips = this.gameObject.GetComponent<Tips>();
+        }
         if (WaitAnswer == false)
         {
             if (Input.GetMouseButtonDown(0) && canClick || Input.GetButtonDown("Fire1") && canClick)
             {
                 DisplayNextSentence();
+                Debug.Log("click");
             }
         }
         if (WaitAnswer && Yquestion)
@@ -62,10 +68,10 @@ public class DialogueManager : MonoBehaviour
             {
                 timer = 100;
                 WaitAnswer = false;
+                Debug.Log("click2");
             }
 
         }
-
         if (dialogueEnd == true && Xquestion == true && display == true)
         {
             nameAlyx.gameObject.SetActive(true);
@@ -116,6 +122,7 @@ public class DialogueManager : MonoBehaviour
     {
         Cursor.visible = true;
         question1 = question;
+        nameAlyx.gameObject.SetActive(true);
         taille = question.choices.Length;
         questions = question.text;
         PlayersController.canControl = false;
@@ -195,6 +202,7 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         //Debug.Log("Fin du dialogue");
+        tips.enabled = true;
         dialogueEnd = true;
         animator.SetBool("IsOpen", false);
         PlayersController.canControl = true;
@@ -223,7 +231,8 @@ public class DialogueManager : MonoBehaviour
 
     public void ButtonClicked(int buttonNo)
     {
-        //Debug.Log("Button clicked = " + buttonNo);
+
+        Debug.Log("Button clicked = " + buttonNo);
         if (Yquestion == false) { StartDialogue(question1.choices[buttonNo].dialogue); Yquestion = true; timerStart = true; }
     }
 }

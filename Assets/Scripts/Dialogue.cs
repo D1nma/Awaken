@@ -9,5 +9,6 @@ public class Dialogue
 
     [TextArea(3,15)]
     public string[] sentences;
+    public bool next;
     public bool isQuestion = false;
 }
