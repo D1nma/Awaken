@@ -14,19 +14,18 @@ public class DialogueManager : MonoBehaviour
     private float timer, timerlimit = 2;
     private bool Xquestion = false, Yquestion = false, WaitAnswer = false, canClick = false;
     public bool canMove = false;
-    private bool dialogueEnd = false,name=false, dialogueAvecQuestionEnd = false, display = false, timerStart = false;
-    private Queue<string> sentences; //mieux qu'un tableau pour le dialogue (FIFO collection)
+    private bool dialogueEnd = false, dialogueAvecQuestionEnd = false, display = false, timerStart = false;
+    private Queue<sentence> sentences; //mieux qu'un tableau pour le dialogue (FIFO collection)
     private string questions;
     private Question question1;
     private int taille;
-    private List<bool> monBool = new List<bool>();
 
     private static DialogueManager instance;
 
 
     void Start()
     {
-        sentences = new Queue<string>();
+        sentences = new Queue<sentence>();
         dialogueEnd = false;
         dialogueAvecQuestionEnd = false;
         timer = 0;
@@ -105,19 +104,12 @@ public class DialogueManager : MonoBehaviour
             Boutons[i].SetActive(false);
         }
         animator.SetBool("IsOpen", true);
-        //Debug.Log("Dialogue avec " + dialogue.name);
-        
+
         sentences.Clear();
-        for (int i = 0; i < dialogue.sentences.Length; i++)
+        foreach (sentence sentence in dialogue.sentences)
         {
-            monBool.Add(dialogue.sentences[i].next);
-            //Debug.Log(monBool[i]);
-            foreach (string sentence in dialogue.sentences[i].sentences)
-            {
-                sentences.Enqueue(sentence);
-                
-            }
-            
+            sentences.Enqueue(sentence);
+
         }
         DisplayNextSentence();
 
@@ -143,17 +135,16 @@ public class DialogueManager : MonoBehaviour
         }
 
         animator.SetBool("IsOpen", true);
-        //Debug.Log("Dialogue et question avec " + dialogue.name);
         nameText.text = dialogue.name;
         sentences.Clear();
 
         for (int i = 0; i < dialogue.sentences.Length; i++)
         {
-            foreach (string sentence in dialogue.sentences[i].sentences)
+            foreach (sentence sentence in dialogue.sentences)
             {
                 sentences.Enqueue(sentence);
             }
-            
+
         }
         DisplayNextSentence();
 
@@ -162,14 +153,6 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        /*if (monBool[i] == true)
-        {
-            nameText.text = nom2;
-        }
-        else
-        {
-            nameText.text = nom1;
-        }*/
         if (sentences != null)
         {
             canClick = false;
@@ -189,7 +172,7 @@ public class DialogueManager : MonoBehaviour
                 }
                 return;
             }
-            string sentence = sentences.Dequeue();
+            sentence sentence = sentences.Dequeue();
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));
 
@@ -197,10 +180,11 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    IEnumerator TypeSentence(string sentence)
+    IEnumerator TypeSentence(sentence sentence)
     {
+        nameText.text = sentence.next ? nom2 : nom1;
         dialogueText.text = "";
-        foreach (char letter in sentence.ToCharArray())
+        foreach (char letter in sentence.sentences.ToCharArray())
         {
             dialogueText.text += letter;
             yield return null;

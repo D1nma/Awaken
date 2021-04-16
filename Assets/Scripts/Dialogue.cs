@@ -6,7 +6,7 @@ using UnityEngine;
 public struct sentence
 {
     [TextArea(3, 15)]
-    public string[] sentences;
+    public string sentences;
     public bool next;
 }
 [System.Serializable]
