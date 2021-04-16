@@ -6,19 +6,20 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
+    string nom1, nom2;
     public Text dialogueText;
     public GameObject[] Boutons;
-    Tips tips;
     public Text nameAlyx;
     public Animator animator;
     private float timer, timerlimit = 2;
     private bool Xquestion = false, Yquestion = false, WaitAnswer = false, canClick = false;
     public bool canMove = false;
-    private bool dialogueEnd = false, dialogueAvecQuestionEnd = false, display = false, timerStart = false;
+    private bool dialogueEnd = false,name=false, dialogueAvecQuestionEnd = false, display = false, timerStart = false;
     private Queue<string> sentences; //mieux qu'un tableau pour le dialogue (FIFO collection)
     private string questions;
     private Question question1;
     private int taille;
+    private List<bool> monBool = new List<bool>();
 
     private static DialogueManager instance;
 
@@ -50,16 +51,11 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
-        if (!tips)
-        {
-            tips = this.gameObject.GetComponent<Tips>();
-        }
         if (WaitAnswer == false)
         {
             if (Input.GetMouseButtonDown(0) && canClick || Input.GetButtonDown("Fire1") && canClick)
             {
                 DisplayNextSentence();
-                Debug.Log("click");
             }
         }
         if (WaitAnswer && Yquestion)
@@ -68,7 +64,6 @@ public class DialogueManager : MonoBehaviour
             {
                 timer = 100;
                 WaitAnswer = false;
-                Debug.Log("click2");
             }
 
         }
@@ -97,6 +92,8 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
+        nom1 = dialogue.name;
+        nom2 = dialogue.name2;
         if (!canMove)
         {
             PlayersController.canControl = false;
@@ -109,14 +106,23 @@ public class DialogueManager : MonoBehaviour
         }
         animator.SetBool("IsOpen", true);
         //Debug.Log("Dialogue avec " + dialogue.name);
-        nameText.text = dialogue.name;
+        
         sentences.Clear();
-
-        foreach (string sentence in dialogue.sentences)
+        for (int i = 0; i < dialogue.sentences.Length; i++)
         {
-            sentences.Enqueue(sentence);
+            monBool.Add(dialogue.sentences[i].next);
+            //Debug.Log(monBool[i]);
+            foreach (string sentence in dialogue.sentences[i].sentences)
+            {
+                sentences.Enqueue(sentence);
+                
+            }
+            
         }
         DisplayNextSentence();
+
+
+
     }
     public void StartQuestion(Dialogue dialogue, Question question)
     {
@@ -141,16 +147,29 @@ public class DialogueManager : MonoBehaviour
         nameText.text = dialogue.name;
         sentences.Clear();
 
-        foreach (string sentence in dialogue.sentences)
+        for (int i = 0; i < dialogue.sentences.Length; i++)
         {
-            sentences.Enqueue(sentence);
+            foreach (string sentence in dialogue.sentences[i].sentences)
+            {
+                sentences.Enqueue(sentence);
+            }
+            
         }
-
         DisplayNextSentence();
+
+
     }
 
     public void DisplayNextSentence()
     {
+        /*if (monBool[i] == true)
+        {
+            nameText.text = nom2;
+        }
+        else
+        {
+            nameText.text = nom1;
+        }*/
         if (sentences != null)
         {
             canClick = false;
@@ -202,7 +221,6 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         //Debug.Log("Fin du dialogue");
-        tips.enabled = true;
         dialogueEnd = true;
         animator.SetBool("IsOpen", false);
         PlayersController.canControl = true;
@@ -232,7 +250,7 @@ public class DialogueManager : MonoBehaviour
     public void ButtonClicked(int buttonNo)
     {
 
-        Debug.Log("Button clicked = " + buttonNo);
+        //Debug.Log("Button clicked = " + buttonNo);
         if (Yquestion == false) { StartDialogue(question1.choices[buttonNo].dialogue); Yquestion = true; timerStart = true; }
     }
 }
