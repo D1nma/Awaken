@@ -8,12 +8,20 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public Question question;
     public GameObject InteragirText;
-    public bool Interagir;
+    public bool Interagir,Avertissement,canMove;
     private bool start;
 
 
     public void TriggerDialogue()
     {
+        if (canMove)
+        {
+            FindObjectOfType<DialogueManager>().canMove = true;
+        }
+        else
+        {
+            FindObjectOfType<DialogueManager>().canMove = false;
+        }
         if (dialogue.isQuestion == false)
         {
             //Debug.Log("Dialogue simple");
@@ -72,7 +80,12 @@ public class DialogueTrigger : MonoBehaviour
             else
             {
                 TriggerDialogue();
+                if (Avertissement)
+                {
+                    Destroy(this.gameObject.GetComponent<DialogueTrigger>());
+                }
             }
+            
         }
     }
 
@@ -83,7 +96,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             InteragirText.SetActive(false);
         }
-        if (dialogue.isQuestion == false)
+        if (dialogue.isQuestion == false && !Avertissement)
         {
             Destroy(this.gameObject);
         }

@@ -97,6 +97,10 @@ public class DialogueManager : MonoBehaviour
         {
             PlayersController.canControl = false;
         }
+        else
+        {
+            PlayersController.canControl = true;
+        }
         timer += Time.deltaTime;
         nameAlyx.gameObject.SetActive(false);
         for (int i = 0; i < Boutons.Length; i++)
