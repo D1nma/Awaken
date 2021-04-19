@@ -391,6 +391,7 @@ MonoBehaviour:
   MaxDist: 10
   MinDist: 5
   lookRadius: 10
+  offsetRay: 1
   pathPoints: []
 --- !u!1 &2421175590199851819
 GameObject:
@@ -989,6 +990,7 @@ GameObject:
   - component: {fileID: 2564328210174055938}
   - component: {fileID: 6526837700682265104}
   - component: {fileID: 884296182}
+  - component: {fileID: 1464835965}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -1021,10 +1023,12 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1109,6 +1113,21 @@ CapsuleCollider:
   m_Height: 4.13
   m_Direction: 1
   m_Center: {x: 0.13431077, y: -1.86, z: 0.05523117}
+--- !u!114 &1464835965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6710501527228646713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24340841e09e59a469406907e3b464f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.1
+  valueMax: 0.2
+  valueMin: 0.1
 --- !u!1 &6878685864526117234
 GameObject:
   m_ObjectHideFlags: 0
