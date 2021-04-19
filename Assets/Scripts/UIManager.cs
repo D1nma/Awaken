@@ -152,7 +152,7 @@ public class UIManager : MonoBehaviour
     }
     public void Option()
     {
-
+        Cursor.visible = true;
         if (optionPanel != null)
             optionPanel.SetActive(true);
         Time.timeScale = 0;
@@ -166,6 +166,7 @@ public class UIManager : MonoBehaviour
     }
     public void DeadMenu()
     {
+        Cursor.visible = true;
         if (deadPanel != null)
             deadPanel.SetActive(true);
         Time.timeScale = 0.2f;
@@ -173,17 +174,20 @@ public class UIManager : MonoBehaviour
 
     public void CloseOption()
     {
+        Cursor.visible = false;
         if (optionPanel != null)
             optionPanel.SetActive(false);
         Time.timeScale = 1;
     }
     public void LoadMenu()
     {
+        Cursor.visible = true;
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
     }
     public void Quit()
     {
+        Cursor.visible = true;
         Application.Quit();
     }
 

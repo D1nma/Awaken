@@ -26,6 +26,7 @@ public class PlayersController : MonoBehaviour
     public static bool canControl = true, wakeUp = false;
     public float animationLenghtWakeUp = 11f;
     public bool courrir = true;
+    private bool SUPERUSER = false;
 
     void Start()
     {
@@ -34,7 +35,8 @@ public class PlayersController : MonoBehaviour
         m_MainCamera = Camera.main;
         cam = m_MainCamera.transform;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
-        if(gm.testeur == false)
+        SUPERUSER = gm.testeur;
+        if (!SUPERUSER)
         {
             transform.position = gm.lastCheckPointPos;
             canControl = false;
@@ -46,6 +48,10 @@ public class PlayersController : MonoBehaviour
 
     void Update()
     {
+        if (SUPERUSER)
+        {
+            canControl = true;
+        }
 
         if (!canControl)
         {
@@ -84,22 +90,29 @@ public class PlayersController : MonoBehaviour
                 if (Input.GetButtonDown("Sprint") && !accroupir)
                 {
                     animator.SetBool("IsRunning", true);
-
-                    if (StaminaBar.instance.currentStamina > 0 && courrir && isGrounded)
+                    if (SUPERUSER)
                     {
-                        StaminaBar.instance.UseStamina(true);
-                        if (StaminaBar.instance.use)
-                        {
-                            moveSpeed = moveSpeed * 1.4f;
-                        }
-
+                        moveSpeed = moveSpeed * 1.4f;
                     }
                     else
                     {
-                        animator.SetBool("IsRunning", false);
-                        StaminaBar.instance.StopStamina();
-                        moveSpeed = oldMoveSpeed;
+                        if (StaminaBar.instance.currentStamina > 0 && courrir && isGrounded && !SUPERUSER)
+                        {
+                            StaminaBar.instance.UseStamina(true);
+                            if (StaminaBar.instance.use)
+                            {
+                                moveSpeed = moveSpeed * 1.4f;
+                            }
+
+                        }
+                        else
+                        {
+                            animator.SetBool("IsRunning", false);
+                            StaminaBar.instance.StopStamina();
+                            moveSpeed = oldMoveSpeed;
+                        }
                     }
+
 
                 }
                 if (Input.GetButtonUp("Sprint") && !accroupir)
@@ -143,6 +156,7 @@ public class PlayersController : MonoBehaviour
                     cc.height = oldColliderHeight;
                     moveSpeed = oldMoveSpeed;
                     accroupir = false;
+                    courrir = true;
                     animator.SetBool("Accroupi", false);
                 }
 
