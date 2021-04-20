@@ -28,7 +28,9 @@ public class LampeHuile : MonoBehaviour
     [HideInInspector]
     public bool dispo;
     [HideInInspector]
-    public bool EnMain, tipBool, startTiming = false, consomme = false;
+    public bool EnMain;
+    [HideInInspector]
+    private bool startTiming = false, consomme = false;
 
 
     private void Awake()
@@ -47,7 +49,6 @@ public class LampeHuile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tipBool = false;
         if (!ui)
         {
             ui = GameObject.Find("Canvas").GetComponent<UIManager>();
@@ -176,10 +177,10 @@ public class LampeHuile : MonoBehaviour
             }
 
         }
-        if (!EnMain)
+        /*if (!EnMain)
         {
             //lightDown();
-        }
+        }*/
         if (currentHuile <= 0)
         {
             lightDown();
@@ -204,6 +205,7 @@ public class LampeHuile : MonoBehaviour
             lightUp();
             ui.huile.SetActive(true);
             ui.Etathuile[0].SetActive(true);
+            this.gameObject.transform.rotation.Set(0, 0, 0, 0);
             if (tipInt == 0)
             {
                 tipInt = 1;

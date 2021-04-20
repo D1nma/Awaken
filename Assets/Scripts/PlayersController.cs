@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations.Rigging;
 
 public class PlayersController : MonoBehaviour
 {
+    [SerializeField]
+    public Rig rig = null;
+    LampeHuile lampeHuile;
     Animator animator;
     private GameManager gm;
     CharacterController cc;
@@ -48,6 +52,17 @@ public class PlayersController : MonoBehaviour
 
     void Update()
     {
+        if (!lampeHuile)
+        {
+            lampeHuile = GameObject.Find("Lampe à huile").GetComponent<LampeHuile>();
+        }
+        if(lampeHuile != null)
+        {
+            if (lampeHuile.EnMain)
+            {
+                rig.weight = 0.8f;
+            }
+        }
         if (SUPERUSER)
         {
             canControl = true;
