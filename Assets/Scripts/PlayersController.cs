@@ -60,11 +60,12 @@ public class PlayersController : MonoBehaviour
         {
             if (lampeHuile.EnMain)
             {
-                rig.weight = 0.8f;
+                rig.GetComponentInChildren<TwoBoneIKConstraint>().weight = 0.8f;
             }
         }
         if (SUPERUSER)
         {
+            lampeHuile.currentHuile = 99999999f;
             canControl = true;
         }
 

@@ -18,7 +18,7 @@ public class LampeHuile : MonoBehaviour
     public int nbRecharges = 1;
     private int maxHuile = 100;
     float oldValueFog;
-    public float FogStartDistance=50f;
+    public float FogStartDistance = 50f;
     public float currentHuile = 25;
     private int tipInt = 0;
     private float consume = 0.005f;
@@ -35,7 +35,7 @@ public class LampeHuile : MonoBehaviour
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(instance);
@@ -44,7 +44,7 @@ public class LampeHuile : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
+
     }
     // Start is called before the first frame update
     void Start()
@@ -66,7 +66,7 @@ public class LampeHuile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         ObjNbRecharges.gameObject.GetComponent<Text>().text = nbRecharges.ToString();
         if (main == null)
         {
@@ -75,7 +75,8 @@ public class LampeHuile : MonoBehaviour
         if (EnMain)
         {
             RenderSettings.fogStartDistance = FogStartDistance;
-            if (ObjNbRecharges != null){
+            if (ObjNbRecharges != null)
+            {
                 ObjNbRecharges.SetActive(true);
             }
             useHuile();
@@ -201,24 +202,23 @@ public class LampeHuile : MonoBehaviour
 
     public void LAlampe()
     {
-            EnMain = true;
-            lightUp();
-            ui.huile.SetActive(true);
-            ui.Etathuile[0].SetActive(true);
-            this.gameObject.transform.rotation.Set(0, 0, 0, 0);
-            if (tipInt == 0)
+        EnMain = true;
+        lightUp();
+        ui.huile.SetActive(true);
+        ui.Etathuile[0].SetActive(true);
+        if (tipInt == 0)
+        {
+            tipInt = 1;
+            if (Tips != null)
             {
-                tipInt = 1;
-                if (Tips != null)
-                {
-                    Tips.gameObject.GetComponent<Text>().text = "Appuyer sur F pour recharger";
-                    Tips.SetActive(true);
-                    startTiming = true;
+                Tips.gameObject.GetComponent<Text>().text = "Appuyer sur F pour recharger";
+                Tips.SetActive(true);
+                startTiming = true;
 
-                }
             }
-            transform.position = main.transform.position;
-            transform.parent = main.transform;
+        }
+        StartCoroutine(GetLampe());
+
     }
 
     void OnTriggerEnter(Collider player)
@@ -228,7 +228,7 @@ public class LampeHuile : MonoBehaviour
         {
             if (InteragirText != null)
             {
-                InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur “E” ou “Triangle” pour intéragir (" + this.gameObject.name+")"; //pour prendre/interagir avec un objet “E” ou “△”
+                InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur “E” ou “Triangle” pour intéragir (" + this.gameObject.name + ")"; //pour prendre/interagir avec un objet “E” ou “△”
                 InteragirText.SetActive(true);
                 dispo = true;
             }
@@ -272,5 +272,10 @@ public class LampeHuile : MonoBehaviour
     {
         lumiere.SetActive(false);
     }
+    private IEnumerator GetLampe()
+    {
+        yield return new WaitForSeconds(0.1f);
+        transform.position = main.transform.position;
+        transform.parent = main.transform;
+    }
 }
-    
