@@ -81,10 +81,12 @@ public class UIManager : MonoBehaviour
         {
             if (GameIsPaused)
             {
+                Cursor.visible = false;
                 Resume();
             }
             else
             {
+                Cursor.visible = true;
                 Pause();
             }
         }

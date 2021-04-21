@@ -44,13 +44,13 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8773585, g: 0.59237796, b: 0.34349412, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.4
   m_Range: 28.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 9126410377620574896}
-  minIntensity: 0.8
+  minIntensity: 0.4
   maxIntensity: 1
   smoothing: 12
 --- !u!1 &2988165827566487232
@@ -204,6 +204,7 @@ GameObject:
   - component: {fileID: 8726274600987448265}
   - component: {fileID: 7046337459745134210}
   - component: {fileID: 2795974770881223648}
+  - component: {fileID: 1447933277}
   m_Layer: 0
   m_Name: "lampe_\xE0_huile_lowpoly"
   m_TagString: Untagged
@@ -243,7 +244,7 @@ MonoBehaviour:
   huileBar: {fileID: 0}
   InteragirText: {fileID: 0}
   Tips: {fileID: 0}
-  lumiere: {fileID: 0}
+  lumiere: {fileID: 2509342103834004204}
   main: {fileID: 0}
   ObjNbRecharges: {fileID: 0}
   prefab: {fileID: 0}
@@ -266,6 +267,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.14
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1447933277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8237686425163565427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d19a2b915f8124cb8abb4e3ed905d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  watchMe: 1
 --- !u!1 &8666840706156367515
 GameObject:
   m_ObjectHideFlags: 0

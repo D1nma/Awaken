@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 205966509}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Doigt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 597948814}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1809598459}
   - component: {fileID: 1809598460}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TargetHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,8 +143,8 @@ MonoBehaviour:
         transform: {fileID: 2126894842}
         weight: 1
       m_Item1:
-        transform: {fileID: 0}
-        weight: 0
+        transform: {fileID: 2126894842}
+        weight: 1
       m_Item2:
         transform: {fileID: 0}
         weight: 0
@@ -187,7 +187,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2126894842}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126894841}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.023, y: 1.274, z: 0.81}
+  m_LocalPosition: {x: 0, y: 1.274, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1809598459}
@@ -681,9 +681,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2954305861135274748}
   - component: {fileID: 6803072164218805586}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point Light
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1697,7 +1697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3332978746745818899}
   - component: {fileID: 3368668301469948717}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TargetHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2697,6 +2697,8 @@ GameObject:
   - component: {fileID: -4506911232936754886}
   - component: {fileID: 5277648582694419862}
   - component: {fileID: 6281115245032013453}
+  - component: {fileID: 300034395}
+  - component: {fileID: 300034396}
   m_Layer: 8
   m_Name: Alyx
   m_TagString: Player
@@ -2940,6 +2942,34 @@ MonoBehaviour:
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
     m_Visible: 1
+--- !u!135 &300034395
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8699770889497131319}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &300034396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8699770889497131319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820a1d63537baff44a3ea3e9fab86e85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookRadius: 10
+  rig: {fileID: 0}
+  speed: 20
 --- !u!1 &8741020064287440969
 GameObject:
   m_ObjectHideFlags: 0
@@ -3277,9 +3307,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1713689658286584776}
   - component: {fileID: 7212678385090248021}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rig 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
