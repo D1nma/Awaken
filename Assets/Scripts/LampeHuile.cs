@@ -217,7 +217,7 @@ public class LampeHuile : MonoBehaviour
 
             }
         }
-        StartCoroutine(GetLampe());
+        StartCoroutine(GetLampe()); // après quelque milli sec pour que le bras soit déjà en position
 
     }
 
@@ -274,8 +274,9 @@ public class LampeHuile : MonoBehaviour
     }
     private IEnumerator GetLampe()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.3f);
         transform.position = main.transform.position;
         transform.parent = main.transform;
+        
     }
 }

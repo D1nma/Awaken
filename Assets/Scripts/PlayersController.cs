@@ -58,9 +58,10 @@ public class PlayersController : MonoBehaviour
         }
         if(lampeHuile != null)
         {
-            if (lampeHuile.EnMain)
+            if (lampeHuile.EnMain )
             {
-                rig.GetComponentInChildren<TwoBoneIKConstraint>().weight = 0.8f;
+                rig.GetComponentInChildren<TwoBoneIKConstraint>().weight = 0.8f; //Le bras se met en place
+                lampeHuile.gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 0f); //aucun effet
             }
         }
         if (SUPERUSER)
