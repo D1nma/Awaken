@@ -419,6 +419,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1094501020870391740, guid: a296afa606fc08e4aaa21def42f4d51b,
         type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1094501020870391740, guid: a296afa606fc08e4aaa21def42f4d51b,
+        type: 3}
       propertyPath: m_BoundingSphereOverride.w
       value: 0
       objectReference: {fileID: 0}
@@ -4461,6 +4466,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094501020870391740, guid: a296afa606fc08e4aaa21def42f4d51b,
         type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1094501020870391740, guid: a296afa606fc08e4aaa21def42f4d51b,
+        type: 3}
       propertyPath: m_BoundingSphereOverride.w
       value: 0
       objectReference: {fileID: 0}
@@ -5889,12 +5899,12 @@ PrefabInstance:
     - target: {fileID: 5324693827314288162, guid: c3f53fa5f56e77d46b84dcb42a92c2b5,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000015398918
+      value: 0.000000015398918
       objectReference: {fileID: 0}
     - target: {fileID: 5324693827314288162, guid: c3f53fa5f56e77d46b84dcb42a92c2b5,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000002451417
+      value: -0.000000002451417
       objectReference: {fileID: 0}
     - target: {fileID: 5324693827314288163, guid: c3f53fa5f56e77d46b84dcb42a92c2b5,
         type: 3}
@@ -11219,7 +11229,7 @@ PrefabInstance:
     - target: {fileID: 9126410377620574896, guid: a4706d990e8a3a040a15a22851f8c07d,
         type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9126410377620574896, guid: a4706d990e8a3a040a15a22851f8c07d,
         type: 3}
@@ -11849,7 +11859,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -12201,6 +12211,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
         type: 3}
+      propertyPath: enableVoids
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
+        type: 3}
       propertyPath: showBoundary
       value: 0
       objectReference: {fileID: 0}
@@ -12211,6 +12226,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
         type: 3}
+      propertyPath: fogOfWarSize.x
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
+        type: 3}
+      propertyPath: fogOfWarSize.z
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
+        type: 3}
       propertyPath: enablePointLights
       value: 0
       objectReference: {fileID: 0}
@@ -12218,6 +12243,11 @@ PrefabInstance:
         type: 3}
       propertyPath: maskEditorEnabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
+        type: 3}
+      propertyPath: fogOfWarTextureSize
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 7468127071565925998, guid: c46874cfe0175db46900cae01a9fb731,
         type: 3}
@@ -18467,12 +18497,12 @@ PrefabInstance:
     - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
         type: 3}
       propertyPath: fogOfWarSize.x
-      value: 2048
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
         type: 3}
       propertyPath: fogOfWarSize.z
-      value: 2048
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
         type: 3}
@@ -18493,6 +18523,11 @@ PrefabInstance:
         type: 3}
       propertyPath: maskBrushFuzziness
       value: 0.691
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
+        type: 3}
+      propertyPath: fogOfWarTextureSize
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
         type: 3}
@@ -18856,7 +18891,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -19849,6 +19884,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1094501020870391740, guid: a296afa606fc08e4aaa21def42f4d51b,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1094501020870391740, guid: a296afa606fc08e4aaa21def42f4d51b,
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -26202,6 +26242,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
         type: 3}
+      propertyPath: enableVoids
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
+        type: 3}
       propertyPath: showBoundary
       value: 0
       objectReference: {fileID: 0}
@@ -26212,6 +26257,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
         type: 3}
+      propertyPath: fogOfWarSize.x
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
+        type: 3}
+      propertyPath: fogOfWarSize.z
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
+        type: 3}
       propertyPath: enablePointLights
       value: 0
       objectReference: {fileID: 0}
@@ -26219,6 +26274,11 @@ PrefabInstance:
         type: 3}
       propertyPath: maskEditorEnabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
+        type: 3}
+      propertyPath: fogOfWarTextureSize
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 7468127071565925998, guid: c46874cfe0175db46900cae01a9fb731,
         type: 3}
@@ -27432,6 +27492,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
         type: 3}
+      propertyPath: enableVoids
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
+        type: 3}
       propertyPath: showBoundary
       value: 0
       objectReference: {fileID: 0}
@@ -27442,6 +27507,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
         type: 3}
+      propertyPath: fogOfWarSize.x
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
+        type: 3}
+      propertyPath: fogOfWarSize.z
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
+        type: 3}
       propertyPath: enablePointLights
       value: 0
       objectReference: {fileID: 0}
@@ -27449,6 +27524,11 @@ PrefabInstance:
         type: 3}
       propertyPath: maskEditorEnabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468127071565925997, guid: c46874cfe0175db46900cae01a9fb731,
+        type: 3}
+      propertyPath: fogOfWarTextureSize
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 7468127071565925998, guid: c46874cfe0175db46900cae01a9fb731,
         type: 3}
@@ -28445,6 +28525,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4114906944193052932, guid: 21d8c024e98cd4f47b8722865359cf18,
         type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114906944193052932, guid: 21d8c024e98cd4f47b8722865359cf18,
+        type: 3}
       propertyPath: m_BoundingSphereOverride.w
       value: 0
       objectReference: {fileID: 0}
@@ -28803,6 +28888,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ShadowRadius
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1094501020870391740, guid: a296afa606fc08e4aaa21def42f4d51b,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1094501020870391740, guid: a296afa606fc08e4aaa21def42f4d51b,
         type: 3}
@@ -32619,6 +32709,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1554404612009725622, guid: c2b2d7fce57326d498b3eb887e2131f0,
         type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554404612009725622, guid: c2b2d7fce57326d498b3eb887e2131f0,
+        type: 3}
       propertyPath: m_BoundingSphereOverride.y
       value: 208073090
       objectReference: {fileID: 0}
@@ -32710,7 +32805,7 @@ PrefabInstance:
     - target: {fileID: 3264956145804262014, guid: c2b2d7fce57326d498b3eb887e2131f0,
         type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3264956145804262014, guid: c2b2d7fce57326d498b3eb887e2131f0,
         type: 3}
@@ -32721,6 +32816,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
       value: -680.2549
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264956146090114440, guid: c2b2d7fce57326d498b3eb887e2131f0,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3264956146090114440, guid: c2b2d7fce57326d498b3eb887e2131f0,
         type: 3}
@@ -32825,7 +32925,7 @@ PrefabInstance:
     - target: {fileID: 5175851655421747344, guid: c2b2d7fce57326d498b3eb887e2131f0,
         type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5175851655421747344, guid: c2b2d7fce57326d498b3eb887e2131f0,
         type: 3}
@@ -33769,6 +33869,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ShadowRadius
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1094501020870391740, guid: a296afa606fc08e4aaa21def42f4d51b,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1094501020870391740, guid: a296afa606fc08e4aaa21def42f4d51b,
         type: 3}

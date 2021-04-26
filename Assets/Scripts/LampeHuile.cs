@@ -15,6 +15,7 @@ public class LampeHuile : MonoBehaviour
     public GameObject main;
     public GameObject ObjNbRecharges;
     public GameObject prefab;
+    WatchMe watchMe;
     public int nbRecharges = 1;
     private int maxHuile = 100;
     float oldValueFog;
@@ -61,6 +62,10 @@ public class LampeHuile : MonoBehaviour
         huileBar.value = currentHuile;
         ui.huile.SetActive(false);
         oldValueFog = RenderSettings.fogStartDistance;
+        if (!watchMe)
+        {
+            watchMe = GetComponent<WatchMe>();
+        }
     }
 
     // Update is called once per frame
@@ -74,6 +79,10 @@ public class LampeHuile : MonoBehaviour
         }
         if (EnMain)
         {
+            if(watchMe.watchMe == true)
+            {
+                watchMe.watchMe = false;
+            }
             RenderSettings.fogStartDistance = FogStartDistance;
             if (ObjNbRecharges != null)
             {
