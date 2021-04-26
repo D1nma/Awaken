@@ -50,7 +50,7 @@ Light:
   m_InnerSpotAngle: 115.44507
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -83,13 +83,13 @@ Light:
     serializedVersion: 2
     m_Bits: 4294959103
   m_RenderingLayerMask: 1
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: -0.0000000032804959, z: 4.5905e-41, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.9552277e-33, z: 4.5905e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 10
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213241586669367366}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 221a6f03dd53e1242a246c9a6cf5585a, type: 3}
   m_Name: 
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4463851465057510321}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 221a6f03dd53e1242a246c9a6cf5585a, type: 3}
   m_Name: 
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4463851465375867975}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 221a6f03dd53e1242a246c9a6cf5585a, type: 3}
   m_Name: 
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6298825834354440543}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 221a6f03dd53e1242a246c9a6cf5585a, type: 3}
   m_Name: 
@@ -391,7 +391,7 @@ PrefabInstance:
     - target: {fileID: 7226862065037622651, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
         type: 3}
       propertyPath: m_Lightmapping
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7226862065037622651, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
         type: 3}
@@ -401,12 +401,32 @@ PrefabInstance:
     - target: {fileID: 7226862065037622651, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
         type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7226862065037622651, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
         type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 4294959103
+      objectReference: {fileID: 0}
+    - target: {fileID: 7226862065037622651, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 6.890596e+22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7226862065037622651, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 1.05e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 7226862065037622651, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 4.165042e-11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7226862065037622651, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 4.757186e+30
       objectReference: {fileID: 0}
     - target: {fileID: 7370798313094679629, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
         type: 3}
@@ -483,7 +503,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2902285457913392068, guid: ba1c0666764a4ce498d6f88ad2c83bdd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ba1c0666764a4ce498d6f88ad2c83bdd, type: 3}
 --- !u!4 &6649667478696446336 stripped
 Transform:
@@ -798,7 +819,7 @@ PrefabInstance:
     - target: {fileID: 7226862065037622651, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
         type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7370798313094679629, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
         type: 3}
@@ -870,7 +891,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2902285457913392068, guid: ba1c0666764a4ce498d6f88ad2c83bdd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ba1c0666764a4ce498d6f88ad2c83bdd, type: 3}
 --- !u!4 &3950633994290287768 stripped
 Transform:
@@ -910,7 +932,7 @@ PrefabInstance:
     - target: {fileID: 7226862065037622651, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
         type: 3}
       propertyPath: m_Lightmapping
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7226862065037622651, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
         type: 3}
@@ -920,12 +942,27 @@ PrefabInstance:
     - target: {fileID: 7226862065037622651, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
         type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7226862065037622651, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
         type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 4294959103
+      objectReference: {fileID: 0}
+    - target: {fileID: 7226862065037622651, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 1.02e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 7226862065037622651, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 1.9552277e-33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7226862065037622651, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 4.5905e-41
       objectReference: {fileID: 0}
     - target: {fileID: 7370798313094679629, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
         type: 3}
@@ -1007,7 +1044,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2902285457913392068, guid: ba1c0666764a4ce498d6f88ad2c83bdd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ba1c0666764a4ce498d6f88ad2c83bdd, type: 3}
 --- !u!4 &3950633993971995502 stripped
 Transform:

@@ -5946,12 +5946,12 @@ PrefabInstance:
     - target: {fileID: 5324693827314288162, guid: c3f53fa5f56e77d46b84dcb42a92c2b5,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000017817836
+      value: 0.000000017817836
       objectReference: {fileID: 0}
     - target: {fileID: 5324693827314288162, guid: c3f53fa5f56e77d46b84dcb42a92c2b5,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000028364953
+      value: -0.0000000028364953
       objectReference: {fileID: 0}
     - target: {fileID: 5324693827314288163, guid: c3f53fa5f56e77d46b84dcb42a92c2b5,
         type: 3}
@@ -6136,12 +6136,12 @@ PrefabInstance:
     - target: {fileID: 5324693828588216976, guid: c3f53fa5f56e77d46b84dcb42a92c2b5,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00000001719689
+      value: -0.00000001719689
       objectReference: {fileID: 0}
     - target: {fileID: 5324693828588216976, guid: c3f53fa5f56e77d46b84dcb42a92c2b5,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -5.714147e-10
+      value: 5.714147e-10
       objectReference: {fileID: 0}
     - target: {fileID: 5324693828588216977, guid: c3f53fa5f56e77d46b84dcb42a92c2b5,
         type: 3}
@@ -26919,10 +26919,10 @@ Terrain:
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
-  m_ScaleInLightmap: 0.0256
+  m_ScaleInLightmap: 0.08
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
   m_GroupingID: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 2147483647
   m_AllowAutoConnect: 1
 --- !u!4 &1910279201
 Transform:
