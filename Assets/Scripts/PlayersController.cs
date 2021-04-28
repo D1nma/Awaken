@@ -7,6 +7,7 @@ public class PlayersController : MonoBehaviour
 {
     [SerializeField]
     public Rig rig = null;
+    public Rig rigHand = null;
     LampeHuile lampeHuile;
     Animator animator;
     private GameManager gm;
@@ -61,6 +62,8 @@ public class PlayersController : MonoBehaviour
             if (lampeHuile.EnMain )
             {
                 rig.GetComponentInChildren<TwoBoneIKConstraint>().weight = 0.8f; //Le bras se met en place
+                rigHand.weight = 1f;
+                
                 lampeHuile.gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 0f); //aucun effet
             }
         }

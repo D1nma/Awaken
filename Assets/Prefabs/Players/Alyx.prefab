@@ -1584,7 +1584,7 @@ Transform:
   m_Children:
   - {fileID: 205966509}
   m_Father: {fileID: 4584745681288987417}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4153006460331009733
 MonoBehaviour:
@@ -3734,6 +3734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rig: {fileID: 7212678385090248021}
+  rigHand: {fileID: 4153006460331009733}
   moveSpeed: 5
   oldMoveSpeed: 0
   oldColliderHeight: 0
@@ -3844,7 +3845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookRadius: 10
-  rig: {fileID: 0}
+  rig: {fileID: 7212678385090248021}
   speed: 20
 --- !u!1 &8741020064287440969
 GameObject:
@@ -3993,8 +3994,8 @@ Transform:
   - {fileID: 6340728249798867557}
   - {fileID: 370940286385206310}
   - {fileID: 4307886767798153354}
-  - {fileID: 6631882168825263012}
   - {fileID: 1713689658286584776}
+  - {fileID: 6631882168825263012}
   m_Father: {fileID: 8354207181569188749}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4205,7 +4206,7 @@ Transform:
   - {fileID: 3332978746745818899}
   - {fileID: 1809598459}
   m_Father: {fileID: 4584745681288987417}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7212678385090248021
 MonoBehaviour:
