@@ -9,7 +9,6 @@ public class PlayerStress : MonoBehaviour
     GameObject player;
 
     public StressBar stressBar;
-    private float timeStress;
     public bool dead = false;
     public float lookRadius = 8f;
 
@@ -34,13 +33,25 @@ public class PlayerStress : MonoBehaviour
     }
     void Update()
     {
-        if (!player)
+        if (stressBar)
         {
-            stressBar.gameObject.SetActive(false);
+            if (!player)
+            {
+                stressBar.gameObject.SetActive(false);
+            }
+            else
+            {
+                stressBar.gameObject.SetActive(true);
+            }
         }
         else
         {
-            stressBar.gameObject.SetActive(true);
+            GameObject bar = GameObject.Find("StressBar");
+            stressBar = bar.GetComponent<StressBar>();
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StressUp(20);
         }
 
         /*if (currentStress <= maxStress && !dead)
@@ -48,11 +59,9 @@ public class PlayerStress : MonoBehaviour
             StressUp(20);
             timeStress = 0;
         }*/
-
-        timeStress += Time.deltaTime * 0.01f;
         if (currentStress > 0 && currentStress != maxStress)
         {
-            StressDown(timeStress);
+            StressDown();
         }
         if (currentStress < 0)
         {
@@ -78,9 +87,9 @@ public class PlayerStress : MonoBehaviour
         stressBar.SetStress(currentStress);
     }
 
-    void StressDown(float stress)
+    void StressDown()
     {
-        currentStress -= stress;
+        currentStress -= 0.1f;
         stressBar.SetStress(currentStress);
     }
 
