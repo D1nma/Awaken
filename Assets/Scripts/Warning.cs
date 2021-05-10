@@ -6,15 +6,21 @@ using UnityEngine.UI;
 public class Warning : MonoBehaviour
 {
     public string warning;
+    GameManager gm;
     public GameObject warningText;
     public static float oldValue;
     public float fogEndValue = 60f;
     public static bool StartFog;
+    private float time = 0;
+    private bool show = false;
 
     void Start()
     {
         warningText.GetComponent<Text>().text = warning.ToString();
         oldValue = RenderSettings.fogEndDistance;
+        show = false;
+        time = 0;
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
     }
 
 
@@ -23,7 +29,8 @@ public class Warning : MonoBehaviour
         //Debug.Log(RenderSettings.fogEndDistance);
         if (StartFog)
         {
-            if(RenderSettings.fogEndDistance > fogEndValue)
+            gm.OutofP = true;
+            if (RenderSettings.fogEndDistance > fogEndValue)
             {
                 RenderSettings.fogEndDistance -= 2;
             }
@@ -34,7 +41,8 @@ public class Warning : MonoBehaviour
         }
         else
         {
-            if(RenderSettings.fogEndDistance < oldValue)
+            gm.OutofP = false;
+            if (RenderSettings.fogEndDistance < oldValue)
             {
                 RenderSettings.fogEndDistance += 2;
             }
@@ -43,7 +51,26 @@ public class Warning : MonoBehaviour
                 RenderSettings.fogEndDistance = oldValue;
             }
         }
-
+        if (show)
+        {
+            if (warningText != null && warning != null)
+            {
+                warningText.SetActive(true);
+            }
+            
+            time += Time.deltaTime;
+        }
+        else
+        {
+            show = false;
+            warningText.SetActive(false);
+        }
+        if (time >= 3)
+        {
+            show = false;
+            warningText.SetActive(false);
+            time = 0;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -51,14 +78,7 @@ public class Warning : MonoBehaviour
         if (other.tag == "Player")
         {
             StartFog = true;
-            if (warningText != null && warning != null)
-            {
-                warningText.SetActive(true);
-            }
-            else
-            {
-                Debug.LogWarning("Manque un paramètre");
-            }
+            show = true;
         }
 
     }
@@ -67,14 +87,7 @@ public class Warning : MonoBehaviour
         if (other.tag == "Player")
         {
             StartFog = false;
-            if (warningText != null && warning != null)
-            {
-                warningText.SetActive(false);
-            }
-            else
-            {
-                Debug.LogWarning("Manque un paramètre");
-            }
+            show = false;
         }
 
     }

@@ -71,8 +71,14 @@ public class LampeHuile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        ObjNbRecharges.gameObject.GetComponent<Text>().text = nbRecharges.ToString();
+        if (!ObjNbRecharges)
+        {
+            ObjNbRecharges = GameObject.Find("ObjNbRecharge");
+        }
+        else
+        {
+            ObjNbRecharges.gameObject.GetComponent<Text>().text = nbRecharges.ToString();
+        }
         if (main == null)
         {
             main = GameObject.Find("Hand");
@@ -134,6 +140,7 @@ public class LampeHuile : MonoBehaviour
             ui.Etathuile[3].SetActive(false);
             ui.Etathuile[4].SetActive(false);
             ui.Etathuile[5].SetActive(false);
+            ObjNbRecharges.SetActive(false);
         }
         if (Input.GetKeyDown(KeyCode.E) && dispo)
         {

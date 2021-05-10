@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class PlayerStress : MonoBehaviour
 {
-    public float maxStress = 60;
+    public float maxStress = 100;
     public float currentStress;
     GameObject player;
 
     public StressBar stressBar;
-    private float timeStress;
     public bool dead = false;
+    public bool NotSafe = true;
     public float lookRadius = 8f;
+    public float DiminutionStress = 0.1f;
+    public float minRandom = 15f, maxRandom = 25f,LaValeur,speed=0.02f;
 
     void Start()
     {
@@ -21,6 +23,8 @@ public class PlayerStress : MonoBehaviour
         stressBar.SetStress(currentStress);
         stressBar.SetMaxStress(maxStress);
         StartCoroutine(AfterInstance());
+        NotSafe = true;
+        NewValue();
     }
 
     IEnumerator AfterInstance()
@@ -34,13 +38,26 @@ public class PlayerStress : MonoBehaviour
     }
     void Update()
     {
-        if (!player)
+        if (stressBar)
         {
-            stressBar.gameObject.SetActive(false);
+            if (!player)
+            {
+                stressBar.gameObject.SetActive(false);
+            }
+            else
+            {
+                stressBar.gameObject.SetActive(true);
+                stressBar.SetStress(currentStress);
+            }
         }
         else
         {
-            stressBar.gameObject.SetActive(true);
+            GameObject bar = GameObject.Find("StressBar");
+            stressBar = bar.GetComponent<StressBar>();
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StressUp(20);
         }
 
         /*if (currentStress <= maxStress && !dead)
@@ -48,16 +65,13 @@ public class PlayerStress : MonoBehaviour
             StressUp(20);
             timeStress = 0;
         }*/
-
-        timeStress += Time.deltaTime * 0.01f;
-        if (currentStress > 0 && currentStress != maxStress)
+        if (currentStress > 0 && currentStress != maxStress && !NotSafe)
         {
-            StressDown(timeStress);
+            StressDown();
         }
         if (currentStress < 0)
         {
             currentStress = 0;
-            stressBar.SetStress(currentStress);
         }
         if (currentStress >= maxStress)
         {
@@ -67,9 +81,23 @@ public class PlayerStress : MonoBehaviour
             dead = true;
 
         }
+        if (NotSafe)
+        {
+            if (currentStress >= LaValeur)
+            {
+                currentStress -= LaValeur *speed * Time.deltaTime;
+            }
+            else
+            {
+                currentStress += LaValeur *speed * Time.deltaTime;
+            }
+            
+        }
+    }
 
-
-
+    void NewValue()
+    {
+        LaValeur = Random.Range(minRandom, maxRandom);
     }
 
     void StressUp(int stress)
@@ -78,9 +106,9 @@ public class PlayerStress : MonoBehaviour
         stressBar.SetStress(currentStress);
     }
 
-    void StressDown(float stress)
+    void StressDown()
     {
-        currentStress -= stress;
+        currentStress -= DiminutionStress;
         stressBar.SetStress(currentStress);
     }
 

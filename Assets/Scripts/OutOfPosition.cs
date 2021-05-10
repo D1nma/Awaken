@@ -16,6 +16,8 @@ public class OutOfPosition : MonoBehaviour
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         ui = GameObject.Find("Canvas").GetComponent<UIManager>();
         enter = false;
+        show = false;
+        time = 0;
     }
 
 
@@ -25,6 +27,13 @@ public class OutOfPosition : MonoBehaviour
         {
             ui.Respawn.SetActive(true);
             time += Time.deltaTime;
+        }
+        else
+        {
+            show = false;
+            ui.Respawn.SetActive(false);
+            time = 0;
+            enter = false;
         }
         if (time >= 3)
         {
@@ -56,7 +65,7 @@ public class OutOfPosition : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            
+            show = false;
         }
     }
 

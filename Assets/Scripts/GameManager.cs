@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 using Cinemachine;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -11,7 +14,11 @@ public class GameManager : MonoBehaviour
     public Transform[] spawnPosition;
     public GameObject playerInstance;
     CharacterController cc;
+    public bool OutofP;
+    float oldValueInt;
     private LampeHuile LH;
+    Volume volume;
+    private Vignette vg;
     public GameObject Player;
     public UIManager ui;
     private Warning warning;
@@ -38,6 +45,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        OutofP = false;
+        volume = GameObject.FindGameObjectWithTag("PostP").GetComponent<Volume>();
         if (!cam)
         {
             cam = GameObject.Find("Third Person Camera").GetComponent<CinemachineFreeLook>();
@@ -59,8 +68,10 @@ public class GameManager : MonoBehaviour
         {
             Player = GameObject.FindGameObjectWithTag("Player");
         }
-        lastCheckPointPos = spawnPos.transform.position;
-        SpawnPlayer();
+        volume.profile.TryGet(out vg); //on récupère la vignette
+        oldValueInt = vg.intensity.value; //on garde en mémoire la valeur par défault
+        lastCheckPointPos = spawnPos.transform.position; //on prend la position du spawn de base et non les checkpoints
+        SpawnPlayer(); //on spawn pour la première fois 
     }
 
     public void SpawnPlayer() //Début, Mort ou sorti de map, spawn sur checkpoint le plus proche
@@ -105,10 +116,23 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if (OutofP)
+        {
+            vg.intensity.value = 0.5f;
+        }
+        else
+        {
+            vg.intensity.value = oldValueInt;
+        }
+        if (!cam)
+        {
+            cam = GameObject.Find("Third Person Camera").GetComponent<CinemachineFreeLook>();
+        }
         if (!Player)
         {
             spawnPos = GameObject.Find("SpawnPlayer").transform;
             spawnPos.position = lastCheckPointPos;
+            Player = GameObject.FindGameObjectWithTag("Player");
             SpawnPlayer();
         }
         time += Time.deltaTime;
