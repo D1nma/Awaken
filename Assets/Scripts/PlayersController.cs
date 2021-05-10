@@ -90,6 +90,7 @@ public class PlayersController : MonoBehaviour
             if (isGrounded && velocity.y < 0)
             {
                 velocity.y = -2f;
+                animator.SetBool("jump", false) ;
             }
 
             h = Input.GetAxisRaw("Horizontal");
@@ -156,7 +157,7 @@ public class PlayersController : MonoBehaviour
             }
             if (Input.GetButtonDown("Jump") && isGrounded)
             {
-                animator.SetTrigger("jump");
+                animator.SetBool("jump",true);
                 velocity.y = Mathf.Sqrt(jumpSpeed * -2f * gravity);
             }
             if (Input.GetKeyDown(KeyCode.C) && isGrounded)

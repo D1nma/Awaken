@@ -68,10 +68,10 @@ public class GameManager : MonoBehaviour
         {
             Player = GameObject.FindGameObjectWithTag("Player");
         }
-        volume.profile.TryGet(out vg);
-        oldValueInt = vg.intensity.value;
-        lastCheckPointPos = spawnPos.transform.position;
-        SpawnPlayer();
+        volume.profile.TryGet(out vg); //on récupère la vignette
+        oldValueInt = vg.intensity.value; //on garde en mémoire la valeur par défault
+        lastCheckPointPos = spawnPos.transform.position; //on prend la position du spawn de base et non les checkpoints
+        SpawnPlayer(); //on spawn pour la première fois 
     }
 
     public void SpawnPlayer() //Début, Mort ou sorti de map, spawn sur checkpoint le plus proche
@@ -116,7 +116,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(oldValueInt);
         if (OutofP)
         {
             vg.intensity.value = 0.5f;
