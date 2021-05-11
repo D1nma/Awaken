@@ -166,6 +166,7 @@ public class UIManager : MonoBehaviour
         if (deadPanel != null)
             deadPanel.SetActive(false);
         Time.timeScale = 1f;
+        GameManager.gameOver = false;
         StartCoroutine(LoadAsynchronously(SceneManager.GetActiveScene().buildIndex));
         Resume();
     }

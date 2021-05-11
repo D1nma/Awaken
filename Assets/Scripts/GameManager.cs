@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        gameOver = false;
         OutofP = false;
         volume = GameObject.FindGameObjectWithTag("PostP").GetComponent<Volume>();
         if (!cam)
@@ -141,6 +142,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Game Over");
             PlayersController.canControl = false;
+            testeur = false;
             EndGame();
         }
     }
@@ -148,6 +150,5 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         ui.DeadMenu();
-        gameOver = false;
     }
 }

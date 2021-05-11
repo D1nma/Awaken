@@ -182,9 +182,10 @@ public class PlayersController : MonoBehaviour
                 }
 
             }
+            cc.Move(velocity * Time.deltaTime);
         }
         velocity.y += gravity * Time.deltaTime;
-        cc.Move(velocity * Time.deltaTime);
+        
 
 
     }
