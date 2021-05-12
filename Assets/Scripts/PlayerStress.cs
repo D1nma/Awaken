@@ -14,7 +14,7 @@ public class PlayerStress : MonoBehaviour
     public bool NotSafe = true;
     public float lookRadius = 8f;
     public float DiminutionStress = 0.1f;
-    public float minRandom = 15f, maxRandom = 25f,LaValeur,speed=0.5f;
+    public float minRandom = 15f, maxRandom = 25f,LaValeur,speed=1f;
 
     void Start()
     {
@@ -26,7 +26,7 @@ public class PlayerStress : MonoBehaviour
         stressBar.SetMaxStress(maxStress);
         StartCoroutine(AfterInstance());
         NotSafe = true;
-        NewValue();
+        NewValueStress(minRandom,maxRandom);
         dead = false;
     }
 
@@ -51,10 +51,10 @@ public class PlayerStress : MonoBehaviour
             {
                 stressBar.gameObject.SetActive(true);
                 stressBar.SetStress(currentStress);
-                if (Input.GetKeyDown(KeyCode.Space))
+                /*if (Input.GetKeyDown(KeyCode.Space))
                 {
                     StressUp(20);
-                }
+                }*/
                 if (currentStress > 0 && currentStress != maxStress && !NotSafe)
                 {
                     StressDown();
@@ -105,9 +105,9 @@ public class PlayerStress : MonoBehaviour
         
     }
 
-    void NewValue()
+    public void NewValueStress(float a,float b)
     {
-        LaValeur = Random.Range(minRandom, maxRandom);
+        LaValeur = Random.Range(a, b);
     }
 
     void StressUp(int stress)
