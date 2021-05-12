@@ -41,6 +41,7 @@ public class PlayersController : MonoBehaviour
         cam = m_MainCamera.transform;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         SUPERUSER = gm.testeur;
+        Debug.Log("TESTEUR ACTIVE");
         if (!SUPERUSER)
         {
             transform.position = gm.lastCheckPointPos;
@@ -64,7 +65,7 @@ public class PlayersController : MonoBehaviour
                 rig.GetComponentInChildren<TwoBoneIKConstraint>().weight = 0.8f; //Le bras se met en place
                 rigHand.weight = 1f;
                 
-                lampeHuile.gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 0f); //aucun effet
+                //lampeHuile.gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 0f); //aucun effet
             }
         }
         if (SUPERUSER)

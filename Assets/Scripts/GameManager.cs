@@ -140,9 +140,8 @@ public class GameManager : MonoBehaviour
         ui.UpdateTime((int)time);
         if (gameOver == true)
         {
-            Debug.Log("Game Over");
+            //Debug.Log("Game Over");
             PlayersController.canControl = false;
-            testeur = false;
             EndGame();
         }
     }

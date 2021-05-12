@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4933477907624226105}
   - component: {fileID: 3297903557178350107}
   - component: {fileID: 4278098575455040560}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: "l\xE0"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,6 +222,7 @@ GameObject:
   - component: {fileID: 5071712792236607363}
   - component: {fileID: 1094501020870391740}
   - component: {fileID: 1183367004238668753}
+  - component: {fileID: 1657748725}
   m_Layer: 0
   m_Name: Point Light (1)
   m_TagString: Untagged
@@ -237,7 +238,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5706932335326855331}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.4668274, z: 0}
+  m_LocalPosition: {x: 0, y: 1.572, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4263723526069869436}
@@ -255,8 +256,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.990566, g: 0.89937085, b: 0.6961997, a: 1}
-  m_Intensity: 20
-  m_Range: 10
+  m_Intensity: 10.46
+  m_Range: 9.7
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -267,7 +268,7 @@ Light:
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.4
+    m_NearPlane: 0.41
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -294,16 +295,16 @@ Light:
     serializedVersion: 2
     m_Bits: 4294959103
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 2
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 6.1e-43, y: 152, z: 0, w: 159.00032}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 20
+  m_ShadowRadius: 10
   m_ShadowAngle: 0
 --- !u!114 &1183367004238668753
 MonoBehaviour:
@@ -318,6 +319,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 1094501020870391740}
-  minIntensity: 0.8
+  minIntensity: 0.5
   maxIntensity: 1
   smoothing: 12
+--- !u!114 &1657748725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5706932335326855331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 0
