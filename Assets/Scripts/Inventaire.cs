@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Inventaire : MonoBehaviour
 {
     private static Inventaire instance;
-    private bool activated = false;
 
     [HideInInspector]
     public bool canne = false, boite = false, keyEmpty = false, key = false, champi = false;

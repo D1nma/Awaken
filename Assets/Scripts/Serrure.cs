@@ -9,7 +9,7 @@ public class Serrure : MonoBehaviour
     public GameObject Tips;
     public Inventaire invent;
     float time;
-    private bool used = false, open = false, canInteract = false, startTiming = false;
+    private bool open = false, canInteract = false, startTiming = false;
     // Start is called before the first frame update
     void Start()
     {
