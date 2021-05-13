@@ -5,10 +5,11 @@ using UnityEngine.UI;
 
 public class Inventaire : MonoBehaviour
 {
+    public GameObject bird;
     private static Inventaire instance;
 
     [HideInInspector]
-    public bool canne = false, boite = false, keyEmpty = false, key = false, champi = false;
+    public bool First = false,canne = false, boite = false, keyEmpty = false, key = false, champi = false;
 
 
     public GameObject canneUI, boiteUI, keyEmptyUI, keyUI, champiUI;
@@ -32,6 +33,10 @@ public class Inventaire : MonoBehaviour
         boiteUI.SetActive(false);
         champiUI.SetActive(false);
         keyUI.SetActive(false);
+        if (!bird)
+        {
+            Debug.LogWarning("Il est ou l'oiseau?");
+        }
     }
 
     void Update()
@@ -50,7 +55,24 @@ public class Inventaire : MonoBehaviour
         }
         if (key)
         {
-            keyUI.SetActive(true);
+            if (!First)
+            {
+                if (bird)
+                {
+                    bird.gameObject.SetActive(true);
+                }
+                Debug.Log("La clé va se faire prendre!");
+                keyUI.SetActive(true);
+                PlayersController.canControl = false;
+                Bird.vol = true;
+                StartCoroutine(BirdKey(6));
+            }
+            else
+            {
+                keyUI.SetActive(true);
+                keyEmpty = false;
+            }
+            
         }
         if (keyEmpty && !key)
         {
@@ -77,5 +99,16 @@ public class Inventaire : MonoBehaviour
             keyEmptyUI.SetActive(false);
         }
 
+    }
+    private IEnumerator BirdKey(float duree)
+    {
+        //animator.SetBool("Bird", true);
+        yield return new WaitForSeconds(duree);
+        key = false;
+        keyUI.SetActive(false);
+        keyEmpty = true;
+        keyEmptyUI.SetActive(true);
+        PlayersController.canControl= true;
+        First = true;
     }
 }

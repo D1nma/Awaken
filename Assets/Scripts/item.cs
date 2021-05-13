@@ -12,8 +12,7 @@ public class item : MonoBehaviour
     public Inventaire invent;
 
     public GameObject InteragirText;
-    [HideInInspector]
-    public bool dispo;
+    private bool dispo;
 
     void Start()
     {
@@ -23,41 +22,52 @@ public class item : MonoBehaviour
         if(objectType == ObjectType.Canne){
             Debug.Log("C'est une canne!");
         }*/
+        StartCoroutine(Setup());
     }
 
-    void Update()
+    IEnumerator Setup()
     {
+        yield return new WaitForSeconds(1);
+        if (InteragirText == null)
+        {
+            InteragirText = GameObject.Find("InteragirText");
+
+        }
         if (!invent)
         {
             invent = GameObject.Find("Inventaire").GetComponent<Inventaire>();
         }
+    }
+
+    void Update()
+    {
+        
         if (Input.GetKeyDown(KeyCode.E) && dispo){
-            Destroy(this.gameObject);
             InteragirText.SetActive(false);
             dispo = false;
             if(objectType == ObjectType.Clés){
+                Destroy(this.gameObject,6.5f);
                 Debug.Log("C'est une clé!");
                 invent.key =true;
                 invent.keyEmpty = false;
             }
             if(objectType == ObjectType.Canne){
+                Destroy(this.gameObject);
                 Debug.Log("C'est une canne!");
                 invent.canne =true;
             }
             if(objectType == ObjectType.Appat){
+                Destroy(this.gameObject);
                 Debug.Log("C'est un Appat!");
                 invent.boite =true;
             }
             if(objectType == ObjectType.Champi){
+                Destroy(this.gameObject);
                 Debug.Log("C'est un champi!");
                 invent.champi =true;
             }
         }
-        if (InteragirText == null)
-        {
-            InteragirText = GameObject.Find("InteragirText");
-            
-        }
+        
     }
     void OnTriggerEnter(Collider player)
     {

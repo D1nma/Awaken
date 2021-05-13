@@ -68,6 +68,14 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
+        if (Cursor.visible == false)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Confined;
+        }
         if (Input.GetKeyDown(KeyCode.P))
         {
             StartCoroutine(LoadAsynchronously(SceneManager.GetActiveScene().buildIndex + 1));

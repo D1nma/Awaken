@@ -208,11 +208,12 @@ public class LampeHuile : MonoBehaviour
             if (currentHuile > 0)
             {
                 currentHuile -= consume;
+                PlayerStress.LH = true;
                 huileBar.value = currentHuile;
                 lightUp();
 
             }
-            else { StopHuile(); lightDown(); }
+            else { StopHuile(); lightDown(); PlayerStress.LH = false; }
         }
     }
 

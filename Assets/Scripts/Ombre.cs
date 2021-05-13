@@ -58,7 +58,13 @@ public class Ombre : MonoBehaviour
         enemy.isStopped = false;
         follow = true;
     }
-
+    IEnumerator Mort()
+    {
+        yield return new WaitForSeconds(1);
+        float distance = Vector3.Distance(player.transform.position, transform.position);
+        if (distance <= enemy.stoppingDistance)
+            GameManager.gameOver = true;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -74,6 +80,7 @@ public class Ombre : MonoBehaviour
             {
                 //Debug.Log("Salut le joueur");
                 canHurt = true;
+                
             }
             else
             {
@@ -126,6 +133,7 @@ public class Ombre : MonoBehaviour
                         _animator.SetInteger("Attaque", attaque);
                         Debug.Log("touché");
                         _animator.SetBool("Chasing", true);
+                        StartCoroutine(Mort());
                     }
                     enemy.ResetPath();
                     enemy.isStopped = true;

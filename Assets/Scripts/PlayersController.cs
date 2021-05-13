@@ -41,12 +41,15 @@ public class PlayersController : MonoBehaviour
         cam = m_MainCamera.transform;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         SUPERUSER = gm.testeur;
-        Debug.Log("TESTEUR ACTIVE");
         if (!SUPERUSER)
         {
             transform.position = gm.lastCheckPointPos;
             canControl = false;
             StartCoroutine(AnimatorSetWakeUp(animationLenghtWakeUp));
+        }
+        else
+        {
+            Debug.Log("TESTEUR ACTIVE");
         }
         oldMoveSpeed = moveSpeed;
         oldColliderHeight = cc.height;
@@ -79,9 +82,12 @@ public class PlayersController : MonoBehaviour
             animator.SetBool("IsRunning", false);
             animator.SetBool("IsWalking", false);
             animator.SetBool("jump", false);
+            cc.enabled = false;
+
         }
         if (canControl)
         {
+            cc.enabled = true;
             if (!courrir)
             {
                 animator.SetBool("IsRunning", false);

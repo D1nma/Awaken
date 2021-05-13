@@ -8,18 +8,43 @@ public class PersoInteraction : MonoBehaviour
     public GameObject InteragirText, player;
     private bool fait = false, canInteract = false, startTiming = false, bouge = false, setup = false;
     float time = 0f, oldDistance = 0f;
+    CharacterController cc;
+    public UIManager ui;
     private Vector3 target;
     public float speed = 1.0f;
     public Inventaire invent;
     Vector3 playerPos;
     public GameObject Tips;
     // Start is called before the first frame update
+
+    private static PersoInteraction instance;
+    void Awake()
+    {
+        if (instance == null)
+        {
+
+            instance = this;
+            DontDestroyOnLoad(instance);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     void Start()
     {
         fait = false;
         setup = false;
         StartCoroutine(AfterInstance());
         bouge = false;
+        if (!ui)
+        {
+            ui = GameObject.Find("Canvas").GetComponent<UIManager>();
+        }
+        if (!Tips)
+        {
+            Debug.LogWarning("Ajouter les parametres necessaires au fonctionnement dans l'inspecteur..");
+        }
 
     }
 
@@ -31,10 +56,7 @@ public class PersoInteraction : MonoBehaviour
         {
             Debug.Log("Il est ou le joueur? Tag le !");
         }
-        if (!Tips)
-        {
-            Debug.LogWarning("Ajouter les parametres necessaires au fonctionnement dans l'inspecteur..");
-        }
+        cc = player.GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
@@ -50,6 +72,10 @@ public class PersoInteraction : MonoBehaviour
         {
             invent = GameObject.Find("Inventaire").GetComponent<Inventaire>();
         }
+        if (!ui)
+        {
+            ui = GameObject.Find("Canvas").GetComponent<UIManager>();
+        }
         if (bouge)
         {
             if (player && !setup)
@@ -58,21 +84,29 @@ public class PersoInteraction : MonoBehaviour
                 target = new Vector3(transform.position.x, playerPos.y, transform.position.z);
                 Vector3 direction = (transform.position - player.transform.position); //.normalized
                 Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
-                player.transform.rotation = Quaternion.Slerp(player.transform.rotation, lookRotation, Time.deltaTime * 50f);
+                player.transform.rotation = Quaternion.Slerp(player.transform.rotation, lookRotation, Time.deltaTime * 10f);
                 //Debug.Log(target);
                 setup = true;
             }
             float step = speed * Time.deltaTime;
+            //player.transform.position = Vector3.MoveTowards(player.transform.position, target, step);
+            ui.transition.SetTrigger("Start");
+            cc.enabled = false;
             player.transform.position = Vector3.MoveTowards(player.transform.position, target, step);
             float distance = Vector3.Distance(player.transform.position, transform.position);
-
             if (distance == oldDistance)
             {
+                
                 bouge = false;
-                PlayersController.canControl = true;
                 invent.canne = false;
+                StartCoroutine(BirdKey(2));
             }
             oldDistance = distance;
+        }
+        else
+        {
+            ui.transition.SetTrigger("End");
+
         }
         if (Input.GetKeyUp(KeyCode.E) && canInteract == true)
         {
@@ -106,6 +140,17 @@ public class PersoInteraction : MonoBehaviour
         {
             canInteract = false;
         }
+    }
+
+    private IEnumerator BirdKey(float duree)
+    {
+        //animator.SetBool("Bird", true);
+        yield return new WaitForSeconds(duree);
+        invent.First = true;
+        invent.key = true;
+        PlayersController.canControl = true;
+        cc.enabled = true;
+
     }
     private void OnTriggerEnter(Collider other)
     {

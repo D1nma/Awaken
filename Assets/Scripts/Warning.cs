@@ -14,6 +14,21 @@ public class Warning : MonoBehaviour
     private float time = 0;
     private bool show = false;
 
+    private static Warning instance;
+    void Awake()
+    {
+        if (instance == null)
+        {
+
+            instance = this;
+            DontDestroyOnLoad(instance);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
         warningText.GetComponent<Text>().text = warning.ToString();
@@ -57,7 +72,7 @@ public class Warning : MonoBehaviour
             {
                 warningText.SetActive(true);
             }
-            
+
             time += Time.deltaTime;
         }
         else
