@@ -174,6 +174,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8094662775815825042}
   - component: {fileID: 7982820106570137640}
+  - component: {fileID: 731329738}
+  - component: {fileID: 731329737}
   m_Layer: 0
   m_Name: Boite d'appats
   m_TagString: Untagged
@@ -211,3 +213,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!135 &731329738
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8871480233197583400}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &731329737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8871480233197583400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903eef1310d59984a9056960a1f8fec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectType: 3
+  invent: {fileID: 0}
+  "DialogueCl\xE9": {fileID: 0}
+  DialogueTrigger: {fileID: 0}
+  InteragirText: {fileID: 0}

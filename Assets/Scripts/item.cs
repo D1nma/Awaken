@@ -67,7 +67,8 @@ public class item : MonoBehaviour
                 invent.keyEmpty = false;
             }
             if(objectType == ObjectType.Canne){
-                Destroy(this.gameObject);
+                Destroy(this.gameObject,20f);
+                StartCoroutine(Disparition(1f));
                 Debug.Log("C'est une canne!");
                 invent.canne =true;
             }
@@ -98,6 +99,19 @@ public class item : MonoBehaviour
                     InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur E pour intéragir (" + this.gameObject.name + ")";
                     InteragirText.SetActive(true);
                     dispo = true;
+                }else if(objectType == ObjectType.Canne)
+                {
+                    if (!invent.ApresRocher)
+                    {
+                        invent.DialoguePeche.SetActive(true);
+                        InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur E pour intéragir (" + this.gameObject.name + ")";
+                        InteragirText.SetActive(true);
+                        dispo = true;
+                    }
+                }else if(objectType == ObjectType.Appat && Appat.fait)
+                {
+                    InteragirText.gameObject.GetComponent<Text>().text = this.gameObject.name;
+                    InteragirText.SetActive(true);
                 }
                 else
                 {
