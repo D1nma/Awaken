@@ -82,7 +82,7 @@ public class PlayersController : MonoBehaviour
             animator.SetBool("IsRunning", false);
             animator.SetBool("IsWalking", false);
             animator.SetBool("jump", false);
-            cc.enabled = false;
+            
 
         }
         if (canControl)

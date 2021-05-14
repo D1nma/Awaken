@@ -10,11 +10,13 @@ public class item : MonoBehaviour
 
     public ObjectType objectType;
     public Inventaire invent;
+    public GameObject DialogueClé, DialogueTrigger;
 
     public GameObject InteragirText;
     private bool dispo;
 
-    void Start()
+
+        void Start()
     {
         /*if(objectType == ObjectType.Clés){
             Debug.Log("C'est une clé!");
@@ -38,16 +40,29 @@ public class item : MonoBehaviour
             invent = GameObject.Find("Inventaire").GetComponent<Inventaire>();
         }
     }
+    IEnumerator DialogueKey(int nb)
+    {
+        yield return new WaitForSeconds(nb);
+        DialogueClé.SetActive(true);
+    }
+    IEnumerator Disparition(float nb)
+    {
+        yield return new WaitForSeconds(nb);
+        this.gameObject.SetActive(false);
+    }
 
     void Update()
     {
-        
+        StartCoroutine(Setup());
+
         if (Input.GetKeyDown(KeyCode.E) && dispo){
             InteragirText.SetActive(false);
             dispo = false;
             if(objectType == ObjectType.Clés){
-                Destroy(this.gameObject,6.5f);
+                Destroy(this.gameObject,20f);
                 Debug.Log("C'est une clé!");
+                StartCoroutine(DialogueKey(7));
+                StartCoroutine(Disparition(7.5f));
                 invent.key =true;
                 invent.keyEmpty = false;
             }
@@ -76,10 +91,21 @@ public class item : MonoBehaviour
         {
             if (InteragirText != null)
             {
-                InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur E pour intéragir ("+this.gameObject.name+")";
-                InteragirText.SetActive(true);
-                dispo = true;
-             
+                
+                if (objectType == ObjectType.Clés)
+                {
+                    DialogueTrigger.SetActive(true);
+                    InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur E pour intéragir (" + this.gameObject.name + ")";
+                    InteragirText.SetActive(true);
+                    dispo = true;
+                }
+                else
+                {
+                    InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur E pour intéragir (" + this.gameObject.name + ")";
+                    InteragirText.SetActive(true);
+                    dispo = true;
+                }
+
             }
         }
     }

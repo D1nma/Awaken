@@ -35,12 +35,16 @@ public class Inventaire : MonoBehaviour
         keyUI.SetActive(false);
         if (!bird)
         {
-            Debug.LogWarning("Il est ou l'oiseau?");
+            bird = GameObject.Find("Bird");
         }
     }
 
     void Update()
     {
+        if (!bird)
+        {
+            bird = GameObject.Find("Bird");
+        }
         if (canne)
         {
             canneUI.SetActive(true);
@@ -104,6 +108,7 @@ public class Inventaire : MonoBehaviour
     {
         //animator.SetBool("Bird", true);
         yield return new WaitForSeconds(duree);
+        bird.SetActive(false);
         key = false;
         keyUI.SetActive(false);
         keyEmpty = true;
