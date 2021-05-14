@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour
     public GameObject LoadingScreen;
     public Slider slider;
     public Text progressText;
+    public Inventaire invent;
     public Animator transition;
     public GameObject stamina;
     public GameObject huile;
@@ -68,6 +69,10 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
+        if (!invent)
+        {
+            invent = GameObject.Find("Inventaire").GetComponent<Inventaire>();
+        }
         if (Cursor.visible == false)
         {
             Cursor.lockState = CursorLockMode.Locked;
@@ -175,6 +180,12 @@ public class UIManager : MonoBehaviour
             deadPanel.SetActive(false);
         Time.timeScale = 1f;
         GameManager.gameOver = false;
+        invent.key = false;
+        invent.keyEmpty = false;
+        invent.canne = false;
+        invent.boite = false;
+        invent.champi = false;
+        invent.First = false;
         StartCoroutine(LoadAsynchronously(SceneManager.GetActiveScene().buildIndex));
         Resume();
     }

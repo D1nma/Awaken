@@ -43,6 +43,10 @@ public class Appat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!invent)
+        {
+            invent = GameObject.Find("Inventaire").GetComponent<Inventaire>();
+        }
         if (canInteract)
         {
             if (Input.GetKeyDown(KeyCode.E) && !open)
