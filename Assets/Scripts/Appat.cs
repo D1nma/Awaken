@@ -10,6 +10,7 @@ public class Appat : MonoBehaviour
     public Inventaire invent;
     public GameObject boiteAppat;
     float time;
+    public static bool fait=false;
     private bool open = false, canInteract = false, startTiming = false;
     // Start is called before the first frame update
 
@@ -55,6 +56,7 @@ public class Appat : MonoBehaviour
                 {
                     invent.boite = false;
                     open = true;
+                    fait = true;
                     startTiming = true;
                     Tips.SetActive(true);
                     InteragirText.SetActive(false);
@@ -85,8 +87,9 @@ public class Appat : MonoBehaviour
 
         if (player.tag == "Player")
         {
-            if (InteragirText != null && !open)
+            if (InteragirText != null && !open && invent.Keyvolee)
             {
+                invent.DialogueAppat.SetActive(true);
                 InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur E pour intéragir";
                 InteragirText.SetActive(true);
                 canInteract = true;

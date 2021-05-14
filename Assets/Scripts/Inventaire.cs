@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class Inventaire : MonoBehaviour
 {
     public GameObject bird;
+    public GameObject DialogueClé, DialoguePeche, DialoguePeche2,DialogueAppat;
     private static Inventaire instance;
 
     [HideInInspector]
-    public bool First = false,canne = false, boite = false, keyEmpty = false, key = false, champi = false;
+    public bool Keyvolee=false, ApresRocher=false, First = false,canne = false, boite = false, keyEmpty = false, key = false, champi = false;
 
 
     public GameObject canneUI, boiteUI, keyEmptyUI, keyUI, champiUI;
@@ -33,6 +34,10 @@ public class Inventaire : MonoBehaviour
         boiteUI.SetActive(false);
         champiUI.SetActive(false);
         keyUI.SetActive(false);
+        DialogueClé.SetActive(false);
+        DialoguePeche.SetActive(false);
+        DialogueAppat.SetActive(false);
+        DialoguePeche2.SetActive(false);
         if (!bird)
         {
             bird = GameObject.Find("Bird");
@@ -47,7 +52,7 @@ public class Inventaire : MonoBehaviour
         }
         if (canne)
         {
-            canneUI.SetActive(true);
+            canneUI.SetActive(true);          
         }
         if (boite)
         {
@@ -69,11 +74,13 @@ public class Inventaire : MonoBehaviour
                 keyUI.SetActive(true);
                 PlayersController.canControl = false;
                 Bird.vol = true;
+                Keyvolee = true;
                 StartCoroutine(BirdKey(6));
             }
             else
             {
                 keyUI.SetActive(true);
+                DialogueClé.SetActive(true);
                 keyEmpty = false;
             }
             

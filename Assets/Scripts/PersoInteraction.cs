@@ -89,16 +89,16 @@ public class PersoInteraction : MonoBehaviour
                 setup = true;
             }
             float step = speed * Time.deltaTime;
-            //player.transform.position = Vector3.MoveTowards(player.transform.position, target, step);
             ui.transition.SetTrigger("Start");
             cc.enabled = false;
             player.transform.position = Vector3.MoveTowards(player.transform.position, target, step);
             float distance = Vector3.Distance(player.transform.position, transform.position);
+            invent.DialogueClé.SetActive(true);
             if (distance == oldDistance)
             {
-                
                 bouge = false;
                 invent.canne = false;
+                
                 StartCoroutine(BirdKey(2));
             }
             oldDistance = distance;
@@ -156,10 +156,15 @@ public class PersoInteraction : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (InteragirText != null && !fait)
+            if (InteragirText != null && !fait && invent.Keyvolee && Appat.fait)
             {
                 InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur E pour intéragir (" + this.gameObject.name + ")";
                 InteragirText.SetActive(true);
+                if (invent.canne)
+                {
+                    invent.DialoguePeche2.SetActive(true);
+                    invent.ApresRocher=true;
+                }
                 canInteract = true;
             }
         }
