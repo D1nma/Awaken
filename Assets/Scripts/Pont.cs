@@ -58,8 +58,8 @@ public class Pont : MonoBehaviour
                         target = new Vector3(point.transform.position.x, playerPos.y, point.transform.position.z);
                         Vector3 direction = (point.transform.position - player.transform.position); //.normalized
                         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
-                        player.transform.rotation = Quaternion.Slerp(player.transform.rotation, lookRotation, Time.deltaTime * 100f);
-                        setup = true;
+                        player.transform.rotation = Quaternion.Slerp(player.transform.rotation, lookRotation, Time.deltaTime * 10f);
+                        
                     }
                     float step = speed * Time.deltaTime;
                     player.transform.position = Vector3.MoveTowards(player.transform.position, target, step);
@@ -67,6 +67,7 @@ public class Pont : MonoBehaviour
                     float distance = Vector3.Distance(player.transform.position, transform.position);
                     if (distance == oldDistance)
                     {
+                        setup = true;
                         PlayersController.moving = false;
                         if (setup && pass)
                         {

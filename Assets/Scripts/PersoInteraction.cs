@@ -86,19 +86,21 @@ public class PersoInteraction : MonoBehaviour
                 Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
                 player.transform.rotation = Quaternion.Slerp(player.transform.rotation, lookRotation, Time.deltaTime * 10f);
                 //Debug.Log(target);
-                setup = true;
+                
             }
             float step = speed * Time.deltaTime;
             ui.transition.SetTrigger("Start");
             cc.enabled = false;
             player.transform.position = Vector3.MoveTowards(player.transform.position, target, step);
+            PlayersController.moving = true;
             float distance = Vector3.Distance(player.transform.position, transform.position);
             invent.DialogueClé.SetActive(true);
             if (distance == oldDistance)
             {
+                setup = true;
                 bouge = false;
                 invent.canne = false;
-                
+                PlayersController.moving = false;
                 StartCoroutine(BirdKey(2));
             }
             oldDistance = distance;
