@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 7361017216885862134}
   - component: {fileID: 4738738303842703932}
   - component: {fileID: 2256773951789670869}
+  - component: {fileID: 3454827969947489128}
   m_Layer: 0
-  m_Name: tronc 06 (1)
+  m_Name: tronc 06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5875031191405142355
 Transform:
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6540243781600115689}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 490.31284, y: 177.73485, z: -76.94495}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -97,3 +98,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2123696627336008252, guid: 5830b1c88f8f4d1459cfad841ac3ae85, type: 3}
+--- !u!205 &3454827969947489128
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6540243781600115689}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.00006109476, y: 2.2660205, z: -1.9282137}
+  m_Size: 4.629332
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.09893756
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 4738738303842703932}
+    - renderer: {fileID: 0}
+    - renderer: {fileID: 0}
+  m_Enabled: 1

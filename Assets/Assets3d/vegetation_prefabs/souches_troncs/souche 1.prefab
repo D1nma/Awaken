@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 3346036915766229634}
   - component: {fileID: 1667464917360217378}
   - component: {fileID: 2919926772394431637}
+  - component: {fileID: 5597047648758786419}
   m_Layer: 0
   m_Name: souche 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6062207630058890921
 Transform:
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192133317196366836}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 488.27185, y: 177.97046, z: -70.80733}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -97,3 +98,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2010354260381967699, guid: 5db36c01798f467418f253a865e6664f, type: 3}
+--- !u!205 &5597047648758786419
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192133317196366836}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.2887665, y: 0.7002639, z: -0.10903585}
+  m_Size: 1.7715766
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.10030188
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 1667464917360217378}
+  m_Enabled: 1

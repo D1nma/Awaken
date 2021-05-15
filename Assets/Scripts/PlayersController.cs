@@ -47,6 +47,7 @@ public class PlayersController : MonoBehaviour
         {
             transform.position = gm.lastCheckPointPos;
             canControl = false;
+            wakeUp = true;
             StartCoroutine(AnimatorSetWakeUp(animationLenghtWakeUp));
         }
         else
@@ -221,6 +222,7 @@ public class PlayersController : MonoBehaviour
         animator.SetBool("WakeUp", true);
         yield return new WaitForSeconds(animationLenghtWakeUp);
         animator.SetBool("WakeUp", false);
+        wakeUp = false;
         canControl = true;
     }
 }

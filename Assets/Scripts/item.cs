@@ -10,7 +10,7 @@ public class item : MonoBehaviour
 
     public ObjectType objectType;
     public Inventaire invent;
-    public GameObject DialogueClé, DialogueTrigger;
+    public GameObject DialogueClé, DialogueTrigger,DialogueAppat1;
 
     public GameObject InteragirText;
     private bool dispo;
@@ -77,7 +77,9 @@ public class item : MonoBehaviour
                 invent.canne =true;
             }
             if(objectType == ObjectType.Appat){
-                Destroy(this.gameObject);
+                Destroy(this.gameObject,20f);
+                StartCoroutine(Disparition(1f));
+                DialogueAppat1.SetActive(true);
                 Debug.Log("C'est un Appat!");
                 invent.boite =true;
             }
