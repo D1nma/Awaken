@@ -910,7 +910,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2954305861135274748
 Transform:
   m_ObjectHideFlags: 0
@@ -4100,17 +4100,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b230bd9b49818c43b7073a4f69a74da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxStress: 60
+  maxStress: 100
   currentStress: 0
   stressBar: {fileID: 0}
   dead: 0
   NotSafe: 1
+  Safe: 0
+  SafeValeur: 20
+  NotSafeValeur: 20
   lookRadius: 10
-  DiminutionStress: 0.1
-  minRandom: 15
-  maxRandom: 25
+  Sun: {fileID: 0}
+  DiminutionStress: 1
+  AugmentationStress: 0.5
+  minRandom: 0
+  maxRandom: 0
   LaValeur: 0
-  speed: 0.02
+  speed: 0.2
 --- !u!114 &259829470507656876
 MonoBehaviour:
   m_ObjectHideFlags: 0
