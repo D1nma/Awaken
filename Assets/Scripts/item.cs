@@ -53,7 +53,11 @@ public class item : MonoBehaviour
 
     void Update()
     {
-        StartCoroutine(Setup());
+        if (!invent)
+        {
+            StartCoroutine(Setup());
+        }
+        
 
         if (Input.GetKeyDown(KeyCode.E) && dispo){
             InteragirText.SetActive(false);
