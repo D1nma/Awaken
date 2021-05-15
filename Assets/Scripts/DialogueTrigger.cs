@@ -8,7 +8,7 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public Question question;
     public GameObject InteragirText;
-    public bool Interagir,Avertissement,canMove;
+    public bool Interagir,Avertissement,canMove,NotDestroy;
     private bool start;
 
 
@@ -80,7 +80,7 @@ public class DialogueTrigger : MonoBehaviour
             else
             {
                 TriggerDialogue();
-                if (Avertissement)
+                if (Avertissement && NotDestroy)
                 {
                     Destroy(this.gameObject.GetComponent<DialogueTrigger>());
                 }
@@ -96,7 +96,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             InteragirText.SetActive(false);
         }
-        if (dialogue.isQuestion == false && !Avertissement)
+        if (dialogue.isQuestion == false && !Avertissement && !NotDestroy)
         {
             Destroy(this.gameObject);
         }
