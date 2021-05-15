@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6140088065563294934}
   - component: {fileID: 8273410318035781660}
   - component: {fileID: 3355268773216287092}
+  - component: {fileID: 1205623548158284597}
   m_Layer: 0
   m_Name: 10_toutviolet_emiss
   m_TagString: Untagged
@@ -97,3 +98,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 587366007896238738, guid: 318c3aa419aca49499e4d503c4cf82e0, type: 3}
+--- !u!205 &1205623548158284597
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7625142454886115785}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 1.6473646, y: 18.682095, z: 0.91838264}
+  m_Size: 38.860954
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.0808083
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 8273410318035781660}
+  m_Enabled: 1

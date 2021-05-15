@@ -254,6 +254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4405507040688416520}
   - component: {fileID: 6627402587286864929}
+  - component: {fileID: 249703860}
   m_Layer: 8
   m_Name: DialogueSress
   m_TagString: Untagged
@@ -298,9 +299,22 @@ MonoBehaviour:
   question: {fileID: 0}
   InteragirText: {fileID: 0}
   Interagir: 0
-  Avertissement: 1
+  Avertissement: 0
   canMove: 1
   NotDestroy: 0
+--- !u!65 &249703860
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197685097284757277}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &279458650493464355
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,7 +1053,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.05e-43, y: 38, z: 12, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -4062,7 +4076,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8699770889497131319}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
   m_Name: 
@@ -4160,6 +4174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxStress: 100
   currentStress: 0
+  DialogueStress: {fileID: 197685097284757277}
   stressBar: {fileID: 0}
   dead: 0
   NotSafe: 1

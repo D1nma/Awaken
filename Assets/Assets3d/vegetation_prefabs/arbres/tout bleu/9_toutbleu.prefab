@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2780162279129658887}
   - component: {fileID: 1241521567561267618}
   - component: {fileID: 3953652499623791976}
-  - component: {fileID: 5945447239837944195}
+  - component: {fileID: 6487521271854813112}
   m_Layer: 0
   m_Name: 9_toutbleu
   m_TagString: Untagged
@@ -83,17 +83,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5945447239837944195
-MeshCollider:
+--- !u!205 &6487521271854813112
+LODGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3305306158910598333}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -1.7413864, y: 15.651178, z: -1.088829}
+  m_Size: 38.842365
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.0949001
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 3953652499623791976}
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3166762114185471660, guid: 449b72abf3e62894995d86bf59d5e82b, type: 3}

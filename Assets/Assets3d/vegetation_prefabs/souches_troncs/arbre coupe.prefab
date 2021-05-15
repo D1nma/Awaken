@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 2098245437297467503}
   - component: {fileID: 4249850289657730213}
   - component: {fileID: 2047741782250570935}
+  - component: {fileID: 104117280995926783}
   m_Layer: 0
   m_Name: arbre coupe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3076429750445289418
 Transform:
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2448405834662442352}
-  m_LocalRotation: {x: -0, y: 0.037203215, z: -0, w: 0.99930775}
+  m_LocalRotation: {x: 0, y: 0.037201867, z: 0, w: 0.9993078}
   m_LocalPosition: {x: 495.34, y: 152.33472, z: 219.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -97,3 +98,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -75171668026845272, guid: 8e3fd472e36ad2e45a1d59a97e45aebe, type: 3}
+--- !u!205 &104117280995926783
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448405834662442352}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -5.8415365, y: 1.2702861, z: -2.107458}
+  m_Size: 17.67215
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.037298072
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 4249850289657730213}
+  m_Enabled: 1

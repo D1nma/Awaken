@@ -80,7 +80,7 @@ public class DialogueTrigger : MonoBehaviour
             else
             {
                 TriggerDialogue();
-                if (Avertissement && NotDestroy)
+                if (Avertissement && !NotDestroy)
                 {
                     Destroy(this.gameObject.GetComponent<DialogueTrigger>());
                 }

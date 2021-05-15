@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 120991331156878147}
   - component: {fileID: 2758788681456228233}
   - component: {fileID: 795747090333034839}
+  - component: {fileID: 6792244899359768889}
   m_Layer: 0
   m_Name: 10_violet_clair
   m_TagString: Untagged
@@ -97,3 +98,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 587366007896238738, guid: 318c3aa419aca49499e4d503c4cf82e0, type: 3}
+--- !u!205 &6792244899359768889
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416293732781831772}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 1.6476088, y: 18.682095, z: 0.91838264}
+  m_Size: 38.860954
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.0949001
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 2758788681456228233}
+  m_Enabled: 1

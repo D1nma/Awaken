@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5799401812297031606}
   - component: {fileID: 8619725246073170812}
   - component: {fileID: 6780877011981400044}
+  - component: {fileID: 5884512830682573417}
   m_Layer: 0
   m_Name: "10_violet_fonc\xE9"
   m_TagString: Untagged
@@ -97,3 +98,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 587366007896238738, guid: 318c3aa419aca49499e4d503c4cf82e0, type: 3}
+--- !u!205 &5884512830682573417
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7827139608952949417}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 1.6475792, y: 18.682156, z: 0.9185066}
+  m_Size: 38.860954
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.096236676
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 8619725246073170812}
+  m_Enabled: 1

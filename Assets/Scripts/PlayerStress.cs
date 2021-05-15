@@ -30,7 +30,7 @@ public class PlayerStress : MonoBehaviour
         {
             Sun = GameObject.Find("Directional Light");
         }
-        DialogueStress.SetActive(true);
+        DialogueStress.SetActive(false);
         GameObject bar = GameObject.Find("StressBar");
         stressBar = bar.GetComponent<StressBar>();
         currentStress = 0;
@@ -66,11 +66,6 @@ public class PlayerStress : MonoBehaviour
     {
         if (stressBar)
         {
-            if (currentStress > 80 && !dialogue)
-            {
-                DialogueStress.SetActive(true);
-                dialogue = true;
-            }
             Raycast();
             if (!player || dead)
             {
@@ -151,6 +146,16 @@ public class PlayerStress : MonoBehaviour
                 else
                 {
                     time = 0;
+                }
+                if (currentStress >= 80 && !dialogue)
+                {
+                    DialogueStress.SetActive(true);
+                    dialogue = true;
+                }
+                if (currentStress < 80)
+                {
+                    DialogueStress.SetActive(false);
+                    dialogue = false;
                 }
             }
         }

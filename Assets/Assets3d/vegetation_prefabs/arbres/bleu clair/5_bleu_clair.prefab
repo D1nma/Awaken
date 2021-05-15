@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4758153023536165974}
   - component: {fileID: 7344436128063291548}
   - component: {fileID: 1550574922935596078}
+  - component: {fileID: 3294725519851770286}
   m_Layer: 0
   m_Name: 5_bleu_clair
   m_TagString: Untagged
@@ -97,3 +98,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1593996420852118269, guid: 80e0f68cfa4857941850f00e3ca209a5, type: 3}
+--- !u!205 &3294725519851770286
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9145774891951038793}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -2.0077457, y: 18.750572, z: 0.14213562}
+  m_Size: 38.18862
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.0949001
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7344436128063291548}
+  m_Enabled: 1

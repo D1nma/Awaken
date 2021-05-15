@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2473011129317378413}
   - component: {fileID: 411254512781376935}
   - component: {fileID: 5747701319710531952}
+  - component: {fileID: 6092253220374326568}
   m_Layer: 0
   m_Name: 6_violet_emiss
   m_TagString: Untagged
@@ -97,3 +98,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3996760141626369306, guid: c544d47f979efbb46b7a878a6a883796, type: 3}
+--- !u!205 &6092253220374326568
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2212936187326471282}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.4105873, y: 19.822994, z: -3.1745052}
+  m_Size: 40.425575
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.07958272
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 411254512781376935}
+  m_Enabled: 1

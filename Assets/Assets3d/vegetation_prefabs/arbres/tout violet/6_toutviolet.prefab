@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8645700328048942546}
   - component: {fileID: 5773410135242516760}
   - component: {fileID: 7706618446206244836}
+  - component: {fileID: 5671751572253526255}
   m_Layer: 0
   m_Name: 6_toutviolet
   m_TagString: Untagged
@@ -97,3 +98,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3996760141626369306, guid: c544d47f979efbb46b7a878a6a883796, type: 3}
+--- !u!205 &5671751572253526255
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5413249365033257165}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.4105873, y: 19.822933, z: -3.1747494}
+  m_Size: 40.425575
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.09893756
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5773410135242516760}
+  m_Enabled: 1
