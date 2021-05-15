@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 172043712755809043}
   - component: {fileID: 8662310141354325730}
   - component: {fileID: 5894152063532706057}
+  - component: {fileID: -8419594670859948430}
   m_Layer: 0
   m_Name: flacon
   m_TagString: Untagged
@@ -110,3 +111,22 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.48
   m_Center: {x: 0, y: 0.0931412, z: -0.000009091571}
+--- !u!205 &-8419594670859948430
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829522100919573190}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0.0931412, z: -0.000009089708}
+  m_Size: 0.18633986
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.017943231
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 172043712755809043}
+  m_Enabled: 1

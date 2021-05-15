@@ -258,8 +258,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7024903688414646423}
+  - component: {fileID: 9053651720911538563}
   m_Layer: 0
-  m_Name: boite_d_allumettes
+  m_Name: boite d'allumettes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -284,6 +285,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -12.983, z: 0}
+--- !u!205 &9053651720911538563
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7653489351828507181}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.013202228, y: 0.013989832, z: -0.016189631}
+  m_Size: 0.10640444
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.01038373
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 1544022947604572616}
+    - renderer: {fileID: 1205748800156039489}
+    - renderer: {fileID: 8425018389992691110}
+    - renderer: {fileID: 6978891636938681281}
+    - renderer: {fileID: 2325007702855712314}
+  m_Enabled: 1
 --- !u!1 &7972988833989439997
 GameObject:
   m_ObjectHideFlags: 0

@@ -205,6 +205,7 @@ GameObject:
   - component: {fileID: 7046337459745134210}
   - component: {fileID: 2795974770881223648}
   - component: {fileID: 1447933277}
+  - component: {fileID: 6737352172247612534}
   m_Layer: 0
   m_Name: "Lampe \xE0 huile"
   m_TagString: Untagged
@@ -280,6 +281,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   watchMe: 1
+--- !u!205 &6737352172247612534
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8237686425163565427}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: -0.23194093, z: -0.000000007450581}
+  m_Size: 0.47164404
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.022313679
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 4372455955998931250}
+    - renderer: {fileID: 3731905980057435056}
+  m_Enabled: 1
 --- !u!1 &8666840706156367515
 GameObject:
   m_ObjectHideFlags: 0

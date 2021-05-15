@@ -176,6 +176,7 @@ GameObject:
   - component: {fileID: 7982820106570137640}
   - component: {fileID: 731329738}
   - component: {fileID: 731329737}
+  - component: {fileID: 948811791794537458}
   m_Layer: 0
   m_Name: Boite d'appats
   m_TagString: Untagged
@@ -242,4 +243,25 @@ MonoBehaviour:
   invent: {fileID: 0}
   "DialogueCl\xE9": {fileID: 0}
   DialogueTrigger: {fileID: 0}
+  DialogueAppat1: {fileID: 0}
   InteragirText: {fileID: 0}
+--- !u!205 &948811791794537458
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8871480233197583400}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0.1019107, z: 0}
+  m_Size: 0.21417873
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.037298072
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 3180726894551373831}
+    - renderer: {fileID: 3882637150580231273}
+  m_Enabled: 1

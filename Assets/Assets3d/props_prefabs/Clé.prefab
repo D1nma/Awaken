@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3181018194862896710}
   - component: {fileID: 371256564691455990}
   - component: {fileID: 3913430197818441946}
+  - component: {fileID: -226817014779148615}
   m_Layer: 0
   m_Name: "Cl\xE9"
   m_TagString: Invisible
@@ -104,6 +105,7 @@ MonoBehaviour:
   invent: {fileID: 0}
   "DialogueCl\xE9": {fileID: 6348679547399926492}
   DialogueTrigger: {fileID: 6348679547595215277}
+  DialogueAppat1: {fileID: 0}
   InteragirText: {fileID: 0}
 --- !u!135 &3913430197818441946
 SphereCollider:
@@ -118,6 +120,25 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.58
   m_Center: {x: 0.0006147139, y: 0, z: -0.00005458854}
+--- !u!205 &-226817014779148615
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3973796934433691539}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.00086060166, y: 0, z: -0.00007642433}
+  m_Size: 0.27547437
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.030097235
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 3181018194862896710}
+  m_Enabled: 1
 --- !u!1 &6348679547399926492
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +212,7 @@ MonoBehaviour:
   Interagir: 0
   Avertissement: 1
   canMove: 1
+  NotDestroy: 0
 --- !u!135 &6348679547399926493
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -261,6 +283,7 @@ MonoBehaviour:
   Interagir: 0
   Avertissement: 1
   canMove: 0
+  NotDestroy: 0
 --- !u!135 &6348679547595215267
 SphereCollider:
   m_ObjectHideFlags: 0

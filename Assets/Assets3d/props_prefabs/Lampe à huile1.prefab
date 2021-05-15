@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 4306822345442252809}
   - component: {fileID: 514545606898225935}
   - component: {fileID: 8245349995699353351}
+  - component: {fileID: 1583438523180354127}
   m_Layer: 0
-  m_Name: "Lampe \xE0 huile"
+  m_Name: "Lampe \xE0 huile1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,6 +74,26 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.14
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!205 &1583438523180354127
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3499077791175705267}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0.23582202, z: -0.000000007450581}
+  m_Size: 0.47164404
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.015649322
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 9111636471190221554}
+    - renderer: {fileID: 8149114170972352624}
+  m_Enabled: 1
 --- !u!1 &4223199057294296411
 GameObject:
   m_ObjectHideFlags: 0

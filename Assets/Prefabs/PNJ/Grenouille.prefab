@@ -1649,6 +1649,7 @@ GameObject:
   - component: {fileID: 8422066048159458339}
   - component: {fileID: 8422066048159458336}
   - component: {fileID: 6050762351376859580}
+  - component: {fileID: 5740876700018672885}
   m_Layer: 0
   m_Name: Grenouille
   m_TagString: Untagged
@@ -1758,6 +1759,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   watchMe: 1
+--- !u!205 &5740876700018672885
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8656017042236199096}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.0000010207295, y: 0.028473608, z: -0.006608974}
+  m_Size: 0.09379296
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.01677778
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 2576501071942167948}
+  m_Enabled: 1
 --- !u!1 &8692046954641520892
 GameObject:
   m_ObjectHideFlags: 0

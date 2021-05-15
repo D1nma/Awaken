@@ -11,7 +11,8 @@ public class item : MonoBehaviour
     public ObjectType objectType;
     public Inventaire invent;
     public GameObject DialogueClé, DialogueTrigger,DialogueAppat1;
-
+    float time;
+    public static bool StartTime;
     public GameObject InteragirText;
     private bool dispo;
 
@@ -57,7 +58,14 @@ public class item : MonoBehaviour
         {
             StartCoroutine(Setup());
         }
-        
+        if (StartTime)
+        {
+            time += Time.deltaTime;
+            if(time >= 300)
+            {
+                StartTime = false;
+            }
+        }
 
         if (Input.GetKeyDown(KeyCode.E) && dispo){
             InteragirText.SetActive(false);
@@ -81,6 +89,7 @@ public class item : MonoBehaviour
                 StartCoroutine(Disparition(1f));
                 DialogueAppat1.SetActive(true);
                 Debug.Log("C'est un Appat!");
+                StartTime = true;
                 invent.boite =true;
             }
             if(objectType == ObjectType.Champi){

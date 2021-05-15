@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 4709531061673184593}
   - component: {fileID: 7403753709171259803}
   - component: {fileID: -3998491860666900556}
+  - component: {fileID: 2452358819992982664}
   m_Layer: 0
   m_Name: Boite de conserve (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8571553064580662004
 Transform:
@@ -97,3 +98,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7336222472559230297, guid: e257b921bd970c741ab5e67ef14ef349, type: 3}
+--- !u!205 &2452358819992982664
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061126682530650190}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0.1019107, z: 0}
+  m_Size: 0.21417873
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.014026015
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7403753709171259803}
+  m_Enabled: 1
