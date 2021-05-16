@@ -189,8 +189,8 @@ public class PlayersController : MonoBehaviour
 
             if (!accroupir)
             {
-                cc.height = oldColliderHeight / 3;
-                moveSpeed = oldMoveSpeed / 3;
+                cc.height = oldColliderHeight / 2;
+                moveSpeed = oldMoveSpeed / 2;
                 accroupir = true;
                 animator.SetBool("Accroupi", true);
                 animator.SetBool("IsRunning", false);
