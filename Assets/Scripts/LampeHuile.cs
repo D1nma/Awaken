@@ -20,7 +20,7 @@ public class LampeHuile : MonoBehaviour
     private int maxHuile = 100;
     float oldValueFog;
     public float FogStartDistance = 50f;
-    public float currentHuile = 25;
+    public float currentHuile = 50;
     private int tipInt = 0;
     private float consume = 0.005f;
     [HideInInspector]
@@ -276,7 +276,7 @@ public class LampeHuile : MonoBehaviour
     }
     void Recharge()
     {
-        currentHuile += 25;
+        currentHuile = 100;
     }
     void lightUp()
     {
