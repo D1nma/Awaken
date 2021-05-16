@@ -88,6 +88,81 @@ MonoBehaviour:
   invent: {fileID: 0}
   DialoguePont: {fileID: 196099974}
   pass: 0
+--- !u!1 &975386264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 975386265}
+  - component: {fileID: 975386266}
+  - component: {fileID: 975386267}
+  m_Layer: 0
+  m_Name: DialoguePont
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &975386265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975386264}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 4.717, z: -18.95}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8012700084206555847}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &975386266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975386264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 808de7eb2c5d75444812d659d03030e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Alyx
+    name2: "Voie myst\xE9rieuse.."
+    sentences:
+    - sentences: "Le pont est bloqu\xE9..."
+      next: 0
+    - sentences: "D\xE9cid\xE9ment, cet endroit ne nous facilite pas la t\xE2che.
+        Bon, heureusement que ce tronc n\u2019est pas si \xE9norme, tu peux au moins
+        grimper par dessus. Il te suffit de sauter et de t\u2019agripper \xE0 l\u2019\xE9corce,
+        enfin, je ne t\u2019apprends rien, si ?"
+      next: 1
+    isQuestion: 0
+  question: {fileID: 0}
+  InteragirText: {fileID: 0}
+  Interagir: 0
+  Avertissement: 0
+  canMove: 0
+  NotDestroy: 0
+--- !u!65 &975386267
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975386264}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 23.33, y: 4.39, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1352320212
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,6 +614,7 @@ Transform:
   - {fileID: 9063644793805691520}
   - {fileID: 196099975}
   - {fileID: 1352320213}
+  - {fileID: 975386265}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -6,6 +6,7 @@ public class Pont : MonoBehaviour
 {
     private GameObject player;
     public GameObject point;
+    public GameObject obstacle;//à supprimer une fois grimper
     public Inventaire invent;
     CharacterController cc;
     public GameObject DialoguePont;
@@ -47,6 +48,8 @@ public class Pont : MonoBehaviour
             if (invent.Keyvolee)
             {
                 this.gameObject.SetActive(false);
+                //à supprimer une fois grimper
+                obstacle.gameObject.SetActive(false);
             }
             else
             {

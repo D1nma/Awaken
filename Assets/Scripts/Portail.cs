@@ -5,8 +5,9 @@ using UnityEngine;
 public class Portail : MonoBehaviour
 {
     public Inventaire invent;
+    Animator animator;
     public GameObject DialogueSansClé;
-    public bool open=false;
+    public static bool open=false;
     // Start is called before the first frame update
     IEnumerator Setup()
     {
@@ -20,16 +21,22 @@ public class Portail : MonoBehaviour
     }
     void Start()
     {
+        animator = GetComponent<Animator>();
         if (!invent)
         {
             StartCoroutine(Setup());
         }
+        open = false;
         
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (open)
+        {
+            animator.SetBool("open",true);
+        }
         if (!invent)
         {
             invent = GameObject.Find("Inventaire").GetComponent<Inventaire>();

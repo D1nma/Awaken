@@ -34,6 +34,7 @@ public class Serrure : MonoBehaviour
                 {
                     invent.key=false;
                     open = true;
+                    Portail.open = true;
                     startTiming=true;
                     Tips.SetActive(true);
                     InteragirText.SetActive(false);
