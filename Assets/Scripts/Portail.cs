@@ -38,6 +38,10 @@ public class Portail : MonoBehaviour
         {
             invent = GameObject.Find("Inventaire").GetComponent<Inventaire>();
         }
+        if (open)
+        {
+            animator.SetBool("open", true);
+        }
 
 
     }
@@ -49,10 +53,7 @@ public class Portail : MonoBehaviour
             {
                 DialogueSansClé.SetActive(true);
             }
-            if (open)
-            {
-                animator.SetBool("open", true);
-            }
+            
         }
     }
     }
