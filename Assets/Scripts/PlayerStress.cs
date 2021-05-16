@@ -47,7 +47,6 @@ public class PlayerStress : MonoBehaviour
             minRandom = 20f;
             maxRandom = 40f;
         }
-        NewValueStress(minRandom,maxRandom);
         dead = false;
         
     }
@@ -126,7 +125,7 @@ public class PlayerStress : MonoBehaviour
                 {
                     if (!fait)
                     {
-                        AugmentationStress = AugmentationStress / 4;
+                        AugmentationStress = AugmentationStress / 10;
                         fait = true;
                     }
                     
