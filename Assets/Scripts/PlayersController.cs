@@ -90,7 +90,6 @@ public class PlayersController : MonoBehaviour
         }
         if (moving)
         {
-            Debug.Log(moving);
            animator.SetBool("IsWalking", true);
         }
         if (!courrir)

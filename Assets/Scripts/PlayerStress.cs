@@ -44,8 +44,8 @@ public class PlayerStress : MonoBehaviour
         }
         if (NotSafe)
         {
-            minRandom = 20f;
-            maxRandom = 40f;
+            minRandom = 10f;
+            maxRandom = 20f;
         }
         dead = false;
         
