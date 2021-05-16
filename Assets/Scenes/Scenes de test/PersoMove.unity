@@ -2555,6 +2555,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 594147883}
     - target: {fileID: 731329737, guid: 2c5c1a34be4944c418a806c9af2ab03e, type: 3}
+      propertyPath: DialogueAide
+      value: 
+      objectReference: {fileID: 2061073185}
+    - target: {fileID: 731329737, guid: 2c5c1a34be4944c418a806c9af2ab03e, type: 3}
       propertyPath: InteragirText
       value: 
       objectReference: {fileID: 1570914878}
@@ -4403,25 +4407,6 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 5580832418399988147}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1545624502 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1829522100919573190, guid: 01869165c867ae04a94753183505c83f,
-    type: 3}
-  m_PrefabInstance: {fileID: 5193632909816753350}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1545624508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1545624502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4d19a2b915f8124cb8abb4e3ed905d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  watchMe: 1
 --- !u!4 &1550247772 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7449116501484426550, guid: 3f0c7c610240fcb4fa1de0b1faac9021,
@@ -5034,6 +5019,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7409083485818782707}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1747711257 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8094662775815825042, guid: 2c5c1a34be4944c418a806c9af2ab03e,
+    type: 3}
+  m_PrefabInstance: {fileID: 739856026}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1754963231 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3748291399115324532, guid: 7557bd13be3934f4eb8f41384a75f0cc,
@@ -5612,6 +5603,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 9044488912923560843}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2061073185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2061073186}
+  - component: {fileID: 2061073188}
+  - component: {fileID: 2061073187}
+  m_Layer: 0
+  m_Name: DialogueAide
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2061073186
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061073185}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1747711257}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2061073187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061073185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 808de7eb2c5d75444812d659d03030e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Alyx
+    name2: "Voie myst\xE9rieuse.."
+    sentences:
+    - sentences: "Hum\u2026 Dis-moi jeune fille, tu as vu toutes les bo\xEEtes de
+        conserves vides qu\u2019il y a avait dans la cabane tout \xE0 l\u2019heure
+        ? La personne qui y vivait devait beaucoup aimer la p\xEAche."
+      next: 1
+    - sentences: "Ce n\u2019est pas toi qui p\xEAchait ?"
+      next: 0
+    - sentences: "Bien s\xFBr que non! Je n\u2019ai m\xEAme pas de bras, d\u2019abord.
+        Mais je me disais que les vers pourraient app\xE2ter autre chose que les
+        poissons..."
+      next: 1
+    - sentences: "Mais les bo\xEEtes dans la cabane \xE9taient toutes vides\u2026"
+      next: 0
+    - sentences: "Peut-\xEAtre qu\u2019il en reste sur le lieu de p\xEAche de notre
+        amateur de poissons.\r\nOn peut toujours inspecter la rivi\xE8re pour v\xE9rifier,
+        tu ne crois pas ?\r"
+      next: 1
+    isQuestion: 0
+  question: {fileID: 0}
+  InteragirText: {fileID: 0}
+  Interagir: 0
+  Avertissement: 1
+  canMove: 1
+  NotDestroy: 0
+--- !u!135 &2061073188
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061073185}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1000
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2074308379
 GameObject:
   m_ObjectHideFlags: 0
@@ -8159,16 +8234,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: flacon
-      objectReference: {fileID: 0}
-    - target: {fileID: 1829522100919573190, guid: 01869165c867ae04a94753183505c83f,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5894152063532706057, guid: 01869165c867ae04a94753183505c83f,
-        type: 3}
-      propertyPath: m_Radius
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01869165c867ae04a94753183505c83f, type: 3}

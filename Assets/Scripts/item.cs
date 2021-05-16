@@ -63,7 +63,9 @@ public class item : MonoBehaviour
             time += Time.deltaTime;
             if(time >= 300)
             {
+                DialogueAide.SetActive(true);
                 StartTime = false;
+                Destroy(this.gameObject,20f);
             }
         }
 
