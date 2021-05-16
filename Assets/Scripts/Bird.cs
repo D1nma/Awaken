@@ -17,6 +17,7 @@ public class Bird : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(vol);
         if (vol)
         {
             animator.SetTrigger("vol");

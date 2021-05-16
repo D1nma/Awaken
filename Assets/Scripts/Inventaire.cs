@@ -69,11 +69,11 @@ public class Inventaire : MonoBehaviour
                 if (bird)
                 {
                     bird.gameObject.SetActive(true);
+                    Bird.vol = true;
                 }
                 Debug.Log("La clé va se faire prendre!");
                 keyUI.SetActive(true);
                 PlayersController.canControl = false;
-                Bird.vol = true;
                 Keyvolee = true;
                 StartCoroutine(BirdKey(6));
             }
