@@ -10,9 +10,9 @@ public class item : MonoBehaviour
 
     public ObjectType objectType;
     public Inventaire invent;
-    public GameObject DialogueClé, DialogueTrigger,DialogueAppat1;
+    public GameObject DialogueClé, DialogueTrigger,DialogueAppat1,DialogueAide;
     float time;
-    public static bool StartTime;
+    public static bool StartTime; //une aide si le joueur trouve pas au bout de 5mins
     public GameObject InteragirText;
     private bool dispo;
 
@@ -85,7 +85,7 @@ public class item : MonoBehaviour
                 invent.canne =true;
             }
             if(objectType == ObjectType.Appat){
-                Destroy(this.gameObject,20f);
+                Destroy(this.gameObject,350f);
                 StartCoroutine(Disparition(1f));
                 DialogueAppat1.SetActive(true);
                 Debug.Log("C'est un Appat!");

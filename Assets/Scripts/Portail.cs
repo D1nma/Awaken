@@ -33,10 +33,7 @@ public class Portail : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (open)
-        {
-            animator.SetBool("open",true);
-        }
+        
         if (!invent)
         {
             invent = GameObject.Find("Inventaire").GetComponent<Inventaire>();
@@ -51,6 +48,10 @@ public class Portail : MonoBehaviour
             if (!invent.key)
             {
                 DialogueSansClé.SetActive(true);
+            }
+            if (open)
+            {
+                animator.SetBool("open", true);
             }
         }
     }

@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 3977745620157326687}
   - component: {fileID: 1294936242}
   - component: {fileID: 379869229}
+  - component: {fileID: 2614464011648877544}
   m_Layer: 0
   m_Name: Portal_low
   m_TagString: Untagged
@@ -153,6 +154,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &2614464011648877544
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4357261491240943589}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.9, y: 10.222072, z: 23.112257}
+  m_Center: {x: -2.6, y: 5.1106505, z: -0.00078248995}
 --- !u!1001 &1801969736415946012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -240,7 +254,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal_low 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -4550362805515284371, guid: 88d3fc29459bf104bb7ad936db61c08d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 88d3fc29459bf104bb7ad936db61c08d, type: 3}
 --- !u!4 &9028175595180091957 stripped
 Transform:

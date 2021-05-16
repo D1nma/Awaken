@@ -14,12 +14,13 @@ GameObject:
   - component: {fileID: 8662310141354325730}
   - component: {fileID: 5894152063532706057}
   - component: {fileID: -8419594670859948430}
+  - component: {fileID: 1545624508}
   m_Layer: 0
   m_Name: flacon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1308317702598279292
 Transform:
@@ -109,7 +110,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.48
+  m_Radius: 1
   m_Center: {x: 0, y: 0.0931412, z: -0.000009091571}
 --- !u!205 &-8419594670859948430
 LODGroup:
@@ -125,8 +126,21 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.017943231
+  - screenRelativeHeight: 0.0037358077
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 172043712755809043}
   m_Enabled: 1
+--- !u!114 &1545624508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829522100919573190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d19a2b915f8124cb8abb4e3ed905d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  watchMe: 1
