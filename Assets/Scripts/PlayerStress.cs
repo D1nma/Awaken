@@ -183,7 +183,6 @@ public class PlayerStress : MonoBehaviour
 
         if(Physics.Raycast(fromPosition, direction,out hitinfo, 10f))
         {
-            Debug.Log(hitinfo.transform.gameObject);
             if (hitinfo.transform.gameObject.tag != "Player" && hitinfo.transform.gameObject.tag != "MainCamera" && hitinfo.transform.gameObject.tag != "point" && hitinfo.transform.gameObject.tag != "Invisible")
             {
                 if (done)

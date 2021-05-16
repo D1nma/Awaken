@@ -80,7 +80,11 @@ public class Inventaire : MonoBehaviour
             else
             {
                 keyUI.SetActive(true);
-                DialogueClé.SetActive(true);
+                if (DialogueClé)
+                {
+                    DialogueClé.SetActive(true);
+                }
+                
                 keyEmpty = false;
             }
             

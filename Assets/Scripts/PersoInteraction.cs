@@ -95,7 +95,9 @@ public class PersoInteraction : MonoBehaviour
             PlayersController.moving = true;
             float distance = Vector3.Distance(player.transform.position, transform.position);
             invent.DialogueClé.SetActive(true);
-            if (distance <= 0.2f)
+            Debug.Log(distance);
+            Debug.Log(oldDistance);
+            if (distance == oldDistance)
             {
                 setup = true;
                 bouge = false;
