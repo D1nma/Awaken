@@ -34,10 +34,22 @@ public class Inventaire : MonoBehaviour
         boiteUI.SetActive(false);
         champiUI.SetActive(false);
         keyUI.SetActive(false);
-        DialogueClé.SetActive(false);
-        DialoguePeche.SetActive(false);
-        DialogueAppat.SetActive(false);
-        DialoguePeche2.SetActive(false);
+        if (DialogueAppat)
+        {
+            DialogueAppat.SetActive(false);
+        }
+        if (DialogueClé)
+        {
+            DialogueClé.SetActive(false);
+        }
+        if (DialoguePeche)
+        {
+            DialoguePeche.SetActive(false);
+        }
+        if (DialoguePeche2)
+        {
+            DialoguePeche2.SetActive(false);
+        }
         if (!bird)
         {
             bird = GameObject.Find("Bird");

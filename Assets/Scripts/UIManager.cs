@@ -106,10 +106,13 @@ public class UIManager : MonoBehaviour
     }
     void Pause()
     {
-        Cursor.visible = true;
-        pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
-        GameIsPaused = true;
+        if (SceneManager.GetActiveScene().buildIndex != 0)
+        {
+            Cursor.visible = true;
+            pauseMenuUI.SetActive(true);
+            Time.timeScale = 0f;
+            GameIsPaused = true;
+        }
     }
     public void Resume()
     {
