@@ -21,15 +21,78 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2530157555" Language="SFX" Hash="1426977689">
+		<SoundBank Id="2530157555" Language="SFX" Hash="3716559535">
 			<ObjectPath>\SoundBanks\Default Work Unit\Environnement</ObjectPath>
 			<ShortName>Environnement</ShortName>
 			<Path>Environnement.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2814713645" Name="Wind_loop_start" ObjectPath="\Events\Default Work Unit\Environnement\Wind\Wind_loop_start">
+					<IncludedMemoryFiles>
+						<File Id="260624337" Language="SFX">
+							<ShortName>Environnement\Wind\vent 1.wav</ShortName>
+							<Path>SFX\Environnement\Wind\vent 1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="774703723" Language="SFX">
+							<ShortName>Environnement\Wind\vent 2_vent foret.wav</ShortName>
+							<Path>SFX\Environnement\Wind\vent 2_vent foret_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1911133551" Name="Wind_loop_stop" ObjectPath="\Events\Default Work Unit\Environnement\Wind\Wind_loop_stop"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="260624337" Language="SFX">
+					<ShortName>Environnement\Wind\vent 1.wav</ShortName>
+					<Path>SFX\Environnement\Wind\vent 1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="774703723" Language="SFX">
+					<ShortName>Environnement\Wind\vent 2_vent foret.wav</ShortName>
+					<Path>SFX\Environnement\Wind\vent 2_vent foret_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="2981377429" Language="SFX" Hash="3977760789">
+		<SoundBank Id="2981377429" Language="SFX" Hash="3965339034">
 			<ObjectPath>\SoundBanks\Default Work Unit\Ambiance</ObjectPath>
 			<ShortName>Ambiance</ShortName>
 			<Path>Ambiance.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4219216500" Name="GameOver_Start" ObjectPath="\Events\Default Work Unit\Ambiance\GameOver_Start">
+					<IncludedMemoryFiles>
+						<File Id="354062294" Language="SFX">
+							<ShortName>Ambiance\GameOver\Game_Over.wav</ShortName>
+							<Path>SFX\Ambiance\GameOver\Game_Over_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4147157480" Name="GameOver_Stop" ObjectPath="\Events\Default Work Unit\Ambiance\GameOver_Stop"/>
+				<Event Id="3908297853" Name="Menu_Start" ObjectPath="\Events\Default Work Unit\Ambiance\Menu_Start">
+					<IncludedMemoryFiles>
+						<File Id="95440876" Language="SFX">
+							<ShortName>Ambiance\Menu\Menu 2 (loops).wav</ShortName>
+							<Path>SFX\Ambiance\Menu\Menu 2 (loops)_D79FB2B7.wem</Path>
+						</File>
+						<File Id="382039251" Language="SFX">
+							<ShortName>Ambiance\Menu\Menu 2.wav</ShortName>
+							<Path>SFX\Ambiance\Menu\Menu 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2696506367" Name="Menu_Stop" ObjectPath="\Events\Default Work Unit\Ambiance\Menu_Stop"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="95440876" Language="SFX">
+					<ShortName>Ambiance\Menu\Menu 2 (loops).wav</ShortName>
+					<Path>SFX\Ambiance\Menu\Menu 2 (loops)_D79FB2B7.wem</Path>
+				</File>
+				<File Id="354062294" Language="SFX">
+					<ShortName>Ambiance\GameOver\Game_Over.wav</ShortName>
+					<Path>SFX\Ambiance\GameOver\Game_Over_10C4C929.wem</Path>
+				</File>
+				<File Id="382039251" Language="SFX">
+					<ShortName>Ambiance\Menu\Menu 2.wav</ShortName>
+					<Path>SFX\Ambiance\Menu\Menu 2_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="3157003241" Language="SFX" Hash="2712263034">
 			<ObjectPath>\SoundBanks\Default Work Unit\test</ObjectPath>

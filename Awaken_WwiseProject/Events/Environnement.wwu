@@ -6,6 +6,60 @@
 				<Property Name="Color" Type="int16" Value="4"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Wind" ID="{34B7486E-E6EA-4902-A870-366626E4569A}" ShortID="361966373">
+					<ChildrenList>
+						<Event Name="Wind_loop_start" ID="{200DE210-2989-49A0-845D-C1C6D35BE074}">
+							<ChildrenList>
+								<Action Name="" ID="{3D0C3C83-306F-40C7-8678-9137902C92B4}" ShortID="113506137">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wind" ID="{64D0C0D9-5241-48CF-B967-DC2B71B1ADAB}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9A3145E1-6417-494E-891C-2E33D88275FC}" ShortID="425076183">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="vent 1" ID="{15A1D4E5-FE79-408D-AC2B-59B82793CABD}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Wind_loop_stop" ID="{92CDE42A-C93F-49B8-B690-95D9C8B7168C}">
+							<ChildrenList>
+								<Action Name="" ID="{8F0B363C-9BDC-47ED-B8A7-1C1344F0E3FF}" ShortID="1046065977">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wind" ID="{64D0C0D9-5241-48CF-B967-DC2B71B1ADAB}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{2B1A0997-71B2-42D2-82BD-B3DA1712A7D7}" ShortID="991746627">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="vent 1" ID="{15A1D4E5-FE79-408D-AC2B-59B82793CABD}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

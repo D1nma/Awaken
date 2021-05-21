@@ -146,17 +146,17 @@ public class UIManager : MonoBehaviour
 
     public void OnFxSliderChanged(float value) //effets
     {
-        SoundsManager.instance.mixer.SetFloat("Effets", value);
+        //SoundsManager.instance.mixer.SetFloat("Effets", value);//Sans Wwise
     }
 
     public void OnMusicSliderChanged(float value)
     {
-        SoundsManager.instance.mixer.SetFloat("Ambiance", value);
+        //SoundsManager.instance.mixer.SetFloat("Ambiance", value);//Sans Wwise
     }
 
     public void OnGeneralSliderChanged(float value)
     {
-        SoundsManager.instance.mixer.SetFloat("General", value);
+        //SoundsManager.instance.mixer.SetFloat("General", value);//Sans Wwise
     }
 
 
@@ -179,6 +179,7 @@ public class UIManager : MonoBehaviour
     }
     public void Reload()
     {
+        AkSoundEngine.PostEvent("GameOver_Stop", gameObject);
         if (deadPanel != null)
             deadPanel.SetActive(false);
         Time.timeScale = 1f;
@@ -194,6 +195,7 @@ public class UIManager : MonoBehaviour
     }
     public void DeadMenu()
     {
+        AkSoundEngine.PostEvent("GameOver_Start", gameObject);
         Cursor.visible = true;
         if (deadPanel != null)
             deadPanel.SetActive(true);

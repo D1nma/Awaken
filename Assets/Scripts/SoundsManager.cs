@@ -9,11 +9,11 @@ public class SoundsManager : MonoBehaviour
 {
     public static SoundsManager instance;
 
-    [SerializeField] public AudioMixer mixer;
+    /*[SerializeField] public AudioMixer mixer;
 
-    [SerializeField] AudioSource ambiance, ombre;
+    [SerializeField] AudioSource ambiance, ombre;*/
 
-    public Sound[] sounds;
+    /*public Sound[] sounds;*/
 
     void Awake()
     {
@@ -36,7 +36,8 @@ public class SoundsManager : MonoBehaviour
     void Start()
     {
         //Play("MainTheme"); //Sans utiliser Wwise
-        //if (SceneManager.GetActiveScene().buildIndex == 1) { AkSoundEngine.PostEvent("Ambiance", gameObject); } //Sans utiliser Wwise
+        //if (SceneManager.GetActiveScene().buildIndex == 1) { AkSoundEngine.PostEvent("Ambiance", gameObject); } 
+        if (SceneManager.GetActiveScene().buildIndex == 0) { AkSoundEngine.PostEvent("Menu_Start", gameObject); }
     }
 
     // Update is called once per frame

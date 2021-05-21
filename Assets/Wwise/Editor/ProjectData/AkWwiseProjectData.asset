@@ -233,8 +233,88 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Ambiance
     guid: 02301d76802f4f47b7f34e89fdd14607
     GuidInternal: 
-    m_lastTime: -8585800148827785402
-    List: []
+    m_lastTime: -8585800045387358596
+    List:
+    - name: GameOver_Start
+      guid: 7ab526051b0aa6408e57cd427564676e
+      id: 4219216500
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 02301d76802f4f47b7f34e89fdd14607
+      - ElementName: GameOver_Start
+        ObjectType: 3
+        guid: 7ab526051b0aa6408e57cd427564676e
+      Path: Events\Default Work Unit\Ambiance\GameOver_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: GameOver_Stop
+      guid: 64e755bfff6fbc438b15d13d0158dc2a
+      id: 4147157480
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 02301d76802f4f47b7f34e89fdd14607
+      - ElementName: GameOver_Stop
+        ObjectType: 3
+        guid: 64e755bfff6fbc438b15d13d0158dc2a
+      Path: Events\Default Work Unit\Ambiance\GameOver_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Menu_Start
+      guid: d9c0d45c3d570e449a65a3c2c630b9c5
+      id: 3908297853
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 02301d76802f4f47b7f34e89fdd14607
+      - ElementName: Menu_Start
+        ObjectType: 3
+        guid: d9c0d45c3d570e449a65a3c2c630b9c5
+      Path: Events\Default Work Unit\Ambiance\Menu_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Menu_Stop
+      guid: e497355f3b6e8547881655d21493abc8
+      id: 2696506367
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 02301d76802f4f47b7f34e89fdd14607
+      - ElementName: Menu_Stop
+        ObjectType: 3
+        guid: e497355f3b6e8547881655d21493abc8
+      Path: Events\Default Work Unit\Ambiance\Menu_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Character.wwu
     PathAndIcons:
     - ElementName: Events
@@ -262,7 +342,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 524bd7222bf7d84284d7b0a1a9071dee
     GuidInternal: 
-    m_lastTime: -8585800148827359795
+    m_lastTime: -8585800051293722534
     List:
     - name: Test
       guid: 8d4576a49c590543bc0ed24c040d5ad3
@@ -295,8 +375,74 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Environnement
     guid: 0b9c659094c6ed43bece16702a7786fc
     GuidInternal: 
-    m_lastTime: -8585800148827605316
-    List: []
+    m_lastTime: -8585800051293896300
+    List:
+    - name: Wind
+      guid: 6e48b734eae60249a870366626e4569a
+      id: 1537061107
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Wind
+        ObjectType: 4
+        guid: 6e48b734eae60249a870366626e4569a
+      Path: Events\Default Work Unit\Environnement\Wind
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Wind_loop_start
+      guid: 10e20d208929a049845dc1c6d35be074
+      id: 2814713645
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Wind
+        ObjectType: 4
+        guid: 6e48b734eae60249a870366626e4569a
+      - ElementName: Wind_loop_start
+        ObjectType: 3
+        guid: 10e20d208929a049845dc1c6d35be074
+      Path: Events\Default Work Unit\Environnement\Wind\Wind_loop_start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Wind_loop_stop
+      guid: 2ae4cd923fc9b849b69095d9c8b7168c
+      id: 1911133551
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Wind
+        ObjectType: 4
+        guid: 6e48b734eae60249a870366626e4569a
+      - ElementName: Wind_loop_stop
+        ObjectType: 3
+        guid: 2ae4cd923fc9b849b69095d9c8b7168c
+      Path: Events\Default Work Unit\Environnement\Wind\Wind_loop_stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -354,7 +500,7 @@ MonoBehaviour:
     m_lastTime: -8585800170548137494
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 04000000050000000a0000000b0000000c0000007c0000007d0000008700000088000000bc000000bd000000
+  ExpandedWaapiItemIds: 04000000050000000600000007000000080000000a0000000b0000000c0000000d0000000e0000000f000000190000001a0000001b0000001d00000051000000520000007c0000008700000088000000bc000000bd000000820b0000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

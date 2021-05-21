@@ -6,6 +6,78 @@
 				<Property Name="Color" Type="int16" Value="1"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="Menu_Start" ID="{5CD4C0D9-573D-440E-9A65-A3C2C630B9C5}">
+					<ChildrenList>
+						<Action Name="" ID="{CA0DAF73-FAA6-45C4-978C-78D9EA973A77}" ShortID="797242119">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu(loops)" ID="{D4BD0E0D-A79E-4886-9483-052B91FC16C5}" WorkUnitID="{B2002B48-84B3-44E9-A30E-6AB42ADE9597}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D79F9ECA-A08C-4111-B4F2-06BEA045657C}" ShortID="46547458">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu" ID="{A7C02393-D39A-4977-B8D2-E8FF6C19D0F2}" WorkUnitID="{B2002B48-84B3-44E9-A30E-6AB42ADE9597}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Menu_Stop" ID="{5F3597E4-6E3B-4785-8816-55D21493ABC8}">
+					<ChildrenList>
+						<Action Name="" ID="{B10BB231-028C-4CD4-ACEE-3798B9D89472}" ShortID="81469451">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu(loops)" ID="{D4BD0E0D-A79E-4886-9483-052B91FC16C5}" WorkUnitID="{B2002B48-84B3-44E9-A30E-6AB42ADE9597}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{03141EAD-7026-4B16-BD6C-A92B4E464EF0}" ShortID="370511307">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu" ID="{A7C02393-D39A-4977-B8D2-E8FF6C19D0F2}" WorkUnitID="{B2002B48-84B3-44E9-A30E-6AB42ADE9597}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="GameOver_Start" ID="{0526B57A-0A1B-40A6-8E57-CD427564676E}">
+					<ChildrenList>
+						<Action Name="" ID="{7058AB9F-CFCC-43C3-B079-091170584B68}" ShortID="937440329">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Game_Over" ID="{330E8E7D-8E2E-41F8-9917-0E89D75BCFFD}" WorkUnitID="{B2002B48-84B3-44E9-A30E-6AB42ADE9597}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="GameOver_Stop" ID="{BF55E764-6FFF-43BC-8B15-D13D0158DC2A}">
+					<ChildrenList>
+						<Action Name="" ID="{2D3A7C99-CA99-4C59-965B-6E4D979A8956}" ShortID="730794826">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Game_Over" ID="{330E8E7D-8E2E-41F8-9917-0E89D75BCFFD}" WorkUnitID="{B2002B48-84B3-44E9-A30E-6AB42ADE9597}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

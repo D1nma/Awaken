@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6728908659011876223}
   - component: {fileID: 6728908659011876220}
   - component: {fileID: 4902884996581703613}
+  - component: {fileID: 7338956462120047433}
   - component: {fileID: 368369710}
   - component: {fileID: 368369711}
   - component: {fileID: 368369712}
@@ -49,7 +50,7 @@ Camera:
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 2
-  m_GateFitMode: 2
+  m_GateFitMode: 0
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -61,10 +62,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 5000
+  far clip plane: 300
   field of view: 40
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -139,10 +140,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82534f694e5af4747b2c1cad6da2e484, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixer: {fileID: 24100000, guid: 3963a11b18b73a84992a439346d7e7b6, type: 2}
-  ambiance: {fileID: 0}
-  ombre: {fileID: 0}
-  sounds: []
+--- !u!114 &7338956462120047433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6728908659011876219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92403641717ce534b99d6575a4c02315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3c9585d347f43fa4182a6ed9d0608f98,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!114 &368369710
 MonoBehaviour:
   m_ObjectHideFlags: 0
