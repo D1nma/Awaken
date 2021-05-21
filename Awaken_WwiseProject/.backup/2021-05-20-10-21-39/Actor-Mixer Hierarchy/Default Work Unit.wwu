@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0DD53A21-0849-491B-A756-EDFC939DEA8D}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{0DD53A21-0849-491B-A756-EDFC939DEA8D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="musique_ambience_001" ID="{DCA110A1-D545-4E2F-9AE0-842D5D9808BA}" ShortID="485104161">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="musique_ambience_001" ID="{F68CB0B5-F4B7-4C67-B05B-8EB42FA7615A}">
+							<Language>SFX</Language>
+							<AudioFile>musique_ambience_001.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="229910191"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="musique_ambience_001" ID="{F68CB0B5-F4B7-4C67-B05B-8EB42FA7615A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
