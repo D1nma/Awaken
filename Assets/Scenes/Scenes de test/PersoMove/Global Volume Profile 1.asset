@@ -48,8 +48,8 @@ MonoBehaviour:
   - {fileID: -2771626615259351225}
   - {fileID: 8562915372595326582}
   - {fileID: 2705247286319488063}
-  - {fileID: 5601288404431281285}
   - {fileID: 7905447635090303841}
+  - {fileID: 3405718740982466555}
 --- !u!114 &2705247286319488063
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -69,11 +69,11 @@ MonoBehaviour:
     m_Value: 1
   gaussianStart:
     m_OverrideState: 1
-    m_Value: 34.1
+    m_Value: 34.3
     min: 0
   gaussianEnd:
     m_OverrideState: 1
-    m_Value: 82.78
+    m_Value: 49
     min: 0
   gaussianMaxRadius:
     m_OverrideState: 1
@@ -112,7 +112,7 @@ MonoBehaviour:
     m_Value: 0
     min: -180
     max: 180
---- !u!114 &5601288404431281285
+--- !u!114 &3405718740982466555
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,16 +121,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81180773991d8724ab7f2d216912b564, type: 3}
-  m_Name: ChromaticAberration
+  m_Script: {fileID: 11500000, guid: 221518ef91623a7438a71fef23660601, type: 3}
+  m_Name: WhiteBalance
   m_EditorClassIdentifier: 
   active: 1
   m_AdvancedMode: 0
-  intensity:
+  temperature:
+    m_OverrideState: 1
+    m_Value: -28
+    min: -100
+    max: 100
+  tint:
     m_OverrideState: 1
     m_Value: 0
-    min: 0
-    max: 1
+    min: -100
+    max: 100
 --- !u!114 &7905447635090303841
 MonoBehaviour:
   m_ObjectHideFlags: 3

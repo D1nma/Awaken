@@ -9,6 +9,41 @@
 							<ObjectRef Name="System" ID="{65710D70-9573-4809-8ABC-8C2BBD43CE1F}" WorkUnitID="{3A2802EF-3337-4F40-9B5E-59823F091E11}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="SFX" ID="{952E1AC9-621E-4698-8085-EF7264D8ADD9}">
+							<ChildrenList>
+								<Bus Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="10"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="4"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Ambiance" ID="{32B23DCB-563F-4834-A7A5-2222FB1C21AB}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="1"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ObjectLists/>
+								</Bus>
+							</ChildrenList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Reverb" ID="{1FB1B547-DD78-43C0-BBCD-07E7DB9D2927}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="3"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ObjectLists/>
+						</Bus>
+					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>

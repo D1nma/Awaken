@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{591B94A3-5334-4A97-A1C6-21143DB977F6}" SchemaVersion="103" RootDocumentID="{0DD53A21-0849-491B-A756-EDFC939DEA8D}" ParentDocumentID="{0DD53A21-0849-491B-A756-EDFC939DEA8D}">
+	<AudioObjects>
+		<WorkUnit Name="Environnement" ID="{591B94A3-5334-4A97-A1C6-21143DB977F6}" OwnerID="{0DD53A21-0849-491B-A756-EDFC939DEA8D}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<ActorMixer Name="Mixer_Environnement" ID="{7E5EE95F-EC9C-4B4B-9277-9DA55B1607CA}" ShortID="468725078">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

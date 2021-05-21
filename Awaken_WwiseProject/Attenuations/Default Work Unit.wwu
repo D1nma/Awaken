@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{62B3FD83-C3F8-4379-A334-6EFD920EC57A}" SchemaVersion="103">
 	<Attenuations>
-		<WorkUnit Name="Default Work Unit" ID="{62B3FD83-C3F8-4379-A334-6EFD920EC57A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{62B3FD83-C3F8-4379-A334-6EFD920EC57A}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Character" ID="{B9AB79F3-1B45-4C64-8231-C9923EF66636}" PersistMode="Reference"/>
+				<WorkUnit Name="Environnement" ID="{D6EB7B8A-FC28-46E1-8B64-995F93579E3C}" PersistMode="Reference"/>
+				<WorkUnit Name="Ambiance" ID="{81305BB3-FBE6-4071-BC67-D31A101A5AB6}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Attenuations>
 </WwiseDocument>

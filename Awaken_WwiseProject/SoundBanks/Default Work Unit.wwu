@@ -4,14 +4,43 @@
 		<WorkUnit Name="Default Work Unit" ID="{A46BAF03-E5ED-4BBF-92D2-5D6E7E04562F}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="Ambiance" ID="{7E70CEA4-F455-4432-BAE9-67DF0E6A9861}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ObjectInclusionList>
-						<ObjectRef Name="Ambiance" ID="{87223922-8F72-49D9-89B8-6A455899ABAD}" WorkUnitID="{22D74B52-F72B-42D8-84D7-B0A1A9071DEE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ambiance" ID="{B2002B48-84B3-44E9-A30E-6AB42ADE9597}" WorkUnitID="{B2002B48-84B3-44E9-A30E-6AB42ADE9597}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ambiance" ID="{761D3002-2F80-474F-B7F3-4E89FDD14607}" WorkUnitID="{761D3002-2F80-474F-B7F3-4E89FDD14607}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
-				<SoundBank Name="Footstep" ID="{4157E39D-1FE1-4F1B-91E0-1DC9982C7936}">
+				<SoundBank Name="test" ID="{02734D4F-FABB-481C-A5EA-0501FDF99057}">
 					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Environnement" ID="{E79F0FD5-F921-46FB-8F3C-C8BACB49B70D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="Environnement" ID="{90659C0B-C694-43ED-BECE-16702A7786FC}" WorkUnitID="{90659C0B-C694-43ED-BECE-16702A7786FC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Environnement" ID="{591B94A3-5334-4A97-A1C6-21143DB977F6}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Character" ID="{C3B70E42-D899-4566-8939-E5B1D21EF68B}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="Character" ID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Character" ID="{B726B7D1-2BB6-4DBC-87A5-6D25AC596348}" WorkUnitID="{B726B7D1-2BB6-4DBC-87A5-6D25AC596348}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

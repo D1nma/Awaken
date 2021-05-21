@@ -24,10 +24,9 @@ public class SoundsManager : MonoBehaviour
         else
         {
             instance = this;
-            //DontDestroyOnLoad(gameObject); //la cam gameManager ne se met pas sur la nouvelle scène
         }
 
-        /*foreach (Sound s in sounds)
+        /*foreach (Sound s in sounds) //Sans utiliser Wwise
         {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
@@ -36,8 +35,8 @@ public class SoundsManager : MonoBehaviour
     }
     void Start()
     {
-        //Play("MainTheme");
-        if (SceneManager.GetActiveScene().buildIndex == 1) { AkSoundEngine.PostEvent("Ambiance", gameObject); }
+        //Play("MainTheme"); //Sans utiliser Wwise
+        //if (SceneManager.GetActiveScene().buildIndex == 1) { AkSoundEngine.PostEvent("Ambiance", gameObject); } //Sans utiliser Wwise
     }
 
     // Update is called once per frame
@@ -46,7 +45,7 @@ public class SoundsManager : MonoBehaviour
         
     }
 
-    /*public void Play(string sound)
+    /*public void Play(string sound) //Sans utiliser Wwise
     {
         Sound s = Array.Find(sounds, item => item.name == sound);
         if(s == null)

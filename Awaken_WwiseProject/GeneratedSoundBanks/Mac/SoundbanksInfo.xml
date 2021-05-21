@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\Awaken Projet\Awaken - Copie\Awaken_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Awaken Projet\Awaken - Copie\Awaken_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Awaken Projet\Awaken - Copie\Awaken_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\Projet Awaken\Awaken\Awaken_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Projet Awaken\Awaken\Awaken_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Projet Awaken\Awaken\Awaken_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Awaken Projet\Awaken - Copie\Awaken_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Projet Awaken\Awaken\Awaken_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2953616821">
+		<SoundBank Id="436743010" Language="SFX" Hash="4019301076">
+			<ObjectPath>\SoundBanks\Default Work Unit\Character</ObjectPath>
+			<ShortName>Character</ShortName>
+			<Path>Character.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1122133769">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1866025847" Language="SFX" Hash="3196959535">
-			<ObjectPath>\SoundBanks\Default Work Unit\Footstep</ObjectPath>
-			<ShortName>Footstep</ShortName>
-			<Path>Footstep.bnk</Path>
+		<SoundBank Id="2530157555" Language="SFX" Hash="1426977689">
+			<ObjectPath>\SoundBanks\Default Work Unit\Environnement</ObjectPath>
+			<ShortName>Environnement</ShortName>
+			<Path>Environnement.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2981377429" Language="SFX" Hash="47198181">
+		<SoundBank Id="2981377429" Language="SFX" Hash="3977760789">
 			<ObjectPath>\SoundBanks\Default Work Unit\Ambiance</ObjectPath>
 			<ShortName>Ambiance</ShortName>
 			<Path>Ambiance.bnk</Path>
-			<IncludedEvents>
-				<Event Id="2981377429" Name="Ambiance" ObjectPath="\Events\Default Work Unit\Ambiance" DurationType="OneShot" DurationMin="219.207596" DurationMax="219.207596">
-					<IncludedMemoryFiles>
-						<File Id="229910191" Language="SFX">
-							<ShortName>musique_ambience_001.wav</ShortName>
-							<Path>SFX\musique_ambience_001_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3157003241" Language="SFX" Hash="2712263034">
+			<ObjectPath>\SoundBanks\Default Work Unit\test</ObjectPath>
+			<ShortName>test</ShortName>
+			<Path>test.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

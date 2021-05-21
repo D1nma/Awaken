@@ -3,17 +3,10 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{22D74B52-F72B-42D8-84D7-B0A1A9071DEE}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Ambiance" ID="{87223922-8F72-49D9-89B8-6A455899ABAD}">
-					<ChildrenList>
-						<Action Name="" ID="{B5BC372B-5521-4863-8469-996B7BE4BEB2}" ShortID="320889964">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="musique_ambience_001" ID="{DCA110A1-D545-4E2F-9AE0-842D5D9808BA}" WorkUnitID="{0DD53A21-0849-491B-A756-EDFC939DEA8D}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				<Folder Name="Test" ID="{A476458D-599C-4305-BC0E-D24C040D5AD3}" ShortID="192275170"/>
+				<WorkUnit Name="Environnement" ID="{90659C0B-C694-43ED-BECE-16702A7786FC}" PersistMode="Reference"/>
+				<WorkUnit Name="Ambiance" ID="{761D3002-2F80-474F-B7F3-4E89FDD14607}" PersistMode="Reference"/>
+				<WorkUnit Name="Character" ID="{B726B7D1-2BB6-4DBC-87A5-6D25AC596348}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
