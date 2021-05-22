@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 6959946338271817602}
   - component: {fileID: 5865225074001373609}
   - component: {fileID: 7132754972687122886}
+  - component: {fileID: 5378760971771593389}
   m_Layer: 0
-  m_Name: plante_4_2 (2)
+  m_Name: plante_4_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,10 +52,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,3 +82,23 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!205 &5378760971771593389
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5280052079946003368}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.005305648, y: 0.5404962, z: 0.043583155}
+  m_Size: 1.6167486
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.044334356
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7132754972687122886}
+  m_Enabled: 1
