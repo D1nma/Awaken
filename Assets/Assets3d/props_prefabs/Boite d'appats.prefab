@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 731329738}
   - component: {fileID: 731329737}
   - component: {fileID: 948811791794537458}
+  - component: {fileID: 6434767290162324959}
   m_Layer: 0
   m_Name: Boite d'appats
   m_TagString: Untagged
@@ -244,6 +245,7 @@ MonoBehaviour:
   "DialogueCl\xE9": {fileID: 0}
   DialogueTrigger: {fileID: 0}
   DialogueAppat1: {fileID: 0}
+  DialogueAide: {fileID: 0}
   InteragirText: {fileID: 0}
 --- !u!205 &948811791794537458
 LODGroup:
@@ -265,3 +267,21 @@ LODGroup:
     - renderer: {fileID: 3180726894551373831}
     - renderer: {fileID: 3882637150580231273}
   m_Enabled: 1
+--- !u!114 &6434767290162324959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8871480233197583400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 3
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []

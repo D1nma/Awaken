@@ -58,6 +58,7 @@ MonoBehaviour:
   Interagir: 0
   Avertissement: 1
   canMove: 0
+  NotDestroy: 0
 --- !u!135 &977525313
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -84,6 +85,7 @@ GameObject:
   - component: {fileID: 4065091882201576260}
   - component: {fileID: 4065091882201576261}
   - component: {fileID: 4065091882201576262}
+  - component: {fileID: 6223048538664683175}
   m_Layer: 0
   m_Name: Canne
   m_TagString: Untagged
@@ -172,6 +174,8 @@ MonoBehaviour:
   invent: {fileID: 0}
   "DialogueCl\xE9": {fileID: 0}
   DialogueTrigger: {fileID: 0}
+  DialogueAppat1: {fileID: 0}
+  DialogueAide: {fileID: 0}
   InteragirText: {fileID: 0}
 --- !u!135 &4065091882201576262
 SphereCollider:
@@ -186,3 +190,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 5.84
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6223048538664683175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4065091882201576263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []

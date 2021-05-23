@@ -19,7 +19,6 @@ public class Tips : MonoBehaviour
         {
 
             instance = this;
-            DontDestroyOnLoad(instance);
         }
         else
         {
