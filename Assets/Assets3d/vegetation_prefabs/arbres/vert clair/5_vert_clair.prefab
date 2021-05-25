@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4182938693389412873}
   - component: {fileID: 982650039228261804}
   - component: {fileID: 3046654674932961638}
-  - component: {fileID: 3550833463257346253}
   - component: {fileID: 3403284910530003241}
   m_Layer: 0
   m_Name: 5_vert_clair
@@ -84,20 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3550833463257346253
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3550833463257346227}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1593996420852118269, guid: 80e0f68cfa4857941850f00e3ca209a5, type: 3}
 --- !u!205 &3403284910530003241
 LODGroup:
   m_ObjectHideFlags: 0

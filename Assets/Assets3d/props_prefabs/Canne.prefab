@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 4065091882201576261}
   - component: {fileID: 4065091882201576262}
   - component: {fileID: 6223048538664683175}
+  - component: {fileID: -7085272576851927627}
   m_Layer: 0
   m_Name: Canne
   m_TagString: Untagged
@@ -208,3 +209,16 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &-7085272576851927627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4065091882201576263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d19a2b915f8124cb8abb4e3ed905d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  watchMe: 1

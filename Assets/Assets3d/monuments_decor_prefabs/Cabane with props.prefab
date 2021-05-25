@@ -32,116 +32,6 @@ MonoBehaviour:
   minIntensity: 0.8
   maxIntensity: 1
   smoothing: 12
---- !u!1 &3042743300969670876
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4464085547736022558}
-  - component: {fileID: 4422027119755400748}
-  - component: {fileID: 5467387774632218594}
-  m_Layer: 0
-  m_Name: Spot Light (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &4464085547736022558
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3042743300969670876}
-  m_LocalRotation: {x: 0.23441795, y: 0.6627939, z: -0.66729313, w: 0.24591163}
-  m_LocalPosition: {x: 0.018078446, y: 2.289444, z: 1.0237751}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5322322938751838520}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 89, y: 48.766, z: -91.522}
---- !u!108 &4422027119755400748
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3042743300969670876}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 0
-  m_Shape: 0
-  m_Color: {r: 0.9960785, g: 0.90196085, b: 0.6117647, a: 1}
-  m_Intensity: 20
-  m_Range: 10
-  m_SpotAngle: 145.4451
-  m_InnerSpotAngle: 115.44507
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294959103
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 2
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 1.9552277e-33, z: 4.5905e-41, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 10
-  m_ShadowAngle: 0
---- !u!114 &5467387774632218594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3042743300969670876}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 221a6f03dd53e1242a246c9a6cf5585a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  light: {fileID: 4422027119755400748}
-  minIntensity: 0.8
-  maxIntensity: 1
-  smoothing: 12
 --- !u!1 &5619237339548190628
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,6 +737,12 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2902285457913392068, guid: ba1c0666764a4ce498d6f88ad2c83bdd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ba1c0666764a4ce498d6f88ad2c83bdd, type: 3}
+--- !u!4 &2170471487447960564 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9211818632659375211, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
+    type: 3}
+  m_PrefabInstance: {fileID: 7046414244548419487}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1530838765414103851 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8428282000563512500, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
@@ -856,12 +752,6 @@ GameObject:
 --- !u!108 &397192726625362660 stripped
 Light:
   m_CorrespondingSourceObject: {fileID: 7226862065037622651, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
-    type: 3}
-  m_PrefabInstance: {fileID: 7046414244548419487}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2170471487447960564 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9211818632659375211, guid: ba1c0666764a4ce498d6f88ad2c83bdd,
     type: 3}
   m_PrefabInstance: {fileID: 7046414244548419487}
   m_PrefabAsset: {fileID: 0}
