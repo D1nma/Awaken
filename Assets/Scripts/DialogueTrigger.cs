@@ -102,6 +102,7 @@ public class DialogueTrigger : MonoBehaviour
         }
         if (other.tag == "Player")
         { start = false; }
+        if (other.tag != "Player") { return; }
     }
 
 }

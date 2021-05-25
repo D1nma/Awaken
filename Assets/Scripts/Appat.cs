@@ -87,7 +87,7 @@ public class Appat : MonoBehaviour
 
         if (player.tag == "Player")
         {
-            if (InteragirText != null && !open && invent.Keyvolee)
+            if (InteragirText != null && !open && invent.Keyvolee && invent.boite)
             {
                 invent.DialogueAppat.SetActive(true);
                 InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur E pour intéragir";

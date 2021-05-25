@@ -11,14 +11,14 @@ GameObject:
   - component: {fileID: 1816058385232973403}
   - component: {fileID: 3358617627393081854}
   - component: {fileID: 682510461600642356}
-  - component: {fileID: -8895218033948276864}
   - component: {fileID: 3615111929836688239}
+  - component: {fileID: 7889303182058995001}
   m_Layer: 0
   m_Name: tronc 03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &1816058385232973403
 Transform:
@@ -84,20 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &-8895218033948276864
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330883878874649825}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1232866759676046226, guid: 83ea5ae0c465f3545b47a9168d5d4ea9, type: 3}
 --- !u!205 &3615111929836688239
 LODGroup:
   m_ObjectHideFlags: 0
@@ -112,8 +98,21 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.01330828
+  - screenRelativeHeight: 0.17427643
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 682510461600642356}
   m_Enabled: 1
+--- !u!65 &7889303182058995001
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330883878874649825}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.9106216, y: 0.9393847, z: 0.77}
+  m_Center: {x: -0.13065654, y: 0.26642162, z: 0.07}

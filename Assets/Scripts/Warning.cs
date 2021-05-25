@@ -14,21 +14,6 @@ public class Warning : MonoBehaviour
     private float time = 0;
     private bool show = false;
 
-    private static Warning instance;
-    void Awake()
-    {
-        if (instance == null)
-        {
-
-            instance = this;
-            DontDestroyOnLoad(instance);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
     void Start()
     {
         warningText.GetComponent<Text>().text = warning.ToString();
@@ -68,7 +53,7 @@ public class Warning : MonoBehaviour
         }
         if (show)
         {
-            if (warningText != null && warning != null)
+            if (warningText != null)
             {
                 warningText.SetActive(true);
             }
@@ -91,10 +76,11 @@ public class Warning : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
-        {
+        {           
             StartFog = true;
             show = true;
         }
+        if (other.tag != "Player") { return; }
 
     }
     private void OnTriggerExit(Collider other)
@@ -104,7 +90,7 @@ public class Warning : MonoBehaviour
             StartFog = false;
             show = false;
         }
-
+        if (other.tag != "Player") { return; }
     }
 
 }

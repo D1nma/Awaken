@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Huile : MonoBehaviour
 {
+    public GameObject InteragirText;
     private LampeHuile lampeHuile;
+
+    private bool dispo;
     // Start is called before the first frame update
     void Start()
     {
-
+        dispo = false;
     }
 
     // Update is called once per frame
@@ -18,18 +22,35 @@ public class Huile : MonoBehaviour
         {
             lampeHuile = GameObject.Find("Lampe à huile").GetComponent<LampeHuile>();
         }
-
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player" && lampeHuile.EnMain)
+        if (Input.GetKeyDown(KeyCode.E) && dispo)
         {
-            
             lampeHuile.nbRecharges += 1;
             Debug.Log("Recharge huile : " + lampeHuile.nbRecharges);
             Destroy(this.gameObject);
         }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player" && lampeHuile.EnMain && !dispo)
+        {
+            dispo = true;
+            InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur E pour prendre la recharge";
+            InteragirText.SetActive(true);
+        }
 
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            if (InteragirText != null)
+            {
+                InteragirText.SetActive(false);
+                dispo = false;
+
+            }
+        }
+        if (other.tag != "Player") { return; }
     }
 
 }

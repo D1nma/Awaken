@@ -22,5 +22,6 @@ public class DeleteMe : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if (other.tag != "Player") { return; }
     }
 }

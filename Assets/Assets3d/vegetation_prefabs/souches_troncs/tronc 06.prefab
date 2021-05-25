@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5875031191405142355}
   - component: {fileID: 7361017216885862134}
   - component: {fileID: 4738738303842703932}
-  - component: {fileID: 2256773951789670869}
   - component: {fileID: 3454827969947489128}
+  - component: {fileID: 8393096648924476215}
   m_Layer: 0
   m_Name: tronc 06
   m_TagString: Untagged
@@ -84,20 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2256773951789670869
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6540243781600115689}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2123696627336008252, guid: 5830b1c88f8f4d1459cfad841ac3ae85, type: 3}
 --- !u!205 &3454827969947489128
 LODGroup:
   m_ObjectHideFlags: 0
@@ -106,16 +92,27 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6540243781600115689}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.00006109476, y: 2.2660205, z: -1.9282137}
-  m_Size: 4.629332
+  m_LocalReferencePoint: {x: -0.000000059604645, y: 0.18406337, z: 0.015655518}
+  m_Size: 1.2654681
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.01330828
+  - screenRelativeHeight: 0.18033741
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 4738738303842703932}
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
   m_Enabled: 1
+--- !u!65 &8393096648924476215
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6540243781600115689}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2654675, y: 0.46544832, z: 0.59727055}
+  m_Center: {x: -0.000015318394, y: 0.18407866, z: 0.015655475}

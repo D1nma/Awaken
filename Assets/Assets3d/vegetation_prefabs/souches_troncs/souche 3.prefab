@@ -11,14 +11,14 @@ GameObject:
   - component: {fileID: 8858514105132994155}
   - component: {fileID: 4054388795918146275}
   - component: {fileID: 9146904185692623687}
-  - component: {fileID: 6051505846929170802}
   - component: {fileID: 6456437784253437553}
+  - component: {fileID: 6855852920418616423}
   m_Layer: 0
   m_Name: souche 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &8858514105132994155
 Transform:
@@ -84,20 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6051505846929170802
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8468145957182164995}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7334992219696970277, guid: 56c2d273aaedff64299760b53b311574, type: 3}
 --- !u!205 &6456437784253437553
 LODGroup:
   m_ObjectHideFlags: 0
@@ -112,8 +98,21 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.0060343393
+  - screenRelativeHeight: 0.12436344
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 9146904185692623687}
   m_Enabled: 1
+--- !u!65 &6855852920418616423
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8468145957182164995}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.51, y: 1.4069066, z: 1.38}
+  m_Center: {x: 0.01, y: 0.5737945, z: -0.02}

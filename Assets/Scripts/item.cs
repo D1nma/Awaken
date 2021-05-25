@@ -139,6 +139,7 @@ public class item : MonoBehaviour
 
             }
         }
+        if (player.tag != "Player") { return; }
     }
     private void OnTriggerExit(Collider other)
     {
@@ -151,5 +152,6 @@ public class item : MonoBehaviour
             
             }
         }
+        if (other.tag != "Player") { return; }
     }
 }

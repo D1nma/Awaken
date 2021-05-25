@@ -6,6 +6,8 @@ public class OutOfPosition : MonoBehaviour
 {
 
     private GameManager gm;
+    public GameObject player;
+    public CharacterController cc;
     private UIManager ui;
     private bool show = false;
     public static bool enter=false;
@@ -15,9 +17,17 @@ public class OutOfPosition : MonoBehaviour
     {
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         ui = GameObject.Find("Canvas").GetComponent<UIManager>();
+        Setup();
         enter = false;
         show = false;
         time = 0;
+    }
+
+    IEnumerator Setup()
+    {
+        yield return new WaitForSeconds(5);
+        player = GameObject.FindGameObjectWithTag("Player");
+        cc = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>();
     }
 
 
@@ -33,7 +43,11 @@ public class OutOfPosition : MonoBehaviour
             show = false;
             ui.Respawn.SetActive(false);
             time = 0;
-            enter = false;
+        }
+        if (enter)
+        {
+            PlayersController.canControl = false;
+            gm.Replace();
         }
         if (time >= 3)
         {
@@ -42,11 +56,6 @@ public class OutOfPosition : MonoBehaviour
             time = 0;
             enter = false;
         }
-        if (enter)
-        {
-            PlayersController.canControl = false;
-            gm.Replace();
-        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -54,10 +63,16 @@ public class OutOfPosition : MonoBehaviour
         {
             show = true;
             enter = true;
+            if (!player)
+            {
+                player = other.gameObject;
+                cc = player.GetComponent<CharacterController>();
+            }
+            
             /*Destroy(gm.Player);
             gm.SpawnPlayer();*/
         }
-        if (other.tag == null) { return; }
+        if (other.tag != "Player") { return; }
     }
 
 
@@ -67,6 +82,7 @@ public class OutOfPosition : MonoBehaviour
         {
             show = false;
         }
+        if (other.tag != "Player") { return; }
     }
 
 }

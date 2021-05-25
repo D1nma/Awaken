@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6139833635213369009}
   - component: {fileID: 8273646194642889339}
   - component: {fileID: 5636229893458930900}
+  - component: {fileID: 3496832150723480169}
   m_Layer: 0
   m_Name: tronc 02
   m_TagString: Untagged
@@ -97,8 +98,21 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.017943231
+  - screenRelativeHeight: 0.15293421
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 8273646194642889339}
   m_Enabled: 1
+--- !u!65 &3496832150723480169
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7624903204557032366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.753765, y: 1.0092973, z: 2.0672832}
+  m_Center: {x: -0.052228272, y: 0.44706413, z: 0.12837014}

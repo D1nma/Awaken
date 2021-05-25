@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "com.unity.adaptiveperformance": {
+      "version": "2.1.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.subsystemregistration": "1.1.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.animation.rigging": {
       "version": "1.0.3",
       "depth": 0,
@@ -113,6 +122,15 @@
         "com.unity.render-pipelines.core": "11.0.0",
         "com.unity.searcher": "4.3.1"
       }
+    },
+    "com.unity.subsystemregistration": {
+      "version": "1.1.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.subsystems": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
     },
     "com.unity.terrain-tools": {
       "version": "3.0.2-preview.3",

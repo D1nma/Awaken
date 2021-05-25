@@ -22,5 +22,6 @@ public class PontPasser : MonoBehaviour
         {
             dialogue.SetActive(true);
         }
+        if (other.tag != "Player") { return; }
     }
 }

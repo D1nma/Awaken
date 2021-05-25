@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8933637287970965290}
   - component: {fileID: 5500439214413482127}
   - component: {fileID: 7760136582118407237}
-  - component: {fileID: 640431486477629707}
   - component: {fileID: 2760919910675406188}
+  - component: {fileID: 8714063251023995914}
   m_Layer: 0
   m_Name: tronc 04
   m_TagString: Untagged
@@ -84,20 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &640431486477629707
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8120402906567531920}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1909823768815543460, guid: 64ae95304fe73f9409d00c887604eb2e, type: 3}
 --- !u!205 &2760919910675406188
 LODGroup:
   m_ObjectHideFlags: 0
@@ -112,8 +98,21 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.01825322
+  - screenRelativeHeight: 0.14735396
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 7760136582118407237}
   m_Enabled: 1
+--- !u!65 &8714063251023995914
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8120402906567531920}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3246112, y: 1.030386, z: 1.1}
+  m_Center: {x: -0.0006878386, y: 0.44853187, z: 0.04}

@@ -57,6 +57,7 @@ public class Tips : MonoBehaviour
             startTiming = true;
             time = 0;
         }
+        if (player.tag != "Player") { return; }
     }
 
 }
