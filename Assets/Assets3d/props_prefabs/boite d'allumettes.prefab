@@ -260,6 +260,7 @@ GameObject:
   - component: {fileID: 7024903688414646423}
   - component: {fileID: 9053651720911538563}
   - component: {fileID: 596891331138270490}
+  - component: {fileID: 7219253798659733524}
   m_Layer: 0
   m_Name: boite d'allumettes
   m_TagString: Untagged
@@ -327,6 +328,19 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &7219253798659733524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7653489351828507181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d19a2b915f8124cb8abb4e3ed905d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  watchMe: 1
 --- !u!1 &7972988833989439997
 GameObject:
   m_ObjectHideFlags: 0
