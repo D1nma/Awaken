@@ -9,13 +9,14 @@ public class PlayerStress : MonoBehaviour
     GameObject player;
     GameManager gm;
     public GameObject DialogueStress;
+    public GameObject DialogueLampeEteint;
     public StressBar stressBar;
     public bool dead = false;
     public bool NotSafe = true,Safe =false;
     public static bool LH= false;
     public int SafeValeur = 20;
     public int NotSafeValeur = 40;
-    bool done,fait,dialogue=false;
+    bool done,fait,dialogue=false,dialogue2 = false;
     public float lookRadius = 8f;
     float time;
     bool useTime;
@@ -155,6 +156,16 @@ public class PlayerStress : MonoBehaviour
                 {
                     DialogueStress.SetActive(false);
                     dialogue = false;
+                }
+                if(currentStress > 60 && currentStress < 80 && !dialogue2)
+                {
+                    DialogueLampeEteint.SetActive(true);
+                    dialogue2 = true;
+                }
+                if(currentStress < 60 || currentStress > 80)
+                {
+                    DialogueLampeEteint.SetActive(false);
+                    dialogue2 = false;
                 }
             }
         }
