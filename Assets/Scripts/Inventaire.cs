@@ -69,6 +69,7 @@ public class Inventaire : MonoBehaviour
         if (boite)
         {
             boiteUI.SetActive(true);
+
         }
         if (champi)
         {
@@ -87,6 +88,7 @@ public class Inventaire : MonoBehaviour
                 keyUI.SetActive(true);
                 PlayersController.canControl = false;
                 Keyvolee = true;
+                RocherOiseau.rocherDialogue = true;
                 StartCoroutine(BirdKey(6));
             }
             else

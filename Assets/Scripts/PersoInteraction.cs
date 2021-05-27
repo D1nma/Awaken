@@ -169,6 +169,11 @@ public class PersoInteraction : MonoBehaviour
                 }
                 canInteract = true;
             }
+            else if (invent.Keyvolee && Appat.fait == false)
+            {
+                InteragirText.gameObject.GetComponent<Text>().text = "Il faut placer la boîte d'appât pour attirer l'oiseau";
+                InteragirText.SetActive(true);
+            }
         }
     }
     private void OnTriggerExit(Collider other)

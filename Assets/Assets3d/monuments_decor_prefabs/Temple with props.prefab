@@ -1,85 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &633634474
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 633634475}
-  - component: {fileID: 633634477}
-  - component: {fileID: 633634476}
-  m_Layer: 13
-  m_Name: DialogueTemple
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &633634475
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633634474}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5998183713160636014}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &633634477
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633634474}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 10.53
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &633634476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633634474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 808de7eb2c5d75444812d659d03030e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Alyx
-    name2: "Voie myst\xE9rieuse.."
-    sentences:
-    - sentences: "Quel b\xE2timent \xE9trange\u2026 Tiens, regarde sur la table l\xE0
-        bas. Tu vois ce que je vois ? un flacon d\u2019huile et une bo\xEEte d\u2019allumettes!
-        Pile ce qui nous fallait.\r\nAvec \xE7a, la lumi\xE8re tiendra un peu plus
-        longtemps.\r\n"
-      next: 1
-    - sentences: "Mais il y a des ronces partout\u2026"
-      next: 0
-    - sentences: "Hum\u2026 c\u2019est vrai, mais, toute menue comme tu es, tu devrais
-        pouvoir te faufiler en dessous des ronces. "
-      next: 1
-    - sentences: "Bon\u2026 quand il faut y aller\u2026 il faut y aller, je suppose\u2026"
-      next: 0
-    isQuestion: 0
-  question: {fileID: 0}
-  InteragirText: {fileID: 0}
-  Interagir: 0
-  Avertissement: 1
-  canMove: 1
-  NotDestroy: 0
 --- !u!1 &661071456479564514
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +126,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4500079973652540219}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &344649969640434283
 SphereCollider:
@@ -756,7 +676,6 @@ Transform:
   - {fileID: 4319543058938553595}
   - {fileID: 6605896399177640140}
   - {fileID: 3185989223559656879}
-  - {fileID: 633634475}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -13.120001, z: 0}
@@ -845,6 +764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a00db936c75cd34583a3d7edecd97fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteragirText: {fileID: 0}
   DialogueAllumette: {fileID: 815837341585473511}
 --- !u!1 &4265515758029986800
 GameObject:
@@ -1356,6 +1276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3d9267bfde31244d9b2024ad496c88f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteragirText: {fileID: 0}
 --- !u!135 &2039430148137062762
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3112,15 +3033,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17edabe3063e33842a0d2b6f60a5ec24, type: 3}
---- !u!1 &3835006708457468289 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7653489351828507181, guid: 17edabe3063e33842a0d2b6f60a5ec24,
-    type: 3}
-  m_PrefabInstance: {fileID: 6849419005206330284}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4500079973652540219 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7024903688414646423, guid: 17edabe3063e33842a0d2b6f60a5ec24,
+    type: 3}
+  m_PrefabInstance: {fileID: 6849419005206330284}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3835006708457468289 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7653489351828507181, guid: 17edabe3063e33842a0d2b6f60a5ec24,
     type: 3}
   m_PrefabInstance: {fileID: 6849419005206330284}
   m_PrefabAsset: {fileID: 0}
