@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7781190993094200958}
   - component: {fileID: 5483309235821984436}
   - component: {fileID: 73801873423532178}
+  - component: {fileID: 3351546135657986688}
   m_Layer: 0
   m_Name: "6_vert_fonc\xE9"
   m_TagString: Untagged
@@ -102,3 +103,16 @@ LODGroup:
     renderers:
     - renderer: {fileID: 5483309235821984436}
   m_Enabled: 1
+--- !u!65 &3351546135657986688
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6275868071389698913}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8, y: 20, z: 8}
+  m_Center: {x: 0, y: 10, z: 0}

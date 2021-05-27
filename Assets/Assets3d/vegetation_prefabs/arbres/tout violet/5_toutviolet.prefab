@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7919487136299451117}
   - component: {fileID: 5333208495249913383}
   - component: {fileID: 8419826897411086573}
+  - component: {fileID: 2638994568430133730}
   m_Layer: 0
   m_Name: 5_toutviolet
   m_TagString: Untagged
@@ -102,3 +103,16 @@ LODGroup:
     renderers:
     - renderer: {fileID: 5333208495249913383}
   m_Enabled: 1
+--- !u!65 &2638994568430133730
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5837686213449406450}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8, y: 20, z: 8}
+  m_Center: {x: 0, y: 10, z: 0}

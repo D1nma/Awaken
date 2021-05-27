@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4559335525249501174}
   - component: {fileID: 1775250347535643452}
   - component: {fileID: 6309860248387860658}
+  - component: {fileID: 7278053619488176162}
   m_Layer: 0
   m_Name: 10_bleu_clair
   m_TagString: Untagged
@@ -102,3 +103,16 @@ LODGroup:
     renderers:
     - renderer: {fileID: 1775250347535643452}
   m_Enabled: 1
+--- !u!65 &7278053619488176162
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261781319656116969}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8, y: 20, z: 8}
+  m_Center: {x: 0, y: 10, z: 0}

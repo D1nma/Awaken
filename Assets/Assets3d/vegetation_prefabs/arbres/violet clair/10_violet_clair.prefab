@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 120991331156878147}
   - component: {fileID: 2758788681456228233}
   - component: {fileID: 6792244899359768889}
+  - component: {fileID: 2588252122687305224}
   m_Layer: 0
   m_Name: 10_violet_clair
   m_TagString: Untagged
@@ -102,3 +103,16 @@ LODGroup:
     renderers:
     - renderer: {fileID: 2758788681456228233}
   m_Enabled: 1
+--- !u!65 &2588252122687305224
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416293732781831772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8, y: 20, z: 8}
+  m_Center: {x: 0, y: 10, z: 0}

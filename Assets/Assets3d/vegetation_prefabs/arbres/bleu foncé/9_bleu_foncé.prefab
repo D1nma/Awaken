@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7098672952848839246}
   - component: {fileID: 5001100297945908868}
   - component: {fileID: 2673166270079654005}
+  - component: {fileID: 2060343403816135596}
   m_Layer: 0
   m_Name: "9_bleu_fonc\xE9"
   m_TagString: Untagged
@@ -102,3 +103,16 @@ LODGroup:
     renderers:
     - renderer: {fileID: 5001100297945908868}
   m_Enabled: 1
+--- !u!65 &2060343403816135596
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6802553412128155473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8, y: 20, z: 8}
+  m_Center: {x: 0, y: 10, z: 0}

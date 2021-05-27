@@ -9,6 +9,7 @@ public class PnjGrenouille : MonoBehaviour
     private NavMeshAgent _agent;
     public GameObject player;
     public float PnjDistanceRun = 4f;
+    private bool PowerOn;
     float oldSpeed, x, z, time, timeAlea;
     public float speedNav = 3f,oldSpeedNav;
     bool timeGo, Destination, setTime = false;
@@ -27,6 +28,7 @@ public class PnjGrenouille : MonoBehaviour
         time = 0;
         timeAlea = Random.Range(4f, 15f);
         setTime = true;
+        PowerOn = false;
     }
     IEnumerator AfterInstance()
     {
@@ -41,82 +43,85 @@ public class PnjGrenouille : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player)
+        if (PowerOn)
         {
-            float distance = Vector3.Distance(transform.position, player.transform.position);
-
-            if (distance < PnjDistanceRun)
+            if (player)
             {
-                _agent.speed = _agent.speed * 2;
-                _animator.SetFloat("Speed", speedNav * 2);
-                _animator.SetBool("Walk", true);
-                Vector3 dirToPlayer = transform.position - player.transform.position;
-                Vector3 newPos = transform.position + dirToPlayer;
+                float distance = Vector3.Distance(transform.position, player.transform.position);
 
-                _agent.SetDestination(newPos);
+                if (distance < PnjDistanceRun)
+                {
+                    _agent.speed = _agent.speed * 2;
+                    _animator.SetFloat("Speed", speedNav * 2);
+                    _animator.SetBool("Walk", true);
+                    Vector3 dirToPlayer = transform.position - player.transform.position;
+                    Vector3 newPos = transform.position + dirToPlayer;
+
+                    _agent.SetDestination(newPos);
+                    _agent.isStopped = false;
+                }
+                else
+                {
+                    _agent.speed = oldSpeed;
+                    speedNav = oldSpeedNav;
+                    _animator.SetFloat("Speed", speedNav);
+                }
+                if (distance < PnjDistanceRun / 2)
+                {
+                    _agent.speed = _agent.speed * 4;
+                    _animator.SetFloat("Speed", speedNav * 4);
+                }
+                else
+                {
+                    _agent.speed = oldSpeed;
+                    speedNav = oldSpeedNav;
+                    _animator.SetFloat("Speed", speedNav);
+                }
+            }
+            if (timeGo)
+            {
+                //Debug.Log("le temps tourne");
+                time += Time.deltaTime;
+                //Debug.Log(timeAlea);
+            }
+            if (time >= timeAlea)
+            {
+                //Debug.Log("Pause fini");
+                _animator.SetBool("Walk", false);
+                timeGo = false;
+                time = 0;
                 _agent.isStopped = false;
+                setTime = false;
+                Destination = true;
+            }
+            if (_agent.isStopped)
+            {
+                _animator.SetBool("Walk", false);
+                TempsAlea();
+                timeGo = true;
+            }
+            if (Destination)
+            {
+                //Debug.Log("je trouve une destination");
+                x = Random.Range(transform.position.x - 2, transform.position.x + 2);
+                z = Random.Range(transform.position.z - 2, transform.position.z + 2);
+                randomPosition = new Vector3(x, transform.position.y, z);
+                _agent.SetDestination(randomPosition);
+                _agent.isStopped = false;
+                _animator.SetBool("Walk", true);
+                Destination = false;
+            }
+            if (_agent.remainingDistance > 0.1f)
+            {
+                //_animator.SetBool("Walk", true);
+                //Debug.Log(_agent.remainingDistance);
             }
             else
             {
-                _agent.speed = oldSpeed;
-                speedNav = oldSpeedNav;
-                _animator.SetFloat("Speed", speedNav);
+                //Debug.Log("Je suis proche");
+                _animator.SetBool("Walk", false);
+                _agent.isStopped = true;
             }
-            if (distance < PnjDistanceRun / 2)
-            {
-                _agent.speed = _agent.speed * 4;
-                _animator.SetFloat("Speed", speedNav * 4);
-            }
-            else
-            {
-                _agent.speed = oldSpeed;
-                speedNav = oldSpeedNav;
-                _animator.SetFloat("Speed", speedNav);
-            }
-        }
-        if (timeGo)
-        {
-            //Debug.Log("le temps tourne");
-            time += Time.deltaTime;
-            //Debug.Log(timeAlea);
-        }
-        if (time >= timeAlea)
-        {
-            //Debug.Log("Pause fini");
-            _animator.SetBool("Walk", false);
-            timeGo = false;
-            time = 0;
-            _agent.isStopped = false;
-            setTime = false;
-            Destination = true;
-        }
-        if (_agent.isStopped)
-        {
-            _animator.SetBool("Walk", false);
-            TempsAlea();
-            timeGo = true;
-        }
-        if (Destination)
-        {
-            //Debug.Log("je trouve une destination");
-            x = Random.Range(transform.position.x - 2, transform.position.x + 2);
-            z = Random.Range(transform.position.z - 2, transform.position.z + 2);
-            randomPosition = new Vector3(x, transform.position.y, z);
-            _agent.SetDestination(randomPosition);
-            _agent.isStopped = false;
-            _animator.SetBool("Walk", true);
-            Destination = false;
-        }
-        if (_agent.remainingDistance > 0.1f)
-        {
-            //_animator.SetBool("Walk", true);
-            //Debug.Log(_agent.remainingDistance);
-        }
-        else
-        {
-            //Debug.Log("Je suis proche");
-            _animator.SetBool("Walk", false);
-            _agent.isStopped = true;
         }
     }
     void TempsAlea()
@@ -127,5 +132,20 @@ public class PnjGrenouille : MonoBehaviour
             setTime = true;
         }
 
+    }
+    void OnTriggerEnter(Collider player)
+    {
+
+        if (player.tag == "Player")
+        {
+            PowerOn = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            PowerOn = false;
+        }
     }
 }

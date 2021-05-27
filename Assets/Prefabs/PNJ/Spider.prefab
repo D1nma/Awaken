@@ -846,6 +846,7 @@ GameObject:
   - component: {fileID: 919132148185759137}
   - component: {fileID: 7375030692556284967}
   - component: {fileID: 5539854920787702355}
+  - component: {fileID: 5848611757150769317}
   m_Layer: 0
   m_Name: Spider
   m_TagString: Untagged
@@ -862,7 +863,7 @@ Transform:
   m_GameObject: {fileID: 7004166420514616754}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.09939, y: 0.05, z: -14.034712}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 1090535026854665408}
   - {fileID: 6202037249912015907}
@@ -1020,6 +1021,19 @@ LODGroup:
     renderers:
     - renderer: {fileID: 4650613834744226718}
   m_Enabled: 1
+--- !u!135 &5848611757150769317
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7004166420514616754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 10
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7086708185336064229
 GameObject:
   m_ObjectHideFlags: 0
