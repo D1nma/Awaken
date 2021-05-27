@@ -63,7 +63,10 @@ public class Warning : MonoBehaviour
         else
         {
             show = false;
-            warningText.SetActive(false);
+            if (warningText)
+            {
+                warningText.SetActive(false);
+            }            
         }
         if (time >= 3)
         {

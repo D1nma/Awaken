@@ -19,6 +19,7 @@ public class Checkpoint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if(show){
             ui.Checkpoint.SetActive(true);
             time += Time.deltaTime;
@@ -34,9 +35,20 @@ public class Checkpoint : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            show = true;
-            gm.lastCheckPointPos = transform.position;
-            Debug.Log("Checkpoint" + gm.lastCheckPointPos);
+            if (!gm)
+            {
+                gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+            }
+            if (!ui)
+            {
+                ui = GameObject.Find("Canvas").GetComponent<UIManager>();
+            }
+            if(ui && gm)
+            {
+                show = true;
+                gm.lastCheckPointPos = transform.position;
+                Debug.Log("Checkpoint" + gm.lastCheckPointPos);
+            }
         }
     }
     private void OnTriggerExit(Collider other)
