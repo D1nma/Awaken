@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 359809539951452790}
   - component: {fileID: 3498488900857445838}
-  - component: {fileID: 2556799193929401554}
+  - component: {fileID: 4302939231167370763}
+  - component: {fileID: 2697826053331259649}
   m_Layer: 9
   m_Name: Champi Long Low
   m_TagString: Untagged
@@ -54,7 +55,7 @@ LODGroup:
     - renderer: {fileID: 8798987080483628620}
     - renderer: {fileID: 4659190811936294958}
   m_Enabled: 1
---- !u!65 &2556799193929401554
+--- !u!65 &4302939231167370763
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -65,8 +66,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.08, y: 0.3, z: 0.08}
+  m_Center: {x: 0, y: 0.15, z: 0}
+--- !u!65 &2697826053331259649
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131982896356800716}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.42, y: 0.21, z: 0.43}
+  m_Center: {x: 0.04, y: 0.32, z: 0}
 --- !u!1 &4979603221378249385
 GameObject:
   m_ObjectHideFlags: 0

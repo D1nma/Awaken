@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 5688517996086719493}
   - component: {fileID: 7572059175488487631}
   - component: {fileID: 6314505275374784884}
-  - component: {fileID: 7013215819214948509}
+  - component: {fileID: 4846249138820101176}
+  - component: {fileID: 464421996868359877}
   m_Layer: 9
   m_Name: Champi_2_TO
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 8220661153673847066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 45.488052, y: 2.9914742, z: 345.65536}
-  m_LocalScale: {x: 32.440483, y: 32.440483, z: 32.440483}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -103,7 +104,7 @@ LODGroup:
     renderers:
     - renderer: {fileID: 7572059175488487631}
   m_Enabled: 1
---- !u!65 &7013215819214948509
+--- !u!65 &4846249138820101176
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,5 +115,18 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.32721367, y: 0.281973, z: 0.3328621}
-  m_Center: {x: -0.0020722002, y: 0.13937128, z: 0.0003284812}
+  m_Size: {x: 0.33, y: 0.095, z: 0.3}
+  m_Center: {x: 0, y: 0.232, z: 0}
+--- !u!65 &464421996868359877
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8220661153673847066}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08, y: 0.25, z: 0.08}
+  m_Center: {x: 0, y: 0.12, z: 0}

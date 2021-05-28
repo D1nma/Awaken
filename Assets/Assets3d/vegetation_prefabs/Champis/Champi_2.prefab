@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 8982521443417397635}
   - component: {fileID: 1653902566390684191}
   - component: {fileID: 8420743164724568232}
-  - component: {fileID: 5971298636547541699}
+  - component: {fileID: 5031663434971322253}
+  - component: {fileID: 3740816483806815047}
   m_Layer: 0
   m_Name: Champi_2
   m_TagString: Untagged
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419014967481500310}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.9299994, y: -0.25753403, z: 13.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1653902566390684191
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -83,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5971298636547541699
+--- !u!65 &5031663434971322253
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,5 +95,18 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.2634335, y: 2.8110268, z: 3.319918}
-  m_Center: {x: -0.020721972, y: 1.3937126, z: 0.003284812}
+  m_Size: {x: 0.6, y: 2.5, z: 0.6}
+  m_Center: {x: -0.18, y: 1.23, z: -0.045}
+--- !u!65 &3740816483806815047
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419014967481500310}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3, y: 0.9, z: 3.3}
+  m_Center: {x: -0.02, y: 2.35, z: 0.02}
