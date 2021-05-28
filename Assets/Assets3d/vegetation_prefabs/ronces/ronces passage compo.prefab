@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3842273878872582012}
   - component: {fileID: 1608365022031915564}
   - component: {fileID: 7595624112573662261}
+  - component: {fileID: 4671833420892633192}
   m_Layer: 0
   m_Name: ronce_passage
   m_TagString: Untagged
@@ -82,6 +83,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4671833420892633192
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854088441532101709}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8113768720884857512, guid: 5a022b7faeb5d9444b94a3e714385b77, type: 3}
 --- !u!1 &1402827708748570966
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,6 +108,7 @@ GameObject:
   - component: {fileID: 8961977574883450189}
   - component: {fileID: 498005399122953951}
   - component: {fileID: 1734481453572202571}
+  - component: {fileID: 6279042447199871302}
   m_Layer: 0
   m_Name: ronce4 (1)
   m_TagString: Untagged
@@ -164,6 +180,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6279042447199871302
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402827708748570966}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3531946766418785785, guid: 6df26ae5c981ab346a03ce80363b4c0b, type: 3}
 --- !u!1 &3539757053081690465
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,6 +205,7 @@ GameObject:
   - component: {fileID: 4203106284598098907}
   - component: {fileID: 1007598437788644478}
   - component: {fileID: 3035217487436284084}
+  - component: {fileID: 2214034616360217199}
   m_Layer: 0
   m_Name: ronce2
   m_TagString: Untagged
@@ -190,8 +221,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3539757053081690465}
   m_LocalRotation: {x: -0, y: -0.58358693, z: -0, w: 0.8120507}
-  m_LocalPosition: {x: -4.0505314, y: 0.12394714, z: 1.8463863}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.95, y: 0.12394714, z: 1.81}
+  m_LocalScale: {x: 0.88186, y: 1, z: 0.88111}
   m_Children: []
   m_Father: {fileID: 3774785165119426730}
   m_RootOrder: 7
@@ -246,6 +277,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2214034616360217199
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3539757053081690465}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3292925553009838691, guid: b7626f096fe895e4c8f95fb1cb2e53bd, type: 3}
 --- !u!1 &3768993749591197977
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,6 +302,7 @@ GameObject:
   - component: {fileID: 6997447252535854925}
   - component: {fileID: 8708633259729476620}
   - component: {fileID: 837632010938791793}
+  - component: {fileID: 1739689903807788051}
   m_Layer: 0
   m_Name: ronce3 (1)
   m_TagString: Untagged
@@ -328,6 +374,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1739689903807788051
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3768993749591197977}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3996760141626369306, guid: c0d57cc48badc064a9d57e865aae8bee, type: 3}
 --- !u!1 &3881616091078805614
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,6 +399,7 @@ GameObject:
   - component: {fileID: 4647825954328281273}
   - component: {fileID: 5667640124301165352}
   - component: {fileID: 6941078978810347509}
+  - component: {fileID: 2971933372315959295}
   m_Layer: 0
   m_Name: ronce3 (3)
   m_TagString: Untagged
@@ -410,6 +471,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2971933372315959295
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3881616091078805614}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3996760141626369306, guid: c0d57cc48badc064a9d57e865aae8bee, type: 3}
 --- !u!1 &4268150975635628414
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,6 +496,7 @@ GameObject:
   - component: {fileID: 2559566197373214775}
   - component: {fileID: 5944237082467177281}
   - component: {fileID: 8762871067737979218}
+  - component: {fileID: 5831794079850093220}
   m_Layer: 0
   m_Name: ronce3 (4)
   m_TagString: Untagged
@@ -492,6 +568,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5831794079850093220
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4268150975635628414}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3996760141626369306, guid: c0d57cc48badc064a9d57e865aae8bee, type: 3}
 --- !u!1 &6327377657799736626
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,7 +591,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3774785165119426730}
-  - component: {fileID: -6314366762306230332}
   m_Layer: 0
   m_Name: ronces passage compo
   m_TagString: Untagged
@@ -516,7 +605,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6327377657799736626}
-  m_LocalRotation: {x: -0, y: 0.36572915, z: -0, w: 0.9307213}
+  m_LocalRotation: {x: 0, y: 0.36572975, z: 0, w: 0.9307211}
   m_LocalPosition: {x: 569.79, y: 156.98851, z: 369.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -531,20 +620,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 42.905, z: 0}
---- !u!64 &-6314366762306230332
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6327377657799736626}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &7081740615886530153
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,6 +631,7 @@ GameObject:
   - component: {fileID: 4349019837262250426}
   - component: {fileID: 2312133188841377447}
   - component: {fileID: 8713339083358590989}
+  - component: {fileID: 6529792426487329603}
   m_Layer: 0
   m_Name: ronce3 (2)
   m_TagString: Untagged
@@ -627,6 +703,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6529792426487329603
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7081740615886530153}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3996760141626369306, guid: c0d57cc48badc064a9d57e865aae8bee, type: 3}
 --- !u!1 &8188399366334213251
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +728,7 @@ GameObject:
   - component: {fileID: 9049165464569336074}
   - component: {fileID: 5505388627330820786}
   - component: {fileID: 9189430839842414418}
+  - component: {fileID: 8013952098571106895}
   m_Layer: 0
   m_Name: ronce4 (2)
   m_TagString: Untagged
@@ -709,3 +800,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8013952098571106895
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8188399366334213251}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3531946766418785785, guid: 6df26ae5c981ab346a03ce80363b4c0b, type: 3}
