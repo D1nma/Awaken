@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4431886240985789250}
   - component: {fileID: 6530534743517957646}
   - component: {fileID: 5062282100225489609}
+  - component: {fileID: 3461674156573236614}
   m_Layer: 0
   m_Name: champi rouge
   m_TagString: Untagged
@@ -94,5 +95,18 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.655496, y: 0.792585, z: 0.65093946}
-  m_Center: {x: -0.059267476, y: 0.33381534, z: 0}
+  m_Size: {x: 0.28, y: 0.4, z: 0.28}
+  m_Center: {x: 0, y: 0.12, z: 0}
+--- !u!65 &3461674156573236614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3272999462727175184}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.65, y: 0.5, z: 0.43}
+  m_Center: {x: -0.055, y: 0.48, z: 0}
