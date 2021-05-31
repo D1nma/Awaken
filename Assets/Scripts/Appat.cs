@@ -48,7 +48,7 @@ public class Appat : MonoBehaviour
         {
             invent = GameObject.Find("Inventaire").GetComponent<Inventaire>();
         }
-        if (canInteract)
+        else if (canInteract)
         {
             if (Input.GetKeyDown(KeyCode.E) && !open)
             {
@@ -75,7 +75,7 @@ public class Appat : MonoBehaviour
         {
             time += Time.deltaTime;
         }
-        if (time >= 4)
+        else if (time >= 4)
         {
             Tips.SetActive(false);
             time = 0;

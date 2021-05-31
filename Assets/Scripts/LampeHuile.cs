@@ -16,7 +16,7 @@ public class LampeHuile : MonoBehaviour
     public GameObject ObjNbRecharges;
     public GameObject prefab;
     WatchMe watchMe;
-    public int nbRecharges = 1;
+    public int nbRecharges = 3;
     private int maxHuile = 100;
     float oldValueFog;
     public float FogStartDistance = 50f;

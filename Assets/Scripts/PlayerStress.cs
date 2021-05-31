@@ -15,7 +15,7 @@ public class PlayerStress : MonoBehaviour
     public bool NotSafe = true,Safe =false;
     public static bool LH= false;
     public int SafeValeur = 20;
-    public int NotSafeValeur = 40;
+    public int NotSafeValeur = 3;
     bool done,fait,dialogue=false,dialogue2 = false;
     public float lookRadius = 8f;
     float time;
@@ -41,12 +41,12 @@ public class PlayerStress : MonoBehaviour
         if (Safe)
         {
             minRandom = 0f;
-            maxRandom = 20f;
+            maxRandom = 2f;
         }
         if (NotSafe)
         {
-            minRandom = 10f;
-            maxRandom = 20f;
+            minRandom = 1f;
+            maxRandom = 5f;
         }
         dead = false;
         
@@ -85,7 +85,7 @@ public class PlayerStress : MonoBehaviour
                     if (Safe)
                     {
                         minRandom = 0f;
-                        maxRandom = 20f;
+                        maxRandom = 2f;
                     }
                 }
                 else
@@ -152,17 +152,17 @@ public class PlayerStress : MonoBehaviour
                     DialogueStress.SetActive(true);
                     dialogue = true;
                 }
-                if (currentStress < 80)
+                else if (currentStress < 80)
                 {
                     DialogueStress.SetActive(false);
                     dialogue = false;
                 }
-                if(currentStress > 60 && currentStress < 80 && !dialogue2)
+                else if(currentStress > 60 && currentStress < 80 && !dialogue2)
                 {
                     DialogueLampeEteint.SetActive(true);
                     dialogue2 = true;
                 }
-                if(currentStress < 60 || currentStress > 80)
+                else if(currentStress < 60 || currentStress > 80)
                 {
                     DialogueLampeEteint.SetActive(false);
                     dialogue2 = false;
@@ -249,16 +249,16 @@ public class PlayerStress : MonoBehaviour
             {
                 maxRandom = maxStress;
                 minRandom = maxRandom - 15;
-            }
-            if (minRandom <= 0)
-            {
-                minRandom = 0;
+                if (minRandom <= 0)
+                {
+                    minRandom = 0;
+                }
             }
             NewValueStress(minRandom, maxRandom);
             stressBar.SetStress(currentStress);
             //done = true;
         }
-        if (maxRandom >= maxStress)
+        else if (maxRandom >= maxStress)
         {
             maxRandom = maxStress;
             minRandom = maxRandom - 15;
@@ -274,7 +274,7 @@ public class PlayerStress : MonoBehaviour
             currentStress -= DiminutionStress * Time.deltaTime + time / 50;
             stressBar.SetStress(currentStress);
         }
-        if (currentStress < 0)
+        else if (currentStress < 0)
         {
             useTime = false;
             currentStress = 0;
@@ -283,7 +283,7 @@ public class PlayerStress : MonoBehaviour
     }
     public void StressUpAuto()
     {
-        if (currentStress <= maxStress)
+        if (currentStress < maxStress)
         {
             currentStress += AugmentationStress * Time.deltaTime;
             stressBar.SetStress(currentStress);
