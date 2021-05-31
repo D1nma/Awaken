@@ -64,7 +64,7 @@ public class PlayersController : MonoBehaviour
         {
             lampeHuile = GameObject.Find("Lampe à huile").GetComponent<LampeHuile>();
         }
-        if (lampeHuile != null)
+        else if (lampeHuile != null)
         {
             if (lampeHuile.EnMain)
             {
@@ -159,7 +159,7 @@ public class PlayersController : MonoBehaviour
 
 
             }
-            if (Input.GetButtonUp("Sprint") && !accroupir && canControl)
+            else if (Input.GetButtonUp("Sprint") && !accroupir && canControl)
             {
                 animator.SetBool("IsRunning", false);
                 StaminaBar.instance.StopStamina();

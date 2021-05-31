@@ -68,11 +68,11 @@ public class PersoInteraction : MonoBehaviour
             player = GameObject.FindGameObjectWithTag("Player");
         }
 
-        if (!invent)
+        else if (!invent)
         {
             invent = GameObject.Find("Inventaire").GetComponent<Inventaire>();
         }
-        if (!ui)
+        else if (!ui)
         {
             ui = GameObject.Find("Canvas").GetComponent<UIManager>();
         }
