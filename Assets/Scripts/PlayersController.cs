@@ -31,7 +31,7 @@ public class PlayersController : MonoBehaviour
     private bool accroupir = false;
     public static bool canControl = true, wakeUp = false;
     public float animationLenghtWakeUp = 11f;
-    public bool courrir = true;
+    public bool courrir = true, grimper;
     private bool SUPERUSER = false;
 
     void Start()
@@ -178,10 +178,16 @@ public class PlayersController : MonoBehaviour
             animator.SetBool("IsWalking", false);
             animator.SetBool("IsRunning", false);
         }
-        if (Input.GetButtonDown("Jump") && isGrounded && canControl)
+
+        if (Input.GetButtonDown("Jump") && isGrounded && canControl && !grimper)
         {
             animator.SetBool("jump", true);
             velocity.y = Mathf.Sqrt(jumpSpeed * -2f * gravity);
+        }
+        else if (Input.GetButtonDown("Jump") && isGrounded && canControl && grimper)
+        {
+            animator.SetTrigger("Grimper");
+            //animation intégrer plus empecher de bouger
         }
         if (Input.GetKeyDown(KeyCode.C) && isGrounded && canControl)
         {
