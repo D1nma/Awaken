@@ -6,6 +6,7 @@ public class FPS : MonoBehaviour
 {
 	float deltaTime = 0.0f;
 	private bool Key;
+	float buttonPressedTime;
 
     private void Start()
     {
@@ -15,16 +16,28 @@ public class FPS : MonoBehaviour
     void Update()
 	{
 		deltaTime += (Time.unscaledDeltaTime - deltaTime) * 0.1f;
-		if(Input.GetKeyDown(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.F))
-        {
-            if (Key)
+		if((Input.GetKeyDown(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.F)) 
+			|| (Input.GetKeyDown(KeyCode.F) && Input.GetKeyDown(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.LeftControl)) 
+			|| (Input.GetKeyDown(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.F) && Input.GetKeyDown(KeyCode.LeftControl)) 
+			|| (Input.GetKeyDown(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.F) && Input.GetKeyDown(KeyCode.LeftAlt))
+			|| (Input.GetKeyDown(KeyCode.F) && Input.GetKeyDown(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.LeftAlt))
+			|| (Input.GetKeyDown(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.F)))
+		{	
+			buttonPressedTime = Time.time;
+			if (buttonPressedTime > 2f)
             {
-				Key = false;
+				if (Key)
+				{
+					Key = false;
+					buttonPressedTime = 0;
+				}
+				else
+				{
+					Key = true;
+					buttonPressedTime = 0;
+
+				}
 			}
-			else if (!Key)
-            {
-				Key = true;
-            }
         }
 	}
 

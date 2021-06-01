@@ -16,16 +16,70 @@
 			<ShortName>Character</ShortName>
 			<Path>Character.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1122133769">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3808553749">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2530157555" Language="SFX" Hash="3716559535">
+		<SoundBank Id="2530157555" Language="SFX" Hash="3281649961">
 			<ObjectPath>\SoundBanks\Default Work Unit\Environnement</ObjectPath>
 			<ShortName>Environnement</ShortName>
 			<Path>Environnement.bnk</Path>
 			<IncludedEvents>
+				<Event Id="384109318" Name="Chant_Bird_1_Start" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Bird_1_Start">
+					<IncludedMemoryFiles>
+						<File Id="232362674" Language="SFX">
+							<ShortName>oiseau 23_cuicui.wav</ShortName>
+							<Path>SFX\oiseau 23_cuicui_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1026565830" Name="Chant_Bird_1_Stop" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Bird_1_Stop"/>
+				<Event Id="3244540270" Name="Chant_Corbeau_1_Start" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_1_Start">
+					<IncludedMemoryFiles>
+						<File Id="791093738" Language="SFX">
+							<ShortName>corbeau 1.wav</ShortName>
+							<Path>SFX\corbeau 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2861096014" Name="Chant_Corbeau_1_Stop" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_1_Stop"/>
+				<Event Id="2675815885" Name="Chant_Corbeau_2_Start" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_2_Start">
+					<IncludedMemoryFiles>
+						<File Id="235868969" Language="SFX">
+							<ShortName>corbeau 2.wav</ShortName>
+							<Path>SFX\corbeau 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4179501455" Name="Chant_Corbeau_2_Stop" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_2_Stop"/>
+				<Event Id="3648403224" Name="Chant_Corbeau_3_Start" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_3_Start">
+					<IncludedMemoryFiles>
+						<File Id="408059349" Language="SFX">
+							<ShortName>corbeau 3.wav</ShortName>
+							<Path>SFX\corbeau 3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1025265060" Name="Chant_Corbeau_3_Stop" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_3_Stop"/>
+				<Event Id="2018654895" Name="Chant_Corbeau_4_Start" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_4_Start">
+					<IncludedMemoryFiles>
+						<File Id="336679914" Language="SFX">
+							<ShortName>corbeau 4.wav</ShortName>
+							<Path>SFX\corbeau 4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3823094709" Name="Chant_Corbeau_4_Stop" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_4_Stop"/>
+				<Event Id="106254192" Name="Riviere_Start" ObjectPath="\Events\Default Work Unit\Environnement\Riviere_Start">
+					<IncludedMemoryFiles>
+						<File Id="176432756" Language="SFX">
+							<ShortName>1_rivière.wav</ShortName>
+							<Path>SFX\1_rivière_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1930681820" Name="Riviere_Stop" ObjectPath="\Events\Default Work Unit\Environnement\Riviere_Stop"/>
 				<Event Id="2814713645" Name="Wind_loop_start" ObjectPath="\Events\Default Work Unit\Environnement\Wind\Wind_loop_start">
 					<IncludedMemoryFiles>
 						<File Id="260624337" Language="SFX">
@@ -41,13 +95,125 @@
 				<Event Id="1911133551" Name="Wind_loop_stop" ObjectPath="\Events\Default Work Unit\Environnement\Wind\Wind_loop_stop"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="39742750" Language="SFX">
+					<ShortName>oiseau 6_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 6_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="50872857" Language="SFX">
+					<ShortName>oiseau 2_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 2_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="63423348" Language="SFX">
+					<ShortName>oiseau 11_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 11_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="91800397" Language="SFX">
+					<ShortName>oiseau 16_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 16_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="176432756" Language="SFX">
+					<ShortName>1_rivière.wav</ShortName>
+					<Path>SFX\1_rivière_D79FB2B7.wem</Path>
+				</File>
+				<File Id="192332879" Language="SFX">
+					<ShortName>oiseau 5_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 5_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="224404038" Language="SFX">
+					<ShortName>oiseau 19_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 19_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="232362674" Language="SFX">
+					<ShortName>oiseau 23_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 23_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="235868969" Language="SFX">
+					<ShortName>corbeau 2.wav</ShortName>
+					<Path>SFX\corbeau 2_10C4C929.wem</Path>
+				</File>
+				<File Id="238427749" Language="SFX">
+					<ShortName>oiseau 8_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 8_cuicui_10C4C929.wem</Path>
+				</File>
 				<File Id="260624337" Language="SFX">
 					<ShortName>Environnement\Wind\vent 1.wav</ShortName>
 					<Path>SFX\Environnement\Wind\vent 1_D79FB2B7.wem</Path>
 				</File>
+				<File Id="336679914" Language="SFX">
+					<ShortName>corbeau 4.wav</ShortName>
+					<Path>SFX\corbeau 4_10C4C929.wem</Path>
+				</File>
+				<File Id="346162389" Language="SFX">
+					<ShortName>oiseau 9_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 9_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="372090329" Language="SFX">
+					<ShortName>oiseau 13_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 13_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="408059349" Language="SFX">
+					<ShortName>corbeau 3.wav</ShortName>
+					<Path>SFX\corbeau 3_10C4C929.wem</Path>
+				</File>
+				<File Id="523603527" Language="SFX">
+					<ShortName>oiseau 7_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 7_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="525297627" Language="SFX">
+					<ShortName>oiseau 3_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 3_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="539307055" Language="SFX">
+					<ShortName>oiseau 1_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 1_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="542705106" Language="SFX">
+					<ShortName>oiseau 12_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 12_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="667759706" Language="SFX">
+					<ShortName>oiseau 14_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 14_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="688090902" Language="SFX">
+					<ShortName>oiseau 22_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 22_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="721879130" Language="SFX">
+					<ShortName>oiseau 17_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 17_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="722269656" Language="SFX">
+					<ShortName>oiseau 20_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 20_cuicui_10C4C929.wem</Path>
+				</File>
 				<File Id="774703723" Language="SFX">
 					<ShortName>Environnement\Wind\vent 2_vent foret.wav</ShortName>
 					<Path>SFX\Environnement\Wind\vent 2_vent foret_10C4C929.wem</Path>
+				</File>
+				<File Id="780006696" Language="SFX">
+					<ShortName>oiseau 18_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 18_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="787020632" Language="SFX">
+					<ShortName>oiseau 10_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 10_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="791093738" Language="SFX">
+					<ShortName>corbeau 1.wav</ShortName>
+					<Path>SFX\corbeau 1_10C4C929.wem</Path>
+				</File>
+				<File Id="1010179061" Language="SFX">
+					<ShortName>oiseau 21_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 21_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="1013232674" Language="SFX">
+					<ShortName>oiseau 15_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 15_cuicui_10C4C929.wem</Path>
+				</File>
+				<File Id="1057460352" Language="SFX">
+					<ShortName>oiseau 4_cuicui.wav</ShortName>
+					<Path>SFX\oiseau 4_cuicui_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

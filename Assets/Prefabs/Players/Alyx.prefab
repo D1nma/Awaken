@@ -4090,6 +4090,7 @@ GameObject:
   - component: {fileID: 6281115245032013453}
   - component: {fileID: 300034395}
   - component: {fileID: 300034396}
+  - component: {fileID: 1893498280}
   m_Layer: 8
   m_Name: Alyx
   m_TagString: Player
@@ -4251,8 +4252,8 @@ MonoBehaviour:
   dead: 0
   NotSafe: 1
   Safe: 0
-  SafeValeur: 20
-  NotSafeValeur: 20
+  SafeValeur: 0
+  NotSafeValeur: 0
   lookRadius: 10
   Sun: {fileID: 0}
   DiminutionStress: 1
@@ -4290,6 +4291,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   animationLenghtWakeUp: 11
   courrir: 1
+  grimper: 0
 --- !u!114 &-4506911232936754886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4387,6 +4389,36 @@ MonoBehaviour:
   lookRadius: 10
   rig: {fileID: 7212678385090248021}
   speed: 20
+--- !u!114 &1893498280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8699770889497131319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e66dd25c119401459e0374d7c37d003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstep:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fbc6e23c801066d4cbc97710445c23da,
+      type: 2}
+  jump:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 825d996bede3f4c489d7ff5627bbe36b,
+      type: 2}
+  lever:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  dead:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &8741020064287440969
 GameObject:
   m_ObjectHideFlags: 0

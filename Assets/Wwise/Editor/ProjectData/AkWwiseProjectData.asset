@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 6e0fffe3b857cd48b495bd14c3507860
     GuidInternal: 
-    m_lastTime: -8585791609404661866
+    m_lastTime: -8585790571550413514
     List:
     - name: Ambiance
       guid: cb3db2323f563448a7a52222fb1c21ab
@@ -233,7 +233,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Ambiance
     guid: 02301d76802f4f47b7f34e89fdd14607
     GuidInternal: 
-    m_lastTime: -8585791609417654791
+    m_lastTime: -8585790584930473192
     List:
     - name: GameOver_Start
       guid: 7ab526051b0aa6408e57cd427564676e
@@ -329,8 +329,120 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Character
     guid: d1b726b7b62bbc4d87a56d25ac596348
     GuidInternal: 
-    m_lastTime: -8585791609417644789
-    List: []
+    m_lastTime: -8585790486758509505
+    List:
+    - name: Alyx
+      guid: 49e60b0de728324e87421b4870014945
+      id: 3285845465
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      Path: Events\Default Work Unit\Character\Alyx
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Dead
+      guid: de9983a952a0d3438ef5a44ed524981a
+      id: 2044049779
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Dead
+        ObjectType: 3
+        guid: de9983a952a0d3438ef5a44ed524981a
+      Path: Events\Default Work Unit\Character\Alyx\Dead
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Jump
+      guid: 32c1914bb67a2c4597f729604ed47d47
+      id: 3833651337
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Jump
+        ObjectType: 3
+        guid: 32c1914bb67a2c4597f729604ed47d47
+      Path: Events\Default Work Unit\Character\Alyx\Jump
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lever
+      guid: 1b53c2cb4422d24a890172b957d3bd07
+      id: 2782712987
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Lever
+        ObjectType: 3
+        guid: 1b53c2cb4422d24a890172b957d3bd07
+      Path: Events\Default Work Unit\Character\Alyx\Lever
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Walk
+      guid: 5fdf0ecd2e10564fbbb5d0a688d9139e
+      id: 2108779966
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Walk
+        ObjectType: 3
+        guid: 5fdf0ecd2e10564fbbb5d0a688d9139e
+      Path: Events\Default Work Unit\Character\Alyx\Walk
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -375,8 +487,298 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Environnement
     guid: 0b9c659094c6ed43bece16702a7786fc
     GuidInternal: 
-    m_lastTime: -8585791609417634787
+    m_lastTime: -8585790490593814682
     List:
+    - name: Birds
+      guid: 45adc77911e337418336100430199307
+      id: 352130103
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Birds
+        ObjectType: 4
+        guid: 45adc77911e337418336100430199307
+      Path: Events\Default Work Unit\Environnement\Birds
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Chant_Bird_1_Start
+      guid: e099be3df5a81e49850088709746fb1d
+      id: 384109318
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Birds
+        ObjectType: 4
+        guid: 45adc77911e337418336100430199307
+      - ElementName: Chant_Bird_1_Start
+        ObjectType: 3
+        guid: e099be3df5a81e49850088709746fb1d
+      Path: Events\Default Work Unit\Environnement\Birds\Chant_Bird_1_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Chant_Bird_1_Stop
+      guid: 2c7e44b8105de14689a5b09b62f2452b
+      id: 1026565830
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Birds
+        ObjectType: 4
+        guid: 45adc77911e337418336100430199307
+      - ElementName: Chant_Bird_1_Stop
+        ObjectType: 3
+        guid: 2c7e44b8105de14689a5b09b62f2452b
+      Path: Events\Default Work Unit\Environnement\Birds\Chant_Bird_1_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Chant_Corbeau_1_Start
+      guid: 8f34103e6c7a954f9fc70a55b88dc389
+      id: 3244540270
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Birds
+        ObjectType: 4
+        guid: 45adc77911e337418336100430199307
+      - ElementName: Chant_Corbeau_1_Start
+        ObjectType: 3
+        guid: 8f34103e6c7a954f9fc70a55b88dc389
+      Path: Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_1_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Chant_Corbeau_1_Stop
+      guid: 20095cb981d64a43b6f9758c129ee028
+      id: 2861096014
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Birds
+        ObjectType: 4
+        guid: 45adc77911e337418336100430199307
+      - ElementName: Chant_Corbeau_1_Stop
+        ObjectType: 3
+        guid: 20095cb981d64a43b6f9758c129ee028
+      Path: Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_1_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Chant_Corbeau_2_Start
+      guid: c040d70e643b8b42995518719329daab
+      id: 2675815885
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Birds
+        ObjectType: 4
+        guid: 45adc77911e337418336100430199307
+      - ElementName: Chant_Corbeau_2_Start
+        ObjectType: 3
+        guid: c040d70e643b8b42995518719329daab
+      Path: Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_2_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Chant_Corbeau_2_Stop
+      guid: 9814889d2286e84dbbc8ded40c882a3f
+      id: 4179501455
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Birds
+        ObjectType: 4
+        guid: 45adc77911e337418336100430199307
+      - ElementName: Chant_Corbeau_2_Stop
+        ObjectType: 3
+        guid: 9814889d2286e84dbbc8ded40c882a3f
+      Path: Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_2_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Chant_Corbeau_3_Start
+      guid: af07f7cb5d5445458daf6cf7f53f3562
+      id: 3648403224
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Birds
+        ObjectType: 4
+        guid: 45adc77911e337418336100430199307
+      - ElementName: Chant_Corbeau_3_Start
+        ObjectType: 3
+        guid: af07f7cb5d5445458daf6cf7f53f3562
+      Path: Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_3_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Chant_Corbeau_3_Stop
+      guid: 1f84171f6b4c1e40a086674fd51b97a8
+      id: 1025265060
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Birds
+        ObjectType: 4
+        guid: 45adc77911e337418336100430199307
+      - ElementName: Chant_Corbeau_3_Stop
+        ObjectType: 3
+        guid: 1f84171f6b4c1e40a086674fd51b97a8
+      Path: Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_3_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Chant_Corbeau_4_Start
+      guid: 8c5126b1d4a0fd4b9f348b20f1e40eb9
+      id: 2018654895
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Birds
+        ObjectType: 4
+        guid: 45adc77911e337418336100430199307
+      - ElementName: Chant_Corbeau_4_Start
+        ObjectType: 3
+        guid: 8c5126b1d4a0fd4b9f348b20f1e40eb9
+      Path: Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_4_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Chant_Corbeau_4_Stop
+      guid: 5042930ecc721e4cb6af020031db09ff
+      id: 3823094709
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Birds
+        ObjectType: 4
+        guid: 45adc77911e337418336100430199307
+      - ElementName: Chant_Corbeau_4_Stop
+        ObjectType: 3
+        guid: 5042930ecc721e4cb6af020031db09ff
+      Path: Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_4_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Riviere_Start
+      guid: fa44431d2f58f84881b35db30bfd92db
+      id: 106254192
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Riviere_Start
+        ObjectType: 3
+        guid: fa44431d2f58f84881b35db30bfd92db
+      Path: Events\Default Work Unit\Environnement\Riviere_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Riviere_Stop
+      guid: e019741c262b3043a1c9c0a85c6301d9
+      id: 1930681820
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Riviere_Stop
+        ObjectType: 3
+        guid: e019741c262b3043a1c9c0a85c6301d9
+      Path: Events\Default Work Unit\Environnement\Riviere_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Wind
       guid: 6e48b734eae60249a870366626e4569a
       id: 1537061107
@@ -500,7 +902,7 @@ MonoBehaviour:
     m_lastTime: -8585791609376775737
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 04000000050000000600000007000000080000000a0000000b0000000c0000000d0000000e0000000f000000190000001a0000001b0000001d00000051000000520000007c0000008700000088000000bc000000bd000000820b0000
+  ExpandedWaapiItemIds: 0400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000190000001a0000001b0000001d0000001f00000051000000520000007c0000008700000088000000bc000000bd000000820b0000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

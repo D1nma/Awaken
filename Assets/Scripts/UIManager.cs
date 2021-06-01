@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
     public Slider slider;
     public Text progressText;
     public Inventaire invent;
+    private int nextSceneLoad;
     public Animator transition;
     public GameObject stamina;
     public GameObject huile;
@@ -43,7 +44,7 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-
+        nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
     }
 
     void Awake()
@@ -83,7 +84,7 @@ public class UIManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.P))
         {
-            StartCoroutine(LoadAsynchronously(SceneManager.GetActiveScene().buildIndex + 1));
+            loadLv2();
         }
         if (Input.GetKeyDown(KeyCode.L))
         {
@@ -121,6 +122,10 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
+    public void loadLv2()
+    {
+        SceneManager.LoadScene(nextSceneLoad, LoadSceneMode.Additive);
+    }
 
 
     IEnumerator LoadAsynchronously(int sceneIndex) //load scene + recup la progress + transition
@@ -144,7 +149,7 @@ public class UIManager : MonoBehaviour
     }
 
 
-    public void OnFxSliderChanged(float value) //effets
+    /*public void OnFxSliderChanged(float value) //effets
     {
         //SoundsManager.instance.mixer.SetFloat("Effets", value);//Sans Wwise
     }
@@ -157,7 +162,7 @@ public class UIManager : MonoBehaviour
     public void OnGeneralSliderChanged(float value)
     {
         //SoundsManager.instance.mixer.SetFloat("General", value);//Sans Wwise
-    }
+    }*/
 
 
     public void UpdateTime(int nb) //temps de jeu

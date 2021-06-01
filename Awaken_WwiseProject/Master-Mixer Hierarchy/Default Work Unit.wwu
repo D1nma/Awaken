@@ -21,6 +21,11 @@
 								</Bus>
 								<Bus Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}">
 									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Color" Type="int16" Value="4"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>
@@ -28,6 +33,11 @@
 								</Bus>
 								<Bus Name="Ambiance" ID="{32B23DCB-563F-4834-A7A5-2222FB1C21AB}">
 									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Color" Type="int16" Value="1"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>

@@ -11,20 +11,20 @@
 					<ChildrenList>
 						<Event Name="Wind_loop_start" ID="{200DE210-2989-49A0-845D-C1C6D35BE074}">
 							<ChildrenList>
-								<Action Name="" ID="{3D0C3C83-306F-40C7-8678-9137902C92B4}" ShortID="113506137">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Wind" ID="{64D0C0D9-5241-48CF-B967-DC2B71B1ADAB}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{9A3145E1-6417-494E-891C-2E33D88275FC}" ShortID="425076183">
 									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+										<Property Name="FadeTime" Type="Real64" Value="10"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="vent 1" ID="{15A1D4E5-FE79-408D-AC2B-59B82793CABD}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3D0C3C83-306F-40C7-8678-9137902C92B4}" ShortID="113506137">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wind" ID="{64D0C0D9-5241-48CF-B967-DC2B71B1ADAB}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -52,6 +52,164 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="vent 1" ID="{15A1D4E5-FE79-408D-AC2B-59B82793CABD}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Riviere_Start" ID="{1D4344FA-582F-48F8-81B3-5DB30BFD92DB}">
+					<ChildrenList>
+						<Action Name="" ID="{7DFAB8E7-418B-42AE-AACC-22E8BFC99180}" ShortID="304164614">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="1_rivière" ID="{08EE1110-9F77-4E67-BB5D-078B41E241F9}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Riviere_Stop" ID="{1C7419E0-2B26-4330-A1C9-C0A85C6301D9}">
+					<ChildrenList>
+						<Action Name="" ID="{F482B806-6717-4824-8699-DBD8F56F780D}" ShortID="124671878">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="1_rivière" ID="{08EE1110-9F77-4E67-BB5D-078B41E241F9}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Birds" ID="{79C7AD45-E311-4137-8336-100430199307}" ShortID="769742787">
+					<ChildrenList>
+						<Event Name="Chant_Bird_1_Start" ID="{3DBE99E0-A8F5-491E-8500-88709746FB1D}">
+							<ChildrenList>
+								<Action Name="" ID="{07FA4B5C-3D6C-4A0E-B9BB-C12B1EE89004}" ShortID="1021397959">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="oiseau 23_cuicui" ID="{EE70FEBB-B7B5-4AA7-91B0-17546EE3D0C9}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Chant_Bird_1_Stop" ID="{B8447E2C-5D10-46E1-89A5-B09B62F2452B}">
+							<ChildrenList>
+								<Action Name="" ID="{AF1C00F2-85FC-4677-AE66-D7FB5625A106}" ShortID="10657914">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="oiseau 23_cuicui" ID="{EE70FEBB-B7B5-4AA7-91B0-17546EE3D0C9}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Chant_Corbeau_1_Start" ID="{3E10348F-7A6C-4F95-9FC7-0A55B88DC389}">
+							<ChildrenList>
+								<Action Name="" ID="{024229D4-F34C-47C8-B756-A4F324BA3E4C}" ShortID="117333153">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="corbeau 1" ID="{36543F52-5A61-488D-8B17-89A04EE78B17}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Chant_Corbeau_2_Start" ID="{0ED740C0-3B64-428B-9955-18719329DAAB}">
+							<ChildrenList>
+								<Action Name="" ID="{6786EBEB-481C-4D60-BC1A-858C178E96AB}" ShortID="216515484">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="corbeau 2" ID="{F5BFE67E-DE0E-412A-A055-3755CC1F87DD}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Chant_Corbeau_3_Start" ID="{CBF707AF-545D-4545-8DAF-6CF7F53F3562}">
+							<ChildrenList>
+								<Action Name="" ID="{0952F2D5-D32B-4DBD-98FF-95EA8918A234}" ShortID="734520412">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="corbeau 3" ID="{50C6CE6A-5D62-41CD-8612-52B38013F100}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Chant_Corbeau_4_Start" ID="{B126518C-A0D4-4BFD-9F34-8B20F1E40EB9}">
+							<ChildrenList>
+								<Action Name="" ID="{E82B91A2-E8BA-4208-85AB-9F2B7BB40FC0}" ShortID="157980621">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="corbeau 4" ID="{8398166A-6C0E-49C3-BA56-FB5C4FF06523}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Chant_Corbeau_3_Stop" ID="{1F17841F-4C6B-401E-A086-674FD51B97A8}">
+							<ChildrenList>
+								<Action Name="" ID="{BB1132CA-79F9-4F03-A721-3D78DBAAA83D}" ShortID="282632074">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="corbeau 3" ID="{50C6CE6A-5D62-41CD-8612-52B38013F100}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Chant_Corbeau_2_Stop" ID="{9D881498-8622-4DE8-BBC8-DED40C882A3F}">
+							<ChildrenList>
+								<Action Name="" ID="{41929AAF-A52E-4363-9ACC-02057F1D8946}" ShortID="831359691">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="corbeau 2" ID="{F5BFE67E-DE0E-412A-A055-3755CC1F87DD}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Chant_Corbeau_4_Stop" ID="{0E934250-72CC-4C1E-B6AF-020031DB09FF}">
+							<ChildrenList>
+								<Action Name="" ID="{4EAD08EB-2405-4FD1-ABE3-1A27DFDA1A9A}" ShortID="411782303">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="corbeau 4" ID="{8398166A-6C0E-49C3-BA56-FB5C4FF06523}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Chant_Corbeau_1_Stop" ID="{B95C0920-D681-434A-B6F9-758C129EE028}">
+							<ChildrenList>
+								<Action Name="" ID="{03F77615-A79D-4427-90E6-9AF61ECACF29}" ShortID="250331029">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="corbeau 1" ID="{36543F52-5A61-488D-8B17-89A04EE78B17}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

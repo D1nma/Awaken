@@ -6,6 +6,16 @@
 				<Property Name="Color" Type="int16" Value="10"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Alyx" ID="{0D0BE649-28E7-4E32-8742-1B4870014945}" ShortID="365228224">
+					<ChildrenList>
+						<Event Name="Jump" ID="{4B91C132-7AB6-452C-97F7-29604ED47D47}"/>
+						<Event Name="Walk" ID="{CD0EDF5F-102E-4F56-BBB5-D0A688D9139E}"/>
+						<Event Name="Lever" ID="{CBC2531B-2244-4AD2-8901-72B957D3BD07}"/>
+						<Event Name="Dead" ID="{A98399DE-A052-43D3-8EF5-A44ED524981A}"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

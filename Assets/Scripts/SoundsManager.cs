@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class SoundsManager : MonoBehaviour
 {
     public static SoundsManager instance;
+    private bool runOnce=false;
 
     /*[SerializeField] public AudioMixer mixer;
 
@@ -36,14 +37,20 @@ public class SoundsManager : MonoBehaviour
     void Start()
     {
         //Play("MainTheme"); //Sans utiliser Wwise
-        //if (SceneManager.GetActiveScene().buildIndex == 1) { AkSoundEngine.PostEvent("Ambiance", gameObject); } 
-        if (SceneManager.GetActiveScene().buildIndex == 0) { AkSoundEngine.PostEvent("Menu_Start", gameObject); }
+        //if (SceneManager.GetActiveScene().buildIndex == 1) { AkSoundEngine.PostEvent("Ambiance", gameObject); }
+        runOnce = false;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (!runOnce)
+        {
+            if (SceneManager.GetActiveScene().buildIndex == 0) { AkSoundEngine.PostEvent("Menu_Start", gameObject); }
+            if (SceneManager.GetActiveScene().buildIndex == 1) { AkSoundEngine.PostEvent("Wind_loop_start", gameObject); }
+            runOnce = true;
+        }
     }
 
     /*public void Play(string sound) //Sans utiliser Wwise
