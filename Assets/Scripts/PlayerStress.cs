@@ -102,8 +102,15 @@ public class PlayerStress : MonoBehaviour
                     currentStress = 0;
                     //stressBar.SetStress(currentStress); //annule la réactualisation 
                     GameManager.gameOver = true;
-                    dead = true;
 
+                }
+                if (GameManager.gameOver)
+                {
+                    dead = true;
+                }
+                else
+                {
+                    dead = false;
                 }
                 if (NotSafe)
                 {

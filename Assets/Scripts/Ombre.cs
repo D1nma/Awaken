@@ -11,16 +11,17 @@ public class Ombre : MonoBehaviour
     public float LifeTime = 3000f;
 
     private bool immortal = false;
+    float fastSpeed;
 
     public bool idleOne = false;
     private bool canHurt = false;
 
-    private bool follow = true,see = false;
+    private bool follow = true, see = false;
 
     public int degat = 10;
     public float MaxDist = 0.1f;
     public float MinDist = 5;
-    public float lookRadius = 10f,offsetRay=1;
+    public float lookRadius = 10f, offsetRay = 1;
     private float time;
     Vector3 trait;
 
@@ -39,6 +40,7 @@ public class Ombre : MonoBehaviour
         {
             currentDestinationIndex = (currentDestinationIndex + 1) % pathPoints.Length;
         }
+        fastSpeed = enemy.speed;
 
     }
 
@@ -53,7 +55,7 @@ public class Ombre : MonoBehaviour
     }
     IEnumerator Recommence()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         _animator.SetBool("Chasing", false);
         enemy.isStopped = false;
         follow = true;
@@ -71,100 +73,104 @@ public class Ombre : MonoBehaviour
         if (player)
         {
 
-        
-        trait = this.transform.position;
-        trait.y = this.transform.position.y + offsetRay;
-        var ray = new Ray(trait, this.transform.forward);        
-        Vector3 direction = trait - player.transform.position ;
-        RaycastHit hit;
-        Ray ray2 = new Ray(trait, player.transform.position);
-        Debug.DrawRay(ray2.origin, ray2.direction * 5f, Color.green);
-        RaycastHit hitinfo;
-        float angle = Vector3.Angle(direction, transform.forward);
-        Debug.DrawRay(trait, this.transform.forward * 2, Color.white);
-        if (Physics.Raycast(trait, direction, out hitinfo, 10f))
-        {
-            float distance = Vector3.Distance(hitinfo.transform.gameObject.transform.position, transform.position);
-            if (hitinfo.transform.gameObject.tag != "MainCamera" 
-                && hitinfo.transform.gameObject.tag != "point"
-                && hitinfo.transform.gameObject.tag != null
-                && hitinfo.transform.gameObject.tag != "Spawn"
-                && hitinfo.transform.gameObject.tag != "Decors"
-                && hitinfo.transform.gameObject.tag != "UI"
-                && hitinfo.transform.gameObject.tag != "GM"
-                && hitinfo.transform.gameObject.tag != "Invisible")
+
+            trait = this.transform.position;
+            trait.y = this.transform.position.y + offsetRay;
+            var ray = new Ray(trait, this.transform.forward);
+            Vector3 direction = player.transform.position - trait;
+            RaycastHit hit;
+            Ray ray2 = new Ray(trait, direction);
+            Debug.DrawRay(ray2.origin, ray2.direction * 5f, Color.green);
+            RaycastHit hitinfo;
+            float angle = Vector3.Angle(direction, transform.forward);
+            Debug.DrawRay(trait, this.transform.forward * 2, Color.white);
+            if (Physics.Raycast(trait, direction, out hitinfo, lookRadius))
             {
-
-                see = true;
-                if (hitinfo.transform.gameObject.tag == "Player")
+                //Debug.Log(hitinfo.transform.name);
+                float distance = Vector3.Distance(hitinfo.transform.gameObject.transform.position, transform.position);
+                if (hitinfo.transform.gameObject.tag != "MainCamera"
+                    && hitinfo.transform.gameObject.tag != "point"
+                    && hitinfo.transform.gameObject.tag != null
+                    && hitinfo.transform.gameObject.tag != "Spawn"
+                    && hitinfo.transform.gameObject.tag != "Decors"
+                    && hitinfo.transform.gameObject.tag != "UI"
+                    && hitinfo.transform.gameObject.tag != "GM"
+                    && hitinfo.transform.gameObject.tag != "Invisible")
                 {
-                    Debug.Log("Alyx c'est mon 4h");
-                    if (Physics.Raycast(ray, out hit, 30f) && angle < 120 || distance < 25f )
-                    {
-                        canHurt = true;
-                            Debug.Log("Alyx c'est mon 6h");
-                        }
-                    else
-                    {
-                        canHurt = false;
 
+                    see = true;
+                    if (hitinfo.transform.gameObject.tag == "Player")
+                    {
+                        //Debug.Log("Alyx c'est mon 4h");
+                        if (Physics.Raycast(ray, out hit, 30f) && angle < 120 || distance < 3f)
+                        {
+                            canHurt = true;
+                            //Debug.Log("Alyx c'est mon 6h");
+                        }
+                        else
+                        {
+                            canHurt = false;
+
+                        }
                     }
                 }
-            }
-            else
-            {
-                see = false;
-                Debug.Log("Je vois rien");
-                
-                if (distance >= 30f)
+                else
                 {
-                    Debug.Log("Je devrais voir ailleur..");
-                    follow = false;
-                    enemy.isStopped = true;
-                    StartCoroutine(Recommence());
+                    see = false;
+                    //Debug.Log("Je vois rien");
+
+                    /*if (distance >= 30f)
+                    {
+                        Debug.Log("Je devrais voir ailleur..");
+                        follow = false;
+                        enemy.isStopped = true;
+                        StartCoroutine(Recommence());
+                    }*/
                 }
             }
-        }
-        
-        time += Time.deltaTime;
-        attaque = Random.Range(0, 2);
-        if (LifeTime > 0 && !immortal) { LifeTime -= time; }
-        if (idleOne && follow)
-        {
-            immortal = true;
-            if (pathPoints.Length > 1)
-            {
-                StartAgent();
-            }
 
-            else
+            time += Time.deltaTime;
+            attaque = Random.Range(0, 2);
+            if (LifeTime > 0 && !immortal) { LifeTime -= time; }
+            if (idleOne && follow)
             {
-                Debug.LogWarning("Y'a pas de point pour patrouiller");
+                immortal = true;
+                if (pathPoints.Length > 1)
+                {
+                    StartAgent();
+                }
 
+                else
+                {
+                    Debug.LogWarning("Y'a pas de point pour patrouiller");
+
+                }
             }
-        }
         }
         else if (!player)
         {
             player = GameObject.FindGameObjectWithTag("Player");
         }
-        else if (player != null && follow == true)
+        if (player != null && follow == true)
         {
             float distance = Vector3.Distance(player.transform.position, transform.position);
             //Debug.Log(enemy.stoppingDistance);
-            if (distance <= lookRadius)
+            if (distance <= lookRadius && see)
             {
                 //transform.LookAt(player.transform);
                 enemy.destination = player.transform.position;
                 FaceTarget();
+                enemy.speed = fastSpeed;
+                _animator.SetFloat("speedMultiplier", 1.2f);
                 if (distance <= enemy.stoppingDistance)
                 {
                     if (canHurt)
                     {
-                        
+
                         _animator.SetInteger("Attaque", attaque);
                         Debug.Log("touché");
                         _animator.SetBool("Chasing", true);
+                        
                         StartCoroutine(Mort());
                     }
                     enemy.ResetPath();
@@ -173,6 +179,10 @@ public class Ombre : MonoBehaviour
                     StartCoroutine(Recommence());
                 }
 
+            }
+            else
+            {
+                _animator.SetFloat("speedMultiplier", 1f);
             }
 
         }
