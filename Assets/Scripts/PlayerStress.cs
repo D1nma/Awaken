@@ -102,8 +102,15 @@ public class PlayerStress : MonoBehaviour
                     currentStress = 0;
                     //stressBar.SetStress(currentStress); //annule la réactualisation 
                     GameManager.gameOver = true;
-                    dead = true;
 
+                }
+                if (GameManager.gameOver)
+                {
+                    dead = true;
+                }
+                else
+                {
+                    dead = false;
                 }
                 if (NotSafe)
                 {
@@ -194,7 +201,13 @@ public class PlayerStress : MonoBehaviour
 
         if(Physics.Raycast(fromPosition, direction,out hitinfo, 10f))
         {
-            if (hitinfo.transform.gameObject.tag != "Player" && hitinfo.transform.gameObject.tag != "MainCamera" && hitinfo.transform.gameObject.tag != "point" && hitinfo.transform.gameObject.tag != "Invisible")
+            if (hitinfo.transform.gameObject.tag != "Player" 
+                && hitinfo.transform.gameObject.tag != "MainCamera" 
+                && hitinfo.transform.gameObject.tag != "point"
+                && hitinfo.transform.gameObject.tag != "Spawn"
+                && hitinfo.transform.gameObject.tag != "UI"
+                && hitinfo.transform.gameObject.tag != "GM"
+                && hitinfo.transform.gameObject.tag != "Invisible")
             {
                 if (done)
                 {
