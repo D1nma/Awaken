@@ -26,5 +26,4 @@ public class Lv2Load : MonoBehaviour
     {
         ui.loadLv2();
     }
-
     }
