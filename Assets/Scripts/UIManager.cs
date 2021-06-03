@@ -124,13 +124,52 @@ public class UIManager : MonoBehaviour
     }
     public void loadLv2()
     {
-        SceneManager.LoadScene(nextSceneLoad, LoadSceneMode.Additive);
+        StartCoroutine(LoadAsynchronouslyAdditive(nextSceneLoad));
+        //SceneManager.LoadScene(nextSceneLoad, LoadSceneMode.Additive);
     }
 
 
-    IEnumerator LoadAsynchronously(int sceneIndex) //load scene + recup la progress + transition
+    IEnumerator LoadAsynchronously(int sceneIndex)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+        transition.SetTrigger("Start");
+        LoadingScreen.SetActive(true);
+
+        while (!operation.isDone)
+        {
+            float progress = Mathf.Clamp01(operation.progress / 0.9f);
+            slider.value = progress;
+            progressText.text = Mathf.RoundToInt(progress * 100f) + "%";
+            yield return null;
+        }
+        if (operation.isDone)
+        {
+            LoadingScreen.SetActive(false);
+            transition.SetTrigger("End");
+        }
+    }
+    IEnumerator LoadScene(int sceneIndex)
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+        transition.SetTrigger("Start");
+        LoadingScreen.SetActive(true);
+
+        while (!operation.isDone)
+        {
+            float progress = Mathf.Clamp01(operation.progress / 0.9f);
+            slider.value = progress;
+            progressText.text = Mathf.RoundToInt(progress * 100f) + "%";
+            yield return null;
+        }
+        if (operation.isDone)
+        {
+            LoadingScreen.SetActive(false);
+            transition.SetTrigger("End");
+        }
+    }
+    IEnumerator LoadAsynchronouslyAdditive(int sceneIndex) //load scene + recup la progress + transition
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex,LoadSceneMode.Additive);
         transition.SetTrigger("Start");
         LoadingScreen.SetActive(true);
 
@@ -191,11 +230,15 @@ public class UIManager : MonoBehaviour
         GameManager.gameOver = false;
         invent.key = false;
         invent.keyEmpty = false;
+        FeuFollet.follow = false;
+        FeuFollet.pieger = true;
+        FeuFollet.canInteract = true;
+        FeuFollet.done = false;
         invent.canne = false;
         invent.boite = false;
         invent.champi = false;
         invent.First = false;
-        StartCoroutine(LoadAsynchronously(SceneManager.GetActiveScene().buildIndex));
+        StartCoroutine(LoadScene(SceneManager.GetActiveScene().buildIndex));
         Resume();
     }
     public void DeadMenu()

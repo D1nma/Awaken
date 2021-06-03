@@ -62,9 +62,9 @@ public class Ombre : MonoBehaviour
     }
     IEnumerator Mort()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         float distance = Vector3.Distance(player.transform.position, transform.position);
-        if (distance <= enemy.stoppingDistance)
+        if (distance <= enemy.stoppingDistance && canHurt)
             GameManager.gameOver = true;
     }
     // Update is called once per frame
@@ -80,11 +80,11 @@ public class Ombre : MonoBehaviour
             Vector3 direction = player.transform.position - trait;
             RaycastHit hit;
             Ray ray2 = new Ray(trait, direction);
-            Debug.DrawRay(ray2.origin, ray2.direction * 5f, Color.green);
+            Debug.DrawRay(ray2.origin, ray2.direction * 2f, Color.green);
             RaycastHit hitinfo;
             float angle = Vector3.Angle(direction, transform.forward);
-            Debug.DrawRay(trait, this.transform.forward * 2, Color.white);
-            if (Physics.Raycast(trait, direction, out hitinfo, lookRadius))
+            Debug.DrawRay(trait, this.transform.forward * 1, Color.white);
+            if (Physics.Raycast(trait, direction, out hitinfo, 5f))
             {
                 //Debug.Log(hitinfo.transform.name);
                 float distance = Vector3.Distance(hitinfo.transform.gameObject.transform.position, transform.position);
