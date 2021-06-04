@@ -159,7 +159,7 @@ public class LampeHuile : MonoBehaviour
         }
         if (InteragirText == null)
         {
-            InteragirText = GameObject.Find("InteragirText");
+            Debug.LogWarning("Specifier interagir text");
         }
         if (Tips == null)
         {
