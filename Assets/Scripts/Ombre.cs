@@ -113,7 +113,7 @@ public class Ombre : MonoBehaviour
                         {
 
                             //Debug.Log("Alyx c'est mon 4h");
-                            if (Physics.Raycast(ray, out hit, 30f) && angle < 120 || distance < 2f)
+                            if (Physics.Raycast(ray, out hit, 30f) && angle < 160 || distance < 2f)
                             {
                                 see = true;
                                 canHurt = true;

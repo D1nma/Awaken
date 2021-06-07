@@ -79,8 +79,8 @@ public class FeuFollet : MonoBehaviour
                 }
                 else if (distance <= ff.stoppingDistance)
                 {
-                    ff.speed = 0;
-                    ff.isStopped = true;
+                    //ff.speed = 0;
+                    //ff.isStopped = true;
                     StartCoroutine(Recommence());
                     //TheNPC.GetComponent<Animation>().Play("Idle");
                 }
@@ -115,7 +115,7 @@ public class FeuFollet : MonoBehaviour
     {
         Vector3 direction = (spotPNJ.transform.position - transform.position); //.normalized
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 50f);
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 10f);
     }
     private void OnTriggerEnter(Collider other)
     {
