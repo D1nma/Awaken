@@ -13,7 +13,7 @@ public class Ombre : MonoBehaviour
     private bool immortal = false;
     float fastSpeed;
 
-    public bool idleOne = false;
+    public bool idleOne = false,canTouch;
     private bool canHurt = false;
 
     private bool follow = true, see = false;
@@ -72,81 +72,94 @@ public class Ombre : MonoBehaviour
     {
         if (player)
         {
-
-
-            trait = this.transform.position;
-            trait.y = this.transform.position.y + offsetRay;
-            var ray = new Ray(trait, this.transform.forward);
-            Vector3 direction = player.transform.position - trait;
-            RaycastHit hit;
-            Ray ray2 = new Ray(trait, direction);
-            Debug.DrawRay(ray2.origin, ray2.direction * 2f, Color.green);
-            RaycastHit hitinfo;
-            float angle = Vector3.Angle(direction, transform.forward);
-            Debug.DrawRay(trait, this.transform.forward * 1, Color.white);
-            if (Physics.Raycast(trait, direction, out hitinfo, 5f))
+            if (PlayersController.canControl == false || PlayersController.wakeUp == true)
             {
-                //Debug.Log(hitinfo.transform.name);
-                float distance = Vector3.Distance(hitinfo.transform.gameObject.transform.position, transform.position);
-                if (hitinfo.transform.gameObject.tag != "MainCamera"
-                    && hitinfo.transform.gameObject.tag != "point"
-                    && hitinfo.transform.gameObject.tag != null
-                    && hitinfo.transform.gameObject.tag != "Spawn"
-                    && hitinfo.transform.gameObject.tag != "Decors"
-                    && hitinfo.transform.gameObject.tag != "UI"
-                    && hitinfo.transform.gameObject.tag != "GM"
-                    && hitinfo.transform.gameObject.tag != "Invisible")
+                canTouch = false;
+            }
+            else
+            {
+                canTouch = true;
+            }
+            if (canTouch)
+            {
+
+
+
+                trait = this.transform.position;
+                trait.y = this.transform.position.y + offsetRay;
+                var ray = new Ray(trait, this.transform.forward);
+                Vector3 direction = player.transform.position - trait;
+                RaycastHit hit;
+                Ray ray2 = new Ray(trait, direction);
+                Debug.DrawRay(ray2.origin, ray2.direction * 2f, Color.green);
+                RaycastHit hitinfo;
+                float angle = Vector3.Angle(direction, transform.forward);
+                Debug.DrawRay(trait, this.transform.forward * 1, Color.white);
+                if (Physics.Raycast(trait, direction, out hitinfo, 5f))
                 {
-
-                    see = true;
-                    if (hitinfo.transform.gameObject.tag == "Player")
+                    //Debug.Log(hitinfo.transform.name);
+                    float distance = Vector3.Distance(hitinfo.transform.gameObject.transform.position, transform.position);
+                    if (hitinfo.transform.gameObject.tag != "MainCamera"
+                        && hitinfo.transform.gameObject.tag != "point"
+                        && hitinfo.transform.gameObject.tag != null
+                        && hitinfo.transform.gameObject.tag != "Spawn"
+                        && hitinfo.transform.gameObject.tag != "Decors"
+                        && hitinfo.transform.gameObject.tag != "UI"
+                        && hitinfo.transform.gameObject.tag != "GM"
+                        && hitinfo.transform.gameObject.tag != "Invisible")
                     {
-                        //Debug.Log("Alyx c'est mon 4h");
-                        if (Physics.Raycast(ray, out hit, 30f) && angle < 120 || distance < 3f)
-                        {
-                            canHurt = true;
-                            //Debug.Log("Alyx c'est mon 6h");
-                        }
-                        else
-                        {
-                            canHurt = false;
 
+                        if (hitinfo.transform.gameObject.tag == "Player")
+                        {
+
+                            //Debug.Log("Alyx c'est mon 4h");
+                            if (Physics.Raycast(ray, out hit, 30f) && angle < 160 || distance < 2f)
+                            {
+                                see = true;
+                                canHurt = true;
+                                //Debug.Log("Alyx c'est mon 6h");
+                            }
+                            else
+                            {
+                                canHurt = false;
+
+                            }
                         }
                     }
-                }
-                else
-                {
-                    see = false;
-                    //Debug.Log("Je vois rien");
-
-                    /*if (distance >= 30f)
+                    else
                     {
-                        Debug.Log("Je devrais voir ailleur..");
-                        follow = false;
-                        enemy.isStopped = true;
-                        StartCoroutine(Recommence());
-                    }*/
-                }
-            }
-
-            time += Time.deltaTime;
-            attaque = Random.Range(0, 2);
-            if (LifeTime > 0 && !immortal) { LifeTime -= time; }
-            if (idleOne && follow)
-            {
-                immortal = true;
-                if (pathPoints.Length > 1)
-                {
-                    StartAgent();
-                }
-
-                else
-                {
-                    Debug.LogWarning("Y'a pas de point pour patrouiller");
-
+                        see = false;
+                        Debug.Log("Je vois rien");
+                        //follow = false;
+                        /*enemy.isStopped = true;
+                        if (pathPoints.Length > 1)
+                        {
+                            StartAgent();
+                        }
+                        StartCoroutine(Recommence());*/
+                    }
                 }
             }
         }
+
+        time += Time.deltaTime;
+        attaque = Random.Range(0, 2);
+        if (LifeTime > 0 && !immortal) { LifeTime -= time; }
+        if (idleOne && follow)
+        {
+            immortal = true;
+            if (pathPoints.Length > 1)
+            {
+                StartAgent();
+            }
+
+            else
+            {
+                Debug.LogWarning("Y'a pas de point pour patrouiller");
+
+            }
+        }
+
         else if (!player)
         {
             player = GameObject.FindGameObjectWithTag("Player");
@@ -170,7 +183,7 @@ public class Ombre : MonoBehaviour
                         _animator.SetInteger("Attaque", attaque);
                         Debug.Log("touché");
                         _animator.SetBool("Chasing", true);
-                        
+
                         StartCoroutine(Mort());
                     }
                     enemy.ResetPath();
