@@ -45,6 +45,7 @@ public class TriggerEnnemy : MonoBehaviour
             }
         }
 
+
     }
 
     void OnTriggerEnter(Collider player)
@@ -52,6 +53,10 @@ public class TriggerEnnemy : MonoBehaviour
         if (player.tag == "Player")
         {
             Debug.Log("Entrer Zone de danger");
+            if (!spawnEnemy)
+            {
+                spawnEnemy = GameObject.FindGameObjectWithTag("Player").GetComponent<SpawnEnemy>();
+            }
             spawnEnemy.spawnOk = true;
         }
     }

@@ -72,7 +72,7 @@ public class FeuFollet : MonoBehaviour
                 if (distance > ff.stoppingDistance)
                 {
                     ff.isStopped = false;
-                    ff.destination = player.transform.position;
+                    ff.destination = spotPNJ.transform.position;
                     ff.speed = 8f;
                     //TheNPC.GetComponent<Animation>().Play("Walk");
                     //transform.position = Vector3.MoveTowards(transform.position, player.transform.position, FollowSpeed);
@@ -113,7 +113,7 @@ public class FeuFollet : MonoBehaviour
     }
     void FaceTarget()
     {
-        Vector3 direction = (player.transform.position - transform.position); //.normalized
+        Vector3 direction = (spotPNJ.transform.position - transform.position); //.normalized
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 50f);
     }
