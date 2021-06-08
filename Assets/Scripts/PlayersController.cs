@@ -24,7 +24,7 @@ public class PlayersController : MonoBehaviour
     bool isGrounded;
     public float turnSmoothTime = 0.1f;
     public float stamina = 10f;
-    public static bool moving = false;
+    public static bool moving = false,cacher;
     float turnSmoothVelocity;
     public Transform cam;
     Camera m_MainCamera;
@@ -194,8 +194,8 @@ public class PlayersController : MonoBehaviour
 
             if (!accroupir)
             {
-                cc.height = oldColliderHeight / 2;
-                moveSpeed = oldMoveSpeed / 2;
+                cc.height = oldColliderHeight / 4;
+                moveSpeed = oldMoveSpeed / 4;
                 accroupir = true;
                 animator.SetBool("Accroupi", true);
                 animator.SetBool("IsRunning", false);
@@ -208,6 +208,28 @@ public class PlayersController : MonoBehaviour
                 accroupir = false;
                 courrir = true;
                 animator.SetBool("Accroupi", false);
+            }
+
+        }
+        if (Input.GetKeyDown(KeyCode.A) && isGrounded && canControl && !accroupir)
+        {
+
+            if (!cacher)
+            {
+                cc.height = oldColliderHeight / 2;
+                moveSpeed = oldMoveSpeed / 2;
+                cacher = true;
+                animator.SetBool("Cacher", true);
+                animator.SetBool("IsRunning", false);
+                courrir = false;
+            }
+            else
+            {
+                cc.height = oldColliderHeight;
+                moveSpeed = oldMoveSpeed;
+                cacher = false;
+                courrir = true;
+                animator.SetBool("Cacher", false);
             }
 
         }
