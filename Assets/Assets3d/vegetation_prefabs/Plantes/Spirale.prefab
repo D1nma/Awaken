@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4625479719922430565}
   - component: {fileID: 7458361857752045822}
   - component: {fileID: 1355560376498501054}
+  - component: {fileID: 1731724687904406404}
   m_Layer: 0
   m_Name: Spirale
   m_TagString: Untagged
@@ -51,6 +52,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -81,3 +83,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!205 &1731724687904406404
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848171250866802333}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.024847865, y: 0.4479208, z: 0.03062725}
+  m_Size: 1.6167486
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.13828254
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 1355560376498501054}
+  m_Enabled: 1

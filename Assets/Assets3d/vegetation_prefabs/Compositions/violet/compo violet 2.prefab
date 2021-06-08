@@ -5717,6 +5717,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5329121119563140835}
+  - component: {fileID: 3330503506542506095}
   m_Layer: 0
   m_Name: compo violet 2
   m_TagString: Untagged
@@ -5752,6 +5753,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &3330503506542506095
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5329121119563140832}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.22549677, y: 1.8162898, z: -0.34963143}
+  m_Size: 5.858652
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.13828254
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 6788405465809075318}
+    - renderer: {fileID: 5329121118897073264}
+    - renderer: {fileID: 6788405465429458255}
+    - renderer: {fileID: 5329121119631584481}
+    - renderer: {fileID: 6788405465779523210}
+    - renderer: {fileID: 5329121119256519064}
+    - renderer: {fileID: 5329121119677711145}
+    - renderer: {fileID: 6788405465581467613}
+    - renderer: {fileID: 6788405464826125962}
+    - renderer: {fileID: 5329121119367072594}
+    - renderer: {fileID: 5329121118198873139}
+    - renderer: {fileID: 5329121119380325157}
+    - renderer: {fileID: 5329121119222796053}
+    - renderer: {fileID: 5329121119797270893}
+  m_Enabled: 1
 --- !u!1 &5329121119631584511
 GameObject:
   m_ObjectHideFlags: 0

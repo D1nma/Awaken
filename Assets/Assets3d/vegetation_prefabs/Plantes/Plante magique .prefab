@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1119334298325127236}
   - component: {fileID: 900571395920757912}
   - component: {fileID: 1052352296543589361}
+  - component: {fileID: 2495798603612144771}
   m_Layer: 0
   m_Name: 'Plante magique '
   m_TagString: Untagged
@@ -102,3 +103,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!205 &2495798603612144771
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3622456539645872818}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.018936753, y: 0.55903333, z: 0.2229886}
+  m_Size: 2.05489
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.13650258
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 900571395920757912}
+  m_Enabled: 1

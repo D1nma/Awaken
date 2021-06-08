@@ -747,6 +747,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5496825713943780774}
+  - component: {fileID: 6343823671822993749}
   m_Layer: 0
   m_Name: compo bleu 5
   m_TagString: Untagged
@@ -785,6 +786,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &6343823671822993749
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5496825713943780773}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.04517126, y: 1.3805659, z: 0.10409284}
+  m_Size: 5.951112
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.14007391
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5496825715931626139}
+    - renderer: {fileID: 6595856442509533368}
+    - renderer: {fileID: 6595856441144288015}
+    - renderer: {fileID: 6595856441142631832}
+    - renderer: {fileID: 6595856442517254127}
+    - renderer: {fileID: 6595856441184321249}
+    - renderer: {fileID: 5496825714506988190}
+    - renderer: {fileID: 5496825714300379907}
+    - renderer: {fileID: 5496825715863093116}
+    - renderer: {fileID: 5496825715360234010}
+    - renderer: {fileID: 5496825715568640779}
+    - renderer: {fileID: 6595856441809765458}
+    - renderer: {fileID: 6595856440741915575}
+    - renderer: {fileID: 6595856442143358440}
+    - renderer: {fileID: 6595856441241718156}
+    - renderer: {fileID: 5496825715510788861}
+    - renderer: {fileID: 5496825715550220261}
+  m_Enabled: 1
 --- !u!1 &5496825714302385603
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ public class CheatCode : MonoBehaviour
 {
     public Transform[] SpotSpawn;
     public GameObject player;
+    public static bool cheat;
     CharacterController cc;
     // Start is called before the first frame update
     void Start()
@@ -222,6 +223,17 @@ public class CheatCode : MonoBehaviour
                         Debug.Log("TP 9");
                     }
 
+                }
+                else if (Input.GetKeyDown(KeyCode.H))
+                {
+                    if (cheat)
+                    {
+                        cheat = false;
+                    }
+                    else
+                    {
+                        cheat = true;
+                    }
                 }
             }
             

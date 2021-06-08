@@ -50,6 +50,21 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (Xquestion == false && Yquestion == false)
+            {
+                EndDialogue();
+            }
+            else if (Xquestion == true)
+            {
+                EndDialogueForQuestion();
+            }
+            else
+            {
+                EndQuestion();
+            }
+        }
         if (WaitAnswer == false)
         {
             if (Input.GetMouseButtonDown(0) && canClick || Input.GetButtonDown("Fire1") && canClick)
@@ -57,7 +72,7 @@ public class DialogueManager : MonoBehaviour
                 DisplayNextSentence();
             }
         }
-        if (WaitAnswer && Yquestion)
+        else if (WaitAnswer && Yquestion)
         {
             if (Input.GetMouseButtonDown(0) && canClick || Input.GetButtonDown("Fire1") && canClick)
             {

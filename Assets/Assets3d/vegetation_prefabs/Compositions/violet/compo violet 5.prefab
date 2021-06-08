@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8120318157002095091}
+  - component: {fileID: 3861156153004907431}
   m_Layer: 0
   m_Name: compo violet 5
   m_TagString: Untagged
@@ -36,6 +37,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &3861156153004907431
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539639439251982822}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.34084558, y: 1.1485347, z: 0.17790645}
+  m_Size: 3.2403667
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.14007391
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 8402559933719345761}
+    - renderer: {fileID: 728236731172329932}
+    - renderer: {fileID: 7283409580535663485}
+    - renderer: {fileID: 3974029781482647798}
+    - renderer: {fileID: 5305465779820675598}
+    - renderer: {fileID: 4255270268720195252}
+  m_Enabled: 1
 --- !u!1 &1232802136480593945
 GameObject:
   m_ObjectHideFlags: 0
