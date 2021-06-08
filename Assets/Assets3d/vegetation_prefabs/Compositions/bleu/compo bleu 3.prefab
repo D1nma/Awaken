@@ -4829,6 +4829,7 @@ GameObject:
   - component: {fileID: 2766914279958177932}
   - component: {fileID: 2766914279958948012}
   - component: {fileID: 2766914279960078956}
+  - component: {fileID: 9182715558155282037}
   m_Layer: 0
   m_Name: Champi_1 (26)
   m_TagString: Untagged
@@ -4900,6 +4901,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9182715558155282037
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2766914279958082732}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6554962, y: 0.792585, z: 0.65093976}
+  m_Center: {x: -0.059267487, y: 0.3338163, z: 0.00000092294573}
 --- !u!1 &2766914280214197449
 GameObject:
   m_ObjectHideFlags: 0
@@ -4991,7 +5005,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2766914280214197449}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.65549606, y: 0.79258513, z: 0.6509395}
@@ -5126,7 +5140,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2766914280646063109}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.655496, y: 0.792585, z: 0.6509395}
@@ -5222,7 +5236,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2766914280665604741}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.6554963, y: 0.7925851, z: 0.6509397}
@@ -5420,7 +5434,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2766914281074105976}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.6554964, y: 0.7925852, z: 0.6509402}
