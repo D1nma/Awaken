@@ -50,10 +50,6 @@ public class DialogueTrigger : MonoBehaviour
             TriggerDialogue();
             start = false;
         }
-        /*if (InteragirText == null)
-        {
-            InteragirText = GameObject.Find("interagirText");
-        }*/
 
     }
     private void OnTriggerEnter(Collider other)
