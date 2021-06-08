@@ -119,6 +119,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2609056725621126162}
+  - component: {fileID: 8233725279180758876}
   m_Layer: 0
   m_Name: compo champis 4
   m_TagString: Untagged
@@ -142,6 +143,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &8233725279180758876
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5520219729677138923}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.03479007, y: 0.32254365, z: -0.03194353}
+  m_Size: 1.1299059
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.14202787
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7969211627295265068}
+    - renderer: {fileID: 3948379092655913375}
+  m_Enabled: 1
 --- !u!1 &6043867701198783827
 GameObject:
   m_ObjectHideFlags: 0

@@ -5005,6 +5005,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2766914280631269024}
+  - component: {fileID: 8831295645093022724}
   m_Layer: 0
   m_Name: compo bleu 3
   m_TagString: Untagged
@@ -5035,6 +5036,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -0.04, y: -0.245, z: 0.226}
+--- !u!205 &8831295645093022724
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2766914280631269027}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.18304831, y: 0.59079707, z: -0.0743736}
+  m_Size: 3.507345
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.13650258
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 3577995834903713532}
+    - renderer: {fileID: 2766914279542819484}
+    - renderer: {fileID: 3577995834174389552}
+    - renderer: {fileID: 2766914280952236625}
+    - renderer: {fileID: 2766914281072099512}
+    - renderer: {fileID: 2766914280667610181}
+    - renderer: {fileID: 2766914279960078956}
+    - renderer: {fileID: 2766914280648321733}
+    - renderer: {fileID: 2766914280216193545}
+  m_Enabled: 1
 --- !u!1 &2766914280646063109
 GameObject:
   m_ObjectHideFlags: 0

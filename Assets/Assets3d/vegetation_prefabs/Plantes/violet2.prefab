@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4323418053768582479}
   - component: {fileID: 887216022034848490}
   - component: {fileID: 3149407075738381856}
+  - component: {fileID: 8378980125598407638}
   m_Layer: 0
   m_Name: violet2
   m_TagString: Untagged
@@ -51,6 +52,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -81,3 +83,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!205 &8378980125598407638
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3509444838620876789}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.0064809322, y: 1.339036, z: 0.10716921}
+  m_Size: 2.9484234
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.14187676
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 3149407075738381856}
+  m_Enabled: 1
