@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 4296954260729962319}
   - component: {fileID: 7569899951493825151}
   - component: {fileID: 3410598023817433367}
-  - component: {fileID: 2683996151244774437}
-  - component: {fileID: 9056677374896324509}
   m_Layer: 0
   m_Name: Champi bleu (2)
   m_TagString: Untagged
@@ -84,32 +82,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2683996151244774437
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3860511799091588911}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.28, y: 0.4, z: 0.28}
-  m_Center: {x: 0, y: 0.12, z: 0}
---- !u!65 &9056677374896324509
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3860511799091588911}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.65, y: 0.5, z: 0.43}
-  m_Center: {x: -0.055, y: 0.48, z: 0}
 --- !u!1 &4499301995682526662
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,8 +93,6 @@ GameObject:
   - component: {fileID: 2838838713128484993}
   - component: {fileID: 8482266175207090576}
   - component: {fileID: 4381958526870218112}
-  - component: {fileID: 823282762519482523}
-  - component: {fileID: 4854977046782280175}
   m_Layer: 0
   m_Name: Champi bleu
   m_TagString: Untagged
@@ -194,32 +164,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &823282762519482523
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4499301995682526662}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.28, y: 0.4, z: 0.28}
-  m_Center: {x: 0, y: 0.12, z: 0}
---- !u!65 &4854977046782280175
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4499301995682526662}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.65, y: 0.5, z: 0.43}
-  m_Center: {x: -0.055, y: 0.48, z: 0}
 --- !u!1 &4915923091995383333
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,8 +230,6 @@ GameObject:
   - component: {fileID: 9144206741509108959}
   - component: {fileID: 5013524738015998382}
   - component: {fileID: 8197302761413308037}
-  - component: {fileID: 8315315101777051140}
-  - component: {fileID: 3468323852223945965}
   m_Layer: 0
   m_Name: Champi bleu (1)
   m_TagString: Untagged
@@ -359,29 +301,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8315315101777051140
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6249021009068298491}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.28, y: 0.4, z: 0.28}
-  m_Center: {x: 0, y: 0.12, z: 0}
---- !u!65 &3468323852223945965
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6249021009068298491}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.65, y: 0.5, z: 0.43}
-  m_Center: {x: -0.055, y: 0.48, z: 0}

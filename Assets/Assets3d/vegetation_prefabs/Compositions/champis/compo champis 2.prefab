@@ -66,8 +66,6 @@ GameObject:
   - component: {fileID: 5696338932521250145}
   - component: {fileID: 1462759549473300548}
   - component: {fileID: 5635066102511876417}
-  - component: {fileID: 6669404645453586277}
-  - component: {fileID: 3732367034927637890}
   m_Layer: 0
   m_Name: Champi violet
   m_TagString: Untagged
@@ -139,32 +137,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6669404645453586277
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2446163197253226028}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.28, y: 0.4, z: 0.28}
-  m_Center: {x: 0, y: 0.12, z: 0}
---- !u!65 &3732367034927637890
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2446163197253226028}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.65, y: 0.5, z: 0.43}
-  m_Center: {x: -0.055, y: 0.48, z: 0}
 --- !u!1 &5811588742502399472
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,8 +148,6 @@ GameObject:
   - component: {fileID: 8502925394126567134}
   - component: {fileID: 1407276842861716840}
   - component: {fileID: 7655837521666694454}
-  - component: {fileID: 5698037370062872291}
-  - component: {fileID: 8260137260192850205}
   m_Layer: 0
   m_Name: Champi violet
   m_TagString: Untagged
@@ -249,32 +219,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5698037370062872291
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5811588742502399472}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.28, y: 0.4, z: 0.28}
-  m_Center: {x: 0, y: 0.12, z: 0}
---- !u!65 &8260137260192850205
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5811588742502399472}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.65, y: 0.5, z: 0.43}
-  m_Center: {x: -0.055, y: 0.48, z: 0}
 --- !u!1 &6141554467105286837
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,8 +230,6 @@ GameObject:
   - component: {fileID: 6709046252961798521}
   - component: {fileID: 7906773654716075071}
   - component: {fileID: 5136414029341152025}
-  - component: {fileID: 4589313262552810213}
-  - component: {fileID: 6887989990279421974}
   m_Layer: 0
   m_Name: Champi violet
   m_TagString: Untagged
@@ -359,29 +301,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4589313262552810213
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6141554467105286837}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.28, y: 0.4, z: 0.28}
-  m_Center: {x: 0, y: 0.12, z: 0}
---- !u!65 &6887989990279421974
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6141554467105286837}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.65, y: 0.5, z: 0.43}
-  m_Center: {x: -0.055, y: 0.48, z: 0}

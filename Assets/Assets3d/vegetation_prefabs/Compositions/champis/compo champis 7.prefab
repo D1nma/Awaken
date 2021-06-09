@@ -44,8 +44,6 @@ GameObject:
   - component: {fileID: 771126431666275388}
   - component: {fileID: 8694089192954301371}
   - component: {fileID: 5837848742098344312}
-  - component: {fileID: 7581870709873094386}
-  - component: {fileID: 737522833277427069}
   m_Layer: 0
   m_Name: champi rouge
   m_TagString: Untagged
@@ -117,32 +115,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7581870709873094386
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2339220858558693947}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.28, y: 0.4, z: 0.28}
-  m_Center: {x: 0, y: 0.12, z: 0}
---- !u!65 &737522833277427069
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2339220858558693947}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.65, y: 0.5, z: 0.43}
-  m_Center: {x: -0.055, y: 0.48, z: 0}
 --- !u!1 &5130633181259753718
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,8 +126,6 @@ GameObject:
   - component: {fileID: 8313855221132308924}
   - component: {fileID: 4299372065296923078}
   - component: {fileID: 3688066182628077743}
-  - component: {fileID: 5471810184059013741}
-  - component: {fileID: 6772954452373431592}
   m_Layer: 0
   m_Name: Champi_2
   m_TagString: Untagged
@@ -227,32 +197,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5471810184059013741
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5130633181259753718}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6, y: 2.5, z: 0.6}
-  m_Center: {x: -0.18, y: 1.23, z: -0.045}
---- !u!65 &6772954452373431592
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5130633181259753718}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.3, y: 0.9, z: 3.3}
-  m_Center: {x: -0.02, y: 2.35, z: 0.02}
 --- !u!1 &5986652763676767062
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,8 +208,6 @@ GameObject:
   - component: {fileID: 2877522203152135367}
   - component: {fileID: 4983317815620373526}
   - component: {fileID: 6180338274990159385}
-  - component: {fileID: 1715827835951938432}
-  - component: {fileID: 276372103990860203}
   m_Layer: 0
   m_Name: champi rouge
   m_TagString: Untagged
@@ -337,29 +279,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1715827835951938432
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5986652763676767062}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.28, y: 0.4, z: 0.28}
-  m_Center: {x: 0, y: 0.12, z: 0}
---- !u!65 &276372103990860203
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5986652763676767062}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.65, y: 0.5, z: 0.43}
-  m_Center: {x: -0.055, y: 0.48, z: 0}
