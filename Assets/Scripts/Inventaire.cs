@@ -58,27 +58,6 @@ public class Inventaire : MonoBehaviour
 
     void Update()
     {
-        if (CheatCode.cheat)
-        {
-            ApresRocher = true;
-            First = true;
-            canne = true;
-            boite = true;
-            Keyvolee = true;
-            key = true;
-            champi = true;
-
-        }
-        else if(CheatCode.cheat == false)
-        {
-            ApresRocher = false;
-            First = false;
-            canne = false;
-            Keyvolee = false;
-            boite = false;
-            key = false;
-            champi = false;
-        }
         if (!bird)
         {
             bird = GameObject.Find("Bird");

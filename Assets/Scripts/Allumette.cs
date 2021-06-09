@@ -32,9 +32,12 @@ public class Allumette : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            dispo = true;
-            InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur E pour prendre la boite à allumette";
-            InteragirText.SetActive(true);
+            if (InteragirText != null)
+            {
+                dispo = true;
+                InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur E pour prendre la boite à allumette";
+                InteragirText.SetActive(true);
+            }
         }
         if (other.tag != "Player") { return; }
 

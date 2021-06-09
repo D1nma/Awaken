@@ -95,6 +95,7 @@ public class PlayersController : MonoBehaviour
         if (!courrir)
         {
             animator.SetBool("IsRunning", false);
+            StaminaBar.instance.StopStamina();
             moveSpeed = 5;
         }
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
@@ -177,6 +178,7 @@ public class PlayersController : MonoBehaviour
         {
             animator.SetBool("IsWalking", false);
             animator.SetBool("IsRunning", false);
+            StaminaBar.instance.StopStamina();
         }
 
         if (Input.GetButtonDown("Jump") && isGrounded && canControl && !grimper && !wakeUp )
@@ -184,12 +186,12 @@ public class PlayersController : MonoBehaviour
             animator.SetBool("jump", true);
             velocity.y = Mathf.Sqrt(jumpSpeed * -2f * gravity);
         }
-        else if (Input.GetButtonDown("Jump") && isGrounded && canControl && grimper)
+        else if (Input.GetButtonDown("Jump") && isGrounded && canControl && grimper && !wakeUp)
         {
             animator.SetTrigger("Grimper");
             //animation intégrer plus empecher de bouger
         }
-        if (Input.GetKeyDown(KeyCode.C) && isGrounded && canControl)
+        if (Input.GetKeyDown(KeyCode.C) && isGrounded && canControl && !wakeUp)
         {
 
             if (!accroupir)
@@ -211,7 +213,7 @@ public class PlayersController : MonoBehaviour
             }
 
         }
-        if (Input.GetKeyDown(KeyCode.A) && isGrounded && canControl && !accroupir)
+        if (Input.GetKeyDown(KeyCode.A) && isGrounded && canControl && !accroupir && !wakeUp)
         {
 
             if (!cacher)

@@ -17,6 +17,7 @@ public class StaminaBar : MonoBehaviour
 
     public bool use;
     private float time = 0;
+    bool doOnce;
     public static StaminaBar instance;
 
     private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
@@ -53,8 +54,7 @@ public class StaminaBar : MonoBehaviour
 
                 if (regen != null)
                     StopCoroutine(regen);
-
-                regen = StartCoroutine(RegenStamina());
+                doOnce = true;
             }
             else
             {
@@ -68,6 +68,12 @@ public class StaminaBar : MonoBehaviour
     public void StopStamina()
     {
         use = false;
+        if (doOnce)
+        {
+            regen = StartCoroutine(RegenStamina());
+            doOnce = false;
+        }
+        
     }
 
 

@@ -7,6 +7,7 @@ public class CheatCode : MonoBehaviour
     public Transform[] SpotSpawn;
     public GameObject player;
     public static bool cheat;
+    public Inventaire invent;
     CharacterController cc;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,11 @@ public class CheatCode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player)
+        if (!invent)
+        {
+            invent = GameObject.Find("Inventaire").GetComponent<Inventaire>();
+        }
+        else if (player)
         {
             if (!cc)
             {
@@ -31,13 +36,11 @@ public class CheatCode : MonoBehaviour
                     {
                         PlayersController.canControl = false;
                         cc.enabled = false;
+                        float distance = Vector3.Distance(player.transform.position, SpotSpawn[0].position);
 
-                        if (player.transform.position != SpotSpawn[0].position)
+                        if (distance >= 2f)
                         {
                             player.transform.position = SpotSpawn[0].position;
-                        }
-                        else if (player.transform.position == SpotSpawn[0].position)
-                        {
                             PlayersController.canControl = true;
                             cc.enabled = true;
                         }
@@ -50,13 +53,11 @@ public class CheatCode : MonoBehaviour
                     {
                         PlayersController.canControl = false;
                         cc.enabled = false;
+                        float distance = Vector3.Distance(player.transform.position, SpotSpawn[1].position);
 
-                        if (player.transform.position != SpotSpawn[1].position)
+                        if (distance >= 2f)
                         {
                             player.transform.position = SpotSpawn[1].position;
-                        }
-                        else if (player.transform.position == SpotSpawn[1].position)
-                        {
                             PlayersController.canControl = true;
                             cc.enabled = true;
                         }
@@ -70,13 +71,11 @@ public class CheatCode : MonoBehaviour
                     {
                         PlayersController.canControl = false;
                         cc.enabled = false;
+                        float distance = Vector3.Distance(player.transform.position, SpotSpawn[2].position);
 
-                        if (player.transform.position != SpotSpawn[2].position)
+                        if (distance >= 2f)
                         {
                             player.transform.position = SpotSpawn[2].position;
-                        }
-                        else if (player.transform.position == SpotSpawn[2].position)
-                        {
                             PlayersController.canControl = true;
                             cc.enabled = true;
                         }
@@ -90,13 +89,11 @@ public class CheatCode : MonoBehaviour
                     {
                         PlayersController.canControl = false;
                         cc.enabled = false;
+                        float distance = Vector3.Distance(player.transform.position, SpotSpawn[3].position);
 
-                        if (player.transform.position != SpotSpawn[3].position)
+                        if (distance >= 2f)
                         {
                             player.transform.position = SpotSpawn[3].position;
-                        }
-                        else if (player.transform.position == SpotSpawn[3].position)
-                        {
                             PlayersController.canControl = true;
                             cc.enabled = true;
                         }
@@ -110,13 +107,11 @@ public class CheatCode : MonoBehaviour
                     {
                         PlayersController.canControl = false;
                         cc.enabled = false;
+                        float distance = Vector3.Distance(player.transform.position, SpotSpawn[4].position);
 
-                        if (player.transform.position != SpotSpawn[4].position)
+                        if (distance >= 2f)
                         {
                             player.transform.position = SpotSpawn[4].position;
-                        }
-                        else if (player.transform.position == SpotSpawn[4].position)
-                        {
                             PlayersController.canControl = true;
                             cc.enabled = true;
                         }
@@ -130,13 +125,11 @@ public class CheatCode : MonoBehaviour
                     {
                         PlayersController.canControl = false;
                         cc.enabled = false;
+                        float distance = Vector3.Distance(player.transform.position, SpotSpawn[5].position);
 
-                        if (player.transform.position != SpotSpawn[5].position)
+                        if (distance >= 2f)
                         {
                             player.transform.position = SpotSpawn[5].position;
-                        }
-                        else if (player.transform.position == SpotSpawn[5].position)
-                        {
                             PlayersController.canControl = true;
                             cc.enabled = true;
                         }
@@ -150,13 +143,11 @@ public class CheatCode : MonoBehaviour
                     {
                         PlayersController.canControl = false;
                         cc.enabled = false;
+                        float distance = Vector3.Distance(player.transform.position, SpotSpawn[6].position);
 
-                        if (player.transform.position != SpotSpawn[6].position)
+                        if (distance >= 2f)
                         {
                             player.transform.position = SpotSpawn[6].position;
-                        }
-                        else if (player.transform.position == SpotSpawn[6].position)
-                        {
                             PlayersController.canControl = true;
                             cc.enabled = true;
                         }
@@ -170,13 +161,11 @@ public class CheatCode : MonoBehaviour
                     {
                         PlayersController.canControl = false;
                         cc.enabled = false;
+                        float distance = Vector3.Distance(player.transform.position, SpotSpawn[7].position);
 
-                        if (player.transform.position != SpotSpawn[7].position)
+                        if (distance >= 2f)
                         {
                             player.transform.position = SpotSpawn[7].position;
-                        }
-                        else if (player.transform.position == SpotSpawn[7].position)
-                        {
                             PlayersController.canControl = true;
                             cc.enabled = true;
                         }
@@ -190,13 +179,11 @@ public class CheatCode : MonoBehaviour
                     {
                         PlayersController.canControl = false;
                         cc.enabled = false;
+                        float distance = Vector3.Distance(player.transform.position, SpotSpawn[8].position);
 
-                        if (player.transform.position != SpotSpawn[8].position)
+                        if (distance >= 2f)
                         {
                             player.transform.position = SpotSpawn[8].position;
-                        }
-                        else if (player.transform.position == SpotSpawn[8].position)
-                        {
                             PlayersController.canControl = true;
                             cc.enabled = true;
                         }
@@ -210,13 +197,11 @@ public class CheatCode : MonoBehaviour
                     {
                         PlayersController.canControl = false;
                         cc.enabled = false;
+                        float distance = Vector3.Distance(player.transform.position, SpotSpawn[9].position);
 
-                        if (player.transform.position != SpotSpawn[9].position)
+                        if (distance >= 2f)
                         {
                             player.transform.position = SpotSpawn[9].position;
-                        }
-                        else if (player.transform.position == SpotSpawn[9].position)
-                        {
                             PlayersController.canControl = true;
                             cc.enabled = true;
                         }
@@ -229,10 +214,32 @@ public class CheatCode : MonoBehaviour
                     if (cheat)
                     {
                         cheat = false;
+
                     }
                     else
                     {
                         cheat = true;
+                    }
+                    if (cheat)
+                    {
+                        invent.ApresRocher = true;
+                        invent.First = true;
+                        invent.canne = true;
+                        invent.boite = true;
+                        invent.Keyvolee = true;
+                        invent.key = true;
+                        invent.champi = true;
+
+                    }
+                    else if (cheat == false)
+                    {
+                        invent.ApresRocher = false;
+                        invent.First = false;
+                        invent.canne = false;
+                        invent.Keyvolee = false;
+                        invent.boite = false;
+                        invent.key = false;
+                        invent.champi = false;
                     }
                 }
             }

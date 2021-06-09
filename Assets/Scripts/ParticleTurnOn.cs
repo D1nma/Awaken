@@ -6,38 +6,26 @@ public class ParticleTurnOn : MonoBehaviour
 {
     ParticleSystem ps;
     bool closeTo;
+    public ParticleSystem.EmissionModule em;
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         ps = GetComponent<ParticleSystem>();
-        var em = ps.emission;
-        if (closeTo)
-        {
-            em.enabled = true;
-        }
-        else
-        {
-            em.enabled = false;
-        }
+        em = ps.emission;
+
     }
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
         {
-            closeTo = true;
+            em.enabled = true;
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
         {
-            closeTo = false;
+            em.enabled = false;
         }
     }
  }

@@ -18,6 +18,10 @@ public class SuppObstacle : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        obstacle.gameObject.SetActive(false);
+        if(other.tag == "Player")
+        {
+            obstacle.gameObject.SetActive(false);
+        }
+        
     }
 }

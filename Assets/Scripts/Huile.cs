@@ -33,10 +33,25 @@ public class Huile : MonoBehaviour
     {
         if (other.tag == "Player" && lampeHuile.EnMain && !dispo)
         {
-            dispo = true;
-            InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur E pour prendre la recharge";
-            InteragirText.SetActive(true);
+            if (InteragirText != null)
+            {
+                dispo = true;
+                InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur E pour prendre la recharge";
+                InteragirText.SetActive(true);
+            }
         }
+        if (other.tag == "Player" && lampeHuile && !dispo)
+        {
+            if (!lampeHuile.EnMain)
+            {
+                if (InteragirText != null)
+                {
+                    InteragirText.gameObject.GetComponent<Text>().text = "Il te faut la lampe à huile !";
+                    InteragirText.SetActive(true);
+                }
+            }
+        }
+        
 
     }
     private void OnTriggerExit(Collider other)
