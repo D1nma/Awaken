@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6529190144918705041}
   - component: {fileID: 7868787192210086964}
   - component: {fileID: 5392914367429978366}
+  - component: {fileID: 1553242080562748747}
   m_Layer: 0
   m_Name: foret2_2
   m_TagString: Untagged
@@ -82,3 +83,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!205 &1553242080562748747
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5897331201033373995}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 2.0111456, y: 9.082367, z: 2.2301702}
+  m_Size: 20.045582
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.13584702
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5392914367429978366}
+  m_Enabled: 1

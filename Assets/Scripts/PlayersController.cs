@@ -179,7 +179,7 @@ public class PlayersController : MonoBehaviour
             animator.SetBool("IsRunning", false);
         }
 
-        if (Input.GetButtonDown("Jump") && isGrounded && canControl && !grimper)
+        if (Input.GetButtonDown("Jump") && isGrounded && canControl && !grimper && !wakeUp )
         {
             animator.SetBool("jump", true);
             velocity.y = Mathf.Sqrt(jumpSpeed * -2f * gravity);
