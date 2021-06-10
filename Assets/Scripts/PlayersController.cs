@@ -28,9 +28,9 @@ public class PlayersController : MonoBehaviour
     float turnSmoothVelocity;
     public Transform cam;
     Camera m_MainCamera;
-    private bool accroupir = false;
+    private bool accroupir = false,Rotation,positionBras;
     public static bool canControl = true, wakeUp = false;
-    public float animationLenghtWakeUp = 11f;
+    public float animationLenghtWakeUp = 13.2f;
     public bool courrir = true, grimper;
     private bool SUPERUSER = false;
 
@@ -68,10 +68,19 @@ public class PlayersController : MonoBehaviour
         {
             if (lampeHuile.EnMain)
             {
-                rig.GetComponentInChildren<TwoBoneIKConstraint>().weight = 0.8f; //Le bras se met en place
-                rigHand.weight = 1f;
-
-                //lampeHuile.gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 0f); //aucun effet
+                if (!positionBras)
+                {
+                    rig.GetComponentInChildren<TwoBoneIKConstraint>().weight = 0.8f; //Le bras se met en place
+                    rigHand.weight = 1f;
+                    positionBras = true;
+                }
+                
+                if (!Rotation)
+                {
+                    lampeHuile.gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 0f); //aucun effet
+                    Rotation = true;
+                }
+                
             }
         }
         if (SUPERUSER)
@@ -198,6 +207,7 @@ public class PlayersController : MonoBehaviour
             {
                 cc.height = oldColliderHeight / 4;
                 moveSpeed = oldMoveSpeed / 4;
+                cc.center = new Vector3(0, 0.38f, 0);
                 accroupir = true;
                 animator.SetBool("Accroupi", true);
                 animator.SetBool("IsRunning", false);
@@ -206,6 +216,7 @@ public class PlayersController : MonoBehaviour
             else
             {
                 cc.height = oldColliderHeight;
+                cc.center = new Vector3(0, 0.76f, 0);
                 moveSpeed = oldMoveSpeed;
                 accroupir = false;
                 courrir = true;
@@ -219,6 +230,7 @@ public class PlayersController : MonoBehaviour
             if (!cacher)
             {
                 cc.height = oldColliderHeight / 2;
+                cc.center = new Vector3(0, 0.38f, 0);
                 moveSpeed = oldMoveSpeed / 2;
                 cacher = true;
                 animator.SetBool("Cacher", true);
@@ -228,6 +240,7 @@ public class PlayersController : MonoBehaviour
             else
             {
                 cc.height = oldColliderHeight;
+                cc.center = new Vector3(0, 0.76f, 0);
                 moveSpeed = oldMoveSpeed;
                 cacher = false;
                 courrir = true;
@@ -235,7 +248,7 @@ public class PlayersController : MonoBehaviour
             }
 
         }
-        if (canControl)
+        if (canControl && !wakeUp)
         {
             cc.Move(velocity * Time.deltaTime);
         }
@@ -249,6 +262,7 @@ public class PlayersController : MonoBehaviour
     private IEnumerator AnimatorSetWakeUp(float animationLength)
     {
         animator.SetBool("WakeUp", true);
+        cc.Move(velocity * Time.deltaTime);
         yield return new WaitForSeconds(animationLenghtWakeUp);
         animator.SetBool("WakeUp", false);
         wakeUp = false;

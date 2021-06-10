@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Inventaire : MonoBehaviour
 {
-    public GameObject bird;
+    public GameObject bird,cle,pates;
     public GameObject DialogueClé, DialoguePeche, DialoguePeche2,DialogueAppat;
     private static Inventaire instance;
 
@@ -89,7 +89,8 @@ public class Inventaire : MonoBehaviour
                 PlayersController.canControl = false;
                 Keyvolee = true;
                 RocherOiseau.rocherDialogue = true;
-                StartCoroutine(BirdKey(6));
+                StartCoroutine(GetKeyBird(6f));
+                StartCoroutine(BirdKey(12.12f));
             }
             else
             {
@@ -129,7 +130,13 @@ public class Inventaire : MonoBehaviour
         }
 
     }
-    private IEnumerator BirdKey(float duree)
+    private IEnumerator GetKeyBird(float duree)
+    {
+        yield return new WaitForSeconds(duree);
+        cle.transform.parent = pates.transform;
+        cle.transform.position = pates.transform.position;
+    }
+        private IEnumerator BirdKey(float duree)
     {
         //animator.SetBool("Bird", true);
         yield return new WaitForSeconds(duree);

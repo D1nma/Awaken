@@ -76,7 +76,7 @@ public class item : MonoBehaviour
                 Destroy(this.gameObject,20f);
                 Debug.Log("C'est une clé!");
                 StartCoroutine(DialogueKey(7));
-                StartCoroutine(Disparition(7.5f));
+                StartCoroutine(Disparition(12f));
                 invent.key =true;
                 invent.keyEmpty = false;
             }
