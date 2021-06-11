@@ -140,7 +140,7 @@ public class Inventaire : MonoBehaviour
     {
         //animator.SetBool("Bird", true);
         yield return new WaitForSeconds(duree);
-        bird.SetActive(false);
+        //bird.SetActive(false);
         key = false;
         keyUI.SetActive(false);
         keyEmpty = true;
