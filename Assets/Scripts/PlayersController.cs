@@ -34,6 +34,21 @@ public class PlayersController : MonoBehaviour
     public bool courrir = true, grimper;
     private bool SUPERUSER = false;
 
+    private static PlayersController instance;
+    void Awake()
+    {
+        if (instance == null)
+        {
+
+            instance = this;
+            DontDestroyOnLoad(instance);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -143,6 +158,10 @@ public class PlayersController : MonoBehaviour
             animator.SetBool("IsWalking", true);
             if (Input.GetButtonDown("Sprint") && !accroupir && canControl)
             {
+                Debug.Log(isGrounded);
+                Debug.Log(courrir);
+                Debug.Log(StaminaBar.instance.currentStamina);
+                
                 animator.SetBool("IsRunning", true);
                 if (SUPERUSER)
                 {
@@ -153,6 +172,7 @@ public class PlayersController : MonoBehaviour
                     if (StaminaBar.instance.currentStamina > 0 && courrir && isGrounded && !SUPERUSER)
                     {
                         StaminaBar.instance.UseStamina(true);
+                        Debug.Log(StaminaBar.instance.use);
                         if (StaminaBar.instance.use)
                         {
                             moveSpeed = moveSpeed * 1.4f;
