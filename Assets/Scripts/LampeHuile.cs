@@ -8,7 +8,13 @@ public class LampeHuile : MonoBehaviour
     private UIManager ui;
     public static LampeHuile instance;
     public Slider huileBar;
-
+    public GameObject verre;
+    Renderer renderer;
+    Material [] mats;
+    Material mat;
+    Color oldValue;
+    Color baseColor;
+    private bool PowerOn;
     public GameObject InteragirText;
     public GameObject Tips;
     public GameObject lumiere;
@@ -50,6 +56,11 @@ public class LampeHuile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        renderer = verre.GetComponent<Renderer>();
+        mats = renderer.materials;
+        mat = mats[1];
+        baseColor = mat.GetColor("_EmissionColor");
+        oldValue = mat.GetColor("_EmissionColor");
         if (!ui)
         {
             ui = GameObject.Find("Canvas").GetComponent<UIManager>();
@@ -283,11 +294,13 @@ public class LampeHuile : MonoBehaviour
         if (EnMain)
         {
             lumiere.SetActive(true);
+            mat.SetColor("_EmissionColor", oldValue);
         }
     }
     void lightDown()
     {
         lumiere.SetActive(false);
+        mat.SetColor("_EmissionColor", new Color(0,0,0,0));
     }
     private IEnumerator GetLampe()
     {
