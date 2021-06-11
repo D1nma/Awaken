@@ -202,7 +202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4263723526069869436}
   - component: {fileID: 3247132354498273907}
-  - component: {fileID: 438626854}
+  - component: {fileID: 7132599611574268987}
   m_Layer: 0
   m_Name: Lampe Low
   m_TagString: SafeZone
@@ -241,7 +241,7 @@ CapsuleCollider:
   m_Height: 11.69
   m_Direction: 1
   m_Center: {x: 0, y: 1.31, z: 0}
---- !u!205 &438626854
+--- !u!205 &7132599611574268987
 LODGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -258,8 +258,8 @@ LODGroup:
   - screenRelativeHeight: 0.07019363
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 3297903557178350107}
-    - renderer: {fileID: 4443433350340889225}
+    - renderer: {fileID: 0}
+    - renderer: {fileID: 0}
   m_Enabled: 1
 --- !u!1 &3687249039838552656
 GameObject:
@@ -434,7 +434,7 @@ Light:
   m_BounceIntensity: 30
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.545857e-39, y: NaN, z: 0, w: 3.4e-44}
+  m_BoundingSphereOverride: {x: 2.4779543e-36, y: NaN, z: -9.650064e+11, w: 0.00006997105}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 10
