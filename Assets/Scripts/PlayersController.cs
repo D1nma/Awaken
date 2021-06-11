@@ -77,7 +77,7 @@ public class PlayersController : MonoBehaviour
                 
                 if (!Rotation)
                 {
-                    lampeHuile.gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 0f); //aucun effet
+                    lampeHuile.gameObject.transform.rotation = Quaternion.Euler(0f, 90f, 0f); //aucun effet
                     Rotation = true;
                 }
                 
