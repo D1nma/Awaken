@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &130320640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 130320641}
+  m_Layer: 8
+  m_Name: Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &130320641
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130320640}
+  m_LocalRotation: {x: -0.3977781, y: -0.47813016, z: 0.64792997, w: 0.4397168}
+  m_LocalPosition: {x: -0.085, y: -0.008, z: 0.018}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2425293736339255906}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &109618234167849485
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,11 +223,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 1
   m_Data:
-    m_ConstrainedObject: {fileID: 0}
+    m_ConstrainedObject: {fileID: 5801058566935173084}
     m_OverrideSource: {fileID: 0}
-    m_OverridePosition: {x: 0, y: 0, z: 0}
-    m_OverrideRotation: {x: 81.39394, y: 183.67506, z: 182.98798}
-    m_PositionWeight: 0
+    m_OverridePosition: {x: -0.025161376, y: 0.000008182599, z: -0.0000015515832}
+    m_OverrideRotation: {x: 348.14764, y: 349.91483, z: 96.634094}
+    m_PositionWeight: 1
     m_RotationWeight: 1
     m_Space: 1
   m_SourceObjectsGUIToggle: 1
@@ -234,6 +264,7 @@ Transform:
   - {fileID: 7825876670111900984}
   - {fileID: 6130416267508929510}
   - {fileID: 8767768630050466558}
+  - {fileID: 130320641}
   m_Father: {fileID: 4627912518398380028}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -709,11 +740,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 1
   m_Data:
-    m_ConstrainedObject: {fileID: 0}
+    m_ConstrainedObject: {fileID: 8767768630050466558}
     m_OverrideSource: {fileID: 0}
-    m_OverridePosition: {x: 0, y: 0, z: 0}
-    m_OverrideRotation: {x: 70.692825, y: 345.58926, z: 343.31387}
-    m_PositionWeight: 0
+    m_OverridePosition: {x: -0.07194309, y: 0.008343774, z: 0.035725743}
+    m_OverrideRotation: {x: 359.58575, y: 15.888709, z: 37.032196}
+    m_PositionWeight: 1
     m_RotationWeight: 1
     m_Space: 1
   m_SourceObjectsGUIToggle: 1
@@ -1092,6 +1123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rig: {fileID: 6928491832051340131}
   rigHand: {fileID: 3060437521878045670}
+  stb: {fileID: 0}
   moveSpeed: 5
   oldMoveSpeed: 0
   oldColliderHeight: 0
@@ -1105,7 +1137,7 @@ MonoBehaviour:
   turnSmoothTime: 0.1
   stamina: 10
   cam: {fileID: 0}
-  animationLenghtWakeUp: 11
+  animationLenghtWakeUp: 15.2
   courrir: 1
   grimper: 0
 --- !u!114 &1505107342807506409
@@ -1120,7 +1152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79c3684052dab004d9c1a655da73b8cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemies: []
+  enemies:
+  - {fileID: 2354738796409224672, guid: fb338c9d1d81f094596ca4f6f8e639da, type: 3}
   spawnOk: 0
   spawnTime: 10
   spawn: 1
@@ -1164,8 +1197,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886285568546895264}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 8cf7e9a78ad35e340aa57232fdb24613, type: 3}
+  m_Controller: {fileID: 9100000, guid: 54d5882bf3c714942a976cb081bc0274, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1700,10 +1733,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 1
   m_Data:
-    m_ConstrainedObject: {fileID: 0}
+    m_ConstrainedObject: {fileID: 6096835798338937782}
     m_OverrideSource: {fileID: 0}
     m_OverridePosition: {x: 0, y: 0, z: 0}
-    m_OverrideRotation: {x: 61.861835, y: 19.387999, z: 16.837206}
+    m_OverrideRotation: {x: 337.22186, y: 6.128546, z: 46.135025}
     m_PositionWeight: 0
     m_RotationWeight: 1
     m_Space: 1
@@ -1755,11 +1788,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 1
   m_Data:
-    m_ConstrainedObject: {fileID: 0}
+    m_ConstrainedObject: {fileID: 7825876670111900984}
     m_OverrideSource: {fileID: 0}
-    m_OverridePosition: {x: 0, y: 0, z: 0}
-    m_OverrideRotation: {x: 63.070126, y: 13.71786, z: 12.509487}
-    m_PositionWeight: 0
+    m_OverridePosition: {x: -0.08560394, y: 0.0132132275, z: 0.006263076}
+    m_OverrideRotation: {x: 348.03812, y: 14.927015, z: 51.2436}
+    m_PositionWeight: 1
     m_RotationWeight: 1
     m_Space: 1
   m_SourceObjectsGUIToggle: 1
@@ -1957,11 +1990,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 1
   m_Data:
-    m_ConstrainedObject: {fileID: 0}
+    m_ConstrainedObject: {fileID: 5473066149847837297}
     m_OverrideSource: {fileID: 0}
-    m_OverridePosition: {x: 0, y: 0, z: 0}
-    m_OverrideRotation: {x: 81.31008, y: 190.9199, z: 188.77765}
-    m_PositionWeight: 0
+    m_OverridePosition: {x: -0.027982226, y: 0.0000015273688, z: 0.00000014236139}
+    m_OverrideRotation: {x: 336.0255, y: 354.11856, z: 106.66508}
+    m_PositionWeight: 1
     m_RotationWeight: 1
     m_Space: 1
   m_SourceObjectsGUIToggle: 1
@@ -2145,11 +2178,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 1
   m_Data:
-    m_ConstrainedObject: {fileID: 0}
+    m_ConstrainedObject: {fileID: 5656028109360975263}
     m_OverrideSource: {fileID: 0}
-    m_OverridePosition: {x: 0, y: 0, z: 0}
-    m_OverrideRotation: {x: 81.106514, y: 197.26093, z: 195.71106}
-    m_PositionWeight: 0
+    m_OverridePosition: {x: -0.014529254, y: 0.00000029057253, z: 0.0000003222376}
+    m_OverrideRotation: {x: 353.61646, y: 346.02774, z: 44.003223}
+    m_PositionWeight: 1
     m_RotationWeight: 1
     m_Space: 1
   m_SourceObjectsGUIToggle: 1
@@ -2259,6 +2292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7004871920657525830}
+  - component: {fileID: 392804511}
   m_Layer: 8
   m_Name: Main
   m_TagString: Untagged
@@ -2273,8 +2307,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3834088541978067591}
-  m_LocalRotation: {x: -0.48682773, y: -0.51097554, z: 0.5334131, w: -0.466233}
-  m_LocalPosition: {x: 3.7372048, y: 1.1415209, z: -13.7232}
+  m_LocalRotation: {x: -0.5938651, y: -0.7951332, z: 0.12076214, w: 0.022451013}
+  m_LocalPosition: {x: 0.15080805, y: 0.67967457, z: -0.16341929}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4829195532059312058}
@@ -2284,7 +2318,30 @@ Transform:
   - {fileID: 2345731373559968245}
   m_Father: {fileID: 5169251888001865115}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 87.532, y: -174.934, z: -180.166}
+--- !u!114 &392804511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3834088541978067591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf219326d2292de48a0c671da18d402b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Weight: 1
+  m_Data:
+    m_ConstrainedObject: {fileID: 2425293736339255906}
+    m_OverrideSource: {fileID: 0}
+    m_OverridePosition: {x: 0, y: 0, z: 0}
+    m_OverrideRotation: {x: -35.5, y: 70.31, z: -93.8}
+    m_PositionWeight: 1
+    m_RotationWeight: 1
+    m_Space: 2
+  m_SourceObjectsGUIToggle: 1
+  m_SettingsGUIToggle: 0
 --- !u!1 &3848158964346207695
 GameObject:
   m_ObjectHideFlags: 0
@@ -2331,11 +2388,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 1
   m_Data:
-    m_ConstrainedObject: {fileID: 0}
+    m_ConstrainedObject: {fileID: 3810287712179154966}
     m_OverrideSource: {fileID: 0}
-    m_OverridePosition: {x: 0, y: 0, z: 0}
-    m_OverrideRotation: {x: 81.2715, y: 179.17369, z: 179.19997}
-    m_PositionWeight: 0
+    m_OverridePosition: {x: -0.012802046, y: 0.000003390945, z: 0.00000025131885}
+    m_OverrideRotation: {x: 353.35876, y: 10.5831585, z: 58.749557}
+    m_PositionWeight: 1
     m_RotationWeight: 1
     m_Space: 1
   m_SourceObjectsGUIToggle: 1
@@ -2541,11 +2598,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 1
   m_Data:
-    m_ConstrainedObject: {fileID: 0}
+    m_ConstrainedObject: {fileID: 4129986656934482513}
     m_OverrideSource: {fileID: 0}
-    m_OverridePosition: {x: 0, y: 0, z: 0}
-    m_OverrideRotation: {x: 81.063324, y: 180.2796, z: 180.24931}
-    m_PositionWeight: 0
+    m_OverridePosition: {x: -0.026268039, y: 0.00000032177186, z: 0.00000072503445}
+    m_OverrideRotation: {x: 359.24963, y: 356.50964, z: 87.04426}
+    m_PositionWeight: 1
     m_RotationWeight: 1
     m_Space: 1
   m_SourceObjectsGUIToggle: 1
@@ -2626,11 +2683,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 1
   m_Data:
-    m_ConstrainedObject: {fileID: 0}
+    m_ConstrainedObject: {fileID: 6130416267508929510}
     m_OverrideSource: {fileID: 0}
-    m_OverridePosition: {x: 0, y: 0, z: 0}
-    m_OverrideRotation: {x: 67.508545, y: 356.59442, z: 353.3564}
-    m_PositionWeight: 0
+    m_OverridePosition: {x: -0.08033143, y: 0.013134448, z: 0.020615442}
+    m_OverrideRotation: {x: 357.33066, y: 15.445069, z: 57.14234}
+    m_PositionWeight: 1
     m_RotationWeight: 1
     m_Space: 1
   m_SourceObjectsGUIToggle: 1
@@ -2659,7 +2716,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4290656899688506005}
-  m_LocalRotation: {x: 0.68621266, y: 0.0033384245, z: 0.023182599, w: 0.7270238}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2822,11 +2879,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 1
   m_Data:
-    m_ConstrainedObject: {fileID: 0}
+    m_ConstrainedObject: {fileID: 3560471280868889778}
     m_OverrideSource: {fileID: 0}
-    m_OverridePosition: {x: 0, y: 0, z: 0}
-    m_OverrideRotation: {x: 80.68491, y: 205.39258, z: 203.62798}
-    m_PositionWeight: 0
+    m_OverridePosition: {x: -0.015326135, y: 0.0000004107132, z: 0.00000017724231}
+    m_OverrideRotation: {x: 0.41350278, y: 1.7832862, z: 95.51889}
+    m_PositionWeight: 1
     m_RotationWeight: 1
     m_Space: 1
   m_SourceObjectsGUIToggle: 1
@@ -2886,7 +2943,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5036507539701693446}
   m_LocalRotation: {x: -0, y: 0.037221327, z: -0, w: 0.99930704}
-  m_LocalPosition: {x: 0.97885084, y: 1.3599999, z: -0.08401399}
+  m_LocalPosition: {x: 0.436, y: 1.276, z: -0.138}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1253898554689105690}
@@ -3173,10 +3230,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 1
   m_Data:
-    m_ConstrainedObject: {fileID: 0}
+    m_ConstrainedObject: {fileID: 8775766513416114511}
     m_OverrideSource: {fileID: 0}
     m_OverridePosition: {x: 0, y: 0, z: 0}
-    m_OverrideRotation: {x: 353.18234, y: 359.8988, z: 294.05206}
+    m_OverrideRotation: {x: 344.8048, y: 353.58453, z: 6.7604423}
     m_PositionWeight: 0
     m_RotationWeight: 1
     m_Space: 1
@@ -3291,7 +3348,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5646881950381727875}
-  m_LocalRotation: {x: 0.68621266, y: 0.0033384245, z: 0.023182599, w: 0.7270238}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3327,6 +3384,14 @@ MonoBehaviour:
       shape: {fileID: 4300000, guid: e050c2b16fe384bd994474655a4b4968, type: 2}
       color: {r: 1, g: 0, b: 0, a: 0.5}
       size: 0.1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+    m_Visible: 1
+  - m_Transform: {fileID: 1672977910668688911}
+    m_Style:
+      shape: {fileID: 4300000, guid: 707439f5f179a460987ecbb96364c8a9, type: 2}
+      color: {r: 1, g: 0, b: 0, a: 0.5}
+      size: 0.2
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
     m_Visible: 1
@@ -3376,11 +3441,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 1
   m_Data:
-    m_ConstrainedObject: {fileID: 0}
+    m_ConstrainedObject: {fileID: 2419450411887032673}
     m_OverrideSource: {fileID: 0}
-    m_OverridePosition: {x: 0, y: 0, z: 0}
-    m_OverrideRotation: {x: 81.38142, y: 194.01611, z: 191.09035}
-    m_PositionWeight: 0
+    m_OverridePosition: {x: -0.02038374, y: 0.000000016763805, z: -0.00000020110747}
+    m_OverrideRotation: {x: 2.2275043, y: 3.2960773, z: 90.134514}
+    m_PositionWeight: 1
     m_RotationWeight: 1
     m_Space: 1
   m_SourceObjectsGUIToggle: 1
@@ -3409,7 +3474,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6183317267756088903}
   m_LocalRotation: {x: -0.72142005, y: -0.031615805, z: 0.03291789, w: -0.6909921}
-  m_LocalPosition: {x: 0.194, y: 1.098, z: 0.376}
+  m_LocalPosition: {x: 0.183, y: 1.103, z: 0.259}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9164367526447730104}
@@ -3814,10 +3879,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 1
   m_Data:
-    m_ConstrainedObject: {fileID: 0}
+    m_ConstrainedObject: {fileID: 3667833253664650908}
     m_OverrideSource: {fileID: 0}
     m_OverridePosition: {x: 0, y: 0, z: 0}
-    m_OverrideRotation: {x: 22.994822, y: 10.70979, z: 49.08454}
+    m_OverrideRotation: {x: 315.41437, y: 349.44656, z: 22.874035}
     m_PositionWeight: 0
     m_RotationWeight: 1
     m_Space: 1
@@ -3961,10 +4026,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 1
   m_Data:
-    m_ConstrainedObject: {fileID: 0}
+    m_ConstrainedObject: {fileID: 1959362127250304821}
     m_OverrideSource: {fileID: 0}
     m_OverridePosition: {x: 0, y: 0, z: 0}
-    m_OverrideRotation: {x: 352.98413, y: 0.66721195, z: 314.3149}
+    m_OverrideRotation: {x: 328.96295, y: 3.8642812, z: 56.21644}
     m_PositionWeight: 0
     m_RotationWeight: 1
     m_Space: 1
@@ -4118,7 +4183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7741421528033466161}
   m_LocalRotation: {x: -0.488652, y: -0.48864657, z: 0.5111013, w: -0.5110961}
-  m_LocalPosition: {x: 0.297, y: 0.968, z: 0.064}
+  m_LocalPosition: {x: 0.351, y: 0.896, z: -0.026}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9164367526447730104}
@@ -4170,11 +4235,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 1
   m_Data:
-    m_ConstrainedObject: {fileID: 0}
+    m_ConstrainedObject: {fileID: 9000077822815519046}
     m_OverrideSource: {fileID: 0}
-    m_OverridePosition: {x: 0, y: 0, z: 0}
-    m_OverrideRotation: {x: 81.42882, y: 184.94543, z: 184.48022}
-    m_PositionWeight: 0
+    m_OverridePosition: {x: -0.01669637, y: 0.000000702217, z: 0.00000045285555}
+    m_OverrideRotation: {x: 358.69342, y: 1.3323646, z: 56.97729}
+    m_PositionWeight: 1
     m_RotationWeight: 1
     m_Space: 1
   m_SourceObjectsGUIToggle: 1
@@ -4435,9 +4500,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 0
   m_Data:
-    m_Root: {fileID: 0}
-    m_Mid: {fileID: 0}
-    m_Tip: {fileID: 0}
+    m_Root: {fileID: 271148356041573056}
+    m_Mid: {fileID: 8818967467229926508}
+    m_Tip: {fileID: 2425293736339255906}
     m_Target: {fileID: 1672977910668688911}
     m_Hint: {fileID: 110062357737478168}
     m_TargetPositionWeight: 1
