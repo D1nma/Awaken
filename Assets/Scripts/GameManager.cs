@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
         {
             if (!Player && !testeur)
                 Player = Instantiate(playerInstance, spawnPos.position, spawnPos.rotation);
-            if(!Player && testeur)
+            else if(!Player && testeur)
             {
                 Debug.LogWarning("Pose le joueur où tu veux avant de jouer..");
             }
@@ -117,6 +117,11 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if(cam.Follow == null || cam.LookAt == null)
+        {
+            cam.Follow = Player.transform;
+            cam.LookAt = Player.transform;
+        }
         if (OutofP)
         {
             vg.intensity.value = 0.5f;

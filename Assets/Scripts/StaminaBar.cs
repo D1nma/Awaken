@@ -34,7 +34,8 @@ public class StaminaBar : MonoBehaviour
         {
             ui = GameObject.Find("Canvas").GetComponent<UIManager>();
         }
-        
+        pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayersController>();
+        pc.stb = this.gameObject.GetComponent<StaminaBar>();
         currentStamina = maxStamina;
         staminaBar.maxValue = maxStamina;
         staminaBar.value = maxStamina;
@@ -73,26 +74,32 @@ public class StaminaBar : MonoBehaviour
             regen = StartCoroutine(RegenStamina());
             doOnce = false;
         }
-        
+
     }
 
 
     // Update is called once per frame
     void Update()
     {
+
         if (!pc)
         {
             pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayersController>();
         }
-        if (!ui)
+        else if (!pc.stb)
+        {
+            pc.stb = this.gameObject.GetComponent<StaminaBar>();
+
+        }
+        else if (!ui)
         {
             ui = GameObject.Find("Canvas").GetComponent<UIManager>();
         }
-        if(currentStamina>maxStamina)
+        if (currentStamina > maxStamina)
         {
             currentStamina = maxStamina;
         }
-        if (currentStamina == maxStamina)
+        else if (currentStamina == maxStamina)
         {
             //Debug.Log(time);
             time += Time.deltaTime;
@@ -119,7 +126,7 @@ public class StaminaBar : MonoBehaviour
         {
             pc.courrir = true;
         }
-        if (currentStamina <= 0)
+        else if (currentStamina <= 0)
         {
             use = false;
             pc.courrir = false;

@@ -64,7 +64,11 @@ public class PlayerStress : MonoBehaviour
     }
     void Update()
     {
-        if (stressBar)
+        if (!Sun)
+        {
+            Sun = GameObject.Find("Directional Light");
+        }
+        else if (stressBar)
         {
             Raycast();
             if (!player || dead)

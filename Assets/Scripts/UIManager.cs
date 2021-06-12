@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour
     private int nextSceneLoad;
     public Animator transition;
     public GameObject stamina;
+    public GameManager gm;
     public GameObject huile;
     public GameObject[] Etathuile;
 
@@ -32,10 +33,7 @@ public class UIManager : MonoBehaviour
         //SceneManager.UnloadSceneAsync("Menu");
         //SceneManager.LoadScene("Partie_1");
         //SceneManager.LoadScene("PersoMove"); // test a changer
-
-
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); Marche bien aussi
-
         //StartCoroutine(LoadAsynchronously(sceneIndex));
         StartCoroutine(LoadAsynchronously(SceneManager.GetActiveScene().buildIndex + 1));
 
@@ -45,6 +43,10 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
+        if (!gm)
+        {
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        }
     }
 
     void Awake()
@@ -239,6 +241,8 @@ public class UIManager : MonoBehaviour
         invent.champi = false;
         invent.First = false;
         StartCoroutine(LoadScene(SceneManager.GetActiveScene().buildIndex));
+        gm.Replace();
+        gm.SpawnPlayer();
         Resume();
     }
     public void DeadMenu()

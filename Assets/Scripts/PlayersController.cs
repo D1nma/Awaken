@@ -11,6 +11,7 @@ public class PlayersController : MonoBehaviour
     LampeHuile lampeHuile;
     Animator animator;
     private GameManager gm;
+    public StaminaBar stb;
     CharacterController cc;
     public float moveSpeed = 5, oldMoveSpeed, oldColliderHeight;
     //public float rotateSpeed = 180f;
@@ -160,7 +161,7 @@ public class PlayersController : MonoBehaviour
             {
                 Debug.Log(isGrounded);
                 Debug.Log(courrir);
-                Debug.Log(StaminaBar.instance.currentStamina);
+                Debug.Log(stb.currentStamina);
                 
                 animator.SetBool("IsRunning", true);
                 if (SUPERUSER)
@@ -169,11 +170,10 @@ public class PlayersController : MonoBehaviour
                 }
                 else
                 {
-                    if (StaminaBar.instance.currentStamina > 0 && courrir && isGrounded && !SUPERUSER)
+                    if (stb.currentStamina > 0 && courrir && isGrounded && !SUPERUSER)
                     {
-                        StaminaBar.instance.UseStamina(true);
-                        Debug.Log(StaminaBar.instance.use);
-                        if (StaminaBar.instance.use)
+                        stb.UseStamina(true);
+                        if (stb.use)
                         {
                             moveSpeed = moveSpeed * 1.4f;
                         }
@@ -182,7 +182,7 @@ public class PlayersController : MonoBehaviour
                     else
                     {
                         animator.SetBool("IsRunning", false);
-                        StaminaBar.instance.StopStamina();
+                        stb.StopStamina();
                         moveSpeed = oldMoveSpeed;
                     }
                 }
@@ -192,7 +192,7 @@ public class PlayersController : MonoBehaviour
             else if (Input.GetButtonUp("Sprint") && !accroupir && canControl)
             {
                 animator.SetBool("IsRunning", false);
-                StaminaBar.instance.StopStamina();
+                stb.StopStamina();
                 moveSpeed = oldMoveSpeed;
             }
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y; //Atan2 méthode math retourne l'angle entre 0° et x
@@ -207,7 +207,7 @@ public class PlayersController : MonoBehaviour
         {
             animator.SetBool("IsWalking", false);
             animator.SetBool("IsRunning", false);
-            StaminaBar.instance.StopStamina();
+            stb.StopStamina();
         }
 
         if (Input.GetButtonDown("Jump") && isGrounded && canControl && !grimper && !wakeUp )
