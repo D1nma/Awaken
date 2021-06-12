@@ -24,7 +24,7 @@ public class SpawnEnemy : MonoBehaviour
     {
         if (spawnOk)
         {
-            Debug.Log("Le spawn Ennemy activé");
+            //Debug.Log("Le spawn Ennemy activé");
             time -= Time.deltaTime;
             //Debug.Log(time);
             if (time <= 0)

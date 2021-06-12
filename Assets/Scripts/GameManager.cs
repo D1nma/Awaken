@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
     public Vector3 lastCheckPointPos;
     public Transform[] spawnPosition;
     public GameObject playerInstance;
-    CharacterController cc;
+    public GameObject InteragirText;
+    public CharacterController cc;
     public bool OutofP;
     float oldValueInt;
     private LampeHuile LH;

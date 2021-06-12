@@ -12,27 +12,30 @@ public class PlayersController : MonoBehaviour
     Animator animator;
     private GameManager gm;
     public StaminaBar stb;
+    public GameObject SpotGrimper,pivot;
     CharacterController cc;
     public float moveSpeed = 5, oldMoveSpeed, oldColliderHeight;
     //public float rotateSpeed = 180f;
     public float jumpSpeed = 2; //Pas de saut pour l'instant
     public float gravity = -19.62f;
+    Vector3 trait;
     float h, v;
     public Transform groundCheck; //crée un empty et le mettre au bas du personnage pour que la sphere crée détecte le sol correctement
     public float groundDistance = 0.4f; //Check le ground pour reset la velocity
     public LayerMask groundMask;
     Vector3 velocity;
+    public float offsetRay = 1;
     bool isGrounded;
     public float turnSmoothTime = 0.1f;
     public float stamina = 10f;
-    public static bool moving = false,cacher;
+    public static bool moving = false, cacher;
     float turnSmoothVelocity;
     public Transform cam;
     Camera m_MainCamera;
-    private bool accroupir = false,Rotation,positionBras;
+    private bool accroupir = false, Rotation, positionBras, doOnce = false;
     public static bool canControl = true, wakeUp = false;
     public float animationLenghtWakeUp = 13.2f;
-    public bool courrir = true, grimper;
+    public bool courrir = true, grimper,grimpant;
     private bool SUPERUSER = false;
 
     private static PlayersController instance;
@@ -58,6 +61,7 @@ public class PlayersController : MonoBehaviour
         courrir = true;
         cam = m_MainCamera.transform;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        pivot = GameObject.Find("pivot");
         SUPERUSER = gm.testeur;
         if (!SUPERUSER)
         {
@@ -76,7 +80,11 @@ public class PlayersController : MonoBehaviour
 
     void Update()
     {
-        if (!lampeHuile)
+        if (!pivot)
+        {
+            pivot = GameObject.Find("pivot");
+        }
+        else if (!lampeHuile)
         {
             lampeHuile = GameObject.Find("Lampe à huile").GetComponent<LampeHuile>();
         }
@@ -90,13 +98,13 @@ public class PlayersController : MonoBehaviour
                     rigHand.weight = 1f;
                     positionBras = true;
                 }
-                
+
                 if (!Rotation)
                 {
                     lampeHuile.gameObject.transform.rotation = Quaternion.Euler(0f, 90f, 0f); //aucun effet
                     Rotation = true;
                 }
-                
+
             }
         }
         if (SUPERUSER)
@@ -115,7 +123,7 @@ public class PlayersController : MonoBehaviour
         }
         if (moving)
         {
-           animator.SetBool("IsWalking", true);
+            animator.SetBool("IsWalking", true);
         }
         if (!courrir)
         {
@@ -137,6 +145,24 @@ public class PlayersController : MonoBehaviour
             }
             h = Input.GetAxisRaw("Horizontal");
             v = Input.GetAxisRaw("Vertical");
+            trait = this.transform.position;
+            trait.y = this.transform.position.y + offsetRay;
+            RaycastHit hit;
+            Debug.DrawRay(trait, this.transform.forward * 1, Color.white);
+            if (Physics.Raycast(trait, this.transform.forward, out hit, 1f))
+            {
+                if (hit.transform.gameObject.tag == "Grimpe")
+                {
+                    grimper = true;
+                    SpotGrimper = GameObject.Find("LookAtMe");//hit.transform.gameObject;
+                }
+                else
+                {
+                    //grimper = false;
+                    SpotGrimper = null;
+                }
+
+            }
         }
         else
         {
@@ -159,10 +185,7 @@ public class PlayersController : MonoBehaviour
             animator.SetBool("IsWalking", true);
             if (Input.GetButtonDown("Sprint") && !accroupir && canControl)
             {
-                Debug.Log(isGrounded);
-                Debug.Log(courrir);
-                Debug.Log(stb.currentStamina);
-                
+
                 animator.SetBool("IsRunning", true);
                 if (SUPERUSER)
                 {
@@ -210,15 +233,36 @@ public class PlayersController : MonoBehaviour
             stb.StopStamina();
         }
 
-        if (Input.GetButtonDown("Jump") && isGrounded && canControl && !grimper && !wakeUp )
+        if (Input.GetButtonDown("Jump") && isGrounded && canControl && !grimper && !wakeUp)
         {
             animator.SetBool("jump", true);
             velocity.y = Mathf.Sqrt(jumpSpeed * -2f * gravity);
         }
         else if (Input.GetButtonDown("Jump") && isGrounded && canControl && grimper && !wakeUp)
         {
-            animator.SetTrigger("Grimper");
             //animation intégrer plus empecher de bouger
+
+            //cc.enabled = false;
+            if (!doOnce)
+            {
+                canControl = false;
+                grimpant = true;
+                transform.LookAt(new Vector3(SpotGrimper.transform.position.x, transform.position.y, SpotGrimper.transform.position.z));
+                doOnce = true;
+            }
+            animator.SetBool("Grimper", true);
+            StartCoroutine(OnCompleteAnimation(5.3f));
+
+
+
+        }
+        if (grimper)
+        {
+            float distance = Vector3.Distance(transform.position, pivot.transform.position);
+            if (distance < 0.1f && doOnce == false)
+            {
+                grimpant = false; canControl = true; 
+            }
         }
         if (Input.GetKeyDown(KeyCode.C) && isGrounded && canControl && !wakeUp)
         {
@@ -276,6 +320,17 @@ public class PlayersController : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
 
+
+
+    }
+
+    private IEnumerator OnCompleteAnimation(float animationLength)
+    {
+        
+        yield return new WaitForSeconds(animationLength);
+        doOnce = false; grimper = false;
+        transform.position = pivot.transform.position;
+        animator.SetBool("Grimper", false);
 
 
     }

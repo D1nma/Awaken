@@ -244,6 +244,7 @@ public class UIManager : MonoBehaviour
         gm.Replace();
         gm.SpawnPlayer();
         Resume();
+        gm.cc.enabled = true;
     }
     public void DeadMenu()
     {

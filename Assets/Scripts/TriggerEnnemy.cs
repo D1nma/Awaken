@@ -22,31 +22,6 @@ public class TriggerEnnemy : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (spawnEnemy != null)
-        {
-            if (difficulty <= 1)
-            {
-                spawnEnemy.spawnTime = 40f;
-            }
-            if (difficulty == 2)
-            {
-                spawnEnemy.spawnTime = 30f;
-            }
-            if (difficulty == 3)
-            {
-                spawnEnemy.spawnTime = 20f;
-            }
-            if (difficulty >= 4)
-            {
-                spawnEnemy.spawnTime = 10f;
-            }
-        }
-
-
-    }
 
     void OnTriggerEnter(Collider player)
     {
@@ -55,7 +30,26 @@ public class TriggerEnnemy : MonoBehaviour
             Debug.Log("Entrer Zone de danger");
             if (!spawnEnemy)
             {
-                spawnEnemy = GameObject.FindGameObjectWithTag("Player").GetComponent<SpawnEnemy>();
+                spawnEnemy = player.transform.gameObject.GetComponent<SpawnEnemy>();
+            }
+            if (spawnEnemy != null)
+            {
+                if (difficulty <= 1)
+                {
+                    spawnEnemy.spawnTime = 40f;
+                }
+                if (difficulty == 2)
+                {
+                    spawnEnemy.spawnTime = 30f;
+                }
+                if (difficulty == 3)
+                {
+                    spawnEnemy.spawnTime = 20f;
+                }
+                if (difficulty >= 4)
+                {
+                    spawnEnemy.spawnTime = 10f;
+                }
             }
             spawnEnemy.spawnOk = true;
         }
