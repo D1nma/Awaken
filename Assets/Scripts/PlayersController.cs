@@ -24,6 +24,8 @@ public class PlayersController : MonoBehaviour
     public float groundDistance = 0.4f; //Check le ground pour reset la velocity
     public LayerMask groundMask;
     Vector3 velocity;
+    private Quaternion rotCur;
+    private Vector3 posCur;
     public float offsetRay = 1;
     bool isGrounded;
     public float turnSmoothTime = 0.1f;
@@ -145,24 +147,7 @@ public class PlayersController : MonoBehaviour
             }
             h = Input.GetAxisRaw("Horizontal");
             v = Input.GetAxisRaw("Vertical");
-            trait = this.transform.position;
-            trait.y = this.transform.position.y + offsetRay;
-            RaycastHit hit;
-            Debug.DrawRay(trait, this.transform.forward * 1, Color.white);
-            if (Physics.Raycast(trait, this.transform.forward, out hit, 1f))
-            {
-                if (hit.transform.gameObject.tag == "Grimpe")
-                {
-                    grimper = true;
-                    SpotGrimper = GameObject.Find("LookAtMe");//hit.transform.gameObject;
-                }
-                else
-                {
-                    //grimper = false;
-                    SpotGrimper = null;
-                }
-
-            }
+            
         }
         else
         {
@@ -230,32 +215,63 @@ public class PlayersController : MonoBehaviour
         {
             animator.SetBool("IsWalking", false);
             animator.SetBool("IsRunning", false);
-            stb.StopStamina();
-        }
-
-        if (Input.GetButtonDown("Jump") && isGrounded && canControl && !grimper && !wakeUp)
-        {
-            animator.SetBool("jump", true);
-            velocity.y = Mathf.Sqrt(jumpSpeed * -2f * gravity);
-        }
-        else if (Input.GetButtonDown("Jump") && isGrounded && canControl && grimper && !wakeUp)
-        {
-            //animation intégrer plus empecher de bouger
-
-            //cc.enabled = false;
-            if (!doOnce)
+            if (stb)
             {
-                canControl = false;
-                grimpant = true;
-                transform.LookAt(new Vector3(SpotGrimper.transform.position.x, transform.position.y, SpotGrimper.transform.position.z));
-                doOnce = true;
+                stb.StopStamina();
             }
-            animator.SetBool("Grimper", true);
-            StartCoroutine(OnCompleteAnimation(5.3f));
-
-
-
+            
         }
+        if (Input.GetButtonDown("Jump")){
+
+            trait = this.transform.position;
+            trait.y = this.transform.position.y + offsetRay;
+            RaycastHit hit;
+            Debug.DrawRay(trait, this.transform.forward * 1, Color.white);
+            if (Physics.Raycast(trait, this.transform.forward, out hit, 2f))
+            {
+                if (hit.transform.gameObject.tag == "Grimpe")
+                {
+                    grimper = true;
+                    SpotGrimper = GameObject.Find("LookAtMe");//hit.transform.gameObject;
+                    rotCur = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
+                    posCur = new Vector3(transform.position.x, hit.point.y, transform.position.z);
+
+                }
+                else
+                {
+                    //grimper = false;
+                    SpotGrimper = null;
+                }
+
+            }
+
+            if (isGrounded && canControl && !grimper && !wakeUp)
+            {
+                animator.SetBool("jump", true);
+                velocity.y = Mathf.Sqrt(jumpSpeed * -2f * gravity);
+            }
+            else if (isGrounded && canControl && grimper && !wakeUp)
+            {
+                //animation intégrer plus empecher de bouger
+
+                //cc.enabled = false;
+                if (!doOnce)
+                {
+                    canControl = false;
+                    grimpant = true;
+                    //transform.LookAt(new Vector3(SpotGrimper.transform.position.x, transform.position.y, SpotGrimper.transform.position.z));
+                    transform.position = Vector3.Lerp(transform.position, posCur, Time.deltaTime * 5);
+                    transform.rotation = Quaternion.Lerp(transform.rotation, rotCur, Time.deltaTime * 5);
+                    doOnce = true;
+                }
+                animator.SetBool("Grimper", true);
+                StartCoroutine(OnCompleteAnimation(5.3f));
+
+
+
+            }
+        }
+        
         if (grimper)
         {
             float distance = Vector3.Distance(transform.position, pivot.transform.position);
@@ -328,9 +344,10 @@ public class PlayersController : MonoBehaviour
     {
         
         yield return new WaitForSeconds(animationLength);
-        doOnce = false; grimper = false;
         transform.position = pivot.transform.position;
         animator.SetBool("Grimper", false);
+        doOnce = false; grimper = false;
+        
 
 
     }

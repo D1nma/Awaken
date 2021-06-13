@@ -8,13 +8,12 @@ public class LampeHuile : MonoBehaviour
     private UIManager ui;
     public static LampeHuile instance;
     public Slider huileBar;
+    GameManager gm;
     public GameObject verre;
     Renderer renderer;
     Material [] mats;
     Material mat;
     Color oldValue;
-    Color baseColor;
-    private bool PowerOn;
     public GameObject InteragirText;
     public GameObject Tips;
     public GameObject lumiere;
@@ -59,7 +58,7 @@ public class LampeHuile : MonoBehaviour
         renderer = verre.GetComponent<Renderer>();
         mats = renderer.materials;
         mat = mats[1];
-        baseColor = mat.GetColor("_EmissionColor");
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         oldValue = mat.GetColor("_EmissionColor");
         if (!ui)
         {
@@ -93,6 +92,17 @@ public class LampeHuile : MonoBehaviour
         if (main == null)
         {
             main = GameObject.Find("Hand");
+        }else if (!gm)
+        {
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        }
+        else if (!InteragirText)
+        {
+            InteragirText = gm.InteragirText;
+        }
+        else if (Tips == null)
+        {
+            Tips = gm.Tips;
         }
         if (EnMain)
         {
@@ -111,37 +121,37 @@ public class LampeHuile : MonoBehaviour
                 ui.Etathuile[0].SetActive(true);
                 ui.Etathuile[1].SetActive(false);
             }
-            if (currentHuile > 0)
+            else if (currentHuile > 0)
             {
                 ui.Etathuile[1].SetActive(true);
                 ui.Etathuile[0].SetActive(false);
                 ui.Etathuile[2].SetActive(false);
             }
-            if (currentHuile > 25)
+            else if (currentHuile > 25)
             {
                 ui.Etathuile[2].SetActive(true);
                 ui.Etathuile[1].SetActive(false);
                 ui.Etathuile[3].SetActive(false);
             }
-            if (currentHuile > 50)
+            else if (currentHuile > 50)
             {
                 ui.Etathuile[3].SetActive(true);
                 ui.Etathuile[2].SetActive(false);
                 ui.Etathuile[4].SetActive(false);
             }
-            if (currentHuile > 75)
+            else if (currentHuile > 75)
             {
                 ui.Etathuile[4].SetActive(true);
                 ui.Etathuile[3].SetActive(false);
                 ui.Etathuile[5].SetActive(false);
             }
-            if (currentHuile == 100)
+            else if (currentHuile == 100)
             {
                 ui.Etathuile[5].SetActive(true);
                 ui.Etathuile[4].SetActive(false);
             }
         }
-        if (!EnMain)
+        else if (!EnMain)
         {
             RenderSettings.fogStartDistance = oldValueFog;
             ui.huile.SetActive(false);
@@ -168,14 +178,7 @@ public class LampeHuile : MonoBehaviour
             time = 0;
             startTiming = false;
         }
-        if (InteragirText == null)
-        {
-            Debug.LogWarning("Specifier interagir text");
-        }
-        if (Tips == null)
-        {
-            Tips = GameObject.Find("Tips");
-        }
+        
         if (currentHuile > 100)
         {
             currentHuile = 100;

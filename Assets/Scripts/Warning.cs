@@ -16,6 +16,10 @@ public class Warning : MonoBehaviour
 
     void Start()
     {
+        if (!warningText)
+        {
+            warningText = gm.TextWarning;
+        }
         warningText.GetComponent<Text>().text = warning.ToString();
         oldValue = RenderSettings.fogEndDistance;
         show = false;
@@ -26,6 +30,14 @@ public class Warning : MonoBehaviour
 
     void Update()
     {
+        if (!gm)
+        {
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        }
+        else if (!warningText)
+        {
+            warningText = gm.TextWarning;
+        }
         //Debug.Log(RenderSettings.fogEndDistance);
         if (StartFog)
         {

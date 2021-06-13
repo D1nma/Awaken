@@ -10,6 +10,7 @@ public class item : MonoBehaviour
 
     public ObjectType objectType;
     public Inventaire invent;
+    GameManager gm;
     public GameObject DialogueClé, DialogueTrigger,DialogueAppat1,DialogueAide;
     float time;
     public static bool StartTime; //une aide si le joueur trouve pas au bout de 5mins
@@ -33,8 +34,7 @@ public class item : MonoBehaviour
         yield return new WaitForSeconds(1);
         if (InteragirText == null)
         {
-            InteragirText = GameObject.Find("InteragirText");
-
+            InteragirText = gm.InteragirText;
         }
         if (!invent)
         {
@@ -54,6 +54,10 @@ public class item : MonoBehaviour
 
     void Update()
     {
+        if (!gm)
+        {
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        }
         if (!invent)
         {
             StartCoroutine(Setup());
@@ -67,6 +71,10 @@ public class item : MonoBehaviour
                 StartTime = false;
                 Destroy(this.gameObject,20f);
             }
+        }
+        if (InteragirText == null)
+        {
+            InteragirText = gm.InteragirText;
         }
 
         if (Input.GetKeyDown(KeyCode.E) && dispo){

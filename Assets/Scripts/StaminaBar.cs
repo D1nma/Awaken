@@ -34,8 +34,14 @@ public class StaminaBar : MonoBehaviour
         {
             ui = GameObject.Find("Canvas").GetComponent<UIManager>();
         }
-        pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayersController>();
-        pc.stb = this.gameObject.GetComponent<StaminaBar>();
+        if (!pc)
+        {
+            pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayersController>();
+        }
+        else if (!pc.stb)
+        {
+            pc.stb = this.gameObject.GetComponent<StaminaBar>();
+        }
         currentStamina = maxStamina;
         staminaBar.maxValue = maxStamina;
         staminaBar.value = maxStamina;

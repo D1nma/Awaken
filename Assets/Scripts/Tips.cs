@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Tips : MonoBehaviour
 {
     public GameObject tips;
+    GameManager gm;
     [TextArea(3,15)]
     public string text;
     float time;
@@ -27,12 +28,20 @@ public class Tips : MonoBehaviour
     }
     void Start()
     {
-        
+        if (!gm)
+        {
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!gm)
+        {
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        }
         if (startTiming)
         {
             time += Time.deltaTime;

@@ -8,6 +8,7 @@ public class Appat : MonoBehaviour
     public GameObject InteragirText;
     public GameObject Tips;
     public Inventaire invent;
+    GameManager gm;
     public GameObject boiteAppat;
     float time;
     public static bool fait=false;
@@ -30,9 +31,11 @@ public class Appat : MonoBehaviour
     }
     void Start()
     {
-        if (!Tips || !InteragirText || !boiteAppat)
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        if (!Tips || !InteragirText)
         {
-            Debug.LogWarning("Ajouter les parametres necessaires au fonctionnement dans l'inspecteur..");
+            InteragirText = gm.InteragirText;
+            Tips = gm.Tips;
         }
         if (!invent)
         {
@@ -44,7 +47,11 @@ public class Appat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!invent)
+        if (!gm)
+        {
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        }
+        else if (!invent)
         {
             invent = GameObject.Find("Inventaire").GetComponent<Inventaire>();
         }
