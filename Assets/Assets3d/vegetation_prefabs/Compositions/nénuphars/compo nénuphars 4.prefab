@@ -23,7 +23,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5492924260075125647}
-  m_LocalRotation: {x: -0, y: 0.4886865, z: -0, w: 0.8724595}
+  m_LocalRotation: {x: 0, y: 0.48868975, z: 0, w: 0.8724577}
   m_LocalPosition: {x: 500.832, y: 149.292, z: 163.463}
   m_LocalScale: {x: 0.81852806, y: 0.8185281, z: 0.81852806}
   m_Children:
@@ -35,7 +35,7 @@ Transform:
   - {fileID: 845852283220889511}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 58.509, z: 0}
 --- !u!1001 &259787464797682146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43,6 +43,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5207200953527032395}
     m_Modifications:
+    - target: {fileID: 1731724687904406404, guid: 25fce7f9e4069d44198fd477b510a754,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.042095657
+      objectReference: {fileID: 0}
     - target: {fileID: 1848171250866802333, guid: 25fce7f9e4069d44198fd477b510a754,
         type: 3}
       propertyPath: m_Name
@@ -208,6 +213,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3339999406307110269, guid: d55799794095aa7439238200abaa426d,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.03799375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d55799794095aa7439238200abaa426d, type: 3}
 --- !u!4 &3218000405324127594 stripped
@@ -298,6 +308,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3339999406307110269, guid: d55799794095aa7439238200abaa426d,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.03700032
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d55799794095aa7439238200abaa426d, type: 3}
 --- !u!4 &2377842092484126246 stripped
@@ -313,6 +328,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5207200953527032395}
     m_Modifications:
+    - target: {fileID: 1731724687904406404, guid: 25fce7f9e4069d44198fd477b510a754,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.03601971
+      objectReference: {fileID: 0}
     - target: {fileID: 1848171250866802333, guid: 25fce7f9e4069d44198fd477b510a754,
         type: 3}
       propertyPath: m_Name
@@ -403,6 +423,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5207200953527032395}
     m_Modifications:
+    - target: {fileID: 2495798603612144771, guid: bb0868c9887a33f49973dd6a43ab56e5,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.04105096
+      objectReference: {fileID: 0}
     - target: {fileID: 3622456539645872818, guid: bb0868c9887a33f49973dd6a43ab56e5,
         type: 3}
       propertyPath: m_Name
@@ -493,6 +518,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5207200953527032395}
     m_Modifications:
+    - target: {fileID: 2495798603612144771, guid: bb0868c9887a33f49973dd6a43ab56e5,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.04105096
+      objectReference: {fileID: 0}
     - target: {fileID: 3622456539645872818, guid: bb0868c9887a33f49973dd6a43ab56e5,
         type: 3}
       propertyPath: m_Name

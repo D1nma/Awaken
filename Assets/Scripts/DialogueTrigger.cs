@@ -7,6 +7,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
     public Question question;
+    GameManager gm;
     public GameObject InteragirText;
     public bool Interagir,Avertissement,canMove,NotDestroy;
     private bool start;
@@ -42,9 +43,21 @@ public class DialogueTrigger : MonoBehaviour
     private void Start()
     {
         start = false;
+        if (!gm)
+        {
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        }
     }
     private void Update()
     {
+        if (!gm)
+        {
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        }
+        if (!InteragirText)
+        {
+            InteragirText = gm.InteragirText;
+        }
         if (Input.GetKeyDown(KeyCode.E) && start && Interagir)
         {
             TriggerDialogue();

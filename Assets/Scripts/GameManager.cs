@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public Vector3 lastCheckPointPos;
     public Transform[] spawnPosition;
     public GameObject playerInstance;
-    public GameObject InteragirText,Tips,TextWarning;
+    public GameObject InteragirText,Tips,TextWarning,Staminabar;
     public CharacterController cc;
     public bool OutofP;
     float oldValueInt;

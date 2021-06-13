@@ -41,7 +41,7 @@ public class StaminaBar : MonoBehaviour
         else if (!pc.stb)
         {
             pc.stb = this.gameObject.GetComponent<StaminaBar>();
-        }
+        }   
         currentStamina = maxStamina;
         staminaBar.maxValue = maxStamina;
         staminaBar.value = maxStamina;

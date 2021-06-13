@@ -82,6 +82,10 @@ public class PlayersController : MonoBehaviour
 
     void Update()
     {
+        if (!stb)
+        {
+            stb = gm.Staminabar.GetComponent<StaminaBar>();
+        }
         if (!pivot)
         {
             pivot = GameObject.Find("pivot");
