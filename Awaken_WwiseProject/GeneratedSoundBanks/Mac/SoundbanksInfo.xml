@@ -1,27 +1,495 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\Projet Awaken\Awaken\Awaken_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Projet Awaken\Awaken\Awaken_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Projet Awaken\Awaken\Awaken_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\hedin\Documents\GitHub\Awaken\Awaken_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\hedin\Documents\GitHub\Awaken\Awaken_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\hedin\Documents\GitHub\Awaken\Awaken_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Projet Awaken\Awaken\Awaken_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\hedin\Documents\GitHub\Awaken\Awaken_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="436743010" Language="SFX" Hash="4019301076">
+		<SoundBank Id="436743010" Language="SFX" Hash="2955472625">
 			<ObjectPath>\SoundBanks\Default Work Unit\Character</ObjectPath>
 			<ShortName>Character</ShortName>
 			<Path>Character.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2044049779" Name="Dead" ObjectPath="\Events\Default Work Unit\Character\Alyx\Dead"/>
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Character\Alyx\Jump"/>
+				<Event Id="2782712987" Name="Lever" ObjectPath="\Events\Default Work Unit\Character\Alyx\Lever"/>
+				<Event Id="2108779966" Name="Walk" ObjectPath="\Events\Default Work Unit\Character\Alyx\Walk"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="2761487" Language="SFX">
+					<ShortName>50 Pitié qu_ils ne m_entendent pas\Pitié qu_ils ne m_entendent pas 1_Alyx-St.wav</ShortName>
+					<Path>SFX\50 Pitié qu_ils ne m_entendent pas\Pitié qu_ils ne m_entendent pas 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="3740581" Language="SFX">
+					<ShortName>Essoufflement 5_Alyx-St.wav</ShortName>
+					<Path>SFX\Essoufflement 5_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="14727642" Language="SFX">
+					<ShortName>8 Il y a des ronces partout\Il y a des ronces partout 2_Alyx-St.wav</ShortName>
+					<Path>SFX\8 Il y a des ronces partout\Il y a des ronces partout 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="22465445" Language="SFX">
+					<ShortName>Essoufflement_Alyx-St.wav</ShortName>
+					<Path>SFX\Essoufflement_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="25926895" Language="SFX">
+					<ShortName>22 Ce n_est pas toi qui pêchait\C_est pas toi qui pêchait_Alyx-St.wav</ShortName>
+					<Path>SFX\22 Ce n_est pas toi qui pêchait\C_est pas toi qui pêchait_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="32605123" Language="SFX">
+					<ShortName>perplexe 4_Alyx-St.wav</ShortName>
+					<Path>SFX\perplexe 4_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="38126315" Language="SFX">
+					<ShortName>30 Une nouvelle arrivante\Une nouvelle arrivante 3_Alyx-St.wav</ShortName>
+					<Path>SFX\30 Une nouvelle arrivante\Une nouvelle arrivante 3_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="42513952" Language="SFX">
+					<ShortName>Essoufflement 7_Alyx-St.wav</ShortName>
+					<Path>SFX\Essoufflement 7_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="47994579" Language="SFX">
+					<ShortName>perplexe 1_Alyx-St.wav</ShortName>
+					<Path>SFX\perplexe 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="48176805" Language="SFX">
+					<ShortName>53 C_est bizzare\C_est bizarre 2_Alyx-St.wav</ShortName>
+					<Path>SFX\53 C_est bizzare\C_est bizarre 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="56442698" Language="SFX">
+					<ShortName>39 Je vais vers la montagne\Je vais vers la montagne 1_Alyx-St.wav</ShortName>
+					<Path>SFX\39 Je vais vers la montagne\Je vais vers la montagne 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="62077734" Language="SFX">
+					<ShortName>Cris 13_Alyx-St.wav</ShortName>
+					<Path>SFX\Cris 13_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="68157310" Language="SFX">
+					<ShortName>Cauchemar 4_Alyx-St.wav</ShortName>
+					<Path>SFX\Cauchemar 4_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="69276125" Language="SFX">
+					<ShortName>15 Oh non la clef\On non la clef 3_Alyx-St.wav</ShortName>
+					<Path>SFX\15 Oh non la clef\On non la clef 3_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="78008817" Language="SFX">
+					<ShortName>perplexe 6_Alyx-St.wav</ShortName>
+					<Path>SFX\perplexe 6_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="84307508" Language="SFX">
+					<ShortName>Cris 9_Alyx-St.wav</ShortName>
+					<Path>SFX\Cris 9_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="97091560" Language="SFX">
+					<ShortName>Cris 2_Alyx-St.wav</ShortName>
+					<Path>SFX\Cris 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="99101237" Language="SFX">
+					<ShortName>54 Non je peux continuer\Non je peux continuer 3_Alyx-St.wav</ShortName>
+					<Path>SFX\54 Non je peux continuer\Non je peux continuer 3_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="112708623" Language="SFX">
+					<ShortName>Essoufflement 8_Alyx-St.wav</ShortName>
+					<Path>SFX\Essoufflement 8_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="131965189" Language="SFX">
+					<ShortName>11 Le pont est bloqué\Le pont est bloqué 1_Alyx-St.wav</ShortName>
+					<Path>SFX\11 Le pont est bloqué\Le pont est bloqué 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="139025688" Language="SFX">
+					<ShortName>Cauchemar 6_Alyx-St.wav</ShortName>
+					<Path>SFX\Cauchemar 6_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="141649682" Language="SFX">
+					<ShortName>Cauchemar 1_Alyx-St.wav</ShortName>
+					<Path>SFX\Cauchemar 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="160862998" Language="SFX">
+					<ShortName>41 tu es sûr\Tu es sûr 1_Alyx-St.wav</ShortName>
+					<Path>SFX\41 tu es sûr\Tu es sûr 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="194797355" Language="SFX">
+					<ShortName>48 Il faut que je rentre\il faut que je rentre 1_Alyx-St.wav</ShortName>
+					<Path>SFX\48 Il faut que je rentre\il faut que je rentre 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="197639336" Language="SFX">
+					<ShortName>45 Les buissons bougent beaucoup\Les buissons bougens beaucoup 3_Alyx-St.wav</ShortName>
+					<Path>SFX\45 Les buissons bougent beaucoup\Les buissons bougens beaucoup 3_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="200197841" Language="SFX">
+					<ShortName>35 Le maitre des lieux\Le maitre des lieux 2_Alyx-St.wav</ShortName>
+					<Path>SFX\35 Le maitre des lieux\Le maitre des lieux 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="216450825" Language="SFX">
+					<ShortName>Cauchemar 2_Alyx-St.wav</ShortName>
+					<Path>SFX\Cauchemar 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="229542773" Language="SFX">
+					<ShortName>Essoufflement 2_Alyx-St.wav</ShortName>
+					<Path>SFX\Essoufflement 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="241015435" Language="SFX">
+					<ShortName>Cris 12_Alyx-St.wav</ShortName>
+					<Path>SFX\Cris 12_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="253728348" Language="SFX">
+					<ShortName>soufflement du nez 3_Alyx-St.wav</ShortName>
+					<Path>SFX\soufflement du nez 3_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="262647580" Language="SFX">
+					<ShortName>20 Comme une canne à pêche\Comme une canne à pêche 1_Alyx-St.wav</ShortName>
+					<Path>SFX\20 Comme une canne à pêche\Comme une canne à pêche 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="280748073" Language="SFX">
+					<ShortName>52 Je veux rentrer chez moi\Je veux rentrer chez moi 1_Alyx-St.wav</ShortName>
+					<Path>SFX\52 Je veux rentrer chez moi\Je veux rentrer chez moi 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="284453952" Language="SFX">
+					<ShortName>Cauchemar 5_Alyx-St.wav</ShortName>
+					<Path>SFX\Cauchemar 5_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="298185541" Language="SFX">
+					<ShortName>Cris 1_Alyx-St.wav</ShortName>
+					<Path>SFX\Cris 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="302776441" Language="SFX">
+					<ShortName>frisson peur 12_Alyx-St.wav</ShortName>
+					<Path>SFX\frisson peur 12_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="305454198" Language="SFX">
+					<ShortName>24 Il y a encore des vers qui bougent\Il y a encore des vers qui bougent 1_Alyx-St.wav</ShortName>
+					<Path>SFX\24 Il y a encore des vers qui bougent\Il y a encore des vers qui bougent 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="313818403" Language="SFX">
+					<ShortName>frisson peur 13_Alyx-St.wav</ShortName>
+					<Path>SFX\frisson peur 13_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="338695473" Language="SFX">
+					<ShortName>frisson peur 4_Alyx-St.wav</ShortName>
+					<Path>SFX\frisson peur 4_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="355579921" Language="SFX">
+					<ShortName>57 oui je veux me souvenir\Oui je veux me souvenir 1_Alyx-St.wav</ShortName>
+					<Path>SFX\57 oui je veux me souvenir\Oui je veux me souvenir 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="356527190" Language="SFX">
+					<ShortName>frisson peur 6_Alyx-St.wav</ShortName>
+					<Path>SFX\frisson peur 6_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="368283225" Language="SFX">
+					<ShortName>9 Quand il faut y aller\Quand il faut y aller_Alyx-St.wav</ShortName>
+					<Path>SFX\9 Quand il faut y aller\Quand il faut y aller_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="377374244" Language="SFX">
+					<ShortName>frisson peur 14_Alyx-St.wav</ShortName>
+					<Path>SFX\frisson peur 14_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="383205386" Language="SFX">
+					<ShortName>19 Ce rocher. l_air assez grand\Ce rocher à l_air assez grand 1_Alyx-St.wav</ShortName>
+					<Path>SFX\19 Ce rocher. l_air assez grand\Ce rocher à l_air assez grand 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="430733971" Language="SFX">
+					<ShortName>Cris 5_Alyx-St.wav</ShortName>
+					<Path>SFX\Cris 5_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="451038004" Language="SFX">
+					<ShortName>46 C_est pas vrai il est effrayant\C_est pas vrai il est effrayant 3_Alyx-St.wav</ShortName>
+					<Path>SFX\46 C_est pas vrai il est effrayant\C_est pas vrai il est effrayant 3_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="471339257" Language="SFX">
+					<ShortName>frisson peur 2_Alyx-St.wav</ShortName>
+					<Path>SFX\frisson peur 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="478464127" Language="SFX">
+					<ShortName>33 Je veux rentrer chez moi\Je veux rentrer chez moi 1_Alyx-St.wav</ShortName>
+					<Path>SFX\33 Je veux rentrer chez moi\Je veux rentrer chez moi 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="488069091" Language="SFX">
+					<ShortName>Essoufflement 4_Alyx-St.wav</ShortName>
+					<Path>SFX\Essoufflement 4_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="501143173" Language="SFX">
+					<ShortName>Cris 14_Alyx-St.wav</ShortName>
+					<Path>SFX\Cris 14_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="502575621" Language="SFX">
+					<ShortName>5 La voix ne me répond pas\La voix ne me répond pas 2_Alyx-St.wav</ShortName>
+					<Path>SFX\5 La voix ne me répond pas\La voix ne me répond pas 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="503677445" Language="SFX">
+					<ShortName>STRESS Je me sens pas bien du tout\Je me sens pas bien du tout 1_Alyx-St.wav</ShortName>
+					<Path>SFX\STRESS Je me sens pas bien du tout\Je me sens pas bien du tout 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="510809788" Language="SFX">
+					<ShortName>55 J_ai vraiment une impression bizarre\J_ai une impression bizarre 3_Alyx-St.wav</ShortName>
+					<Path>SFX\55 J_ai vraiment une impression bizarre\J_ai une impression bizarre 3_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="513453410" Language="SFX">
+					<ShortName>4 Ou êtes vous\Où êtes vous 3_Alyx-St.wav</ShortName>
+					<Path>SFX\4 Ou êtes vous\Où êtes vous 3_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="518149171" Language="SFX">
+					<ShortName>Essoufflement 3_Alyx-St.wav</ShortName>
+					<Path>SFX\Essoufflement 3_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="524402416" Language="SFX">
+					<ShortName>perplexe 5_Alyx-St.wav</ShortName>
+					<Path>SFX\perplexe 5_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="532721384" Language="SFX">
+					<ShortName>25 je dois vraiment prendre ça\Je dois vraiment prendre ça 2_Alyx-St.wav</ShortName>
+					<Path>SFX\25 je dois vraiment prendre ça\Je dois vraiment prendre ça 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="535953592" Language="SFX">
+					<ShortName>Cris 8_Alyx-St.wav</ShortName>
+					<Path>SFX\Cris 8_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="537561850" Language="SFX">
+					<ShortName>14 Elle est assez tête en l_air\Elle est assez tête en l_air 1_Alyx-St.wav</ShortName>
+					<Path>SFX\14 Elle est assez tête en l_air\Elle est assez tête en l_air 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="537912922" Language="SFX">
+					<ShortName>1 Où je suis\Où je suis 1_Alyx-St.wav</ShortName>
+					<Path>SFX\1 Où je suis\Où je suis 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="547425170" Language="SFX">
+					<ShortName>12 C_est ça le portail\C_est ça le portail 2_Alyx-St.wav</ShortName>
+					<Path>SFX\12 C_est ça le portail\C_est ça le portail 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="551713145" Language="SFX">
+					<ShortName>43 Il y avait un blessé\Il y avait un blessé 2_Alyx-St.wav</ShortName>
+					<Path>SFX\43 Il y avait un blessé\Il y avait un blessé 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="581522027" Language="SFX">
+					<ShortName>soufflement du nez 2_Alyx-St.wav</ShortName>
+					<Path>SFX\soufflement du nez 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="581624048" Language="SFX">
+					<ShortName>56 Je crois que si\Je crois que si 2_Alyx-St.wav</ShortName>
+					<Path>SFX\56 Je crois que si\Je crois que si 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="592723706" Language="SFX">
+					<ShortName>7 Je fais quoi si elle s_éteint\Je fais quoi si elle s_éteint 2_Alyx-St.wav</ShortName>
+					<Path>SFX\7 Je fais quoi si elle s_éteint\Je fais quoi si elle s_éteint 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="604381093" Language="SFX">
+					<ShortName>Cris 4_Alyx-St.wav</ShortName>
+					<Path>SFX\Cris 4_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="613747721" Language="SFX">
+					<ShortName>40 C_est le seul moyen\C_est le seul moyen 1_Alyx-St.wav</ShortName>
+					<Path>SFX\40 C_est le seul moyen\C_est le seul moyen 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="636967929" Language="SFX">
+					<ShortName>37 Tu peux répéter\tu peux répéter 3_Alyx-St.wav</ShortName>
+					<Path>SFX\37 Tu peux répéter\tu peux répéter 3_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="637296290" Language="SFX">
+					<ShortName>frisson peur 9_Alyx-St.wav</ShortName>
+					<Path>SFX\frisson peur 9_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="658483477" Language="SFX">
+					<ShortName>18 Tant que je ne dois pas grimper à cet arbre\Tant que je ne dois pas grimper à cet arbre 3_Alyx-St.wav</ShortName>
+					<Path>SFX\18 Tant que je ne dois pas grimper à cet arbre\Tant que je ne dois pas grimper à cet arbre 3_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="668040900" Language="SFX">
+					<ShortName>27 Il faut que ça fonctionne\Il faut que ça fonctionne 1_Alyx-St.wav</ShortName>
+					<Path>SFX\27 Il faut que ça fonctionne\Il faut que ça fonctionne 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="670774818" Language="SFX">
+					<ShortName>perplexe 3_Alyx-St.wav</ShortName>
+					<Path>SFX\perplexe 3_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="681829825" Language="SFX">
+					<ShortName>23 Les boites dans la cabane étaient vides\Les boites étaient toutes vides_Alyx-St_1.wav</ShortName>
+					<Path>SFX\23 Les boites dans la cabane étaient vides\Les boites étaient toutes vides_Alyx-St_1_3F75BDB9.wem</Path>
+				</File>
+				<File Id="684718457" Language="SFX">
+					<ShortName>31 Tu m_as appelé par mon prénom\Tu m_as appelé par mon prénom 1_Alyx-St.wav</ShortName>
+					<Path>SFX\31 Tu m_as appelé par mon prénom\Tu m_as appelé par mon prénom 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="685482071" Language="SFX">
+					<ShortName>6 Dis moi où tu es\Dis moi où tu es 2_Alyx-St.wav</ShortName>
+					<Path>SFX\6 Dis moi où tu es\Dis moi où tu es 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="696986293" Language="SFX">
+					<ShortName>2 Alyx c_est mon nom\Alyx c_est mon nom 1_Alyx-St.wav</ShortName>
+					<Path>SFX\2 Alyx c_est mon nom\Alyx c_est mon nom 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="704022601" Language="SFX">
+					<ShortName>10 Je peux te rejoindre\Je peux te rejoindre 1_Alyx-St.wav</ShortName>
+					<Path>SFX\10 Je peux te rejoindre\Je peux te rejoindre 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="704770663" Language="SFX">
+					<ShortName>frisson peur 8_Alyx-St.wav</ShortName>
+					<Path>SFX\frisson peur 8_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="715362853" Language="SFX">
+					<ShortName>38 Je pense avoir compris\Je pense avoir compris 2_Alyx-St.wav</ShortName>
+					<Path>SFX\38 Je pense avoir compris\Je pense avoir compris 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="722345312" Language="SFX">
+					<ShortName>frisson peur 15_Alyx-St.wav</ShortName>
+					<Path>SFX\frisson peur 15_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="730628957" Language="SFX">
+					<ShortName>16 Je suis pas un singe\Je suis pas un singe 1_Alyx-St.wav</ShortName>
+					<Path>SFX\16 Je suis pas un singe\Je suis pas un singe 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="733240633" Language="SFX">
+					<ShortName>frisson peur 7_Alyx-St.wav</ShortName>
+					<Path>SFX\frisson peur 7_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="737915784" Language="SFX">
+					<ShortName>frisson peur 10_Alyx-St.wav</ShortName>
+					<Path>SFX\frisson peur 10_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="748518494" Language="SFX">
+					<ShortName>Cris 7_Alyx-St.wav</ShortName>
+					<Path>SFX\Cris 7_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="753041933" Language="SFX">
+					<ShortName>perplexe 2_Alyx-St.wav</ShortName>
+					<Path>SFX\perplexe 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="753281076" Language="SFX">
+					<ShortName>STRESS Brr J_ai peur\J_ai peur 1_Alyx-St.wav</ShortName>
+					<Path>SFX\STRESS Brr J_ai peur\J_ai peur 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="763520841" Language="SFX">
+					<ShortName>Essoufflement 6_Alyx-St.wav</ShortName>
+					<Path>SFX\Essoufflement 6_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="766567794" Language="SFX">
+					<ShortName>44 Il y a des bruits bizarres\Il y a des bruits bizarres 1_Alyx-St.wav</ShortName>
+					<Path>SFX\44 Il y a des bruits bizarres\Il y a des bruits bizarres 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="785213434" Language="SFX">
+					<ShortName>Cris 6_Alyx-St.wav</ShortName>
+					<Path>SFX\Cris 6_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="805675021" Language="SFX">
+					<ShortName>Cris 11_Alyx-St.wav</ShortName>
+					<Path>SFX\Cris 11_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="807195476" Language="SFX">
+					<ShortName>13 Tu sais où est la clef\Tu sais où est la clef 3_Alyx-St.wav</ShortName>
+					<Path>SFX\13 Tu sais où est la clef\Tu sais où est la clef 3_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="818488492" Language="SFX">
+					<ShortName>36 Des ombres\des ombres… 1_Alyx-St.wav</ShortName>
+					<Path>SFX\36 Des ombres\des ombres… 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="839794905" Language="SFX">
+					<ShortName>26 Je vais pouvoir me débarasser des trucs dégoutants\Je vais pouvoir me débarasser de ces trucs dégoutants 2_Alyx-St.wav</ShortName>
+					<Path>SFX\26 Je vais pouvoir me débarasser des trucs dégoutants\Je vais pouvoir me débarasser de ces trucs dégoutants 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="845683292" Language="SFX">
+					<ShortName>soufflement du nez 4_Alyx-St.wav</ShortName>
+					<Path>SFX\soufflement du nez 4_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="851755857" Language="SFX">
+					<ShortName>frisson peur 3_Alyx-St.wav</ShortName>
+					<Path>SFX\frisson peur 3_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="875860453" Language="SFX">
+					<ShortName>49 J_espère qu_ils ne me repèreront pas\J_espère qu_ils ne me repèreront pas 2_Alyx-St.wav</ShortName>
+					<Path>SFX\49 J_espère qu_ils ne me repèreront pas\J_espère qu_ils ne me repèreront pas 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="879725568" Language="SFX">
+					<ShortName>34 Une épreuve\Une épreuve 1_Alyx-St.wav</ShortName>
+					<Path>SFX\34 Une épreuve\Une épreuve 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="902279032" Language="SFX">
+					<ShortName>soufflement du nez 1_Alyx-St.wav</ShortName>
+					<Path>SFX\soufflement du nez 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="904083377" Language="SFX">
+					<ShortName>17 Tu as une idée\T_as une idée 1_Alyx-St.wav</ShortName>
+					<Path>SFX\17 Tu as une idée\T_as une idée 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="915952710" Language="SFX">
+					<ShortName>frisson peur 11_Alyx-St.wav</ShortName>
+					<Path>SFX\frisson peur 11_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="928508773" Language="SFX">
+					<ShortName>frisson peur 16_Alyx-St.wav</ShortName>
+					<Path>SFX\frisson peur 16_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="938879705" Language="SFX">
+					<ShortName>3 C_est la même voix que dans ma tête\C_est la même voix que dans mon rêve 2_Alyx-St.wav</ShortName>
+					<Path>SFX\3 C_est la même voix que dans ma tête\C_est la même voix que dans mon rêve 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="976252593" Language="SFX">
+					<ShortName>47 C_est ça les ombres\C_est ça les ombres 2_Alyx-St.wav</ShortName>
+					<Path>SFX\47 C_est ça les ombres\C_est ça les ombres 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="981967836" Language="SFX">
+					<ShortName>Cauchemar 3_Alyx-St.wav</ShortName>
+					<Path>SFX\Cauchemar 3_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="985341609" Language="SFX">
+					<ShortName>frisson peur 1_Alyx-St.wav</ShortName>
+					<Path>SFX\frisson peur 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="993996084" Language="SFX">
+					<ShortName>51 Sparky a dit\Sparky a dit… 1_Alyx-St.wav</ShortName>
+					<Path>SFX\51 Sparky a dit\Sparky a dit… 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="1000327118" Language="SFX">
+					<ShortName>28 Qui es tu\Qui es tu 1_Alyx-St.wav</ShortName>
+					<Path>SFX\28 Qui es tu\Qui es tu 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="1014981234" Language="SFX">
+					<ShortName>29 C_est toi la voix que j_entend\C_est toi la voix 1_Alyx-St.wav</ShortName>
+					<Path>SFX\29 C_est toi la voix que j_entend\C_est toi la voix 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="1028256910" Language="SFX">
+					<ShortName>soufflement du nez 5_Alyx-St.wav</ShortName>
+					<Path>SFX\soufflement du nez 5_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="1030661899" Language="SFX">
+					<ShortName>42 Il devait se sentir seul ici\Il devait se sentir seul ici 2_Alyx-St.wav</ShortName>
+					<Path>SFX\42 Il devait se sentir seul ici\Il devait se sentir seul ici 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="1049893436" Language="SFX">
+					<ShortName>58 Oui il faut que je me souvienne\Oui il faut que je me souvienne 2_Alyx-St.wav</ShortName>
+					<Path>SFX\58 Oui il faut que je me souvienne\Oui il faut que je me souvienne 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="1053441028" Language="SFX">
+					<ShortName>32 La voix dans mon rêve était plus douce\La voix était plus douce 1_Alyx-St.wav</ShortName>
+					<Path>SFX\32 La voix dans mon rêve était plus douce\La voix était plus douce 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="1060988155" Language="SFX">
+					<ShortName>21 Je risque de blesser l_oiseau\Je risque de blesser l_oiseau 1_Alyx-St.wav</ShortName>
+					<Path>SFX\21 Je risque de blesser l_oiseau\Je risque de blesser l_oiseau 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="1061577941" Language="SFX">
+					<ShortName>frisson peur 5_Alyx-St.wav</ShortName>
+					<Path>SFX\frisson peur 5_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="1066774310" Language="SFX">
+					<ShortName>Cris 3_Alyx-St.wav</ShortName>
+					<Path>SFX\Cris 3_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="1070746206" Language="SFX">
+					<ShortName>Cris 10_Alyx-St.wav</ShortName>
+					<Path>SFX\Cris 10_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX" Hash="3808553749">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2530157555" Language="SFX" Hash="3281649961">
+		<SoundBank Id="2530157555" Language="SFX" Hash="2097972156">
 			<ObjectPath>\SoundBanks\Default Work Unit\Environnement</ObjectPath>
 			<ShortName>Environnement</ShortName>
 			<Path>Environnement.bnk</Path>
@@ -30,7 +498,7 @@
 					<IncludedMemoryFiles>
 						<File Id="232362674" Language="SFX">
 							<ShortName>oiseau 23_cuicui.wav</ShortName>
-							<Path>SFX\oiseau 23_cuicui_10C4C929.wem</Path>
+							<Path>SFX\oiseau 23_cuicui_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -39,7 +507,7 @@
 					<IncludedMemoryFiles>
 						<File Id="791093738" Language="SFX">
 							<ShortName>corbeau 1.wav</ShortName>
-							<Path>SFX\corbeau 1_10C4C929.wem</Path>
+							<Path>SFX\corbeau 1_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -48,7 +516,7 @@
 					<IncludedMemoryFiles>
 						<File Id="235868969" Language="SFX">
 							<ShortName>corbeau 2.wav</ShortName>
-							<Path>SFX\corbeau 2_10C4C929.wem</Path>
+							<Path>SFX\corbeau 2_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -57,7 +525,7 @@
 					<IncludedMemoryFiles>
 						<File Id="408059349" Language="SFX">
 							<ShortName>corbeau 3.wav</ShortName>
-							<Path>SFX\corbeau 3_10C4C929.wem</Path>
+							<Path>SFX\corbeau 3_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -66,7 +534,7 @@
 					<IncludedMemoryFiles>
 						<File Id="336679914" Language="SFX">
 							<ShortName>corbeau 4.wav</ShortName>
-							<Path>SFX\corbeau 4_10C4C929.wem</Path>
+							<Path>SFX\corbeau 4_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -75,7 +543,7 @@
 					<IncludedMemoryFiles>
 						<File Id="176432756" Language="SFX">
 							<ShortName>1_rivière.wav</ShortName>
-							<Path>SFX\1_rivière_D79FB2B7.wem</Path>
+							<Path>SFX\1_rivière_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -84,11 +552,11 @@
 					<IncludedMemoryFiles>
 						<File Id="260624337" Language="SFX">
 							<ShortName>Environnement\Wind\vent 1.wav</ShortName>
-							<Path>SFX\Environnement\Wind\vent 1_D79FB2B7.wem</Path>
+							<Path>SFX\Environnement\Wind\vent 1_9EDFC787.wem</Path>
 						</File>
 						<File Id="774703723" Language="SFX">
 							<ShortName>Environnement\Wind\vent 2_vent foret.wav</ShortName>
-							<Path>SFX\Environnement\Wind\vent 2_vent foret_10C4C929.wem</Path>
+							<Path>SFX\Environnement\Wind\vent 2_vent foret_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -97,127 +565,127 @@
 			<IncludedMemoryFiles>
 				<File Id="39742750" Language="SFX">
 					<ShortName>oiseau 6_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 6_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 6_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="50872857" Language="SFX">
 					<ShortName>oiseau 2_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 2_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 2_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="63423348" Language="SFX">
 					<ShortName>oiseau 11_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 11_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 11_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="91800397" Language="SFX">
 					<ShortName>oiseau 16_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 16_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 16_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="176432756" Language="SFX">
 					<ShortName>1_rivière.wav</ShortName>
-					<Path>SFX\1_rivière_D79FB2B7.wem</Path>
+					<Path>SFX\1_rivière_9EDFC787.wem</Path>
 				</File>
 				<File Id="192332879" Language="SFX">
 					<ShortName>oiseau 5_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 5_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 5_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="224404038" Language="SFX">
 					<ShortName>oiseau 19_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 19_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 19_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="232362674" Language="SFX">
 					<ShortName>oiseau 23_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 23_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 23_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="235868969" Language="SFX">
 					<ShortName>corbeau 2.wav</ShortName>
-					<Path>SFX\corbeau 2_10C4C929.wem</Path>
+					<Path>SFX\corbeau 2_3F75BDB9.wem</Path>
 				</File>
 				<File Id="238427749" Language="SFX">
 					<ShortName>oiseau 8_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 8_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 8_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="260624337" Language="SFX">
 					<ShortName>Environnement\Wind\vent 1.wav</ShortName>
-					<Path>SFX\Environnement\Wind\vent 1_D79FB2B7.wem</Path>
+					<Path>SFX\Environnement\Wind\vent 1_9EDFC787.wem</Path>
 				</File>
 				<File Id="336679914" Language="SFX">
 					<ShortName>corbeau 4.wav</ShortName>
-					<Path>SFX\corbeau 4_10C4C929.wem</Path>
+					<Path>SFX\corbeau 4_3F75BDB9.wem</Path>
 				</File>
 				<File Id="346162389" Language="SFX">
 					<ShortName>oiseau 9_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 9_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 9_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="372090329" Language="SFX">
 					<ShortName>oiseau 13_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 13_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 13_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="408059349" Language="SFX">
 					<ShortName>corbeau 3.wav</ShortName>
-					<Path>SFX\corbeau 3_10C4C929.wem</Path>
+					<Path>SFX\corbeau 3_3F75BDB9.wem</Path>
 				</File>
 				<File Id="523603527" Language="SFX">
 					<ShortName>oiseau 7_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 7_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 7_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="525297627" Language="SFX">
 					<ShortName>oiseau 3_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 3_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 3_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="539307055" Language="SFX">
 					<ShortName>oiseau 1_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 1_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 1_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="542705106" Language="SFX">
 					<ShortName>oiseau 12_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 12_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 12_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="667759706" Language="SFX">
 					<ShortName>oiseau 14_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 14_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 14_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="688090902" Language="SFX">
 					<ShortName>oiseau 22_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 22_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 22_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="721879130" Language="SFX">
 					<ShortName>oiseau 17_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 17_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 17_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="722269656" Language="SFX">
 					<ShortName>oiseau 20_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 20_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 20_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="774703723" Language="SFX">
 					<ShortName>Environnement\Wind\vent 2_vent foret.wav</ShortName>
-					<Path>SFX\Environnement\Wind\vent 2_vent foret_10C4C929.wem</Path>
+					<Path>SFX\Environnement\Wind\vent 2_vent foret_3F75BDB9.wem</Path>
 				</File>
 				<File Id="780006696" Language="SFX">
 					<ShortName>oiseau 18_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 18_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 18_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="787020632" Language="SFX">
 					<ShortName>oiseau 10_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 10_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 10_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="791093738" Language="SFX">
 					<ShortName>corbeau 1.wav</ShortName>
-					<Path>SFX\corbeau 1_10C4C929.wem</Path>
+					<Path>SFX\corbeau 1_3F75BDB9.wem</Path>
 				</File>
 				<File Id="1010179061" Language="SFX">
 					<ShortName>oiseau 21_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 21_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 21_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="1013232674" Language="SFX">
 					<ShortName>oiseau 15_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 15_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 15_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="1057460352" Language="SFX">
 					<ShortName>oiseau 4_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 4_cuicui_10C4C929.wem</Path>
+					<Path>SFX\oiseau 4_cuicui_3F75BDB9.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="2981377429" Language="SFX" Hash="3965339034">
+		<SoundBank Id="2981377429" Language="SFX" Hash="4177107878">
 			<ObjectPath>\SoundBanks\Default Work Unit\Ambiance</ObjectPath>
 			<ShortName>Ambiance</ShortName>
 			<Path>Ambiance.bnk</Path>
@@ -226,7 +694,7 @@
 					<IncludedMemoryFiles>
 						<File Id="354062294" Language="SFX">
 							<ShortName>Ambiance\GameOver\Game_Over.wav</ShortName>
-							<Path>SFX\Ambiance\GameOver\Game_Over_10C4C929.wem</Path>
+							<Path>SFX\Ambiance\GameOver\Game_Over_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -235,11 +703,11 @@
 					<IncludedMemoryFiles>
 						<File Id="95440876" Language="SFX">
 							<ShortName>Ambiance\Menu\Menu 2 (loops).wav</ShortName>
-							<Path>SFX\Ambiance\Menu\Menu 2 (loops)_D79FB2B7.wem</Path>
+							<Path>SFX\Ambiance\Menu\Menu 2 (loops)_9EDFC787.wem</Path>
 						</File>
 						<File Id="382039251" Language="SFX">
 							<ShortName>Ambiance\Menu\Menu 2.wav</ShortName>
-							<Path>SFX\Ambiance\Menu\Menu 2_10C4C929.wem</Path>
+							<Path>SFX\Ambiance\Menu\Menu 2_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -248,15 +716,15 @@
 			<IncludedMemoryFiles>
 				<File Id="95440876" Language="SFX">
 					<ShortName>Ambiance\Menu\Menu 2 (loops).wav</ShortName>
-					<Path>SFX\Ambiance\Menu\Menu 2 (loops)_D79FB2B7.wem</Path>
+					<Path>SFX\Ambiance\Menu\Menu 2 (loops)_9EDFC787.wem</Path>
 				</File>
 				<File Id="354062294" Language="SFX">
 					<ShortName>Ambiance\GameOver\Game_Over.wav</ShortName>
-					<Path>SFX\Ambiance\GameOver\Game_Over_10C4C929.wem</Path>
+					<Path>SFX\Ambiance\GameOver\Game_Over_3F75BDB9.wem</Path>
 				</File>
 				<File Id="382039251" Language="SFX">
 					<ShortName>Ambiance\Menu\Menu 2.wav</ShortName>
-					<Path>SFX\Ambiance\Menu\Menu 2_10C4C929.wem</Path>
+					<Path>SFX\Ambiance\Menu\Menu 2_3F75BDB9.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

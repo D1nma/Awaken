@@ -10,7 +10,7 @@
 				<ActorMixer Name="Mixer_Environnement_Wind" ID="{7E5EE95F-EC9C-4B4B-9277-9DA55B1607CA}" ShortID="468725078">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+							<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
@@ -235,7 +235,7 @@
 							<ObjectRef Name="Water" ID="{C0057ADF-F832-4BD9-8744-7674F1D8CFB4}" WorkUnitID="{62B3FD83-C3F8-4379-A334-6EFD920EC57A}"/>
 						</Reference>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+							<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
@@ -282,10 +282,10 @@
 									<ObjectRef Name="ambiance_foret" ID="{8FCC9F54-C3B1-4D81-8C28-CCD5BAE4CB78}" WorkUnitID="{62B3FD83-C3F8-4379-A334-6EFD920EC57A}"/>
 								</Reference>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+									<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+									<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -299,6 +299,7 @@
 												<Value>1</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>
@@ -337,6 +338,7 @@
 												<Value>1</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>
@@ -375,6 +377,7 @@
 												<Value>1</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>
@@ -413,6 +416,7 @@
 												<Value>1</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>
@@ -442,6 +446,9 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 1_cuicui" ID="{82262E0D-AFAF-4BDA-B54C-A43C286656C1}" ShortID="391925632">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
@@ -465,12 +472,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 2_cuicui" ID="{C25873B4-A3EA-4B32-88B1-02C402C31838}" ShortID="274703265">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -488,12 +498,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 3_cuicui" ID="{6F8F8216-FC17-4D16-9242-333659208BC2}" ShortID="1063041065">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -511,12 +524,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 4_cuicui" ID="{099F57D5-CBCD-482A-8490-D2946F5DB41B}" ShortID="307858682">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -534,12 +550,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 5_cuicui" ID="{3D470BE9-6366-417C-A333-4529645E4160}" ShortID="182965308">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -557,12 +576,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 6_cuicui" ID="{E06875D4-FFA1-4C22-905B-07FD1D4DC3A8}" ShortID="109090634">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -580,12 +602,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 7_cuicui" ID="{2A48A975-F5B1-4ED3-B3D9-D790DFD3B884}" ShortID="157794986">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -603,12 +628,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 8_cuicui" ID="{CADFC0C9-CE64-4D84-85A2-1012FA058FE0}" ShortID="244208108">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -626,12 +654,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 9_cuicui" ID="{C29B7C5A-F293-42A8-B743-0333505249C7}" ShortID="984507122">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -649,12 +680,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 10_cuicui" ID="{AB849902-3315-4A9E-ABAC-0BFA6D24303D}" ShortID="53899031">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -672,12 +706,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 11_cuicui" ID="{80B46D11-57EC-459A-B792-BC0648FF6FC8}" ShortID="572146226">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -695,12 +732,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 12_cuicui" ID="{F0E84592-7D86-433E-82D9-55FE75ACB1A2}" ShortID="696745180">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -718,12 +758,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 13_cuicui" ID="{B5FFDD41-D095-4130-93A5-19DD3E045814}" ShortID="5317182">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -741,12 +784,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 14_cuicui" ID="{1C213403-5EAB-484C-9610-96E3EA610F1A}" ShortID="1004153391">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -764,12 +810,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 15_cuicui" ID="{C83A3976-079E-44AF-86F2-F9283D53EBB4}" ShortID="807278238">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -787,12 +836,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 16_cuicui" ID="{B76FCE37-F658-4111-9700-6EE93F1B4F4D}" ShortID="629326969">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -810,12 +862,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 17_cuicui" ID="{092D5007-138B-4964-AF21-D536770FE659}" ShortID="921604068">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -833,12 +888,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 18_cuicui" ID="{57C76B7F-4123-421B-A835-63CCCD6FC73F}" ShortID="821984331">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -856,12 +914,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 19_cuicui" ID="{470BC977-E757-481D-906A-6FAA340D0094}" ShortID="517256376">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -879,12 +940,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 20_cuicui" ID="{80A81937-EC64-4B2E-BDB2-64F151857BD2}" ShortID="297953607">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -902,12 +966,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 21_cuicui" ID="{ACD63FE0-5D2A-43FD-9BC9-4818495C6294}" ShortID="838874195">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+											<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -925,6 +992,9 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="oiseau 22_cuicui" ID="{74FC1F31-70DE-4359-885D-D7AC80F53834}" ShortID="638489504">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
@@ -962,6 +1032,7 @@
 												<Value>1</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="RenderEffect0" Type="bool">
 											<ValueList>
 												<Value>True</Value>

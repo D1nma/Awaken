@@ -12,7 +12,7 @@ public class PlayersController : MonoBehaviour
     Animator animator;
     private GameManager gm;
     public StaminaBar stb;
-    public GameObject SpotGrimper,pivot;
+    public GameObject SpotGrimper, pivot;
     CharacterController cc;
     public float moveSpeed = 5, oldMoveSpeed, oldColliderHeight;
     //public float rotateSpeed = 180f;
@@ -37,7 +37,7 @@ public class PlayersController : MonoBehaviour
     private bool accroupir = false, Rotation, positionBras, doOnce = false;
     public static bool canControl = true, wakeUp = false;
     public float animationLenghtWakeUp = 13.2f;
-    public bool courrir = true, grimper,grimpant;
+    public bool courrir = true, grimper, grimpant;
     private bool SUPERUSER = false;
 
     private static PlayersController instance;
@@ -151,7 +151,7 @@ public class PlayersController : MonoBehaviour
             }
             h = Input.GetAxisRaw("Horizontal");
             v = Input.GetAxisRaw("Vertical");
-            
+
         }
         else
         {
@@ -223,9 +223,10 @@ public class PlayersController : MonoBehaviour
             {
                 stb.StopStamina();
             }
-            
+
         }
-        if (Input.GetButtonDown("Jump")){
+        if (Input.GetButtonDown("Jump"))
+        {
 
             trait = this.transform.position;
             trait.y = this.transform.position.y + offsetRay;
@@ -275,13 +276,13 @@ public class PlayersController : MonoBehaviour
 
             }
         }
-        
+
         if (grimper)
         {
             float distance = Vector3.Distance(transform.position, pivot.transform.position);
             if (distance < 0.1f && doOnce == false)
             {
-                grimpant = false; canControl = true; 
+                grimpant = false; canControl = true;
             }
         }
         if (Input.GetKeyDown(KeyCode.C) && isGrounded && canControl && !wakeUp)
@@ -332,10 +333,8 @@ public class PlayersController : MonoBehaviour
             }
 
         }
-        if (canControl && !wakeUp)
-        {
-            cc.Move(velocity * Time.deltaTime);
-        }
+        cc.Move(velocity * Time.deltaTime);
+
 
 
         velocity.y += gravity * Time.deltaTime;
@@ -346,12 +345,12 @@ public class PlayersController : MonoBehaviour
 
     private IEnumerator OnCompleteAnimation(float animationLength)
     {
-        
+
         yield return new WaitForSeconds(animationLength);
         transform.position = pivot.transform.position;
         animator.SetBool("Grimper", false);
         doOnce = false; grimper = false;
-        
+
 
 
     }
