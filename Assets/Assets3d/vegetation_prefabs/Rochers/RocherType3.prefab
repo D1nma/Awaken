@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &1889282176491949145
 Transform:
@@ -98,7 +98,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &6526756249541741783
 Transform:
@@ -175,12 +175,13 @@ GameObject:
   - component: {fileID: 7912374423233815677}
   - component: {fileID: 6751256719730787844}
   - component: {fileID: 5981718647036510398}
+  - component: {fileID: 192563820}
   m_Layer: 9
   m_Name: rock3.1(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &7912374423233815677
 Transform:
@@ -246,6 +247,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &192563820
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6210868989977010151}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3860052, y: 2.642494, z: 2.038566}
+  m_Center: {x: -1.316774, y: 0.7186737, z: 0.29115352}
 --- !u!1 &7689877558614147274
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,7 +276,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &4861734831643485239
 Transform:
@@ -343,7 +357,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &168599183821374584
 Transform:
@@ -354,7 +368,7 @@ Transform:
   m_GameObject: {fileID: 9068733607328352551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 22.32, y: 3.876, z: -1.785}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 4861734831643485239}
   - {fileID: 1889282176491949145}
@@ -373,7 +387,7 @@ LODGroup:
   serializedVersion: 2
   m_LocalReferencePoint: {x: -1.2310547, y: 0.7087481, z: 0.2812693}
   m_Size: 3.5701196
-  m_FadeMode: 0
+  m_FadeMode: 1
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
