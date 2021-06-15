@@ -72,7 +72,11 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        if (!invent)
+        if (!gm)
+        {
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        }
+        else if (!invent)
         {
             invent = GameObject.Find("Inventaire").GetComponent<Inventaire>();
         }
