@@ -34,10 +34,6 @@ public class StaminaBar : MonoBehaviour
         {
             ui = GameObject.Find("Canvas").GetComponent<UIManager>();
         }
-        if (!pc)
-        {
-            pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayersController>();
-        }
         else if (!pc.stb)
         {
             pc.stb = this.gameObject.GetComponent<StaminaBar>();
