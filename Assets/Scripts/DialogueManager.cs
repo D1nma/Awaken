@@ -7,6 +7,8 @@ public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
     string nom1, nom2;
+    //public AK.Wwise.Event dialogue0, dialogue1, dialogue2, dialogue3, dialogue4, dialogue5, dialogue6, dialogue7, dialogue8, dialogue9, dialogue10;
+    public int son;
     public Text dialogueText;
     public GameObject[] Boutons;
     public Text nameAlyx;
@@ -106,7 +108,8 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
-        AkSoundEngine.PostEvent("Dialogue", gameObject);
+        AkSoundEngine.PostEvent("Dialogue_0" + son, gameObject);
+        //Debug.Log("Dialogue_0" + son);
         nom1 = dialogue.name;
         nom2 = dialogue.name2;
         if (!canMove)

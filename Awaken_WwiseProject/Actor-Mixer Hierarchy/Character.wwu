@@ -9,9 +9,14 @@
 			<ChildrenList>
 				<ActorMixer Name="Mix_Dialogues" ID="{F2D3BE59-1D73-43A0-B17F-72206DDB1D67}" ShortID="333693490">
 					<PropertyList>
-						<Property Name="Volume" Type="Real64">
+						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -20,187 +25,12 @@
 							<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+							<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Folder Name="Dialogues" ID="{C3135CF5-D0AC-43B0-B91C-636DEC7B7D22}" ShortID="23184528">
 							<ChildrenList>
-								<Folder Name="1 Où je suis" ID="{4C313ADD-22C9-45BE-B449-B5DCF6DF224D}" ShortID="449417155">
-									<ChildrenList>
-										<Sound Name="Où je suis 1_Alyx-St" ID="{FDB0AC97-C798-451A-AB51-BCCDF422F7E8}" ShortID="111510024">
-											<PropertyList>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Où je suis 1_Alyx-St" ID="{B114AD51-E6ED-42EE-B8F1-BEC1E981386D}">
-													<Language>SFX</Language>
-													<AudioFile>1 Où je suis\Où je suis 1_Alyx-St.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="537912922"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Où je suis 1_Alyx-St" ID="{B114AD51-E6ED-42EE-B8F1-BEC1E981386D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</Folder>
-								<Folder Name="2 Alyx c_est mon nom" ID="{D41F03F8-F0D1-4F57-BDF9-367CFD425529}" ShortID="975255571">
-									<ChildrenList>
-										<Sound Name="Alyx c_est mon nom 1_Alyx-St" ID="{AF70899E-874B-4DD8-97EE-6BD2DCC18374}" ShortID="1000610310">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Alyx c_est mon nom 1_Alyx-St" ID="{9EC2825F-6CC0-4336-AE6C-F6C6E5B5B8BF}">
-													<Language>SFX</Language>
-													<AudioFile>2 Alyx c_est mon nom\Alyx c_est mon nom 1_Alyx-St.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="696986293"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Alyx c_est mon nom 1_Alyx-St" ID="{9EC2825F-6CC0-4336-AE6C-F6C6E5B5B8BF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</Folder>
-								<Folder Name="3 C_est la même voix que dans ma tête" ID="{5BF789A4-2B04-4005-B5A8-DC1FA87B0DA1}" ShortID="549823955">
-									<ChildrenList>
-										<Sound Name="C_est la même voix que dans mon rêve 2_Alyx-St" ID="{84B5145B-B74D-4668-AF29-CB6E184ECEF6}" ShortID="738155135">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="C_est la même voix que dans mon rêve 2_Alyx-St" ID="{C5E073D2-9E26-44E8-B3DB-ECDC9048467B}">
-													<Language>SFX</Language>
-													<AudioFile>3 C_est la même voix que dans ma tête\C_est la même voix que dans mon rêve 2_Alyx-St.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="938879705"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="C_est la même voix que dans mon rêve 2_Alyx-St" ID="{C5E073D2-9E26-44E8-B3DB-ECDC9048467B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</Folder>
-								<Folder Name="4 Ou êtes vous" ID="{B4E6FAA2-9536-40DE-9513-D98665ED8BE7}" ShortID="644598457">
-									<ChildrenList>
-										<Sound Name="Où êtes vous 3_Alyx-St" ID="{FE1AA64A-E328-476D-97F2-C5FE4B0DFE66}" ShortID="733831932">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Où êtes vous 3_Alyx-St" ID="{4502F4EA-05FE-4B2C-8F65-5DC383E1A608}">
-													<Language>SFX</Language>
-													<AudioFile>4 Ou êtes vous\Où êtes vous 3_Alyx-St.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="513453410"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Où êtes vous 3_Alyx-St" ID="{4502F4EA-05FE-4B2C-8F65-5DC383E1A608}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</Folder>
-								<Folder Name="5 La voix ne me répond pas" ID="{D8AD6AC4-9A7C-4E30-9B73-BC8F93ECDA84}" ShortID="861850825">
-									<ChildrenList>
-										<Sound Name="La voix ne me répond pas 2_Alyx-St" ID="{5B1B147E-6AAC-4EB2-B339-EA26D3E74268}" ShortID="688212707">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="La voix ne me répond pas 2_Alyx-St" ID="{10EE7BEE-2A72-4C48-B23D-786B88BBF960}">
-													<Language>SFX</Language>
-													<AudioFile>5 La voix ne me répond pas\La voix ne me répond pas 2_Alyx-St.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="502575621"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="La voix ne me répond pas 2_Alyx-St" ID="{10EE7BEE-2A72-4C48-B23D-786B88BBF960}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</Folder>
-								<Folder Name="6 Dis moi où tu es" ID="{B874415B-117D-44B4-8F46-5B37CF575348}" ShortID="142851159">
-									<ChildrenList>
-										<Sound Name="Dis moi où tu es 2_Alyx-St" ID="{0266E8B1-EE67-4ED5-AB81-C752BDA70CD0}" ShortID="1056112955">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Dis moi où tu es 2_Alyx-St" ID="{6ED806AE-CAEE-4A8E-837D-2105C2EC93B1}">
-													<Language>SFX</Language>
-													<AudioFile>6 Dis moi où tu es\Dis moi où tu es 2_Alyx-St.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="685482071"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="Dis moi où tu es 2_Alyx-St" ID="{6ED806AE-CAEE-4A8E-837D-2105C2EC93B1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</Folder>
 								<Folder Name="7 Je fais quoi si elle s_éteint" ID="{A176B943-19FC-4FF5-8B4E-BB6494BFC56B}" ShortID="618882610">
 									<ChildrenList>
 										<Sound Name="Je fais quoi si elle s_éteint 2_Alyx-St" ID="{1768B609-F2F3-43FE-89BF-6DBBCF1B7F37}" ShortID="243535069">
@@ -1659,6 +1489,225 @@
 										</Sound>
 									</ChildrenList>
 								</Folder>
+								<RandomSequenceContainer Name="Sequencer_01" ID="{A8F10515-0C86-48F5-9E12-8B7CC21765DE}" ShortID="163708690">
+									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Où je suis 1_Alyx-St" ID="{FDB0AC97-C798-451A-AB51-BCCDF422F7E8}" ShortID="111510024">
+											<PropertyList>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Où je suis 1_Alyx-St" ID="{B114AD51-E6ED-42EE-B8F1-BEC1E981386D}">
+													<Language>SFX</Language>
+													<AudioFile>1 Où je suis\Où je suis 1_Alyx-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="537912922"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Où je suis 1_Alyx-St" ID="{B114AD51-E6ED-42EE-B8F1-BEC1E981386D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Alyx c_est mon nom 1_Alyx-St" ID="{AF70899E-874B-4DD8-97EE-6BD2DCC18374}" ShortID="1000610310">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Alyx c_est mon nom 1_Alyx-St" ID="{9EC2825F-6CC0-4336-AE6C-F6C6E5B5B8BF}">
+													<Language>SFX</Language>
+													<AudioFile>2 Alyx c_est mon nom\Alyx c_est mon nom 1_Alyx-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="696986293"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Alyx c_est mon nom 1_Alyx-St" ID="{9EC2825F-6CC0-4336-AE6C-F6C6E5B5B8BF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="C_est la même voix que dans mon rêve 2_Alyx-St" ID="{84B5145B-B74D-4668-AF29-CB6E184ECEF6}" ShortID="738155135">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="C_est la même voix que dans mon rêve 2_Alyx-St" ID="{C5E073D2-9E26-44E8-B3DB-ECDC9048467B}">
+													<Language>SFX</Language>
+													<AudioFile>3 C_est la même voix que dans ma tête\C_est la même voix que dans mon rêve 2_Alyx-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="938879705"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="C_est la même voix que dans mon rêve 2_Alyx-St" ID="{C5E073D2-9E26-44E8-B3DB-ECDC9048467B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="N’aie pas peur jeune enfant" ID="{1D3A420C-5B76-44D4-ADD8-BE953C9EE23E}" ShortID="514051085">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</Sound>
+										<Sound Name="Suis ma voix" ID="{D3AE1B75-29BC-4256-9125-900DF744301C}" ShortID="865327982">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</Sound>
+										<Sound Name="Où êtes vous 3_Alyx-St" ID="{FE1AA64A-E328-476D-97F2-C5FE4B0DFE66}" ShortID="733831932">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Où êtes vous 3_Alyx-St" ID="{4502F4EA-05FE-4B2C-8F65-5DC383E1A608}">
+													<Language>SFX</Language>
+													<AudioFile>4 Ou êtes vous\Où êtes vous 3_Alyx-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="513453410"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Où êtes vous 3_Alyx-St" ID="{4502F4EA-05FE-4B2C-8F65-5DC383E1A608}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="La voix ne me répond pas 2_Alyx-St" ID="{5B1B147E-6AAC-4EB2-B339-EA26D3E74268}" ShortID="688212707">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="La voix ne me répond pas 2_Alyx-St" ID="{10EE7BEE-2A72-4C48-B23D-786B88BBF960}">
+													<Language>SFX</Language>
+													<AudioFile>5 La voix ne me répond pas\La voix ne me répond pas 2_Alyx-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="502575621"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="La voix ne me répond pas 2_Alyx-St" ID="{10EE7BEE-2A72-4C48-B23D-786B88BBF960}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="Où je suis 1_Alyx-St" ID="{FDB0AC97-C798-451A-AB51-BCCDF422F7E8}"/>
+										<ItemRef Name="Alyx c_est mon nom 1_Alyx-St" ID="{AF70899E-874B-4DD8-97EE-6BD2DCC18374}"/>
+										<ItemRef Name="N’aie pas peur jeune enfant" ID="{1D3A420C-5B76-44D4-ADD8-BE953C9EE23E}"/>
+										<ItemRef Name="C_est la même voix que dans mon rêve 2_Alyx-St" ID="{84B5145B-B74D-4668-AF29-CB6E184ECEF6}"/>
+										<ItemRef Name="Suis ma voix" ID="{D3AE1B75-29BC-4256-9125-900DF744301C}"/>
+										<ItemRef Name="Où êtes vous 3_Alyx-St" ID="{FE1AA64A-E328-476D-97F2-C5FE4B0DFE66}"/>
+										<ItemRef Name="La voix ne me répond pas 2_Alyx-St" ID="{5B1B147E-6AAC-4EB2-B339-EA26D3E74268}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Sequencer_02" ID="{F2A0684A-9776-4E98-B581-40F784E476B6}" ShortID="938240727">
+									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Dis moi où tu es 2_Alyx-St" ID="{0266E8B1-EE67-4ED5-AB81-C752BDA70CD0}" ShortID="1056112955">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dis moi où tu es 2_Alyx-St" ID="{6ED806AE-CAEE-4A8E-837D-2105C2EC93B1}">
+													<Language>SFX</Language>
+													<AudioFile>6 Dis moi où tu es\Dis moi où tu es 2_Alyx-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="685482071"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Dis moi où tu es 2_Alyx-St" ID="{6ED806AE-CAEE-4A8E-837D-2105C2EC93B1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="Dis moi où tu es 2_Alyx-St" ID="{0266E8B1-EE67-4ED5-AB81-C752BDA70CD0}"/>
+									</Playlist>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -1670,7 +1719,7 @@
 							<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+							<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1684,7 +1733,7 @@
 							<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+							<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

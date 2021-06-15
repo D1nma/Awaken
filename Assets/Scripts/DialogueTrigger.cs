@@ -7,6 +7,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
     public Question question;
+    public int son;
     GameManager gm;
     public GameObject InteragirText;
     public bool Interagir,Avertissement,canMove,NotDestroy;
@@ -26,13 +27,17 @@ public class DialogueTrigger : MonoBehaviour
         if (dialogue.isQuestion == false)
         {
             //Debug.Log("Dialogue simple");
+            FindObjectOfType<DialogueManager>().son = son;
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+            
         }
         if (dialogue.isQuestion == true)
         {
             //Debug.Log("Y'a une question");
+            FindObjectOfType<DialogueManager>().son = son;
             FindObjectOfType<DialogueManager>().StartQuestion(dialogue, question);
-            if(InteragirText != null)
+            
+            if (InteragirText != null)
             {
                 InteragirText.SetActive(false);
             }
@@ -42,6 +47,7 @@ public class DialogueTrigger : MonoBehaviour
     }
     private void Start()
     {
+
         start = false;
         if (!gm)
         {

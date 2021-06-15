@@ -146,9 +146,53 @@
 								</Folder>
 								<Folder Name="Dialogues" ID="{056A9B6D-2FE6-4D67-89C0-77CC0335ABB6}" ShortID="884008833">
 									<ChildrenList>
-										<Event Name="Dialogue" ID="{FE91E3B3-D67C-41FE-A5CD-236C3EC473FC}">
+										<Event Name="Dialogue_00" ID="{FE91E3B3-D67C-41FE-A5CD-236C3EC473FC}">
 											<ChildrenList>
-												<Action Name="" ID="{460B6BAF-8A69-49A9-BEE3-BC7E60F7B12E}" ShortID="161545353">
+												<Action Name="" ID="{B49B20AD-D736-4D77-AD38-2B3E19DCF33F}" ShortID="129327400">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Sequencer_01" ID="{A8F10515-0C86-48F5-9E12-8B7CC21765DE}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Dialogue_01" ID="{79506BEF-B813-43FC-9121-3CE7F0EF3FD0}">
+											<ChildrenList>
+												<Action Name="" ID="{CC90BB13-87E6-40A9-B22C-D4388CC9BCB6}" ShortID="381736352">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Sequencer_02" ID="{F2A0684A-9776-4E98-B581-40F784E476B6}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Dialogue_02" ID="{1233D210-165E-462B-B92D-1592E7FBB7C5}">
+											<ChildrenList>
+												<Action Name="" ID="{68EC3D4B-95B8-4102-9E32-3AFDA12B9408}" ShortID="918312681">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Où je suis 1_Alyx-St" ID="{FDB0AC97-C798-451A-AB51-BCCDF422F7E8}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Dialogue_03" ID="{FBC0C407-E2F5-44FD-94F8-00279EBB8974}">
+											<ChildrenList>
+												<Action Name="" ID="{4EBBB5D4-FB28-4D01-B693-85D2BA8155E0}" ShortID="1047706717">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Où je suis 1_Alyx-St" ID="{FDB0AC97-C798-451A-AB51-BCCDF422F7E8}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Dialogue_04" ID="{47B38986-B060-4962-8C46-1FBF8F8F67FB}">
+											<ChildrenList>
+												<Action Name="" ID="{A98AAE6E-0FAA-4970-9CBE-70615B9A72E7}" ShortID="1022788749">
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Où je suis 1_Alyx-St" ID="{FDB0AC97-C798-451A-AB51-BCCDF422F7E8}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>

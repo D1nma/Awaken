@@ -77,6 +77,84 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Lvl1_Start" ID="{3889E996-06E7-47AA-8B72-F343427FF20B}">
+					<ChildrenList>
+						<Action Name="" ID="{46BEC9FF-14EE-45F8-829C-4973C35CCE83}" ShortID="856711855">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lvl 1" ID="{D475F9BD-B6DD-42BD-9039-CBDBEC5A37A0}" WorkUnitID="{B2002B48-84B3-44E9-A30E-6AB42ADE9597}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Lvl2_Start" ID="{FD0E5E9C-3E99-4711-89F4-A07114F0CB0C}">
+					<ChildrenList>
+						<Action Name="" ID="{412EDD1E-A26C-41BE-BC70-BAF8EB027992}" ShortID="531340005">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lvl 2 Loops" ID="{C82BD429-D683-453A-BABA-E96A1A87337D}" WorkUnitID="{B2002B48-84B3-44E9-A30E-6AB42ADE9597}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Lvl2_Stop" ID="{6101A5AD-C1EA-4DA3-8BA7-1D697529426C}">
+					<ChildrenList>
+						<Action Name="" ID="{1510C178-A679-4F00-8C9B-976ACAFD4C03}" ShortID="156763405">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lvl 2 Loops" ID="{C82BD429-D683-453A-BABA-E96A1A87337D}" WorkUnitID="{B2002B48-84B3-44E9-A30E-6AB42ADE9597}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Lvl1_Stop" ID="{8D7563A1-2ADC-4760-B61D-67F467BBBDCD}">
+					<ChildrenList>
+						<Action Name="" ID="{AEFB23A8-5039-4099-9262-B1FAA589B89D}" ShortID="125452777">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lvl 1" ID="{D475F9BD-B6DD-42BD-9039-CBDBEC5A37A0}" WorkUnitID="{B2002B48-84B3-44E9-A30E-6AB42ADE9597}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Explo_Start" ID="{883AC149-0C8C-437A-86F4-3C3C505A1978}">
+					<ChildrenList>
+						<Action Name="" ID="{45D7C6A9-A532-4E38-B315-673656370858}" ShortID="191932665">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explo add" ID="{539A1625-CE3B-4DC1-B69B-102A6547358D}" WorkUnitID="{B2002B48-84B3-44E9-A30E-6AB42ADE9597}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Explo_Stop" ID="{E952544F-79C1-4F2C-864C-0B145C254B0F}">
+					<ChildrenList>
+						<Action Name="" ID="{17772039-E984-44BF-913B-414971467AD3}" ShortID="648534218">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explo add" ID="{539A1625-CE3B-4DC1-B69B-102A6547358D}" WorkUnitID="{B2002B48-84B3-44E9-A30E-6AB42ADE9597}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

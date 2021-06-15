@@ -215,6 +215,31 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Birds_Start" ID="{069E1C77-5A6D-41CA-9D13-722427B559A1}">
+							<ChildrenList>
+								<Action Name="" ID="{DAD8B9BF-A42C-4084-9A96-A12E7307503F}" ShortID="963892938">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Mixer_Birds" ID="{B496E6F0-DEC1-4FE9-8763-F8A1FE7B64C1}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Birds_Stop" ID="{E72872D5-FB56-4B0F-BD5E-7BEB423FC0B7}">
+							<ChildrenList>
+								<Action Name="" ID="{48565064-D524-43CF-A49E-77115E4C69C9}" ShortID="689462546">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Mixer_Birds" ID="{B496E6F0-DEC1-4FE9-8763-F8A1FE7B64C1}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
