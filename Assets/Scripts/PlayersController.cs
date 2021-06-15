@@ -200,6 +200,7 @@ public class PlayersController : MonoBehaviour
                         animator.SetBool("IsRunning", false);
                         stb.StopStamina();
                         moveSpeed = oldMoveSpeed;
+                        
                     }
                 }
 
@@ -210,6 +211,7 @@ public class PlayersController : MonoBehaviour
                 animator.SetBool("IsRunning", false);
                 stb.StopStamina();
                 moveSpeed = oldMoveSpeed;
+                AkSoundEngine.PostEvent("Essoufflement_Start", gameObject);
             }
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y; //Atan2 méthode math retourne l'angle entre 0° et x
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);

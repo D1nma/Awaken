@@ -13,6 +13,154 @@
 						<Event Name="Walk" ID="{CD0EDF5F-102E-4F56-BBB5-D0A688D9139E}"/>
 						<Event Name="Lever" ID="{CBC2531B-2244-4AD2-8901-72B957D3BD07}"/>
 						<Event Name="Dead" ID="{A98399DE-A052-43D3-8EF5-A44ED524981A}"/>
+						<Folder Name="Voix" ID="{1B54167A-2459-4631-B679-B5F5D99485E5}" ShortID="267025256">
+							<ChildrenList>
+								<Folder Name="Onomatope" ID="{AEF4DD0D-C170-4C14-BB87-67178CC48ABB}" ShortID="1059289687">
+									<ChildrenList>
+										<Event Name="Cris_Start" ID="{3F178DE9-5DD3-417F-B2AC-B7DAF790B4C6}">
+											<ChildrenList>
+												<Action Name="" ID="{15FC5567-171D-4AC6-83F7-F670C0C5E938}" ShortID="503242035">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Mix_Cris" ID="{7B89267F-AB35-4CFA-BDDC-153A6F049101}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Cris_End" ID="{3146A737-9E1F-43B7-8606-2D5A0E3DAB58}">
+											<ChildrenList>
+												<Action Name="" ID="{7BBB5B3F-0D9A-46C4-A2BB-5D6BA61AC62C}" ShortID="96265728">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Mix_Cris" ID="{7B89267F-AB35-4CFA-BDDC-153A6F049101}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Essoufflement_Start" ID="{B4EFD770-AFAA-44D7-8B61-2B3CC7A9B764}">
+											<ChildrenList>
+												<Action Name="" ID="{F8E53997-B4A0-47F2-A8B3-383514042DEB}" ShortID="676339569">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Random_Essouflement" ID="{A9949B3D-1E0C-436D-83E6-2F04E52A461E}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Essoufflement_End" ID="{E6A16064-D39D-4A1D-B382-A5C44F2A2B22}">
+											<ChildrenList>
+												<Action Name="" ID="{DBBA1D55-BC78-4B8C-8E73-6A27EA565B56}" ShortID="55192774">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Random_Essouflement" ID="{A9949B3D-1E0C-436D-83E6-2F04E52A461E}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Frisson_Start" ID="{A054E7B1-B89C-4EFE-A2DF-FFEC350270FA}">
+											<ChildrenList>
+												<Action Name="" ID="{F24400CE-1979-4FD5-895F-4B0549AE2BFD}" ShortID="670530083">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Random_Frisson" ID="{7E7856D3-07F2-4E97-BC17-1E67915D0775}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Frisson_Stop" ID="{8571EE77-8CD5-4EA8-9566-E0238A9A8E2B}">
+											<ChildrenList>
+												<Action Name="" ID="{799C2CDB-828A-4785-918B-AF638912B0CB}" ShortID="929326585">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Random_Frisson" ID="{7E7856D3-07F2-4E97-BC17-1E67915D0775}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Soufflement_Start" ID="{BA589E1F-6F20-4A37-9BA6-3659E0DD496E}">
+											<ChildrenList>
+												<Action Name="" ID="{EA2B1E6F-7D7A-401C-94A6-522739E870E8}" ShortID="1062284509">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Random_Soufflement" ID="{BC554D43-F93A-4949-A1CB-F39ACECB450E}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Soufflement_Stop" ID="{D2002559-28FA-458B-844C-70BEC3283EC9}">
+											<ChildrenList>
+												<Action Name="" ID="{A470338A-DE7C-469C-9958-3E1D3B703F39}" ShortID="672706718">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Random_Soufflement" ID="{BC554D43-F93A-4949-A1CB-F39ACECB450E}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Perplexe_Start" ID="{7EE2C3F9-C4F2-4E42-8AF1-8C1F2C5362C4}">
+											<ChildrenList>
+												<Action Name="" ID="{EB2B04C6-230A-4565-B38E-18E053A266E4}" ShortID="22099470">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Random_Perplexe" ID="{671C3F08-8840-41CF-94AC-91E8927E5D50}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Perplexe_End" ID="{6144D6A1-6F89-41FD-9270-1DA26C4555DE}">
+											<ChildrenList>
+												<Action Name="" ID="{8BE7D537-3CE8-429C-ACD6-8D00D0054B7C}" ShortID="213611022">
+													<PropertyList>
+														<Property Name="ActionType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Random_Perplexe" ID="{671C3F08-8840-41CF-94AC-91E8927E5D50}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Dialogues" ID="{056A9B6D-2FE6-4D67-89C0-77CC0335ABB6}" ShortID="884008833">
+									<ChildrenList>
+										<Event Name="Dialogue" ID="{FE91E3B3-D67C-41FE-A5CD-236C3EC473FC}">
+											<ChildrenList>
+												<Action Name="" ID="{460B6BAF-8A69-49A9-BEE3-BC7E60F7B12E}" ShortID="161545353">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Où je suis 1_Alyx-St" ID="{FDB0AC97-C798-451A-AB51-BCCDF422F7E8}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

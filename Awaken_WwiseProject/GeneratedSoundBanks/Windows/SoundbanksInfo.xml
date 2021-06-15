@@ -11,14 +11,227 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="436743010" Language="SFX" Hash="3323164163">
+		<SoundBank Id="436743010" Language="SFX" Hash="1160269450">
 			<ObjectPath>\SoundBanks\Default Work Unit\Character</ObjectPath>
 			<ShortName>Character</ShortName>
 			<Path>Character.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3469716904" Name="Cris_End" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Cris_End"/>
+				<Event Id="2077130451" Name="Cris_Start" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Cris_Start">
+					<IncludedMemoryFiles>
+						<File Id="84307508" Language="SFX">
+							<ShortName>Cris 9_Alyx-St.wav</ShortName>
+							<Path>SFX\Cris 9_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="97091560" Language="SFX">
+							<ShortName>Cris 2_Alyx-St.wav</ShortName>
+							<Path>SFX\Cris 2_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="241015435" Language="SFX">
+							<ShortName>Cris 12_Alyx-St.wav</ShortName>
+							<Path>SFX\Cris 12_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="298185541" Language="SFX">
+							<ShortName>Cris 1_Alyx-St.wav</ShortName>
+							<Path>SFX\Cris 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="430733971" Language="SFX">
+							<ShortName>Cris 5_Alyx-St.wav</ShortName>
+							<Path>SFX\Cris 5_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="501143173" Language="SFX">
+							<ShortName>Cris 14_Alyx-St.wav</ShortName>
+							<Path>SFX\Cris 14_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="535953592" Language="SFX">
+							<ShortName>Cris 8_Alyx-St.wav</ShortName>
+							<Path>SFX\Cris 8_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="604381093" Language="SFX">
+							<ShortName>Cris 4_Alyx-St.wav</ShortName>
+							<Path>SFX\Cris 4_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="748518494" Language="SFX">
+							<ShortName>Cris 7_Alyx-St.wav</ShortName>
+							<Path>SFX\Cris 7_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="785213434" Language="SFX">
+							<ShortName>Cris 6_Alyx-St.wav</ShortName>
+							<Path>SFX\Cris 6_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1066774310" Language="SFX">
+							<ShortName>Cris 3_Alyx-St.wav</ShortName>
+							<Path>SFX\Cris 3_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2044049779" Name="Dead" ObjectPath="\Events\Default Work Unit\Character\Alyx\Dead"/>
+				<Event Id="3930136735" Name="Dialogue" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue">
+					<IncludedMemoryFiles>
+						<File Id="537912922" Language="SFX">
+							<ShortName>1 Où je suis\Où je suis 1_Alyx-St.wav</ShortName>
+							<Path>SFX\1 Où je suis\Où je suis 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1887586335" Name="Essoufflement_End" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Essoufflement_End"/>
+				<Event Id="3952429884" Name="Essoufflement_Start" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Essoufflement_Start">
+					<IncludedMemoryFiles>
+						<File Id="3740581" Language="SFX">
+							<ShortName>Essoufflement 5_Alyx-St.wav</ShortName>
+							<Path>SFX\Essoufflement 5_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="22465445" Language="SFX">
+							<ShortName>Essoufflement_Alyx-St.wav</ShortName>
+							<Path>SFX\Essoufflement_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="42513952" Language="SFX">
+							<ShortName>Essoufflement 7_Alyx-St.wav</ShortName>
+							<Path>SFX\Essoufflement 7_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="112708623" Language="SFX">
+							<ShortName>Essoufflement 8_Alyx-St.wav</ShortName>
+							<Path>SFX\Essoufflement 8_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="229542773" Language="SFX">
+							<ShortName>Essoufflement 2_Alyx-St.wav</ShortName>
+							<Path>SFX\Essoufflement 2_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="488069091" Language="SFX">
+							<ShortName>Essoufflement 4_Alyx-St.wav</ShortName>
+							<Path>SFX\Essoufflement 4_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="518149171" Language="SFX">
+							<ShortName>Essoufflement 3_Alyx-St.wav</ShortName>
+							<Path>SFX\Essoufflement 3_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="763520841" Language="SFX">
+							<ShortName>Essoufflement 6_Alyx-St.wav</ShortName>
+							<Path>SFX\Essoufflement 6_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="692643746" Name="Frisson_Start" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Frisson_Start">
+					<IncludedMemoryFiles>
+						<File Id="302776441" Language="SFX">
+							<ShortName>frisson peur 12_Alyx-St.wav</ShortName>
+							<Path>SFX\frisson peur 12_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="313818403" Language="SFX">
+							<ShortName>frisson peur 13_Alyx-St.wav</ShortName>
+							<Path>SFX\frisson peur 13_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="338695473" Language="SFX">
+							<ShortName>frisson peur 4_Alyx-St.wav</ShortName>
+							<Path>SFX\frisson peur 4_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="356527190" Language="SFX">
+							<ShortName>frisson peur 6_Alyx-St.wav</ShortName>
+							<Path>SFX\frisson peur 6_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="377374244" Language="SFX">
+							<ShortName>frisson peur 14_Alyx-St.wav</ShortName>
+							<Path>SFX\frisson peur 14_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="471339257" Language="SFX">
+							<ShortName>frisson peur 2_Alyx-St.wav</ShortName>
+							<Path>SFX\frisson peur 2_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="637296290" Language="SFX">
+							<ShortName>frisson peur 9_Alyx-St.wav</ShortName>
+							<Path>SFX\frisson peur 9_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="704770663" Language="SFX">
+							<ShortName>frisson peur 8_Alyx-St.wav</ShortName>
+							<Path>SFX\frisson peur 8_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="722345312" Language="SFX">
+							<ShortName>frisson peur 15_Alyx-St.wav</ShortName>
+							<Path>SFX\frisson peur 15_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="733240633" Language="SFX">
+							<ShortName>frisson peur 7_Alyx-St.wav</ShortName>
+							<Path>SFX\frisson peur 7_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="737915784" Language="SFX">
+							<ShortName>frisson peur 10_Alyx-St.wav</ShortName>
+							<Path>SFX\frisson peur 10_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="851755857" Language="SFX">
+							<ShortName>frisson peur 3_Alyx-St.wav</ShortName>
+							<Path>SFX\frisson peur 3_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="915952710" Language="SFX">
+							<ShortName>frisson peur 11_Alyx-St.wav</ShortName>
+							<Path>SFX\frisson peur 11_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="928508773" Language="SFX">
+							<ShortName>frisson peur 16_Alyx-St.wav</ShortName>
+							<Path>SFX\frisson peur 16_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="985341609" Language="SFX">
+							<ShortName>frisson peur 1_Alyx-St.wav</ShortName>
+							<Path>SFX\frisson peur 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1061577941" Language="SFX">
+							<ShortName>frisson peur 5_Alyx-St.wav</ShortName>
+							<Path>SFX\frisson peur 5_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4280372378" Name="Frisson_Stop" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Frisson_Stop"/>
 				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Character\Alyx\Jump"/>
 				<Event Id="2782712987" Name="Lever" ObjectPath="\Events\Default Work Unit\Character\Alyx\Lever"/>
+				<Event Id="2982867032" Name="Perplexe_End" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Perplexe_End"/>
+				<Event Id="3164078595" Name="Perplexe_Start" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Perplexe_Start">
+					<IncludedMemoryFiles>
+						<File Id="32605123" Language="SFX">
+							<ShortName>perplexe 4_Alyx-St.wav</ShortName>
+							<Path>SFX\perplexe 4_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="47994579" Language="SFX">
+							<ShortName>perplexe 1_Alyx-St.wav</ShortName>
+							<Path>SFX\perplexe 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="78008817" Language="SFX">
+							<ShortName>perplexe 6_Alyx-St.wav</ShortName>
+							<Path>SFX\perplexe 6_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="524402416" Language="SFX">
+							<ShortName>perplexe 5_Alyx-St.wav</ShortName>
+							<Path>SFX\perplexe 5_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="670774818" Language="SFX">
+							<ShortName>perplexe 3_Alyx-St.wav</ShortName>
+							<Path>SFX\perplexe 3_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="753041933" Language="SFX">
+							<ShortName>perplexe 2_Alyx-St.wav</ShortName>
+							<Path>SFX\perplexe 2_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="772918084" Name="Soufflement_Start" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Soufflement_Start">
+					<IncludedMemoryFiles>
+						<File Id="253728348" Language="SFX">
+							<ShortName>soufflement du nez 3_Alyx-St.wav</ShortName>
+							<Path>SFX\soufflement du nez 3_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="581522027" Language="SFX">
+							<ShortName>soufflement du nez 2_Alyx-St.wav</ShortName>
+							<Path>SFX\soufflement du nez 2_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="902279032" Language="SFX">
+							<ShortName>soufflement du nez 1_Alyx-St.wav</ShortName>
+							<Path>SFX\soufflement du nez 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1028256910" Language="SFX">
+							<ShortName>soufflement du nez 5_Alyx-St.wav</ShortName>
+							<Path>SFX\soufflement du nez 5_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1644087800" Name="Soufflement_Stop" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Soufflement_Stop"/>
 				<Event Id="2108779966" Name="Walk" ObjectPath="\Events\Default Work Unit\Character\Alyx\Walk"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>

@@ -992,6 +992,7 @@ GameObject:
   - component: {fileID: 1972682073635048917}
   - component: {fileID: 783380399619837936}
   - component: {fileID: 3629613230792620923}
+  - component: {fileID: -5136519782087496754}
   m_Layer: 8
   m_Name: Alyx
   m_TagString: Player
@@ -1302,6 +1303,31 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+--- !u!114 &-5136519782087496754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886285568546895264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92403641717ce534b99d6575a4c02315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5fd65d4e37ba48b41ba71a8fc30960f3,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &2006620072818642142
 GameObject:
   m_ObjectHideFlags: 0
