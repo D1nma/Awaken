@@ -119,7 +119,10 @@ public class PlayersController : MonoBehaviour
         }
         if (SUPERUSER)
         {
-            lampeHuile.currentHuile = 99999999f;
+            if (lampeHuile)
+            {
+                lampeHuile.currentHuile = 99999999f;
+            }
             canControl = true;
         }
 

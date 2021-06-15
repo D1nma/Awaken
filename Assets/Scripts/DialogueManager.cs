@@ -106,6 +106,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
+        AkSoundEngine.PostEvent("Dialogue", gameObject);
         nom1 = dialogue.name;
         nom2 = dialogue.name2;
         if (!canMove)
