@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 6e0fffe3b857cd48b495bd14c3507860
     GuidInternal: 
-    m_lastTime: -8585781166320729101
+    m_lastTime: -8585778479510099886
     List:
     - name: Ambiance
       guid: cb3db2323f563448a7a52222fb1c21ab
@@ -329,7 +329,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Character
     guid: d1b726b7b62bbc4d87a56d25ac596348
     GuidInternal: 
-    m_lastTime: -8585781166330324809
+    m_lastTime: -8585778479514820910
     List:
     - name: Alyx
       guid: 49e60b0de728324e87421b4870014945
@@ -348,6 +348,64 @@ MonoBehaviour:
         ObjectType: 4
         guid: 49e60b0de728324e87421b4870014945
       Path: Events\Default Work Unit\Character\Alyx
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Cris_End
+      guid: 37a746311f9eb74386062d5a0e3dab58
+      id: 3469716904
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: Onomatope
+        ObjectType: 4
+        guid: 0dddf4ae70c1144cbb8767178cc48abb
+      - ElementName: Cris_End
+        ObjectType: 3
+        guid: 37a746311f9eb74386062d5a0e3dab58
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Cris_End
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Cris_Start
+      guid: e98d173fd35d7f41b2acb7daf790b4c6
+      id: 2077130451
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: Onomatope
+        ObjectType: 4
+        guid: 0dddf4ae70c1144cbb8767178cc48abb
+      - ElementName: Cris_Start
+        ObjectType: 3
+        guid: e98d173fd35d7f41b2acb7daf790b4c6
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Cris_Start
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -371,6 +429,177 @@ MonoBehaviour:
         ObjectType: 3
         guid: de9983a952a0d3438ef5a44ed524981a
       Path: Events\Default Work Unit\Character\Alyx\Dead
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Dialogue
+      guid: b3e391fe7cd6fe41a5cd236c3ec473fc
+      id: 3930136735
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: Dialogues
+        ObjectType: 4
+        guid: 6d9b6a05e62f674d89c077cc0335abb6
+      - ElementName: Dialogue
+        ObjectType: 3
+        guid: b3e391fe7cd6fe41a5cd236c3ec473fc
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Dialogues
+      guid: 6d9b6a05e62f674d89c077cc0335abb6
+      id: 1669749310
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: Dialogues
+        ObjectType: 4
+        guid: 6d9b6a05e62f674d89c077cc0335abb6
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Dialogues
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Essoufflement_End
+      guid: 6460a1e69dd31d4ab382a5c44f2a2b22
+      id: 1887586335
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: Onomatope
+        ObjectType: 4
+        guid: 0dddf4ae70c1144cbb8767178cc48abb
+      - ElementName: Essoufflement_End
+        ObjectType: 3
+        guid: 6460a1e69dd31d4ab382a5c44f2a2b22
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Essoufflement_End
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Essoufflement_Start
+      guid: 70d7efb4aaafd7448b612b3cc7a9b764
+      id: 3952429884
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: Onomatope
+        ObjectType: 4
+        guid: 0dddf4ae70c1144cbb8767178cc48abb
+      - ElementName: Essoufflement_Start
+        ObjectType: 3
+        guid: 70d7efb4aaafd7448b612b3cc7a9b764
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Essoufflement_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Frisson_Start
+      guid: b1e754a09cb8fe4ea2dfffec350270fa
+      id: 692643746
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: Onomatope
+        ObjectType: 4
+        guid: 0dddf4ae70c1144cbb8767178cc48abb
+      - ElementName: Frisson_Start
+        ObjectType: 3
+        guid: b1e754a09cb8fe4ea2dfffec350270fa
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Frisson_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Frisson_Stop
+      guid: 77ee7185d58ca84e9566e0238a9a8e2b
+      id: 4280372378
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: Onomatope
+        ObjectType: 4
+        guid: 0dddf4ae70c1144cbb8767178cc48abb
+      - ElementName: Frisson_Stop
+        ObjectType: 3
+        guid: 77ee7185d58ca84e9566e0238a9a8e2b
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Frisson_Stop
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -417,6 +646,171 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1b53c2cb4422d24a890172b957d3bd07
       Path: Events\Default Work Unit\Character\Alyx\Lever
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Onomatope
+      guid: 0dddf4ae70c1144cbb8767178cc48abb
+      id: 633188121
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: Onomatope
+        ObjectType: 4
+        guid: 0dddf4ae70c1144cbb8767178cc48abb
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Onomatope
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Perplexe_End
+      guid: a1d64461896ffd4192701da26c4555de
+      id: 2982867032
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: Onomatope
+        ObjectType: 4
+        guid: 0dddf4ae70c1144cbb8767178cc48abb
+      - ElementName: Perplexe_End
+        ObjectType: 3
+        guid: a1d64461896ffd4192701da26c4555de
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Perplexe_End
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Perplexe_Start
+      guid: f9c3e27ef2c4424e8af18c1f2c5362c4
+      id: 3164078595
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: Onomatope
+        ObjectType: 4
+        guid: 0dddf4ae70c1144cbb8767178cc48abb
+      - ElementName: Perplexe_Start
+        ObjectType: 3
+        guid: f9c3e27ef2c4424e8af18c1f2c5362c4
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Perplexe_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Soufflement_Start
+      guid: 1f9e58ba206f374a9ba63659e0dd496e
+      id: 772918084
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: Onomatope
+        ObjectType: 4
+        guid: 0dddf4ae70c1144cbb8767178cc48abb
+      - ElementName: Soufflement_Start
+        ObjectType: 3
+        guid: 1f9e58ba206f374a9ba63659e0dd496e
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Soufflement_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Soufflement_Stop
+      guid: 592500d2fa288b45844c70bec3283ec9
+      id: 1644087800
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: Onomatope
+        ObjectType: 4
+        guid: 0dddf4ae70c1144cbb8767178cc48abb
+      - ElementName: Soufflement_Stop
+        ObjectType: 3
+        guid: 592500d2fa288b45844c70bec3283ec9
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Soufflement_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Voix
+      guid: 7a16541b59243146b679b5f5d99485e5
+      id: 3370469991
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      Path: Events\Default Work Unit\Character\Alyx\Voix
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

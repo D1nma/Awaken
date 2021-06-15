@@ -567,6 +567,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5971779976567330938}
+  - component: {fileID: -4908166634225588556}
   m_Layer: 0
   m_Name: Rocher_compo 1
   m_TagString: Untagged
@@ -593,6 +594,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &-4908166634225588556
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2915171794894119800}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.2887665, y: 0.7002639, z: -0.10903585}
+  m_Size: 1.7715766
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.11826341
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 1667464917360217378, guid: 31b39a56ef2edcf459f3fc66202d84aa,
+        type: 3}
+  m_Enabled: 1
 --- !u!1 &3276627039682338386
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3929203962898558464}
   - component: {fileID: 83472427349123493}
   - component: {fileID: 2795744653167547759}
+  - component: {fileID: 5238884655036880046}
   m_Layer: 0
   m_Name: sapin_1
   m_TagString: Untagged
@@ -51,6 +52,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -81,3 +83,23 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!205 &5238884655036880046
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4453082029299365050}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.2887665, y: 0.7002639, z: -0.10903585}
+  m_Size: 1.7715766
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.11826341
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 1667464917360217378, guid: 31b39a56ef2edcf459f3fc66202d84aa,
+        type: 3}
+  m_Enabled: 1
