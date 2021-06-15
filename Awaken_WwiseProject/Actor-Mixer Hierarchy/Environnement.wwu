@@ -259,6 +259,7 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="Mixer_Birds" ID="{B496E6F0-DEC1-4FE9-8763-F8A1FE7B64C1}" ShortID="620264091">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
@@ -276,6 +277,11 @@
 									</ModifierList>
 								</Property>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -283,6 +289,9 @@
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Environnement" ID="{3810CF2B-CD94-4076-A352-815B516A2FA4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
