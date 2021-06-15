@@ -48,7 +48,7 @@ public class SoundsManager : MonoBehaviour
         if (!runOnce)
         {
             if (SceneManager.GetActiveScene().buildIndex == 0) { AkSoundEngine.PostEvent("Menu_Start", gameObject); }
-            if (SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 2) { AkSoundEngine.PostEvent("Wind_loop_start", gameObject); AkSoundEngine.PostEvent("Birds_Start", gameObject); }
+            if (SceneManager.GetActiveScene().buildIndex == 1 || SceneManager.GetActiveScene().buildIndex == 2) { AkSoundEngine.PostEvent("Wind_loop_start", gameObject); AkSoundEngine.PostEvent("Birds_Start", gameObject); AkSoundEngine.PostEvent("Lvl1_Start", gameObject); }
             runOnce = true;
         }
     }

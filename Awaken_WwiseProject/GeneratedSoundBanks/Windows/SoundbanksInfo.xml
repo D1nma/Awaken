@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="436743010" Language="SFX" Hash="1245944533">
+		<SoundBank Id="436743010" Language="SFX" Hash="2482208193">
 			<ObjectPath>\SoundBanks\Default Work Unit\Character</ObjectPath>
 			<ShortName>Character</ShortName>
 			<Path>Character.bnk</Path>
@@ -66,7 +66,55 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2044049779" Name="Dead" ObjectPath="\Events\Default Work Unit\Character\Alyx\Dead"/>
-				<Event Id="3930136735" Name="Dialogue" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue">
+				<Event Id="1227595426" Name="Dialogue_00" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue_00">
+					<IncludedMemoryFiles>
+						<File Id="502575621" Language="SFX">
+							<ShortName>5 La voix ne me répond pas\La voix ne me répond pas 2_Alyx-St.wav</ShortName>
+							<Path>SFX\5 La voix ne me répond pas\La voix ne me répond pas 2_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="513453410" Language="SFX">
+							<ShortName>4 Ou êtes vous\Où êtes vous 3_Alyx-St.wav</ShortName>
+							<Path>SFX\4 Ou êtes vous\Où êtes vous 3_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="537912922" Language="SFX">
+							<ShortName>1 Où je suis\Où je suis 1_Alyx-St.wav</ShortName>
+							<Path>SFX\1 Où je suis\Où je suis 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="696986293" Language="SFX">
+							<ShortName>2 Alyx c_est mon nom\Alyx c_est mon nom 1_Alyx-St.wav</ShortName>
+							<Path>SFX\2 Alyx c_est mon nom\Alyx c_est mon nom 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="938879705" Language="SFX">
+							<ShortName>3 C_est la même voix que dans ma tête\C_est la même voix que dans mon rêve 2_Alyx-St.wav</ShortName>
+							<Path>SFX\3 C_est la même voix que dans ma tête\C_est la même voix que dans mon rêve 2_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1227595427" Name="Dialogue_01" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue_01">
+					<IncludedMemoryFiles>
+						<File Id="685482071" Language="SFX">
+							<ShortName>6 Dis moi où tu es\Dis moi où tu es 2_Alyx-St.wav</ShortName>
+							<Path>SFX\6 Dis moi où tu es\Dis moi où tu es 2_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1227595424" Name="Dialogue_02" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue_02">
+					<IncludedMemoryFiles>
+						<File Id="537912922" Language="SFX">
+							<ShortName>1 Où je suis\Où je suis 1_Alyx-St.wav</ShortName>
+							<Path>SFX\1 Où je suis\Où je suis 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1227595425" Name="Dialogue_03" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue_03">
+					<IncludedMemoryFiles>
+						<File Id="537912922" Language="SFX">
+							<ShortName>1 Où je suis\Où je suis 1_Alyx-St.wav</ShortName>
+							<Path>SFX\1 Où je suis\Où je suis 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1227595430" Name="Dialogue_04" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue_04">
 					<IncludedMemoryFiles>
 						<File Id="537912922" Language="SFX">
 							<ShortName>1 Où je suis\Où je suis 1_Alyx-St.wav</ShortName>
@@ -681,7 +729,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="879334947">
+		<SoundBank Id="1355168291" Language="SFX" Hash="692434672">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -995,11 +1043,20 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="2981377429" Language="SFX" Hash="4177107878">
+		<SoundBank Id="2981377429" Language="SFX" Hash="3606512928">
 			<ObjectPath>\SoundBanks\Default Work Unit\Ambiance</ObjectPath>
 			<ShortName>Ambiance</ShortName>
 			<Path>Ambiance.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1190810872" Name="Explo_Start" ObjectPath="\Events\Default Work Unit\Ambiance\Explo_Start">
+					<IncludedMemoryFiles>
+						<File Id="888294628" Language="SFX">
+							<ShortName>Explo add.wav</ShortName>
+							<Path>SFX\Explo add_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="55996420" Name="Explo_Stop" ObjectPath="\Events\Default Work Unit\Ambiance\Explo_Stop"/>
 				<Event Id="4219216500" Name="GameOver_Start" ObjectPath="\Events\Default Work Unit\Ambiance\GameOver_Start">
 					<IncludedMemoryFiles>
 						<File Id="354062294" Language="SFX">
@@ -1009,6 +1066,24 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="4147157480" Name="GameOver_Stop" ObjectPath="\Events\Default Work Unit\Ambiance\GameOver_Stop"/>
+				<Event Id="267820003" Name="Lvl1_Start" ObjectPath="\Events\Default Work Unit\Ambiance\Lvl1_Start">
+					<IncludedMemoryFiles>
+						<File Id="141012042" Language="SFX">
+							<ShortName>Lvl 1.wav</ShortName>
+							<Path>SFX\Lvl 1_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1151883745" Name="Lvl1_Stop" ObjectPath="\Events\Default Work Unit\Ambiance\Lvl1_Stop"/>
+				<Event Id="3655569304" Name="Lvl2_Start" ObjectPath="\Events\Default Work Unit\Ambiance\Lvl2_Start">
+					<IncludedMemoryFiles>
+						<File Id="1051092675" Language="SFX">
+							<ShortName>Lvl 2 Loops.wav</ShortName>
+							<Path>SFX\Lvl 2 Loops_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4174570276" Name="Lvl2_Stop" ObjectPath="\Events\Default Work Unit\Ambiance\Lvl2_Stop"/>
 				<Event Id="3908297853" Name="Menu_Start" ObjectPath="\Events\Default Work Unit\Ambiance\Menu_Start">
 					<IncludedMemoryFiles>
 						<File Id="95440876" Language="SFX">
@@ -1028,6 +1103,14 @@
 					<ShortName>Ambiance\Menu\Menu 2 (loops).wav</ShortName>
 					<Path>SFX\Ambiance\Menu\Menu 2 (loops)_9EDFC787.wem</Path>
 				</File>
+				<File Id="141012042" Language="SFX">
+					<ShortName>Lvl 1.wav</ShortName>
+					<Path>SFX\Lvl 1_3F75BDB9.wem</Path>
+				</File>
+				<File Id="332576881" Language="SFX">
+					<ShortName>FlashBack 1.wav</ShortName>
+					<Path>SFX\FlashBack 1_3F75BDB9.wem</Path>
+				</File>
 				<File Id="354062294" Language="SFX">
 					<ShortName>Ambiance\GameOver\Game_Over.wav</ShortName>
 					<Path>SFX\Ambiance\GameOver\Game_Over_3F75BDB9.wem</Path>
@@ -1035,6 +1118,18 @@
 				<File Id="382039251" Language="SFX">
 					<ShortName>Ambiance\Menu\Menu 2.wav</ShortName>
 					<Path>SFX\Ambiance\Menu\Menu 2_3F75BDB9.wem</Path>
+				</File>
+				<File Id="835138835" Language="SFX">
+					<ShortName>Prologue.wav</ShortName>
+					<Path>SFX\Prologue_3F75BDB9.wem</Path>
+				</File>
+				<File Id="888294628" Language="SFX">
+					<ShortName>Explo add.wav</ShortName>
+					<Path>SFX\Explo add_3F75BDB9.wem</Path>
+				</File>
+				<File Id="1051092675" Language="SFX">
+					<ShortName>Lvl 2 Loops.wav</ShortName>
+					<Path>SFX\Lvl 2 Loops_3F75BDB9.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

@@ -10,6 +10,7 @@
 				<ActorMixer Name="Menu" ID="{EB8F85C1-C6D1-4838-B44C-ECC5B1D4B6DF}" ShortID="660852475">
 					<PropertyList>
 						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
 								<Value>1</Value>
@@ -18,6 +19,11 @@
 						<Property Name="UseMaxSoundPerInstance" Type="bool">
 							<ValueList>
 								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -149,6 +155,11 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -170,6 +181,298 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Game_Over" ID="{DEC0B98F-B6FE-4B6E-810C-1DC109B631EC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Level1" ID="{4A0B9A13-67CE-4464-8170-9B95CA84B704}" ShortID="635109012">
+					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambiance" ID="{32B23DCB-563F-4834-A7A5-2222FB1C21AB}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Lvl 1" ID="{D475F9BD-B6DD-42BD-9039-CBDBEC5A37A0}" ShortID="539459934">
+							<PropertyList>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lvl 1" ID="{0E0C6E65-0AE1-4050-A513-04F23A3AB8D4}">
+									<Language>SFX</Language>
+									<AudioFile>Lvl 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="141012042"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Lvl 1" ID="{0E0C6E65-0AE1-4050-A513-04F23A3AB8D4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Explo add" ID="{539A1625-CE3B-4DC1-B69B-102A6547358D}" ShortID="938706553">
+							<PropertyList>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Explo add" ID="{BBA5FB2B-EAA5-4BBC-A690-A76E298B9E6F}">
+									<Language>SFX</Language>
+									<AudioFile>Explo add.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="888294628"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Explo add" ID="{BBA5FB2B-EAA5-4BBC-A690-A76E298B9E6F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Level2" ID="{26E333E2-B8CC-4033-B3EF-39FF5B7DA6ED}" ShortID="325949774">
+					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambiance" ID="{32B23DCB-563F-4834-A7A5-2222FB1C21AB}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Lvl 2 Loops" ID="{C82BD429-D683-453A-BABA-E96A1A87337D}" ShortID="230727483">
+							<PropertyList>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lvl 2 Loops" ID="{EC3AEE7D-22A6-4BC4-82E0-92AF9C6C110D}">
+									<Language>SFX</Language>
+									<AudioFile>Lvl 2 Loops.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1051092675"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Lvl 2 Loops" ID="{EC3AEE7D-22A6-4BC4-82E0-92AF9C6C110D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Autres" ID="{172DD4A4-8831-4F91-AAE4-AC84407331DA}" ShortID="1043249988">
+					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambiance" ID="{32B23DCB-563F-4834-A7A5-2222FB1C21AB}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="FlashBack 1" ID="{2613DF7E-92D7-4DAD-8CE6-823E4D7A2305}" ShortID="548984569">
+							<PropertyList>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FlashBack 1" ID="{17928475-ED74-44B3-8412-365B1F5E4098}">
+									<Language>SFX</Language>
+									<AudioFile>FlashBack 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="332576881"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="FlashBack 1" ID="{17928475-ED74-44B3-8412-365B1F5E4098}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Prologue" ID="{6DE175E0-D0B4-441C-A3E2-2C5339B670BE}" ShortID="150775063">
+							<PropertyList>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Prologue" ID="{2B7AA418-E60C-4684-9554-1E00549CD7CA}">
+									<Language>SFX</Language>
+									<AudioFile>Prologue.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="835138835"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Prologue" ID="{2B7AA418-E60C-4684-9554-1E00549CD7CA}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

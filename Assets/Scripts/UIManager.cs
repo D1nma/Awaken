@@ -43,7 +43,7 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
-        if (!gm)
+        if (!gm && SceneManager.GetActiveScene().buildIndex != 0)
         {
             gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         }
@@ -72,7 +72,7 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        if (!gm)
+        if (!gm && SceneManager.GetActiveScene().buildIndex != 0)
         {
             gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         }
