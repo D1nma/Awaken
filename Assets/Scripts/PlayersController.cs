@@ -82,11 +82,15 @@ public class PlayersController : MonoBehaviour
 
     void Update()
     {
-        if (!stb)
+        if (!gm)
+        {
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        }
+        else if (!stb)
         {
             stb = gm.Staminabar.GetComponent<StaminaBar>();
         }
-        if (!pivot)
+        else if (!pivot)
         {
             pivot = GameObject.Find("pivot");
         }
@@ -119,7 +123,7 @@ public class PlayersController : MonoBehaviour
             canControl = true;
         }
 
-        if (!canControl && !moving)
+        else if (!canControl && !moving)
         {
             animator.SetBool("IsRunning", false);
             animator.SetBool("IsWalking", false);
@@ -127,11 +131,11 @@ public class PlayersController : MonoBehaviour
 
 
         }
-        if (moving)
+        else if (moving)
         {
             animator.SetBool("IsWalking", true);
         }
-        if (!courrir)
+        else if (!courrir && !accroupir && !cacher)
         {
             animator.SetBool("IsRunning", false);
             StaminaBar.instance.StopStamina();
@@ -250,12 +254,12 @@ public class PlayersController : MonoBehaviour
 
             }
 
-            if (isGrounded && canControl && !grimper && !wakeUp)
+            if (isGrounded && canControl && !grimper && !wakeUp && !accroupir && !cacher)
             {
                 animator.SetBool("jump", true);
                 velocity.y = Mathf.Sqrt(jumpSpeed * -2f * gravity);
             }
-            else if (isGrounded && canControl && grimper && !wakeUp)
+            else if (isGrounded && canControl && grimper && !wakeUp && !accroupir && !cacher)
             {
                 //animation intégrer plus empecher de bouger
 
@@ -298,7 +302,7 @@ public class PlayersController : MonoBehaviour
                 animator.SetBool("IsRunning", false);
                 courrir = false;
             }
-            else
+            else if(accroupir)
             {
                 cc.height = oldColliderHeight;
                 cc.center = new Vector3(0, 0.76f, 0);
@@ -322,7 +326,7 @@ public class PlayersController : MonoBehaviour
                 animator.SetBool("IsRunning", false);
                 courrir = false;
             }
-            else
+            else if(cacher)
             {
                 cc.height = oldColliderHeight;
                 cc.center = new Vector3(0, 0.76f, 0);
