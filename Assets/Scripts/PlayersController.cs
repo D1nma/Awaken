@@ -34,7 +34,7 @@ public class PlayersController : MonoBehaviour
     float turnSmoothVelocity;
     public Transform cam;
     Camera m_MainCamera;
-    private bool accroupir = false, Rotation, positionBras, doOnce = false;
+    private bool accroupir = false, Rotation, positionBras, doOnce = false, essoufflement = false;
     public static bool canControl = true, wakeUp = false;
     public float animationLenghtWakeUp = 13.2f;
     public bool courrir = true, grimper, grimpant;
@@ -162,7 +162,18 @@ public class PlayersController : MonoBehaviour
             h = 0;
             v = 0;
         }
-
+        if(stb.currentStamina < 25)
+        {
+            if (!essoufflement)
+            {
+                AkSoundEngine.PostEvent("Essoufflement_Start", gameObject);
+                essoufflement = true;
+            }
+        }
+        else
+        {
+            essoufflement = false;
+        }
 
         /*Vector3 wantedMovement = transform.forward * moveSpeed * v * Time.deltaTime;
         cc.Move(wantedMovement);
@@ -211,7 +222,6 @@ public class PlayersController : MonoBehaviour
                 animator.SetBool("IsRunning", false);
                 stb.StopStamina();
                 moveSpeed = oldMoveSpeed;
-                AkSoundEngine.PostEvent("Essoufflement_Start", gameObject);
             }
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y; //Atan2 méthode math retourne l'angle entre 0° et x
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
