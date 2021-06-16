@@ -13,19 +13,6 @@ public class Tips : MonoBehaviour
     bool startTiming;
     // Start is called before the first frame update
 
-    private static Tips instance;
-    void Awake()
-    {
-        if (instance == null)
-        {
-
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
     void Start()
     {
         if (!gm)

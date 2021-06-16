@@ -10,7 +10,7 @@ public class Inventaire : MonoBehaviour
     private static Inventaire instance;
 
     [HideInInspector]
-    public bool Keyvolee=false, ApresRocher=false, First = false,canne = false, boite = false, keyEmpty = false, key = false, champi = false;
+    public bool Keyvolee=false, ApresRocher=false, First = false,canne = false, boite = false, keyEmpty = false, key = false;
 
 
     public GameObject canneUI, boiteUI, keyEmptyUI, keyUI, champiUI;
@@ -71,10 +71,6 @@ public class Inventaire : MonoBehaviour
             boiteUI.SetActive(true);
 
         }
-        if (champi)
-        {
-            champiUI.SetActive(true);
-        }
         if (key)
         {
             if (!First)
@@ -115,10 +111,6 @@ public class Inventaire : MonoBehaviour
         if (!boite)
         {
             boiteUI.SetActive(false);
-        }
-        if (!champi)
-        {
-            champiUI.SetActive(false);
         }
         if (!key)
         {

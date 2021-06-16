@@ -242,7 +242,6 @@ public class UIManager : MonoBehaviour
         FeuFollet.done = false;
         invent.canne = false;
         invent.boite = false;
-        invent.champi = false;
         invent.First = false;
         StartCoroutine(LoadScene(SceneManager.GetActiveScene().buildIndex));
         gm.Replace();

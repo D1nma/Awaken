@@ -228,7 +228,6 @@ public class CheatCode : MonoBehaviour
                         invent.boite = true;
                         invent.Keyvolee = true;
                         invent.key = true;
-                        invent.champi = true;
 
                     }
                     else if (cheat == false)
@@ -239,7 +238,6 @@ public class CheatCode : MonoBehaviour
                         invent.Keyvolee = false;
                         invent.boite = false;
                         invent.key = false;
-                        invent.champi = false;
                     }
                 }
             }
