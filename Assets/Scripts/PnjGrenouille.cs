@@ -68,8 +68,8 @@ public class PnjGrenouille : MonoBehaviour
                 }
                 if (distance < PnjDistanceRun / 2)
                 {
-                    _agent.speed = _agent.speed * 4;
-                    _animator.SetFloat("Speed", speedNav * 4);
+                    _agent.speed = _agent.speed * 2;
+                    _animator.SetFloat("Speed", speedNav * 2);
                 }
                 else
                 {
