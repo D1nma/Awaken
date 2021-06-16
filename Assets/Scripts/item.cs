@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class item : MonoBehaviour
 {
-    public enum ObjectType { Clés=1, Canne=2, Appat=3, Champi=4 }
+    public enum ObjectType { Clés=1, Canne=2, Appat=3}
     
 
     public ObjectType objectType;
@@ -101,11 +101,6 @@ public class item : MonoBehaviour
                 Debug.Log("C'est un Appat!");
                 StartTime = true;
                 invent.boite =true;
-            }
-            if(objectType == ObjectType.Champi){
-                Destroy(this.gameObject);
-                Debug.Log("C'est un champi!");
-                invent.champi =true;
             }
         }
         
