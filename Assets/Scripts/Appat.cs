@@ -82,7 +82,7 @@ public class Appat : MonoBehaviour
         {
             time += Time.deltaTime;
         }
-        else if (time >= 4)
+        if (time >= 4)
         {
             Tips.SetActive(false);
             time = 0;
