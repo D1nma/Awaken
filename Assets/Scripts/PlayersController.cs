@@ -100,7 +100,7 @@ public class PlayersController : MonoBehaviour
         }
         else if (lampeHuile != null)
         {
-            if (lampeHuile.EnMain)
+            if (lampeHuile.EnMain && !accroupir)
             {
                 if (!positionBras)
                 {
@@ -115,6 +115,11 @@ public class PlayersController : MonoBehaviour
                     Rotation = true;
                 }
 
+            }
+            else if (accroupir)
+            {
+
+                StartCoroutine(OnCompleteAccroupirAnimation(4f));
             }
         }
         if (SUPERUSER)
@@ -165,7 +170,7 @@ public class PlayersController : MonoBehaviour
             h = 0;
             v = 0;
         }
-        if(stb.currentStamina < 25)
+        if (stb.currentStamina < 25)
         {
             if (!essoufflement)
             {
@@ -214,7 +219,7 @@ public class PlayersController : MonoBehaviour
                         animator.SetBool("IsRunning", false);
                         stb.StopStamina();
                         moveSpeed = oldMoveSpeed;
-                        
+
                     }
                 }
 
@@ -309,6 +314,7 @@ public class PlayersController : MonoBehaviour
 
             if (!accroupir)
             {
+                lampeHuile.gameObject.SetActive(false);
                 cc.height = oldColliderHeight / 4;
                 moveSpeed = oldMoveSpeed / 4;
                 cc.center = new Vector3(0, 0.38f, 0);
@@ -317,8 +323,9 @@ public class PlayersController : MonoBehaviour
                 animator.SetBool("IsRunning", false);
                 courrir = false;
             }
-            else if(accroupir)
+            else if (accroupir)
             {
+                lampeHuile.gameObject.SetActive(true);
                 cc.height = oldColliderHeight;
                 cc.center = new Vector3(0, 0.76f, 0);
                 moveSpeed = oldMoveSpeed;
@@ -341,7 +348,7 @@ public class PlayersController : MonoBehaviour
                 animator.SetBool("IsRunning", false);
                 courrir = false;
             }
-            else if(cacher)
+            else if (cacher)
             {
                 cc.height = oldColliderHeight;
                 cc.center = new Vector3(0, 0.76f, 0);
@@ -369,9 +376,11 @@ public class PlayersController : MonoBehaviour
         transform.position = pivot.transform.position;
         animator.SetBool("Grimper", false);
         doOnce = false; grimper = false;
-
-
-
+    }
+    IEnumerator OnCompleteAccroupirAnimation(float animationLength)
+    {
+            yield return new WaitForSeconds(animationLength);
+            rig.GetComponentInChildren<TwoBoneIKConstraint>().weight = 0f; rigHand.weight = 0f; Rotation = false; positionBras = false;
     }
     private IEnumerator AnimatorSetWakeUp(float animationLength)
     {
