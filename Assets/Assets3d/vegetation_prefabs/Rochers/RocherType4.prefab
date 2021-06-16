@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 9037861990800558356}
   - component: {fileID: 7265323855298148299}
   - component: {fileID: 1872784585767797863}
-  m_Layer: 9
+  - component: {fileID: 2363653701799429963}
+  m_Layer: 14
   m_Name: rock4.1(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &9037861990800558356
 Transform:
@@ -82,6 +83,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2363653701799429963
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2305812267322093020}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.841745, y: 4.335931, z: 3.3117237}
+  m_Center: {x: -2.2209055, y: 0.25147644, z: 0.4022572}
 --- !u!1 &3523368252160583541
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,12 +107,12 @@ GameObject:
   - component: {fileID: 5682803052883740951}
   - component: {fileID: 377100449182058572}
   - component: {fileID: 8998390797578308534}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: rock4.3(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &5682803052883740951
 Transform:
@@ -175,12 +189,12 @@ GameObject:
   - component: {fileID: 2348860385763841627}
   - component: {fileID: 2203325512560693114}
   - component: {fileID: 3756809956040472924}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: rock4.4(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &2348860385763841627
 Transform:
@@ -256,12 +270,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4368518215234011467}
   - component: {fileID: 8039820773754747102}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: RocherType4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &4368518215234011467
 Transform:
@@ -291,7 +305,7 @@ LODGroup:
   serializedVersion: 2
   m_LocalReferencePoint: {x: -2.3714752, y: 0.21045732, z: 0.32693267}
   m_Size: 5.614338
-  m_FadeMode: 0
+  m_FadeMode: 1
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
@@ -323,12 +337,12 @@ GameObject:
   - component: {fileID: 2638742791470674373}
   - component: {fileID: 4199620280729433232}
   - component: {fileID: 6304075732552124484}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: rock4.2(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &2638742791470674373
 Transform:

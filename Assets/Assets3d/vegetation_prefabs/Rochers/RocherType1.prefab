@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 9219910686726340050}
   - component: {fileID: 6928682506709826225}
   - component: {fileID: 2130216749646438797}
-  m_Layer: 9
+  - component: {fileID: 5247831190411495776}
+  m_Layer: 14
   m_Name: rock2(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &9219910686726340050
 Transform:
@@ -82,6 +83,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5247831190411495776
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46915343218871812}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5436096, y: 1.7786502, z: 1.6655645}
+  m_Center: {x: 0.000746337, y: 0.026212513, z: 0.08547655}
 --- !u!1 &3207907366149466938
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,12 +107,12 @@ GameObject:
   - component: {fileID: 609620566415427058}
   - component: {fileID: 2033038502432527712}
   - component: {fileID: 8390240958787225219}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: rock1(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &609620566415427058
 Transform:
@@ -175,12 +189,12 @@ GameObject:
   - component: {fileID: 3323849610096507357}
   - component: {fileID: 745982689807954726}
   - component: {fileID: 3681865809101307973}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: rock4(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &3323849610096507357
 Transform:
@@ -256,12 +270,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2806069297308471611}
   - component: {fileID: 4754264122700032361}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: RocherType1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &2806069297308471611
 Transform:
@@ -323,12 +337,12 @@ GameObject:
   - component: {fileID: 3057120747476309223}
   - component: {fileID: 3791445675106108716}
   - component: {fileID: 7037825708215169175}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: rock3(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &3057120747476309223
 Transform:
