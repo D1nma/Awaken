@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 6e0fffe3b857cd48b495bd14c3507860
     GuidInternal: 
-    m_lastTime: -8585778397849048304
+    m_lastTime: -8585778379201149462
     List:
     - name: Ambiance
       guid: cb3db2323f563448a7a52222fb1c21ab
@@ -233,8 +233,48 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Ambiance
     guid: 02301d76802f4f47b7f34e89fdd14607
     GuidInternal: 
-    m_lastTime: -8585781166330324809
+    m_lastTime: -8585778379205329183
     List:
+    - name: Explo_Start
+      guid: 49c13a888c0c7a4386f43c3c505a1978
+      id: 1190810872
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 02301d76802f4f47b7f34e89fdd14607
+      - ElementName: Explo_Start
+        ObjectType: 3
+        guid: 49c13a888c0c7a4386f43c3c505a1978
+      Path: Events\Default Work Unit\Ambiance\Explo_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Explo_Stop
+      guid: 4f5452e9c1792c4f864c0b145c254b0f
+      id: 55996420
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 02301d76802f4f47b7f34e89fdd14607
+      - ElementName: Explo_Stop
+        ObjectType: 3
+        guid: 4f5452e9c1792c4f864c0b145c254b0f
+      Path: Events\Default Work Unit\Ambiance\Explo_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: GameOver_Start
       guid: 7ab526051b0aa6408e57cd427564676e
       id: 4219216500
@@ -272,6 +312,86 @@ MonoBehaviour:
         ObjectType: 3
         guid: 64e755bfff6fbc438b15d13d0158dc2a
       Path: Events\Default Work Unit\Ambiance\GameOver_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lvl1_Start
+      guid: 96e98938e706aa478b72f343427ff20b
+      id: 267820003
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 02301d76802f4f47b7f34e89fdd14607
+      - ElementName: Lvl1_Start
+        ObjectType: 3
+        guid: 96e98938e706aa478b72f343427ff20b
+      Path: Events\Default Work Unit\Ambiance\Lvl1_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lvl1_Stop
+      guid: a163758ddc2a6047b61d67f467bbbdcd
+      id: 1151883745
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 02301d76802f4f47b7f34e89fdd14607
+      - ElementName: Lvl1_Stop
+        ObjectType: 3
+        guid: a163758ddc2a6047b61d67f467bbbdcd
+      Path: Events\Default Work Unit\Ambiance\Lvl1_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lvl2_Start
+      guid: 9c5e0efd993e114789f4a07114f0cb0c
+      id: 3655569304
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 02301d76802f4f47b7f34e89fdd14607
+      - ElementName: Lvl2_Start
+        ObjectType: 3
+        guid: 9c5e0efd993e114789f4a07114f0cb0c
+      Path: Events\Default Work Unit\Ambiance\Lvl2_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lvl2_Stop
+      guid: ada50161eac1a34d8ba71d697529426c
+      id: 4174570276
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 02301d76802f4f47b7f34e89fdd14607
+      - ElementName: Lvl2_Stop
+        ObjectType: 3
+        guid: ada50161eac1a34d8ba71d697529426c
+      Path: Events\Default Work Unit\Ambiance\Lvl2_Stop
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -329,7 +449,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Character
     guid: d1b726b7b62bbc4d87a56d25ac596348
     GuidInternal: 
-    m_lastTime: -8585778397850399436
+    m_lastTime: -8585778365001386344
     List:
     - name: Alyx
       guid: 49e60b0de728324e87421b4870014945
@@ -432,9 +552,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Dialogue
+    - name: Dialogue_00
       guid: b3e391fe7cd6fe41a5cd236c3ec473fc
-      id: 3930136735
+      id: 1227595426
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -454,10 +574,126 @@ MonoBehaviour:
       - ElementName: Dialogues
         ObjectType: 4
         guid: 6d9b6a05e62f674d89c077cc0335abb6
-      - ElementName: Dialogue
+      - ElementName: Dialogue_00
         ObjectType: 3
         guid: b3e391fe7cd6fe41a5cd236c3ec473fc
-      Path: Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue_00
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Dialogue_01
+      guid: ef6b507913b8fc4391213ce7f0ef3fd0
+      id: 1227595427
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: Dialogues
+        ObjectType: 4
+        guid: 6d9b6a05e62f674d89c077cc0335abb6
+      - ElementName: Dialogue_01
+        ObjectType: 3
+        guid: ef6b507913b8fc4391213ce7f0ef3fd0
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue_01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Dialogue_02
+      guid: 10d233125e162b46b92d1592e7fbb7c5
+      id: 1227595424
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: Dialogues
+        ObjectType: 4
+        guid: 6d9b6a05e62f674d89c077cc0335abb6
+      - ElementName: Dialogue_02
+        ObjectType: 3
+        guid: 10d233125e162b46b92d1592e7fbb7c5
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue_02
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Dialogue_03
+      guid: 07c4c0fbf5e2fd4494f800279ebb8974
+      id: 1227595425
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: Dialogues
+        ObjectType: 4
+        guid: 6d9b6a05e62f674d89c077cc0335abb6
+      - ElementName: Dialogue_03
+        ObjectType: 3
+        guid: 07c4c0fbf5e2fd4494f800279ebb8974
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue_03
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Dialogue_04
+      guid: 8689b34760b062498c461fbf8f8f67fb
+      id: 1227595430
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: Dialogues
+        ObjectType: 4
+        guid: 6d9b6a05e62f674d89c077cc0335abb6
+      - ElementName: Dialogue_04
+        ObjectType: 3
+        guid: 8689b34760b062498c461fbf8f8f67fb
+      Path: Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue_04
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -881,7 +1117,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Environnement
     guid: 0b9c659094c6ed43bece16702a7786fc
     GuidInternal: 
-    m_lastTime: -8585781166330314845
+    m_lastTime: -8585778379205319207
     List:
     - name: Birds
       guid: 45adc77911e337418336100430199307
@@ -900,6 +1136,52 @@ MonoBehaviour:
         ObjectType: 4
         guid: 45adc77911e337418336100430199307
       Path: Events\Default Work Unit\Environnement\Birds
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Birds_Start
+      guid: 771c9e066d5aca419d13722427b559a1
+      id: 1003161594
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Birds
+        ObjectType: 4
+        guid: 45adc77911e337418336100430199307
+      - ElementName: Birds_Start
+        ObjectType: 3
+        guid: 771c9e066d5aca419d13722427b559a1
+      Path: Events\Default Work Unit\Environnement\Birds\Birds_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Birds_Stop
+      guid: d57228e756fb0f4bbd5e7beb423fc0b7
+      id: 544687890
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Environnement
+        ObjectType: 12
+        guid: 0b9c659094c6ed43bece16702a7786fc
+      - ElementName: Birds
+        ObjectType: 4
+        guid: 45adc77911e337418336100430199307
+      - ElementName: Birds_Stop
+        ObjectType: 3
+        guid: d57228e756fb0f4bbd5e7beb423fc0b7
+      Path: Events\Default Work Unit\Environnement\Birds\Birds_Stop
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1296,7 +1578,7 @@ MonoBehaviour:
     m_lastTime: -8585781166299159409
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000190000001a0000001b0000001d0000001f00000051000000520000007c0000008700000088000000bc000000bd000000820b0000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
