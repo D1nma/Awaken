@@ -41,6 +41,9 @@ public class Tips : MonoBehaviour
         if (!gm)
         {
             gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        }else if (!tips)
+        {
+            tips = gm.Tips;
         }
         if (startTiming)
         {
