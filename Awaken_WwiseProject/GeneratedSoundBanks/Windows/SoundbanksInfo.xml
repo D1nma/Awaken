@@ -11,11 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="436743010" Language="SFX" Hash="3817595281">
+		<SoundBank Id="436743010" Language="SFX" Hash="1844013525">
 			<ObjectPath>\SoundBanks\Default Work Unit\Character</ObjectPath>
 			<ShortName>Character</ShortName>
 			<Path>Character.bnk</Path>
 			<IncludedEvents>
+				<Event Id="270661937" Name="Brume_Start" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Brume_Start"/>
 				<Event Id="3469716904" Name="Cris_End" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Cris_End"/>
 				<Event Id="2077130451" Name="Cris_Start" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Cris_Start">
 					<IncludedMemoryFiles>
@@ -280,6 +281,22 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1644087800" Name="Soufflement_Stop" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Soufflement_Stop"/>
+				<Event Id="1950348611" Name="Stress60" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Stress60">
+					<IncludedMemoryFiles>
+						<File Id="753281076" Language="SFX">
+							<ShortName>STRESS Brr J_ai peur\J_ai peur 1_Alyx-St.wav</ShortName>
+							<Path>SFX\STRESS Brr J_ai peur\J_ai peur 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2185235277" Name="Stress80" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Stress80">
+					<IncludedMemoryFiles>
+						<File Id="503677445" Language="SFX">
+							<ShortName>STRESS Je me sens pas bien du tout\Je me sens pas bien du tout 1_Alyx-St.wav</ShortName>
+							<Path>SFX\STRESS Je me sens pas bien du tout\Je me sens pas bien du tout 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2108779966" Name="Walk" ObjectPath="\Events\Default Work Unit\Character\Alyx\Walk"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
