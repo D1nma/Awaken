@@ -6,6 +6,7 @@ public class RocherOiseau : MonoBehaviour
 {
     public GameObject DialogueRocher;
     public static bool rocherDialogue;
+    bool done;
     void Start()
     {
         DialogueRocher.SetActive(false);
@@ -15,9 +16,10 @@ public class RocherOiseau : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (rocherDialogue)
+        if (rocherDialogue && !done)
         {
             DialogueRocher.SetActive(true);
+            done = true;
         }
     }
 }
