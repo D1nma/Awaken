@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     public Text time;
     public GameObject optionPanel;
     public GameObject deadPanel;
+    public GameObject fin;
     public GameObject LoadingScreen;
     public Slider slider;
     public Text progressText;
@@ -260,6 +261,16 @@ public class UIManager : MonoBehaviour
         if (deadPanel != null)
             deadPanel.SetActive(true);
         Time.timeScale = 0.2f;
+    }
+
+    public void Fin()
+    {
+        if (fin != null)
+            fin.SetActive(true);
+        Time.timeScale = 0f;
+        AkSoundEngine.PostEvent("Lvl1_Stop", gameObject);
+        AkSoundEngine.PostEvent("Wind_loop_stop", gameObject);
+        AkSoundEngine.PostEvent("Birds_Stop", gameObject);
     }
 
     public void CloseOption()
