@@ -51,7 +51,7 @@ public class Warning : MonoBehaviour
                 RenderSettings.fogEndDistance = fogEndValue;
             }
         }
-        else
+        else if(!StartFog)
         {
             gm.OutofP = false;
             if (RenderSettings.fogEndDistance < oldValue)
@@ -68,18 +68,19 @@ public class Warning : MonoBehaviour
             if (warningText != null)
             {
                 warningText.SetActive(true);
+                Debug.Log("warning");
             }
 
             time += Time.deltaTime;
         }
-        else
+        /*else if(!show)
         {
             show = false;
             if (warningText)
             {
                 warningText.SetActive(false);
             }            
-        }
+        }*/
         if (time >= 3)
         {
             show = false;
@@ -101,7 +102,7 @@ public class Warning : MonoBehaviour
         if (other.tag != "Player") { return; }
 
     }
-    private void OnTriggerExit(Collider other)
+    /*private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
         {
@@ -109,6 +110,6 @@ public class Warning : MonoBehaviour
             show = false;
         }
         if (other.tag != "Player") { return; }
-    }
+    }*/
 
 }
