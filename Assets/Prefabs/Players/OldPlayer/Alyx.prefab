@@ -297,6 +297,7 @@ MonoBehaviour:
       next: 0
     isQuestion: 0
   question: {fileID: 0}
+  son: 0
   InteragirText: {fileID: 0}
   Interagir: 0
   Avertissement: 0
@@ -2638,6 +2639,7 @@ MonoBehaviour:
       next: 0
     isQuestion: 0
   question: {fileID: 0}
+  son: 0
   InteragirText: {fileID: 0}
   Interagir: 0
   Avertissement: 0
@@ -4121,6 +4123,7 @@ GameObject:
   - component: {fileID: 300034395}
   - component: {fileID: 300034396}
   - component: {fileID: 1893498280}
+  - component: {fileID: -5642911044418533377}
   m_Layer: 8
   m_Name: Alyx
   m_TagString: Player
@@ -4307,6 +4310,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rig: {fileID: 7212678385090248021}
   rigHand: {fileID: 4153006460331009733}
+  stb: {fileID: 0}
+  SpotGrimper: {fileID: 0}
+  pivot: {fileID: 0}
   moveSpeed: 5
   oldMoveSpeed: 0
   oldColliderHeight: 0
@@ -4317,12 +4323,14 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 512
+  offsetRay: 1
   turnSmoothTime: 0.1
   stamina: 10
   cam: {fileID: 0}
   animationLenghtWakeUp: 11
   courrir: 1
   grimper: 0
+  grimpant: 0
 --- !u!114 &-4506911232936754886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4450,6 +4458,31 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+--- !u!114 &-5642911044418533377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8699770889497131319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92403641717ce534b99d6575a4c02315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5fd65d4e37ba48b41ba71a8fc30960f3,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &8741020064287440969
 GameObject:
   m_ObjectHideFlags: 0
