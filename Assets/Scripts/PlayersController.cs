@@ -112,7 +112,8 @@ public class PlayersController : MonoBehaviour
 
                 if (!Rotation)
                 {
-                    lampeHuile.gameObject.transform.rotation = Quaternion.Euler(0f, 90f, 0f); //aucun effet
+                    //lampeHuile.gameObject.transform.rotation = Quaternion.Euler(0f, 90f, 0f); //le nouveau perso
+                    lampeHuile.gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
                     Rotation = true;
                 }
 
@@ -327,7 +328,7 @@ public class PlayersController : MonoBehaviour
             {
                 if (lampeHuile.EnMain)
                 {
-                    StartCoroutine(OnCompleteAccroupirAnimation(4f));
+                    StartCoroutine(OnCompleteAccroupirAnimation(1f));
                 }
                 cc.height = oldColliderHeight;
                 cc.center = new Vector3(0, 0.76f, 0);
