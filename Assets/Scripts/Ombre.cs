@@ -177,7 +177,7 @@ public class Ombre : MonoBehaviour
                 _animator.SetFloat("speedMultiplier", 1.2f);
                 if (distance <= enemy.stoppingDistance)
                 {
-                    if (canHurt)
+                    if (canHurt && GameManager.gameOver == false)
                     {
                         AkSoundEngine.PostEvent("Dead", gameObject);
                         _animator.SetInteger("Attaque", attaque);

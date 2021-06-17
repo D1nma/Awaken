@@ -248,9 +248,13 @@ public class UIManager : MonoBehaviour
         gm.SpawnPlayer();
         Resume();
         gm.cc.enabled = true;
+        PlayersController.canControl = true;
     }
     public void DeadMenu()
     {
+        AkSoundEngine.PostEvent("Lvl1_Stop", gameObject);
+        AkSoundEngine.PostEvent("Wind_loop_stop", gameObject);
+        AkSoundEngine.PostEvent("Birds_Stop", gameObject);
         AkSoundEngine.PostEvent("GameOver_Start", gameObject);
         Cursor.visible = true;
         if (deadPanel != null)
