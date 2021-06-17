@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 7589114303119433358}
   - component: {fileID: 6844953197267259691}
   - component: {fileID: 8726533395533456865}
-  - component: {fileID: 7153325671461298480}
+  - component: {fileID: 5054360985083804849}
   m_Layer: 0
   m_Name: gros champi bleu 2
   m_TagString: Untagged
@@ -177,8 +177,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7153325671461298480
-MeshCollider:
+--- !u!136 &5054360985083804849
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -187,7 +187,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2144492602232178039, guid: 02a23492ae75e0646b6f94288b0751fc, type: 3}
+  m_Radius: 0.95
+  m_Height: 7
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.5, z: 0}

@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 3956435763327784981}
   - component: {fileID: 92269676306028464}
   - component: {fileID: 2784132224982852474}
-  - component: {fileID: 3551937287405814269}
+  - component: {fileID: 822096741314992725}
   m_Layer: 0
   m_Name: gros champi violet 1
   m_TagString: Untagged
@@ -177,8 +177,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3551937287405814269
-MeshCollider:
+--- !u!136 &822096741314992725
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -187,7 +187,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -831774524296487689, guid: 51ef703abb1fecf49aaac70ec3628be2, type: 3}
+  m_Radius: 0.95
+  m_Height: 7
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.5, z: 0.08}

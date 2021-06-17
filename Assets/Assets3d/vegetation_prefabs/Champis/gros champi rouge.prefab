@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1227369015082578403}
   - component: {fileID: 2785377450230447686}
   - component: {fileID: 91005758775134860}
+  - component: {fileID: 1270861011858845047}
   m_Layer: 0
   m_Name: gros champi rouge
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1270861011858845047
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892546695781231449}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.95
+  m_Height: 7
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.5, z: 0}
 --- !u!1 &8205334866073427166
 GameObject:
   m_ObjectHideFlags: 0
