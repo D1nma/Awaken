@@ -90,13 +90,14 @@ public class PlayersController : MonoBehaviour
         {
             stb = gm.Staminabar.GetComponent<StaminaBar>();
         }
-        else if (!pivot)
+        /*else if (!pivot)
         {
             pivot = GameObject.Find("pivot");
-        }
+        }*/
         else if (!lampeHuile)
         {
-            lampeHuile = GameObject.Find("Lampe à huile").GetComponent<LampeHuile>();
+            //lampeHuile = GameObject.Find("Lampe à huile").GetComponent<LampeHuile>();
+            lampeHuile = gm.LH;
         }
         else if (lampeHuile != null)
         {
@@ -246,7 +247,7 @@ public class PlayersController : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
 
-            trait = this.transform.position;
+            /*trait = this.transform.position;
             trait.y = this.transform.position.y + offsetRay;
             RaycastHit hit;
             Debug.DrawRay(trait, this.transform.forward * 1, Color.white);
@@ -266,14 +267,14 @@ public class PlayersController : MonoBehaviour
                     SpotGrimper = null;
                 }
 
-            }
+            }*/
 
             if (isGrounded && canControl && !grimper && !wakeUp && !accroupir && !cacher)
             {
                 animator.SetTrigger("jump");
                 velocity.y = Mathf.Sqrt(jumpSpeed * -2f * gravity);
             }
-            else if (isGrounded && canControl && grimper && !wakeUp && !accroupir && !cacher)
+            /*else if (isGrounded && canControl && grimper && !wakeUp && !accroupir && !cacher)
             {
                 //animation intégrer plus empecher de bouger
 
@@ -292,25 +293,28 @@ public class PlayersController : MonoBehaviour
 
 
 
-            }
+            }*/
         }
 
-        if (grimper)
+        /*if (grimper)
         {
             float distance = Vector3.Distance(transform.position, pivot.transform.position);
             if (distance < 0.1f && doOnce == false)
             {
                 grimpant = false; canControl = true;
             }
-        }
+        }*/
         if (Input.GetKeyDown(KeyCode.C) && isGrounded && canControl && !wakeUp)
         {
 
             if (!accroupir)
             {
-                lampeHuile.gameObject.SetActive(false);
-                rig.GetComponentInChildren<TwoBoneIKConstraint>().weight = 0f; 
-                rigHand.weight = 0f;
+                if (lampeHuile.EnMain)
+                {
+                    lampeHuile.gameObject.SetActive(false);
+                    rig.GetComponentInChildren<TwoBoneIKConstraint>().weight = 0f;
+                    rigHand.weight = 0f;
+                }
                 cc.height = oldColliderHeight / 4;
                 moveSpeed = oldMoveSpeed / 4;
                 cc.center = new Vector3(0, 0.38f, 0);
@@ -321,8 +325,10 @@ public class PlayersController : MonoBehaviour
             }
             else if (accroupir)
             {
-                StartCoroutine(OnCompleteAccroupirAnimation(4f));
-                
+                if (lampeHuile.EnMain)
+                {
+                    StartCoroutine(OnCompleteAccroupirAnimation(4f));
+                }
                 cc.height = oldColliderHeight;
                 cc.center = new Vector3(0, 0.76f, 0);
                 moveSpeed = oldMoveSpeed;

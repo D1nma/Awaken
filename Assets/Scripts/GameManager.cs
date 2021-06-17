@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     public CharacterController cc;
     public bool OutofP;
     float oldValueInt;
-    private LampeHuile LH;
+    public LampeHuile LH;
     Volume volume;
     private Vignette vg;
     public GameObject Player;
