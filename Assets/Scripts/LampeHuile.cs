@@ -221,7 +221,7 @@ public class LampeHuile : MonoBehaviour
         {
             if (currentHuile > 0)
             {
-                currentHuile -= consume;
+                currentHuile -= consume * Time.deltaTime;
                 PlayerStress.LH = true;
                 huileBar.value = currentHuile;
                 lightUp();
