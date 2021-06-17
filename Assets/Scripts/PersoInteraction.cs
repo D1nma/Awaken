@@ -12,6 +12,7 @@ public class PersoInteraction : MonoBehaviour
     public UIManager ui;
     private Vector3 target;
     public float speed = 1.0f;
+    GameManager gm;
     public Inventaire invent;
     Vector3 playerPos;
     public GameObject Tips;
@@ -41,10 +42,7 @@ public class PersoInteraction : MonoBehaviour
         {
             ui = GameObject.Find("Canvas").GetComponent<UIManager>();
         }
-        if (!Tips)
-        {
-            Debug.LogWarning("Ajouter les parametres necessaires au fonctionnement dans l'inspecteur..");
-        }
+        
 
     }
 
@@ -62,8 +60,11 @@ public class PersoInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (!player)
+        if (!gm)
+        {
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        }
+        else if (!player)
         {
             player = GameObject.FindGameObjectWithTag("Player");
         }
@@ -75,6 +76,10 @@ public class PersoInteraction : MonoBehaviour
         else if (!ui)
         {
             ui = GameObject.Find("Canvas").GetComponent<UIManager>();
+        }
+        else if (!Tips)
+        {
+            Tips = gm.Tips;
         }
         if (bouge)
         {
@@ -169,9 +174,14 @@ public class PersoInteraction : MonoBehaviour
                 }
                 canInteract = true;
             }
-            else if (invent.Keyvolee && Appat.fait == false)
+            else if (invent.Keyvolee && Appat.fait == false && invent.boite)
             {
-                InteragirText.gameObject.GetComponent<Text>().text = "Il faut placer la boîte d'appât pour attirer l'oiseau";
+                InteragirText.gameObject.GetComponent<Text>().text = "Il faut placer la boîte d'appât au pied de l'arbre pour attirer l'oiseau";
+                InteragirText.SetActive(true);
+            }
+            else if (invent.Keyvolee && Appat.fait == false && !invent.boite)
+            {
+                InteragirText.gameObject.GetComponent<Text>().text = "Il faut quelque chose pour récupèrer la clé d'ici";
                 InteragirText.SetActive(true);
             }
         }
