@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="436743010" Language="SFX" Hash="1962886088">
+		<SoundBank Id="436743010" Language="SFX" Hash="2913760078">
 			<ObjectPath>\SoundBanks\Default Work Unit\Character</ObjectPath>
 			<ShortName>Character</ShortName>
 			<Path>Character.bnk</Path>
@@ -166,8 +166,26 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3534404267" Name="Dialogue_012" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue_012"/>
-				<Event Id="3534404266" Name="Dialogue_013" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue_013"/>
+				<Event Id="3534404267" Name="Dialogue_012" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue_012">
+					<IncludedMemoryFiles>
+						<File Id="668040900" Language="SFX">
+							<ShortName>27 Il faut que ça fonctionne\Il faut que ça fonctionne 1_Alyx-St.wav</ShortName>
+							<Path>SFX\27 Il faut que ça fonctionne\Il faut que ça fonctionne 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3534404266" Name="Dialogue_013" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue_013">
+					<IncludedMemoryFiles>
+						<File Id="1000327118" Language="SFX">
+							<ShortName>28 Qui es tu\Qui es tu 1_Alyx-St.wav</ShortName>
+							<Path>SFX\28 Qui es tu\Qui es tu 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1014981234" Language="SFX">
+							<ShortName>29 C_est toi la voix que j_entend\C_est toi la voix 1_Alyx-St.wav</ShortName>
+							<Path>SFX\29 C_est toi la voix que j_entend\C_est toi la voix 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3534404269" Name="Dialogue_014" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue_014"/>
 				<Event Id="3534404268" Name="Dialogue_015" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue_015"/>
 				<Event Id="3534404271" Name="Dialogue_016" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Dialogue_016"/>
