@@ -11,7 +11,7 @@ public class StaminaBar : MonoBehaviour
 
     public Slider staminaBar;
 
-    private int maxStamina = 200;
+    private int maxStamina = 400;
     public int currentStamina;
     private int energie = 1;
 
@@ -141,7 +141,7 @@ public class StaminaBar : MonoBehaviour
 
         while (currentStamina < maxStamina)
         {
-            currentStamina += maxStamina / 100;
+            currentStamina += maxStamina / 70;
             staminaBar.value = currentStamina;
             yield return regenTick;
         }

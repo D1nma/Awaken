@@ -116,11 +116,6 @@ public class PlayersController : MonoBehaviour
                 }
 
             }
-            else if (accroupir)
-            {
-
-                StartCoroutine(OnCompleteAccroupirAnimation(4f));
-            }
         }
         if (SUPERUSER)
         {
@@ -315,6 +310,8 @@ public class PlayersController : MonoBehaviour
             if (!accroupir)
             {
                 lampeHuile.gameObject.SetActive(false);
+                rig.GetComponentInChildren<TwoBoneIKConstraint>().weight = 0f; rigHand.weight = 0f;
+                
                 cc.height = oldColliderHeight / 4;
                 moveSpeed = oldMoveSpeed / 4;
                 cc.center = new Vector3(0, 0.38f, 0);
@@ -325,7 +322,8 @@ public class PlayersController : MonoBehaviour
             }
             else if (accroupir)
             {
-                lampeHuile.gameObject.SetActive(true);
+                StartCoroutine(OnCompleteAccroupirAnimation(4f));
+                
                 cc.height = oldColliderHeight;
                 cc.center = new Vector3(0, 0.76f, 0);
                 moveSpeed = oldMoveSpeed;
@@ -380,7 +378,7 @@ public class PlayersController : MonoBehaviour
     IEnumerator OnCompleteAccroupirAnimation(float animationLength)
     {
             yield return new WaitForSeconds(animationLength);
-            rig.GetComponentInChildren<TwoBoneIKConstraint>().weight = 0f; rigHand.weight = 0f; Rotation = false; positionBras = false;
+            lampeHuile.gameObject.SetActive(true); positionBras = false;
     }
     private IEnumerator AnimatorSetWakeUp(float animationLength)
     {
