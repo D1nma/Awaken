@@ -130,7 +130,6 @@ public class PlayersController : MonoBehaviour
         {
             animator.SetBool("IsRunning", false);
             animator.SetBool("IsWalking", false);
-            animator.SetBool("jump", false);
 
 
         }
@@ -271,7 +270,7 @@ public class PlayersController : MonoBehaviour
 
             if (isGrounded && canControl && !grimper && !wakeUp && !accroupir && !cacher)
             {
-                animator.SetBool("jump", true);
+                animator.SetTrigger("jump");
                 velocity.y = Mathf.Sqrt(jumpSpeed * -2f * gravity);
             }
             else if (isGrounded && canControl && grimper && !wakeUp && !accroupir && !cacher)
@@ -310,8 +309,8 @@ public class PlayersController : MonoBehaviour
             if (!accroupir)
             {
                 lampeHuile.gameObject.SetActive(false);
-                rig.GetComponentInChildren<TwoBoneIKConstraint>().weight = 0f; rigHand.weight = 0f;
-                
+                rig.GetComponentInChildren<TwoBoneIKConstraint>().weight = 0f; 
+                rigHand.weight = 0f;
                 cc.height = oldColliderHeight / 4;
                 moveSpeed = oldMoveSpeed / 4;
                 cc.center = new Vector3(0, 0.38f, 0);
