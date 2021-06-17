@@ -13,7 +13,7 @@ public class Ombre : MonoBehaviour
     private bool immortal = false;
     float fastSpeed;
 
-    public bool idleOne = false,canTouch;
+    public bool idleOne = false, canTouch;
     private bool canHurt = false;
 
     private bool follow = true, see = false;
@@ -179,7 +179,7 @@ public class Ombre : MonoBehaviour
                 {
                     if (canHurt)
                     {
-
+                        AkSoundEngine.PostEvent("Dead", gameObject);
                         _animator.SetInteger("Attaque", attaque);
                         Debug.Log("touché");
                         _animator.SetBool("Chasing", true);

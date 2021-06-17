@@ -12,7 +12,17 @@
 						<Event Name="Jump" ID="{4B91C132-7AB6-452C-97F7-29604ED47D47}"/>
 						<Event Name="Walk" ID="{CD0EDF5F-102E-4F56-BBB5-D0A688D9139E}"/>
 						<Event Name="Lever" ID="{CBC2531B-2244-4AD2-8901-72B957D3BD07}"/>
-						<Event Name="Dead" ID="{A98399DE-A052-43D3-8EF5-A44ED524981A}"/>
+						<Event Name="Dead" ID="{A98399DE-A052-43D3-8EF5-A44ED524981A}">
+							<ChildrenList>
+								<Action Name="" ID="{FBED0C7D-A563-4BC9-AB5A-35F8CC88481C}" ShortID="977061042">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Mix_Cris" ID="{7B89267F-AB35-4CFA-BDDC-153A6F049101}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Folder Name="Voix" ID="{1B54167A-2459-4631-B679-B5F5D99485E5}" ShortID="267025256">
 							<ChildrenList>
 								<Folder Name="Onomatope" ID="{AEF4DD0D-C170-4C14-BB87-67178CC48ABB}" ShortID="1059289687">
