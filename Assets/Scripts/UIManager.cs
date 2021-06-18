@@ -267,6 +267,7 @@ public class UIManager : MonoBehaviour
     {
         if (fin != null)
             fin.SetActive(true);
+        Cursor.visible = true;
         Time.timeScale = 0f;
         AkSoundEngine.PostEvent("Lvl1_Stop", gameObject);
         AkSoundEngine.PostEvent("Wind_loop_stop", gameObject);
