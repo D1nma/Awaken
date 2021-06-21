@@ -1686,14 +1686,12 @@
 						</Effect>
 						<Effect Name="Secret_message" ID="{2F5DE612-1AAD-4A84-8FB4-3E66521C920E}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
 							<PropertyList>
+								<Property Name="DryLevel" Type="Real32" Value="-5"/>
 								<Property Name="Voice1FilterFrequency" Type="Real32" Value="3656"/>
-								<Property Name="Voice1FilterType" Type="int32" Value="4"/>
-								<Property Name="Voice1Pitch" Type="Real32" Value="-1200"/>
-								<Property Name="Voice2Enable" Type="bool" Value="True"/>
+								<Property Name="Voice1FilterType" Type="int32" Value="2"/>
 								<Property Name="Voice2FilterFrequency" Type="Real32" Value="361"/>
 								<Property Name="Voice2FilterType" Type="int32" Value="4"/>
-								<Property Name="Voice2Gain" Type="Real32" Value="-4"/>
-								<Property Name="Voice2Pitch" Type="Real32" Value="-1200"/>
+								<Property Name="WetLevel" Type="Real32" Value="3"/>
 								<Property Name="WindowSize" Type="int32" Value="256"/>
 							</PropertyList>
 						</Effect>

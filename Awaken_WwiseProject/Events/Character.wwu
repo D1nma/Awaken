@@ -216,7 +216,7 @@
 												<Action Name="" ID="{5DEAA3BA-F787-4CC1-9B66-0D1B475A9834}" ShortID="254704545">
 													<ReferenceList>
 														<Reference Name="Target">
-															<ObjectRef Name="Brume" ID="{6F2E7F41-798F-4871-A936-C820E05DD8CA}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+															<ObjectRef Name="J_ai oublié de t_en parler 2_Sparky-St" ID="{57A2E355-715C-418C-ADCF-41A28227EF01}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
@@ -439,6 +439,39 @@
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Sequencer_04" ID="{13835DCF-F9C1-4FED-BB54-A2B6F27282E5}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Apres_Pont" ID="{1280A022-A913-463F-BE7C-23B77FA36C70}">
+											<ChildrenList>
+												<Action Name="" ID="{C5C91063-2586-4F5A-A9B1-D0D5F5420CF7}" ShortID="98049241">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Attend un peu 1_Sparky-St" ID="{9CA10D86-E31D-4F4F-979D-691C003D2DE4}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="CanneFound" ID="{BEE2EFB1-D8BF-4ABA-A800-542F43E729CB}">
+											<ChildrenList>
+												<Action Name="" ID="{17CBAD30-1FE6-4701-9CFF-DD37CD642A7D}" ShortID="78533339">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="une canne à peche 2_Sparky-St" ID="{962574FC-64CE-448E-A90E-63889EAC8668}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="Perdu" ID="{316B9ED2-F859-44EC-8AA6-0F297BCC6608}">
+											<ChildrenList>
+												<Action Name="" ID="{E68399C4-6EEB-4FE4-9705-CB55610FE497}" ShortID="770200052">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="Que fais tu 1_Sparky-St" ID="{3B0D0377-B4D1-4125-A14C-30F8F23276D5}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
 														</Reference>
 													</ReferenceList>
 												</Action>
