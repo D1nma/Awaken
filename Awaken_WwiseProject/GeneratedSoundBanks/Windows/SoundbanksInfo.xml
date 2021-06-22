@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="436743010" Language="SFX" Hash="4237689544">
+		<SoundBank Id="436743010" Language="SFX" Hash="1215860921">
 			<ObjectPath>\SoundBanks\Default Work Unit\Character</ObjectPath>
 			<ShortName>Character</ShortName>
 			<Path>Character.bnk</Path>
@@ -490,8 +490,26 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="4280372378" Name="Frisson_Stop" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Frisson_Stop"/>
-				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Character\Alyx\Jump"/>
-				<Event Id="2782712987" Name="Lever" ObjectPath="\Events\Default Work Unit\Character\Alyx\Lever"/>
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Character\Alyx\Jump">
+					<IncludedMemoryFiles>
+						<File Id="581522027" Language="SFX">
+							<ShortName>soufflement du nez 2_Alyx-St.wav</ShortName>
+							<Path>SFX\soufflement du nez 2_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="902279032" Language="SFX">
+							<ShortName>soufflement du nez 1_Alyx-St.wav</ShortName>
+							<Path>SFX\soufflement du nez 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2782712987" Name="Lever" ObjectPath="\Events\Default Work Unit\Character\Alyx\Lever">
+					<IncludedMemoryFiles>
+						<File Id="733638265" Language="SFX">
+							<ShortName>frottement 2_vetement_fort.wav</ShortName>
+							<Path>SFX\frottement 2_vetement_fort_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="190087595" Name="Perdu" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Perdu">
 					<IncludedMemoryFiles>
 						<File Id="610253720" Language="SFX">
@@ -502,8 +520,20 @@
 				</Event>
 				<Event Id="2982867032" Name="Perplexe_End" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Perplexe_End"/>
 				<Event Id="3164078595" Name="Perplexe_Start" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Perplexe_Start"/>
-				<Event Id="772918084" Name="Soufflement_Start" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Soufflement_Start"/>
+				<Event Id="772918084" Name="Soufflement_Start" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Soufflement_Start">
+					<IncludedMemoryFiles>
+						<File Id="581522027" Language="SFX">
+							<ShortName>soufflement du nez 2_Alyx-St.wav</ShortName>
+							<Path>SFX\soufflement du nez 2_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="902279032" Language="SFX">
+							<ShortName>soufflement du nez 1_Alyx-St.wav</ShortName>
+							<Path>SFX\soufflement du nez 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1644087800" Name="Soufflement_Stop" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Soufflement_Stop"/>
+				<Event Id="3086540886" Name="StopAll" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\StopAll"/>
 				<Event Id="1950348611" Name="Stress60" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Stress60">
 					<IncludedMemoryFiles>
 						<File Id="753281076" Language="SFX">
@@ -520,7 +550,22 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2108779966" Name="Walk" ObjectPath="\Events\Default Work Unit\Character\Alyx\Walk"/>
+				<Event Id="2108779966" Name="Walk" ObjectPath="\Events\Default Work Unit\Character\Alyx\Walk">
+					<IncludedMemoryFiles>
+						<File Id="108488477" Language="SFX">
+							<ShortName>pas roche_marche2.wav</ShortName>
+							<Path>SFX\pas roche_marche2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="589709640" Language="SFX">
+							<ShortName>pas roche_marche1.wav</ShortName>
+							<Path>SFX\pas roche_marche1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="704634299" Language="SFX">
+							<ShortName>pas roche_marche3.wav</ShortName>
+							<Path>SFX\pas roche_marche3_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="2761487" Language="SFX">
@@ -534,6 +579,10 @@
 				<File Id="14727642" Language="SFX">
 					<ShortName>8 Il y a des ronces partout\Il y a des ronces partout 2_Alyx-St.wav</ShortName>
 					<Path>SFX\8 Il y a des ronces partout\Il y a des ronces partout 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="25119440" Language="SFX">
+					<ShortName>pas bois 1_marche3.wav</ShortName>
+					<Path>SFX\pas bois 1_marche3_3F75BDB9.wem</Path>
 				</File>
 				<File Id="25926895" Language="SFX">
 					<ShortName>22 Ce n_est pas toi qui pêchait\C_est pas toi qui pêchait_Alyx-St.wav</ShortName>
@@ -631,6 +680,10 @@
 					<ShortName>35 Le maitre des lieux\Le maitre des lieux 2_Alyx-St.wav</ShortName>
 					<Path>SFX\35 Le maitre des lieux\Le maitre des lieux 2_Alyx-St_3F75BDB9.wem</Path>
 				</File>
+				<File Id="214719174" Language="SFX">
+					<ShortName>pas terre_marche3.wav</ShortName>
+					<Path>SFX\pas terre_marche3_3F75BDB9.wem</Path>
+				</File>
 				<File Id="221709254" Language="SFX">
 					<ShortName>3 Pas trop de mal à marcher\Pas trop de mal à marcher 2_Sparky-St.wav</ShortName>
 					<Path>SFX\3 Pas trop de mal à marcher\Pas trop de mal à marcher 2_Sparky-St_3F75BDB9.wem</Path>
@@ -715,6 +768,14 @@
 					<ShortName>33 Ton guide favori\Ton guide favori.wav</ShortName>
 					<Path>SFX\33 Ton guide favori\Ton guide favori_3F75BDB9.wem</Path>
 				</File>
+				<File Id="456228350" Language="SFX">
+					<ShortName>pas terre_marche2.wav</ShortName>
+					<Path>SFX\pas terre_marche2_3F75BDB9.wem</Path>
+				</File>
+				<File Id="465999486" Language="SFX">
+					<ShortName>pas herbe 1_marche2.wav</ShortName>
+					<Path>SFX\pas herbe 1_marche2_3F75BDB9.wem</Path>
+				</File>
 				<File Id="469266037" Language="SFX">
 					<ShortName>25 Peut être qu_il en reste\Peut qu_il en reste 2_Sparky-St.wav</ShortName>
 					<Path>SFX\25 Peut être qu_il en reste\Peut qu_il en reste 2_Sparky-St_3F75BDB9.wem</Path>
@@ -734,6 +795,10 @@
 				<File Id="503677445" Language="SFX">
 					<ShortName>STRESS Je me sens pas bien du tout\Je me sens pas bien du tout 1_Alyx-St.wav</ShortName>
 					<Path>SFX\STRESS Je me sens pas bien du tout\Je me sens pas bien du tout 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="507585069" Language="SFX">
+					<ShortName>pas bois 1_marche2.wav</ShortName>
+					<Path>SFX\pas bois 1_marche2_3F75BDB9.wem</Path>
 				</File>
 				<File Id="510809788" Language="SFX">
 					<ShortName>55 J_ai vraiment une impression bizarre\J_ai une impression bizarre 3_Alyx-St.wav</ShortName>
@@ -795,6 +860,10 @@
 					<ShortName>41 Tu le rencontrera\Tu le rencontrera_Sparky-St.wav</ShortName>
 					<Path>SFX\41 Tu le rencontrera\Tu le rencontrera_Sparky-St_3F75BDB9.wem</Path>
 				</File>
+				<File Id="581522027" Language="SFX">
+					<ShortName>soufflement du nez 2_Alyx-St.wav</ShortName>
+					<Path>SFX\soufflement du nez 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
 				<File Id="581624048" Language="SFX">
 					<ShortName>56 Je crois que si\Je crois que si 2_Alyx-St.wav</ShortName>
 					<Path>SFX\56 Je crois que si\Je crois que si 2_Alyx-St_3F75BDB9.wem</Path>
@@ -806,6 +875,14 @@
 				<File Id="592723706" Language="SFX">
 					<ShortName>7 Je fais quoi si elle s_éteint\Je fais quoi si elle s_éteint 2_Alyx-St.wav</ShortName>
 					<Path>SFX\7 Je fais quoi si elle s_éteint\Je fais quoi si elle s_éteint 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="598412214" Language="SFX">
+					<ShortName>pas terre_marche1.wav</ShortName>
+					<Path>SFX\pas terre_marche1_3F75BDB9.wem</Path>
+				</File>
+				<File Id="608025529" Language="SFX">
+					<ShortName>pas herbe 1_marche3.wav</ShortName>
+					<Path>SFX\pas herbe 1_marche3_3F75BDB9.wem</Path>
 				</File>
 				<File Id="610253720" Language="SFX">
 					<ShortName>18 Que fais tu\Que fais tu 1_Sparky-St.wav</ShortName>
@@ -983,6 +1060,10 @@
 					<ShortName>21 Bonne idée\Bonne idée 2_Sparky-St.wav</ShortName>
 					<Path>SFX\21 Bonne idée\Bonne idée 2_Sparky-St_3F75BDB9.wem</Path>
 				</File>
+				<File Id="902279032" Language="SFX">
+					<ShortName>soufflement du nez 1_Alyx-St.wav</ShortName>
+					<Path>SFX\soufflement du nez 1_Alyx-St_3F75BDB9.wem</Path>
+				</File>
 				<File Id="904083377" Language="SFX">
 					<ShortName>17 Tu as une idée\T_as une idée 1_Alyx-St.wav</ShortName>
 					<Path>SFX\17 Tu as une idée\T_as une idée 1_Alyx-St_3F75BDB9.wem</Path>
@@ -1011,6 +1092,10 @@
 					<ShortName>3 C_est la même voix que dans ma tête\C_est la même voix que dans mon rêve 2_Alyx-St.wav</ShortName>
 					<Path>SFX\3 C_est la même voix que dans ma tête\C_est la même voix que dans mon rêve 2_Alyx-St_3F75BDB9.wem</Path>
 				</File>
+				<File Id="939560047" Language="SFX">
+					<ShortName>pas herbe 1_marche1.wav</ShortName>
+					<Path>SFX\pas herbe 1_marche1_3F75BDB9.wem</Path>
+				</File>
 				<File Id="941206336" Language="SFX">
 					<ShortName>28 Fais un effort\Fais un effort 2_Sparky-St.wav</ShortName>
 					<Path>SFX\28 Fais un effort\Fais un effort 2_Sparky-St_3F75BDB9.wem</Path>
@@ -1018,6 +1103,10 @@
 				<File Id="954375665" Language="SFX">
 					<ShortName>59 Je suppose que tu vas continuer ta route\je suppose que tu vas continuer ta route.wav</ShortName>
 					<Path>SFX\59 Je suppose que tu vas continuer ta route\je suppose que tu vas continuer ta route_3F75BDB9.wem</Path>
+				</File>
+				<File Id="957828448" Language="SFX">
+					<ShortName>pas bois 1_marche1.wav</ShortName>
+					<Path>SFX\pas bois 1_marche1_3F75BDB9.wem</Path>
 				</File>
 				<File Id="959908028" Language="SFX">
 					<ShortName>54 Hein mais qu_est ce que tu raconte\Qu_est ce que tu ravontes 1_Sparky-St.wav</ShortName>
@@ -1082,7 +1171,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2530157555" Language="SFX" Hash="2716310059">
+		<SoundBank Id="2530157555" Language="SFX" Hash="2440755675">
 			<ObjectPath>\SoundBanks\Default Work Unit\Environnement</ObjectPath>
 			<ShortName>Environnement</ShortName>
 			<Path>Environnement.bnk</Path>
@@ -1280,7 +1369,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="2981377429" Language="SFX" Hash="4191337378">
+		<SoundBank Id="2981377429" Language="SFX" Hash="3369608266">
 			<ObjectPath>\SoundBanks\Default Work Unit\Ambiance</ObjectPath>
 			<ShortName>Ambiance</ShortName>
 			<Path>Ambiance.bnk</Path>

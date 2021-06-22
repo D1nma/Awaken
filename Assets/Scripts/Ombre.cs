@@ -62,6 +62,7 @@ public class Ombre : MonoBehaviour
     }
     IEnumerator Mort()
     {
+        AkSoundEngine.PostEvent("Frisson_Start", gameObject);
         yield return new WaitForSeconds(0.5f);
         float distance = Vector3.Distance(player.transform.position, transform.position);
         if (distance <= enemy.stoppingDistance && canHurt)
@@ -70,7 +71,7 @@ public class Ombre : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player)
+        if (player && GameManager.gameOver != true)
         {
             if (PlayersController.canControl == false || PlayersController.wakeUp == true)
             {

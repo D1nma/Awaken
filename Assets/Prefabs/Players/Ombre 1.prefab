@@ -293,6 +293,7 @@ GameObject:
   - component: {fileID: 1433874894}
   - component: {fileID: 1433874893}
   - component: {fileID: 1433874890}
+  - component: {fileID: 860400411078175924}
   m_Layer: 0
   m_Name: Ombre 1
   m_TagString: Untagged
@@ -387,6 +388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LifeTime: 1500
   idleOne: 1
+  canTouch: 0
   degat: 10
   MaxDist: 10
   MinDist: 5
@@ -396,6 +398,31 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &860400411078175924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2354738796409224672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92403641717ce534b99d6575a4c02315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5fd65d4e37ba48b41ba71a8fc30960f3,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &2421175590199851819
 GameObject:
   m_ObjectHideFlags: 0

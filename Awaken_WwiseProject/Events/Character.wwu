@@ -9,9 +9,39 @@
 			<ChildrenList>
 				<Folder Name="Alyx" ID="{0D0BE649-28E7-4E32-8742-1B4870014945}" ShortID="365228224">
 					<ChildrenList>
-						<Event Name="Jump" ID="{4B91C132-7AB6-452C-97F7-29604ED47D47}"/>
-						<Event Name="Walk" ID="{CD0EDF5F-102E-4F56-BBB5-D0A688D9139E}"/>
-						<Event Name="Lever" ID="{CBC2531B-2244-4AD2-8901-72B957D3BD07}"/>
+						<Event Name="Jump" ID="{4B91C132-7AB6-452C-97F7-29604ED47D47}">
+							<ChildrenList>
+								<Action Name="" ID="{D1DA4CAF-DFE9-44E8-8F7F-45E740316765}" ShortID="247596170">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Random_Soufflement" ID="{BC554D43-F93A-4949-A1CB-F39ACECB450E}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Walk" ID="{CD0EDF5F-102E-4F56-BBB5-D0A688D9139E}">
+							<ChildrenList>
+								<Action Name="" ID="{40296575-CA0C-467E-B22C-055FC801D746}" ShortID="229946002">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Walk_random_roche" ID="{D1FFE94B-2EFD-4FDD-8F6A-AE6B73815C2F}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Lever" ID="{CBC2531B-2244-4AD2-8901-72B957D3BD07}">
+							<ChildrenList>
+								<Action Name="" ID="{C976CD2B-404C-4BA9-96CF-A40ED6E368F6}" ShortID="529468208">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="frottement 2_vetement_fort" ID="{FD3029D9-3597-484B-A922-8D0EC7D20892}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="Dead" ID="{A98399DE-A052-43D3-8EF5-A44ED524981A}">
 							<ChildrenList>
 								<Action Name="" ID="{FBED0C7D-A563-4BC9-AB5A-35F8CC88481C}" ShortID="977061042">
@@ -479,6 +509,16 @@
 										</Event>
 									</ChildrenList>
 								</Folder>
+								<Event Name="StopAll" ID="{2D398CB0-A89B-4317-BDB3-FBCD618165F9}">
+									<ChildrenList>
+										<Action Name="" ID="{2C269382-4851-4226-8743-6440BE6F7E2B}" ShortID="66321059">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList/>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

@@ -13,6 +13,7 @@ public class Warning : MonoBehaviour
     public static bool StartFog;
     private float time = 0;
     private bool show = false;
+    bool doOnce;
 
     void Start()
     {
@@ -90,19 +91,28 @@ public class Warning : MonoBehaviour
             }
             time = 0;
         }
+        if (!show)
+        {
+            warningText.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
-        {           
+        {
+            if (!doOnce)
+            {
+                AkSoundEngine.PostEvent("Brume_Start", gameObject);
+                doOnce = true;
+            }
             StartFog = true;
             show = true;
         }
         if (other.tag != "Player") { return; }
 
     }
-    /*private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
         {
@@ -110,6 +120,6 @@ public class Warning : MonoBehaviour
             show = false;
         }
         if (other.tag != "Player") { return; }
-    }*/
+    }
 
 }

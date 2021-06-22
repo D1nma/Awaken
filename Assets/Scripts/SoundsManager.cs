@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class SoundsManager : MonoBehaviour
 {
-    public static SoundsManager instance;
+    //public static SoundsManager instance;
     private bool runOnce=false;
 
     /*[SerializeField] public AudioMixer mixer;
@@ -18,14 +18,14 @@ public class SoundsManager : MonoBehaviour
 
     void Awake()
     {
-        if(instance != null)
+        /*if(instance != null)
         {
             Destroy(gameObject);
         }
         else
         {
             instance = this;
-        }
+        }*/
 
         /*foreach (Sound s in sounds) //Sans utiliser Wwise
         {

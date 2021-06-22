@@ -148,6 +148,7 @@ public class GameManager : MonoBehaviour
         {
             //Debug.Log("Game Over");
             PlayersController.canControl = false;
+            AkSoundEngine.PostEvent("StopAll", gameObject);
             EndGame();
         }
     }

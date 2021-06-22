@@ -15,7 +15,7 @@ public class item : MonoBehaviour
     float time;
     public static bool StartTime; //une aide si le joueur trouve pas au bout de 5mins
     public GameObject InteragirText;
-    private bool dispo;
+    private bool dispo,doOnce;
 
 
         void Start()
@@ -123,6 +123,12 @@ public class item : MonoBehaviour
                 {
                     if (!invent.ApresRocher)
                     {
+                        if (!doOnce)
+                        {
+                            AkSoundEngine.PostEvent("CanneFound", gameObject);
+                            doOnce = true;
+                        }
+                        
                         invent.DialoguePeche.SetActive(true);
                         InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur E pour intéragir (" + this.gameObject.name + ")";
                         InteragirText.SetActive(true);

@@ -119,6 +119,10 @@ public class PlayersController : MonoBehaviour
 
             }
         }
+        if (GameManager.gameOver == true)
+        {
+            animator.SetBool("Dead", true);
+        }
         if (SUPERUSER)
         {
             if (lampeHuile)
@@ -245,6 +249,17 @@ public class PlayersController : MonoBehaviour
             }
 
         }
+        if (accroupir)
+        {
+            if (h == 0 && v == 0 || direction.magnitude < 0.1f)
+            {
+                animator.SetFloat("SpeedMultiplier", 0f);
+            }
+            else if (direction.magnitude >= 0.1f)
+            {
+                animator.SetFloat("SpeedMultiplier", 1f);
+            }
+        }
         if (Input.GetButtonDown("Jump"))
         {
 
@@ -273,6 +288,7 @@ public class PlayersController : MonoBehaviour
             if (isGrounded && canControl && !grimper && !wakeUp && !accroupir && !cacher)
             {
                 animator.SetTrigger("jump");
+                AkSoundEngine.PostEvent("Jump", gameObject);
                 velocity.y = Mathf.Sqrt(jumpSpeed * -2f * gravity);
             }
             /*else if (isGrounded && canControl && grimper && !wakeUp && !accroupir && !cacher)
@@ -389,6 +405,7 @@ public class PlayersController : MonoBehaviour
     private IEnumerator AnimatorSetWakeUp(float animationLength)
     {
         animator.SetBool("WakeUp", true);
+        AkSoundEngine.PostEvent("Lever", gameObject);
         cc.Move(velocity * Time.deltaTime);
         yield return new WaitForSeconds(animationLenghtWakeUp);
         animator.SetBool("WakeUp", false);

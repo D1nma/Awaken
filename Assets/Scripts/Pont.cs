@@ -93,12 +93,14 @@ public class Pont : MonoBehaviour
             if (invent.Keyvolee == false)
             {
                 DialoguePont.SetActive(true);
+                AkSoundEngine.PostEvent("Apres_Pont", gameObject);
                 PlayersController.canControl = false;
                 cc.enabled = false;
                 pass = true;
             }
             else
             {
+                AkSoundEngine.PostEvent("Apres_Pont", gameObject);
                 DialoguePont.SetActive(true);
             }
         }

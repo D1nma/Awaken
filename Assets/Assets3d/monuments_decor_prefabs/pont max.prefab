@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &62011036
 Transform:
@@ -70,13 +70,14 @@ GameObject:
   - component: {fileID: 196099978}
   - component: {fileID: 196099977}
   - component: {fileID: 196099976}
+  - component: {fileID: 5610696192998604742}
   m_Layer: 0
   m_Name: DialoguePont
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &196099975
 Transform:
   m_ObjectHideFlags: 0
@@ -112,11 +113,13 @@ MonoBehaviour:
       next: 0
     isQuestion: 0
   question: {fileID: 0}
+  son: 5
   InteragirText: {fileID: 0}
   Interagir: 0
   Avertissement: 0
   canMove: 0
   NotDestroy: 1
+  sonOn: 0
 --- !u!65 &196099977
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -146,6 +149,31 @@ MonoBehaviour:
   invent: {fileID: 0}
   DialoguePont: {fileID: 196099974}
   pass: 0
+--- !u!114 &5610696192998604742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196099974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92403641717ce534b99d6575a4c02315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5fd65d4e37ba48b41ba71a8fc30960f3,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &975386264
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,13 +185,12 @@ GameObject:
   - component: {fileID: 975386265}
   - component: {fileID: 975386266}
   - component: {fileID: 975386267}
-  - component: {fileID: 3139650873193260138}
   m_Layer: 0
   m_Name: DialoguePont
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &975386265
 Transform:
@@ -197,18 +224,23 @@ MonoBehaviour:
     sentences:
     - sentences: "Le pont est bloqu\xE9..."
       next: 0
-    - sentences: "D\xE9cid\xE9ment, cet endroit ne nous facilite pas la t\xE2che.
-        Bon, heureusement que ce tronc n\u2019est pas si \xE9norme, tu peux au moins
-        grimper par dessus. Il te suffit de sauter et de t\u2019agripper \xE0 l\u2019\xE9corce,
+    - sentences: "D\xE9cid\xE9ment, cet endroit ne nous facilite pas la t\xE2che. "
+      next: 1
+    - sentences: "Bon, heureusement que ce tronc n\u2019est pas si \xE9norme, tu
+        peux au moins grimper par dessus."
+      next: 1
+    - sentences: "Il te suffit de sauter et de t\u2019agripper \xE0 l\u2019\xE9corce,
         enfin, je ne t\u2019apprends rien, si ?"
       next: 1
     isQuestion: 0
   question: {fileID: 0}
+  son: 0
   InteragirText: {fileID: 0}
   Interagir: 0
-  Avertissement: 0
+  Avertissement: 1
   canMove: 0
   NotDestroy: 0
+  sonOn: 0
 --- !u!65 &975386267
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -222,19 +254,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 16.35, y: 4.39, z: 8.21}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3139650873193260138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975386264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fac3863765f8a349903895a61d8feb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obstacle: {fileID: 0}
 --- !u!1 &1352320212
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,6 +600,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8012700084206555847}
     m_Modifications:
+    - target: {fileID: -8944853443671704271, guid: e779147ab8145a54cbbf0ed0dad816ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -8860573731387719125, guid: e779147ab8145a54cbbf0ed0dad816ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e779147ab8145a54cbbf0ed0dad816ac,
         type: 3}
       propertyPath: m_RootOrder
@@ -681,6 +710,21 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a3a7dbb6bf81ac241be7f1c6b528f30a, type: 2}
+    - target: {fileID: 4975695555984854431, guid: e779147ab8145a54cbbf0ed0dad816ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4975695555984854431, guid: e779147ab8145a54cbbf0ed0dad816ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637945233233281203, guid: e779147ab8145a54cbbf0ed0dad816ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e779147ab8145a54cbbf0ed0dad816ac, type: 3}
 --- !u!4 &2775035994487554521 stripped
