@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="436743010" Language="SFX" Hash="2843135722">
+		<SoundBank Id="436743010" Language="SFX" Hash="3435544109">
 			<ObjectPath>\SoundBanks\Default Work Unit\Character</ObjectPath>
 			<ShortName>Character</ShortName>
 			<Path>Character.bnk</Path>
@@ -490,7 +490,18 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="4280372378" Name="Frisson_Stop" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Frisson_Stop"/>
-				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Character\Alyx\Jump"/>
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Character\Alyx\Jump">
+					<IncludedMemoryFiles>
+						<File Id="581522027" Language="SFX">
+							<ShortName>soufflement du nez 2_Alyx-St.wav</ShortName>
+							<Path>SFX\soufflement du nez 2_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="902279032" Language="SFX">
+							<ShortName>soufflement du nez 1_Alyx-St.wav</ShortName>
+							<Path>SFX\soufflement du nez 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2782712987" Name="Lever" ObjectPath="\Events\Default Work Unit\Character\Alyx\Lever">
 					<IncludedMemoryFiles>
 						<File Id="733638265" Language="SFX">
@@ -509,7 +520,18 @@
 				</Event>
 				<Event Id="2982867032" Name="Perplexe_End" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Perplexe_End"/>
 				<Event Id="3164078595" Name="Perplexe_Start" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Perplexe_Start"/>
-				<Event Id="772918084" Name="Soufflement_Start" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Soufflement_Start"/>
+				<Event Id="772918084" Name="Soufflement_Start" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Soufflement_Start">
+					<IncludedMemoryFiles>
+						<File Id="581522027" Language="SFX">
+							<ShortName>soufflement du nez 2_Alyx-St.wav</ShortName>
+							<Path>SFX\soufflement du nez 2_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+						<File Id="902279032" Language="SFX">
+							<ShortName>soufflement du nez 1_Alyx-St.wav</ShortName>
+							<Path>SFX\soufflement du nez 1_Alyx-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1644087800" Name="Soufflement_Stop" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Onomatope\Soufflement_Stop"/>
 				<Event Id="3086540886" Name="StopAll" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\StopAll"/>
 				<Event Id="1950348611" Name="Stress60" ObjectPath="\Events\Default Work Unit\Character\Alyx\Voix\Dialogues\Stress60">
@@ -838,6 +860,10 @@
 					<ShortName>41 Tu le rencontrera\Tu le rencontrera_Sparky-St.wav</ShortName>
 					<Path>SFX\41 Tu le rencontrera\Tu le rencontrera_Sparky-St_3F75BDB9.wem</Path>
 				</File>
+				<File Id="581522027" Language="SFX">
+					<ShortName>soufflement du nez 2_Alyx-St.wav</ShortName>
+					<Path>SFX\soufflement du nez 2_Alyx-St_3F75BDB9.wem</Path>
+				</File>
 				<File Id="581624048" Language="SFX">
 					<ShortName>56 Je crois que si\Je crois que si 2_Alyx-St.wav</ShortName>
 					<Path>SFX\56 Je crois que si\Je crois que si 2_Alyx-St_3F75BDB9.wem</Path>
@@ -1033,6 +1059,10 @@
 				<File Id="890200324" Language="SFX">
 					<ShortName>21 Bonne idée\Bonne idée 2_Sparky-St.wav</ShortName>
 					<Path>SFX\21 Bonne idée\Bonne idée 2_Sparky-St_3F75BDB9.wem</Path>
+				</File>
+				<File Id="902279032" Language="SFX">
+					<ShortName>soufflement du nez 1_Alyx-St.wav</ShortName>
+					<Path>SFX\soufflement du nez 1_Alyx-St_3F75BDB9.wem</Path>
 				</File>
 				<File Id="904083377" Language="SFX">
 					<ShortName>17 Tu as une idée\T_as une idée 1_Alyx-St.wav</ShortName>
@@ -1339,7 +1369,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="2981377429" Language="SFX" Hash="4191337378">
+		<SoundBank Id="2981377429" Language="SFX" Hash="3369608266">
 			<ObjectPath>\SoundBanks\Default Work Unit\Ambiance</ObjectPath>
 			<ShortName>Ambiance</ShortName>
 			<Path>Ambiance.bnk</Path>

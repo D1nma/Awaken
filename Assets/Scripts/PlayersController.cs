@@ -288,6 +288,7 @@ public class PlayersController : MonoBehaviour
             if (isGrounded && canControl && !grimper && !wakeUp && !accroupir && !cacher)
             {
                 animator.SetTrigger("jump");
+                AkSoundEngine.PostEvent("Jump", gameObject);
                 velocity.y = Mathf.Sqrt(jumpSpeed * -2f * gravity);
             }
             /*else if (isGrounded && canControl && grimper && !wakeUp && !accroupir && !cacher)
@@ -404,6 +405,7 @@ public class PlayersController : MonoBehaviour
     private IEnumerator AnimatorSetWakeUp(float animationLength)
     {
         animator.SetBool("WakeUp", true);
+        AkSoundEngine.PostEvent("Lever", gameObject);
         cc.Move(velocity * Time.deltaTime);
         yield return new WaitForSeconds(animationLenghtWakeUp);
         animator.SetBool("WakeUp", false);

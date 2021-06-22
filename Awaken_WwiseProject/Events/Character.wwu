@@ -9,7 +9,17 @@
 			<ChildrenList>
 				<Folder Name="Alyx" ID="{0D0BE649-28E7-4E32-8742-1B4870014945}" ShortID="365228224">
 					<ChildrenList>
-						<Event Name="Jump" ID="{4B91C132-7AB6-452C-97F7-29604ED47D47}"/>
+						<Event Name="Jump" ID="{4B91C132-7AB6-452C-97F7-29604ED47D47}">
+							<ChildrenList>
+								<Action Name="" ID="{D1DA4CAF-DFE9-44E8-8F7F-45E740316765}" ShortID="247596170">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Random_Soufflement" ID="{BC554D43-F93A-4949-A1CB-F39ACECB450E}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="Walk" ID="{CD0EDF5F-102E-4F56-BBB5-D0A688D9139E}">
 							<ChildrenList>
 								<Action Name="" ID="{71B2A454-DDDD-4B66-ACA3-AEDD85368958}" ShortID="196771421">

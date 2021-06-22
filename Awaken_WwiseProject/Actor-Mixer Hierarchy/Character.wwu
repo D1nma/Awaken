@@ -5925,13 +5925,6 @@
 									</ChildrenList>
 								</Folder>
 								<Folder Name="Soufflement du nez" ID="{CCCAF4FA-950D-4E37-B10A-CD3977C8DCF6}" ShortID="561000910">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ChildrenList>
 										<RandomSequenceContainer Name="Random_Soufflement" ID="{BC554D43-F93A-4949-A1CB-F39ACECB450E}" ShortID="227913062">
 											<PropertyList>
@@ -6009,6 +6002,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="soufflement du nez 5_Alyx-St" ID="{271F5AA1-1585-4443-BA50-204F117B0209}" ShortID="670388392">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
@@ -6062,6 +6062,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="soufflement du nez 3_Alyx-St" ID="{C74927F9-A7F2-4101-8E62-67C3548E68CB}" ShortID="680323256">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
