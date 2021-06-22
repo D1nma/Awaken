@@ -139,7 +139,8 @@ public class UIManager : MonoBehaviour
     IEnumerator LoadAsynchronously(int sceneIndex)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
-        transition.SetTrigger("Start");
+        transition.SetBool("Start", true);
+        transition.SetBool("End", false);
         LoadingScreen.SetActive(true);
 
         while (!operation.isDone)
@@ -152,13 +153,15 @@ public class UIManager : MonoBehaviour
         if (operation.isDone)
         {
             LoadingScreen.SetActive(false);
-            transition.SetTrigger("End");
+            transition.SetBool("Start", false);
+            transition.SetBool("End", true);
         }
     }
     IEnumerator LoadScene(int sceneIndex)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
-        transition.SetTrigger("Start");
+        transition.SetBool("Start", true);
+        transition.SetBool("End", false);
         LoadingScreen.SetActive(true);
 
         while (!operation.isDone)
@@ -171,13 +174,15 @@ public class UIManager : MonoBehaviour
         if (operation.isDone)
         {
             LoadingScreen.SetActive(false);
-            transition.SetTrigger("End");
+            transition.SetBool("Start", false);
+            transition.SetBool("End", true);
         }
     }
     IEnumerator LoadAsynchronouslyAdditive(int sceneIndex) //load scene + recup la progress + transition
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex,LoadSceneMode.Additive);
-        transition.SetTrigger("Start");
+        transition.SetBool("Start", true);
+        transition.SetBool("End", false);
         LoadingScreen.SetActive(true);
 
         while (!operation.isDone)
@@ -190,7 +195,8 @@ public class UIManager : MonoBehaviour
         if (operation.isDone)
         {
             LoadingScreen.SetActive(false);
-            transition.SetTrigger("End");
+            transition.SetBool("Start", false);
+            transition.SetBool("End", true);
         }
     }
 
@@ -265,13 +271,20 @@ public class UIManager : MonoBehaviour
 
     public void Fin()
     {
+        transition.SetBool("Start",true);
+        transition.SetBool("End", false);
+        StartCoroutine(FinAnimation(0.2f));
+        AkSoundEngine.PostEvent("Lvl1_Stop", gameObject);
+        AkSoundEngine.PostEvent("Wind_loop_stop", gameObject);
+        AkSoundEngine.PostEvent("Birds_Stop", gameObject);
+    }
+    private IEnumerator FinAnimation(float Length)
+    {
+        yield return new WaitForSeconds(Length);
         if (fin != null)
             fin.SetActive(true);
         Cursor.visible = true;
         Time.timeScale = 0f;
-        AkSoundEngine.PostEvent("Lvl1_Stop", gameObject);
-        AkSoundEngine.PostEvent("Wind_loop_stop", gameObject);
-        AkSoundEngine.PostEvent("Birds_Stop", gameObject);
     }
 
     public void CloseOption()
