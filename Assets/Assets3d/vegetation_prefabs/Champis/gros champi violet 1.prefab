@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3714712422645157354}
   - component: {fileID: 6442932436532758575}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3714712422645157354
 Transform:
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4388756159358583016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.02, y: 0.6, z: 0.13}
+  m_LocalPosition: {x: -0.099, y: 1.715, z: 0.353}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3956435763327784981}
@@ -43,7 +43,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.41568628, g: 0.35686275, b: 0.7490196, a: 1}
-  m_Intensity: 50
+  m_Intensity: 30
   m_Range: 30
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -88,7 +88,7 @@ Light:
   m_BounceIntensity: 30
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: -5.7635612, z: 4.5904e-41, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 6e-45, z: 0, w: 3.2e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -105,12 +105,12 @@ GameObject:
   - component: {fileID: 92269676306028464}
   - component: {fileID: 2784132224982852474}
   - component: {fileID: 822096741314992725}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: gros champi violet 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3956435763327784981
 Transform:
@@ -121,7 +121,7 @@ Transform:
   m_GameObject: {fileID: 4441611299675013807}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 526.37, y: 177.69748, z: 24.98}
-  m_LocalScale: {x: 1.9296405, y: 1.9296405, z: 1.9296405}
+  m_LocalScale: {x: 1.9296407, y: 1.9296405, z: 1.9296405}
   m_Children:
   - {fileID: 3714712422645157354}
   m_Father: {fileID: 0}
