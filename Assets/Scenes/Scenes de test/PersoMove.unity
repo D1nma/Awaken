@@ -7298,6 +7298,7 @@ MonoBehaviour:
   Avertissement: 1
   canMove: 1
   NotDestroy: 0
+  sonOn: 0
 --- !u!135 &2061073188
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -84920,6 +84921,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TriggerDialogueStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 7588630983167273166, guid: acabe567a2e0bee428ab71ed7a805479,
+        type: 3}
+      propertyPath: sonOn
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7588630983167273166, guid: acabe567a2e0bee428ab71ed7a805479,
         type: 3}

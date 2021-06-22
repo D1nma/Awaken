@@ -12,6 +12,7 @@ public class DialogueTrigger : MonoBehaviour
     public GameObject InteragirText;
     public bool Interagir,Avertissement,canMove,NotDestroy;
     private bool start;
+    public bool sonOn;
 
 
     public void TriggerDialogue()
@@ -27,6 +28,7 @@ public class DialogueTrigger : MonoBehaviour
         if (dialogue.isQuestion == false)
         {
             //Debug.Log("Dialogue simple");
+            FindObjectOfType<DialogueManager>().sonOn = sonOn;
             FindObjectOfType<DialogueManager>().son = son;
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             
@@ -34,6 +36,7 @@ public class DialogueTrigger : MonoBehaviour
         if (dialogue.isQuestion == true)
         {
             //Debug.Log("Y'a une question");
+            FindObjectOfType<DialogueManager>().sonOn = sonOn;
             FindObjectOfType<DialogueManager>().son = son;
             FindObjectOfType<DialogueManager>().StartQuestion(dialogue, question);
             
