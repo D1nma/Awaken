@@ -449,7 +449,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Character
     guid: d1b726b7b62bbc4d87a56d25ac596348
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585772961214895069
+=======
+    m_lastTime: -8585772397513415313
+>>>>>>> Stashed changes
     List:
     - name: Alyx
       guid: 49e60b0de728324e87421b4870014945
@@ -1723,6 +1727,32 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: StopAll
+      guid: b08c392d9ba81743bdb3fbcd618165f9
+      id: 3086540886
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Voix
+        ObjectType: 4
+        guid: 7a16541b59243146b679b5f5d99485e5
+      - ElementName: StopAll
+        ObjectType: 3
+        guid: b08c392d9ba81743bdb3fbcd618165f9
+      Path: Events\Default Work Unit\Character\Alyx\Voix\StopAll
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stress60
       guid: 6b80a0c74d8bfe4dab9a66725e053421
       id: 1950348611
@@ -2332,7 +2362,7 @@ MonoBehaviour:
     m_lastTime: -8585772961148749747
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000080000000d0000000e0000000f0000002500000026000000290000002e0000002f000000330000004000000043000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000d0000000e0000000f0000002500000026000000290000002e0000002f0000003300000040000000430000008379110084791100
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -119,6 +119,10 @@ public class PlayersController : MonoBehaviour
 
             }
         }
+        if (GameManager.gameOver == true)
+        {
+            animator.SetBool("Dead", true);
+        }
         if (SUPERUSER)
         {
             if (lampeHuile)
@@ -244,6 +248,17 @@ public class PlayersController : MonoBehaviour
                 stb.StopStamina();
             }
 
+        }
+        if (accroupir)
+        {
+            if (h == 0 && v == 0 || direction.magnitude < 0.1f)
+            {
+                animator.SetFloat("SpeedMultiplier", 0f);
+            }
+            else if (direction.magnitude >= 0.1f)
+            {
+                animator.SetFloat("SpeedMultiplier", 1f);
+            }
         }
         if (Input.GetButtonDown("Jump"))
         {

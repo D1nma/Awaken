@@ -293,6 +293,7 @@ GameObject:
   - component: {fileID: 1433874894}
   - component: {fileID: 1433874893}
   - component: {fileID: 1433874890}
+  - component: {fileID: 5048095338136576364}
   m_Layer: 0
   m_Name: Ombre
   m_TagString: Untagged
@@ -365,7 +366,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 2
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -387,12 +388,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LifeTime: 1500
   idleOne: 0
+  canTouch: 0
   degat: 10
   MaxDist: 10
   MinDist: 5
   lookRadius: 10
   offsetRay: 1
   pathPoints: []
+--- !u!114 &5048095338136576364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2354738796409224672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92403641717ce534b99d6575a4c02315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5fd65d4e37ba48b41ba71a8fc30960f3,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &2421175590199851819
 GameObject:
   m_ObjectHideFlags: 0

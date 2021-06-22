@@ -303,6 +303,7 @@ MonoBehaviour:
   Avertissement: 0
   canMove: 1
   NotDestroy: 0
+  sonOn: 0
 --- !u!65 &249703860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2645,6 +2646,7 @@ MonoBehaviour:
   Avertissement: 0
   canMove: 1
   NotDestroy: 0
+  sonOn: 0
 --- !u!65 &5797224486660651588
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4443,21 +4445,23 @@ MonoBehaviour:
   footstep:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: fbc6e23c801066d4cbc97710445c23da,
+    WwiseObjectReference: {fileID: 11400000, guid: 9b3529d7cd395bc4994fcc8081f5772b,
       type: 2}
   jump:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 825d996bede3f4c489d7ff5627bbe36b,
+    WwiseObjectReference: {fileID: 11400000, guid: 751abe3049f8aac448078a9295232f8f,
       type: 2}
   lever:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: ec8ef00e041c3344c9a8638dd76b6559,
+      type: 2}
   dead:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: db8e9488b4701cf4a9ccd40d00b9cc14,
+      type: 2}
 --- !u!114 &-5642911044418533377
 MonoBehaviour:
   m_ObjectHideFlags: 0
