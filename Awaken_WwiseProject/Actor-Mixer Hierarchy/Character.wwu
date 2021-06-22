@@ -3987,6 +3987,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<RandomSequenceContainer Name="Walk_random_roche" ID="{D1FFE94B-2EFD-4FDD-8F6A-AE6B73815C2F}" ShortID="639011936">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
@@ -4069,6 +4072,9 @@
 											<ObjectLists/>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Walk_random_herbe" ID="{3C0CE951-8EE3-4C9A-8B37-BFF404391392}" ShortID="453601661">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
@@ -4151,6 +4157,9 @@
 											<ObjectLists/>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Walk_random_terrain" ID="{BA4A7ED2-308C-47EA-A290-7704F4BFCAAC}" ShortID="267290779">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
@@ -4233,6 +4242,9 @@
 											<ObjectLists/>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Walk_random_bois" ID="{3FD2B4FC-9708-4102-B781-D5B4303AD6C0}" ShortID="626616268">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
@@ -4336,6 +4348,11 @@
 									<ChildrenList>
 										<Sound Name="frottement 2_vetement_fort" ID="{FD3029D9-3597-484B-A922-8D0EC7D20892}" ShortID="567983545">
 											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
 												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
@@ -5928,7 +5945,6 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Random_Soufflement" ID="{BC554D43-F93A-4949-A1CB-F39ACECB450E}" ShortID="227913062">
 											<PropertyList>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
 														<Value>1</Value>

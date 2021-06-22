@@ -160,6 +160,7 @@ public class PlayerStress : MonoBehaviour
                 }
                 if (currentStress >= 80 && !dialogue)
                 {
+                    AkSoundEngine.PostEvent("Stress80", gameObject);
                     DialogueStress.SetActive(true);
                     dialogue = true;
                 }
@@ -170,6 +171,7 @@ public class PlayerStress : MonoBehaviour
                 }
                 else if(currentStress > 60 && currentStress < 80 && !dialogue2)
                 {
+                    AkSoundEngine.PostEvent("Stress60", gameObject);
                     DialogueLampeEteint.SetActive(true);
                     dialogue2 = true;
                 }
