@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3027477154332223332
+--- !u!1 &3973796934433691539
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,50 +8,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3938217669088058304}
-  - component: {fileID: 2102505943813217488}
-  - component: {fileID: 1947520866216333803}
-  - component: {fileID: 4499113319340773496}
-  - component: {fileID: 3421735547811564887}
-  - component: {fileID: 4328345612720312908}
+  - component: {fileID: 4354439800032628009}
+  - component: {fileID: 847178623227757196}
+  - component: {fileID: 3181018194862896710}
+  - component: {fileID: 371256564691455990}
+  - component: {fileID: 3913430197818441946}
+  - component: {fileID: -226817014779148615}
   m_Layer: 0
   m_Name: "Cl\xE9"
-  m_TagString: Untagged
+  m_TagString: Invisible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!4 &3938217669088058304
+--- !u!4 &4354439800032628009
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3027477154332223332}
-  m_LocalRotation: {x: 0.3075574, y: 0.4117596, z: 0.51334524, w: 0.6872694}
-  m_LocalPosition: {x: -0.077, y: 0.12, z: -0.042}
+  m_GameObject: {fileID: 3973796934433691539}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.7334702, y: 0.060884103, z: -8.517443}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1977285769538144574}
-  - {fileID: 390266445336115302}
+  - {fileID: 6348679547595215266}
+  - {fileID: 6348679547399926483}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -107.519, z: 73.515}
---- !u!33 &2102505943813217488
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &847178623227757196
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3027477154332223332}
-  m_Mesh: {fileID: 9186633843763367028, guid: 3a53e19fe2786a343a2c93df365f0be3, type: 3}
---- !u!23 &1947520866216333803
+  m_GameObject: {fileID: 3973796934433691539}
+  m_Mesh: {fileID: -8610475810017216105, guid: a4e7f2e06697724468c739f4688d6474, type: 3}
+--- !u!23 &3181018194862896710
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3027477154332223332}
+  m_GameObject: {fileID: 3973796934433691539}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -65,7 +65,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8ea13cf753016e745b3feff931f0cd24, type: 2}
+  - {fileID: 2100000, guid: 068944184c7935247a98b96d650b582c, type: 2}
+  - {fileID: 2100000, guid: 3ea5092680dd92f4d96bf35f8508c48d, type: 2}
+  - {fileID: 2100000, guid: 0d755c87a12c61e4f82fcdcedfcf37c1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -87,58 +89,58 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4499113319340773496
+--- !u!114 &371256564691455990
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3027477154332223332}
+  m_GameObject: {fileID: 3973796934433691539}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 903eef1310d59984a9056960a1f8fec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectType: 0
+  objectType: 1
   invent: {fileID: 0}
-  "DialogueCl\xE9": {fileID: 5829402862793377691}
-  DialogueTrigger: {fileID: 4283697706308483666}
+  "DialogueCl\xE9": {fileID: 6348679547399926492}
+  DialogueTrigger: {fileID: 6348679547595215277}
   DialogueAppat1: {fileID: 0}
   DialogueAide: {fileID: 0}
   InteragirText: {fileID: 0}
---- !u!135 &3421735547811564887
+--- !u!135 &3913430197818441946
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3027477154332223332}
+  m_GameObject: {fileID: 3973796934433691539}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.79
-  m_Center: {x: 0.0006142, y: 0, z: -5.458854}
---- !u!205 &4328345612720312908
+  m_Radius: 0.58
+  m_Center: {x: 0.0006147139, y: 0, z: -0.00005458854}
+--- !u!205 &-226817014779148615
 LODGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3027477154332223332}
+  m_GameObject: {fileID: 3973796934433691539}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.001574453, y: -0.0006635785, z: -0.00362885}
-  m_Size: 0.3440782
+  m_LocalReferencePoint: {x: 0.00086060166, y: 0, z: -0.00007642433}
+  m_Size: 0.27547437
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.043321334
+  - screenRelativeHeight: 0.030097235
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 1947520866216333803}
+    - renderer: {fileID: 3181018194862896710}
   m_Enabled: 1
---- !u!1 &4283697706308483666
+--- !u!1 &6348679547399926492
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,82 +148,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1977285769538144574}
-  - component: {fileID: 4980071103783110675}
-  - component: {fileID: 1663926209940785079}
-  m_Layer: 0
-  m_Name: "DialogueCl\xE9"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1977285769538144574
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4283697706308483666}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3938217669088058304}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4980071103783110675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4283697706308483666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 808de7eb2c5d75444812d659d03030e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: "Voie myst\xE9rieuse..."
-    name2: 
-    sentences:
-    - sentences: "Oui, c'est bien cette cl\xE9! Prends la et va ouvrir le portail
-        pour me rejoin... euh ?"
-      next: 0
-    isQuestion: 0
-  question: {fileID: 0}
-  son: 7
-  InteragirText: {fileID: 0}
-  Interagir: 0
-  Avertissement: 1
-  canMove: 0
-  NotDestroy: 0
-  sonOn: 1
---- !u!135 &1663926209940785079
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4283697706308483666}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.92
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &5829402862793377691
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 390266445336115302}
-  - component: {fileID: 5412201066613066710}
-  - component: {fileID: 4415690932745547780}
+  - component: {fileID: 6348679547399926483}
+  - component: {fileID: 6348679547399926482}
+  - component: {fileID: 6348679547399926493}
   m_Layer: 0
   m_Name: "DialogueCl\xE9 (1)"
   m_TagString: Untagged
@@ -229,27 +158,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &390266445336115302
+--- !u!4 &6348679547399926483
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5829402862793377691}
+  m_GameObject: {fileID: 6348679547399926492}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 3938217669088058304}
+  m_Father: {fileID: 4354439800032628009}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5412201066613066710
+--- !u!114 &6348679547399926482
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5829402862793377691}
+  m_GameObject: {fileID: 6348679547399926492}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 808de7eb2c5d75444812d659d03030e7, type: 3}
@@ -257,47 +186,114 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Alyx
-    name2: "Voie myst\xE9rieuse..."
+    name2: "Voie myst\xE9rieuse.."
     sentences:
     - sentences: "Oh non! La cl\xE9!"
       next: 0
-    - sentences: "Ah! Ce satan\xE9 Piaf! On \xE9tait si pr\xE8s du but..."
+    - sentences: "Ah! Ce satan\xE9 piaf! On \xE9tait si pr\xE8s du but\u2026 Bon
+        visiblement on a pas trop le choix\u2026 Dis-moi, tu sais grimper aux arbres
+        ?"
       next: 1
-    - sentences: Bon visiblement on a pas trop le choix... Dis-moi, tu sais grimper
-        aux arbres ?
-      next: 1
-    - sentences: "Je ne pourrais jamais monter aussi haut, je ne suis pas un singe\u2026\r"
+    - sentences: "Je ne pourrais jamais monter aussi haut, je ne suis pas un singe\u2026"
       next: 0
     - sentences: "En effet, c\u2019est probl\xE9matique. Si on ne peut pas grimper,
-        alors il faut obliger ce piaf \xE0 l\xE2cher la cl\xE9.\r"
+        alors il faut obliger ce piaf \xE0 l\xE2cher la cl\xE9."
       next: 1
-    - sentences: "Tu as une id\xE9e ?\r"
+    - sentences: "Tu as une id\xE9e ?"
       next: 0
-    - sentences: "Hum\u2026 pas vraiment.\r"
+    - sentences: "Hum\u2026 pas vraiment. Bah, on pourrait peut-\xEAtre chercher
+        s\u2019il n\u2019y a pas un endroit o\xF9 le nid serait plus facile d\u2019acc\xE8s,
+        pour commencer."
       next: 1
-    - sentences: "Bah, on pourrait peut-\xEAtre chercher s\u2019il n\u2019y a pas
-        un endroit o\xF9 le nid serait plus facile d\u2019acc\xE8s, pour commencer.\r"
-      next: 1
-    - sentences: "Tant que je ne dois pas grimper \xE0 cet arbre...\r"
+    - sentences: "Tant que je ne dois pas grimper \xE0 cet arbre..."
       next: 0
     isQuestion: 0
   question: {fileID: 0}
-  son: 7
   InteragirText: {fileID: 0}
   Interagir: 0
   Avertissement: 1
   canMove: 1
   NotDestroy: 0
-  sonOn: 0
---- !u!135 &4415690932745547780
+--- !u!135 &6348679547399926493
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5829402862793377691}
+  m_GameObject: {fileID: 6348679547399926492}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.92
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &6348679547595215277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6348679547595215266}
+  - component: {fileID: 6348679547595215264}
+  - component: {fileID: 6348679547595215267}
+  m_Layer: 0
+  m_Name: "DialogueCl\xE9"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6348679547595215266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6348679547595215277}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4354439800032628009}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6348679547595215264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6348679547595215277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 808de7eb2c5d75444812d659d03030e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: PNJ
+    name2: 
+    sentences:
+    - sentences: "Oui, c\u2019est bien cette cl\xE9! Prends la et va ouvrir le portail
+        pour me rejoin\u2026 euh ?"
+      next: 0
+    isQuestion: 0
+  question: {fileID: 0}
+  InteragirText: {fileID: 0}
+  Interagir: 0
+  Avertissement: 1
+  canMove: 0
+  NotDestroy: 0
+--- !u!135 &6348679547595215267
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6348679547595215277}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1.92
