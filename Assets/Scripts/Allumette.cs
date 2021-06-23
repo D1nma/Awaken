@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Allumette : MonoBehaviour
 {
     public GameObject InteragirText;
+    GameManager gm;
     public GameObject DialogueAllumette;
     private bool dispo;
     // Start is called before the first frame update
@@ -18,6 +19,14 @@ public class Allumette : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!gm)
+        {
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        }
+        else if (!InteragirText)
+        {
+            InteragirText = gm.InteragirText;
+        }
         if (Input.GetKeyDown(KeyCode.E) && dispo)
         {
 
