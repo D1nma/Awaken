@@ -50,8 +50,9 @@ MonoBehaviour:
     - sentences: "Ce rocher a l\u2019air assez grand...\r\n"
       next: 0
     - sentences: "Hum\u2026 vu d\u2019ici le nid semble moins loin qu\u2019avant,
-        mais il reste toujours inaccessible. Si seulement nous avions une perche
-        ou un autre outil pour l\u2019attraper\u2026\r\n"
+        mais il reste toujours inaccessible.\n"
+      next: 1
+    - sentences: " Si seulement nous avions une perche ou un autre outil pour l\u2019attraper\u2026\r"
       next: 1
     - sentences: "Comme une canne \xE0 p\xEAche, par exemple ?\r\n"
       next: 0
@@ -62,16 +63,21 @@ MonoBehaviour:
         ?\r\n\n"
       next: 0
     - sentences: "C\u2019est vrai que je n\u2019y avais pas pens\xE9\u2026 hmpf\u2026
-        Bon, trouvons un moyen de le faire quitter son nid alors. Ensuite, tu auras
-        le champ libre pour r\xE9cup\xE9rer la cl\xE9.\n"
+        \n"
+      next: 1
+    - sentences: "Bon, trouvons un moyen de le faire quitter son nid alors. \n"
+      next: 1
+    - sentences: "Ensuite, tu auras le champ libre pour r\xE9cup\xE9rer la cl\xE9.\n"
       next: 1
     isQuestion: 0
   question: {fileID: 0}
+  son: 8
   InteragirText: {fileID: 0}
   Interagir: 0
   Avertissement: 1
   canMove: 0
   NotDestroy: 0
+  sonOn: 0
 --- !u!1 &2800451734161507379
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,11 +146,13 @@ MonoBehaviour:
       next: 1
     isQuestion: 0
   question: {fileID: 0}
+  son: 12
   InteragirText: {fileID: 0}
   Interagir: 0
   Avertissement: 0
   canMove: 0
   NotDestroy: 0
+  sonOn: 0
 --- !u!1 &2800451734986478668
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,5 +313,5 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
