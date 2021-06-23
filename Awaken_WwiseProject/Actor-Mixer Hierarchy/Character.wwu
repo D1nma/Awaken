@@ -1130,10 +1130,30 @@
 												<ActiveSource Name="Nid plus facile d_acces 2_Sparky-St" ID="{F3973C10-CE72-40E0-8082-64EF9FB66356}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="Silence" ID="{68250F57-DC99-46B5-B043-A683FDFE53C7}" ShortID="999084383">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Wwise Silence" ID="{8B93FAAB-2E2D-40B5-B35C-BDDF42CE1936}" ShortID="106515579" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Wwise Silence" ID="{8B93FAAB-2E2D-40B5-B35C-BDDF42CE1936}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
 									<Playlist>
 										<ItemRef Name="Oui c_est bien cette clef 1_Sparky-St" ID="{1521C194-4027-4BFA-99E9-78A450AE771A}"/>
+										<ItemRef Name="Silence" ID="{68250F57-DC99-46B5-B043-A683FDFE53C7}"/>
 										<ItemRef Name="On non la clef 3_Alyx-St" ID="{CCB30235-EA06-4A72-A184-4D7324A4EBAA}"/>
 										<ItemRef Name="ce satané piaf 2_Sparky-St" ID="{C4E4FD5C-7973-465C-8D6D-09DC027290D7}"/>
 										<ItemRef Name="Je suis pas un singe 1_Alyx-St" ID="{05424ADD-98E4-4363-A564-6067444F0CBF}"/>
@@ -3935,29 +3955,6 @@
 					<ChildrenList>
 						<Folder Name="Sons" ID="{384EA3B0-396B-4613-9DCB-CC3F7DC6A2A6}" ShortID="381560371">
 							<ChildrenList>
-								<Sound Name="coeur_battement1" ID="{6EB2FA24-466F-4EF4-8F1B-290F3B5D53C1}" ShortID="340963866">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="coeur_battement1" ID="{5A9FC6BD-EBE0-4FFD-B273-0FD20440F259}">
-											<Language>SFX</Language>
-											<AudioFile>coeur_battement1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="905260821"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="coeur_battement1" ID="{5A9FC6BD-EBE0-4FFD-B273-0FD20440F259}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<ActorMixer Name="Walk" ID="{28D9DF29-0BC4-483E-88D1-B84AD5247DBE}" ShortID="925541739">
 									<PropertyList>
 										<Property Name="MaxSoundPerInstance" Type="int16">
@@ -3986,346 +3983,407 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Walk_random_roche" ID="{D1FFE94B-2EFD-4FDD-8F6A-AE6B73815C2F}" ShortID="639011936">
-											<PropertyList>
-												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="pas roche_marche1" ID="{E85C4A65-4349-45DD-B99F-7E74C2155995}" ShortID="690866928">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pas roche_marche1" ID="{11DC4756-E523-424E-AB34-424B09964C81}">
-															<Language>SFX</Language>
-															<AudioFile>pas roche_marche1.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="589709640"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="pas roche_marche1" ID="{11DC4756-E523-424E-AB34-424B09964C81}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pas roche_marche2" ID="{37D780A8-BC67-4650-9627-DA61478E6C4E}" ShortID="222965886">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pas roche_marche2" ID="{0DF3F545-2091-4A45-B7EB-A6AB8C481CD0}">
-															<Language>SFX</Language>
-															<AudioFile>pas roche_marche2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="108488477"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="pas roche_marche2" ID="{0DF3F545-2091-4A45-B7EB-A6AB8C481CD0}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pas roche_marche3" ID="{05744AF3-4E97-435E-BFC5-7C7A51A7DA24}" ShortID="319959326">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pas roche_marche3" ID="{6481F827-22C5-4642-8352-6FDE9B2E4F95}">
-															<Language>SFX</Language>
-															<AudioFile>pas roche_marche3.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="704634299"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="pas roche_marche3" ID="{6481F827-22C5-4642-8352-6FDE9B2E4F95}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Walk_random_herbe" ID="{3C0CE951-8EE3-4C9A-8B37-BFF404391392}" ShortID="453601661">
-											<PropertyList>
-												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
-											</PropertyList>
+										<SwitchContainer Name="Walk_Switch" ID="{5AB6C8DA-6FD3-4EDC-B94A-D5AF4F1B196A}" ShortID="1067477622">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="pas herbe 1_marche1" ID="{9A0E2B63-4F68-4BB0-BBFC-63C75F2A7B72}" ShortID="443472807">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pas herbe 1_marche1" ID="{AB4B7134-2B8E-43B0-8188-4F11256B8E2D}">
-															<Language>SFX</Language>
-															<AudioFile>pas herbe 1_marche1.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="939560047"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="pas herbe 1_marche1" ID="{AB4B7134-2B8E-43B0-8188-4F11256B8E2D}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pas herbe 1_marche2" ID="{294DB091-414B-48AD-BD3A-2E42F6B9FECF}" ShortID="691584467">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pas herbe 1_marche2" ID="{88CED811-B2E5-466A-A6F6-8E9DD6C8BA9A}">
-															<Language>SFX</Language>
-															<AudioFile>pas herbe 1_marche2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="465999486"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="pas herbe 1_marche2" ID="{88CED811-B2E5-466A-A6F6-8E9DD6C8BA9A}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pas herbe 1_marche3" ID="{B44AB556-9DAF-49F7-9FB5-1D4531C823ED}" ShortID="553078291">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pas herbe 1_marche3" ID="{53F49FC1-4E9E-4134-A907-453B780C69AC}">
-															<Language>SFX</Language>
-															<AudioFile>pas herbe 1_marche3.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="608025529"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="pas herbe 1_marche3" ID="{53F49FC1-4E9E-4134-A907-453B780C69AC}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Walk_random_terrain" ID="{BA4A7ED2-308C-47EA-A290-7704F4BFCAAC}" ShortID="267290779">
-											<PropertyList>
-												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="rocher" ID="{EC76DB2F-6CF0-46AD-BE49-E9AD7D10D2D5}" WorkUnitID="{717B1B04-81AA-453B-9421-FF7CF0A30963}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="pas terre_marche1" ID="{C13974E1-F4D0-4B68-A234-377B893708AE}" ShortID="185226023">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pas terre_marche1" ID="{2B168D18-01C3-476D-B42F-3E5259F64821}">
-															<Language>SFX</Language>
-															<AudioFile>pas terre_marche1.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="598412214"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="pas terre_marche1" ID="{2B168D18-01C3-476D-B42F-3E5259F64821}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pas terre_marche2" ID="{DA089BE8-7690-4607-A39A-1CD856F986AF}" ShortID="375894888">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pas terre_marche2" ID="{D14ECD0F-6E1D-45DF-B78B-C9730BD2E001}">
-															<Language>SFX</Language>
-															<AudioFile>pas terre_marche2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="456228350"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="pas terre_marche2" ID="{D14ECD0F-6E1D-45DF-B78B-C9730BD2E001}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pas terre_marche3" ID="{8818F68B-E413-464B-8241-3312EEE9ECF8}" ShortID="175983863">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pas terre_marche3" ID="{EC3BD734-6723-4913-B42F-0775849875C3}">
-															<Language>SFX</Language>
-															<AudioFile>pas terre_marche3.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="214719174"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="pas terre_marche3" ID="{EC3BD734-6723-4913-B42F-0775849875C3}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Walk_random_bois" ID="{3FD2B4FC-9708-4102-B781-D5B4303AD6C0}" ShortID="626616268">
-											<PropertyList>
-												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="footstep" ID="{B0952C46-2983-47FC-9DCB-DCE58734FE9C}" WorkUnitID="{717B1B04-81AA-453B-9421-FF7CF0A30963}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="pas bois 1_marche1" ID="{1A9FCF84-279E-4FB9-A064-49B2C97B27DB}" ShortID="915324356">
+												<RandomSequenceContainer Name="Walk_random_roche" ID="{D1FFE94B-2EFD-4FDD-8F6A-AE6B73815C2F}" ShortID="639011936">
+													<PropertyList>
+														<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+															<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+															<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="pas bois 1_marche1" ID="{AC11473B-4E6D-4F22-87D1-8E8A53DC579F}">
-															<Language>SFX</Language>
-															<AudioFile>pas bois 1_marche1.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="957828448"/>
-															</MediaIDList>
-														</AudioFileSource>
+														<Sound Name="pas roche_marche1" ID="{E85C4A65-4349-45DD-B99F-7E74C2155995}" ShortID="690866928">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="pas roche_marche1" ID="{11DC4756-E523-424E-AB34-424B09964C81}">
+																	<Language>SFX</Language>
+																	<AudioFile>pas roche_marche1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="589709640"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="pas roche_marche1" ID="{11DC4756-E523-424E-AB34-424B09964C81}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="pas roche_marche2" ID="{37D780A8-BC67-4650-9627-DA61478E6C4E}" ShortID="222965886">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="pas roche_marche2" ID="{0DF3F545-2091-4A45-B7EB-A6AB8C481CD0}">
+																	<Language>SFX</Language>
+																	<AudioFile>pas roche_marche2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="108488477"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="pas roche_marche2" ID="{0DF3F545-2091-4A45-B7EB-A6AB8C481CD0}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="pas roche_marche3" ID="{05744AF3-4E97-435E-BFC5-7C7A51A7DA24}" ShortID="319959326">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="pas roche_marche3" ID="{6481F827-22C5-4642-8352-6FDE9B2E4F95}">
+																	<Language>SFX</Language>
+																	<AudioFile>pas roche_marche3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="704634299"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="pas roche_marche3" ID="{6481F827-22C5-4642-8352-6FDE9B2E4F95}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
 													</ChildrenList>
 													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="pas bois 1_marche1" ID="{AC11473B-4E6D-4F22-87D1-8E8A53DC579F}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pas bois 1_marche2" ID="{863A869B-D9AE-4B00-BF84-96512604D820}" ShortID="953699574">
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Walk_random_herbe" ID="{3C0CE951-8EE3-4C9A-8B37-BFF404391392}" ShortID="453601661">
+													<PropertyList>
+														<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+															<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+															<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="pas bois 1_marche2" ID="{C8456520-D589-43F9-BA45-314D1BA3BD7C}">
-															<Language>SFX</Language>
-															<AudioFile>pas bois 1_marche2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="507585069"/>
-															</MediaIDList>
-														</AudioFileSource>
+														<Sound Name="pas herbe 1_marche1" ID="{9A0E2B63-4F68-4BB0-BBFC-63C75F2A7B72}" ShortID="443472807">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="pas herbe 1_marche1" ID="{AB4B7134-2B8E-43B0-8188-4F11256B8E2D}">
+																	<Language>SFX</Language>
+																	<AudioFile>pas herbe 1_marche1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="939560047"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="pas herbe 1_marche1" ID="{AB4B7134-2B8E-43B0-8188-4F11256B8E2D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="pas herbe 1_marche2" ID="{294DB091-414B-48AD-BD3A-2E42F6B9FECF}" ShortID="691584467">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="pas herbe 1_marche2" ID="{88CED811-B2E5-466A-A6F6-8E9DD6C8BA9A}">
+																	<Language>SFX</Language>
+																	<AudioFile>pas herbe 1_marche2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="465999486"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="pas herbe 1_marche2" ID="{88CED811-B2E5-466A-A6F6-8E9DD6C8BA9A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="pas herbe 1_marche3" ID="{B44AB556-9DAF-49F7-9FB5-1D4531C823ED}" ShortID="553078291">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="pas herbe 1_marche3" ID="{53F49FC1-4E9E-4134-A907-453B780C69AC}">
+																	<Language>SFX</Language>
+																	<AudioFile>pas herbe 1_marche3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="608025529"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="pas herbe 1_marche3" ID="{53F49FC1-4E9E-4134-A907-453B780C69AC}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
 													</ChildrenList>
 													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="pas bois 1_marche2" ID="{C8456520-D589-43F9-BA45-314D1BA3BD7C}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pas bois 1_marche3" ID="{18C098C2-A17D-4F83-B30D-3E128B85809F}" ShortID="1005139607">
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Walk_random_terrain" ID="{BA4A7ED2-308C-47EA-A290-7704F4BFCAAC}" ShortID="267290779">
+													<PropertyList>
+														<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+															<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+															<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="pas bois 1_marche3" ID="{4B1DA877-9D8F-4FDC-A77C-DD1ED5BF728E}">
-															<Language>SFX</Language>
-															<AudioFile>pas bois 1_marche3.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="25119440"/>
-															</MediaIDList>
-														</AudioFileSource>
+														<Sound Name="pas terre_marche1" ID="{C13974E1-F4D0-4B68-A234-377B893708AE}" ShortID="185226023">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="pas terre_marche1" ID="{2B168D18-01C3-476D-B42F-3E5259F64821}">
+																	<Language>SFX</Language>
+																	<AudioFile>pas terre_marche1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="598412214"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="pas terre_marche1" ID="{2B168D18-01C3-476D-B42F-3E5259F64821}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="pas terre_marche2" ID="{DA089BE8-7690-4607-A39A-1CD856F986AF}" ShortID="375894888">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="pas terre_marche2" ID="{D14ECD0F-6E1D-45DF-B78B-C9730BD2E001}">
+																	<Language>SFX</Language>
+																	<AudioFile>pas terre_marche2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="456228350"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="pas terre_marche2" ID="{D14ECD0F-6E1D-45DF-B78B-C9730BD2E001}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="pas terre_marche3" ID="{8818F68B-E413-464B-8241-3312EEE9ECF8}" ShortID="175983863">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="pas terre_marche3" ID="{EC3BD734-6723-4913-B42F-0775849875C3}">
+																	<Language>SFX</Language>
+																	<AudioFile>pas terre_marche3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="214719174"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="pas terre_marche3" ID="{EC3BD734-6723-4913-B42F-0775849875C3}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
 													</ChildrenList>
 													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="pas bois 1_marche3" ID="{4B1DA877-9D8F-4FDC-A77C-DD1ED5BF728E}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Walk_random_bois" ID="{3FD2B4FC-9708-4102-B781-D5B4303AD6C0}" ShortID="626616268">
+													<PropertyList>
+														<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="pas bois 1_marche1" ID="{1A9FCF84-279E-4FB9-A064-49B2C97B27DB}" ShortID="915324356">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="pas bois 1_marche1" ID="{AC11473B-4E6D-4F22-87D1-8E8A53DC579F}">
+																	<Language>SFX</Language>
+																	<AudioFile>pas bois 1_marche1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="957828448"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="pas bois 1_marche1" ID="{AC11473B-4E6D-4F22-87D1-8E8A53DC579F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="pas bois 1_marche2" ID="{863A869B-D9AE-4B00-BF84-96512604D820}" ShortID="953699574">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="pas bois 1_marche2" ID="{C8456520-D589-43F9-BA45-314D1BA3BD7C}">
+																	<Language>SFX</Language>
+																	<AudioFile>pas bois 1_marche2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="507585069"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="pas bois 1_marche2" ID="{C8456520-D589-43F9-BA45-314D1BA3BD7C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="pas bois 1_marche3" ID="{18C098C2-A17D-4F83-B30D-3E128B85809F}" ShortID="1005139607">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="pas bois 1_marche3" ID="{4B1DA877-9D8F-4FDC-A77C-DD1ED5BF728E}">
+																	<Language>SFX</Language>
+																	<AudioFile>pas bois 1_marche3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="25119440"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="pas bois 1_marche3" ID="{4B1DA877-9D8F-4FDC-A77C-DD1ED5BF728E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+													<ObjectLists/>
+												</RandomSequenceContainer>
 											</ChildrenList>
 											<ObjectLists/>
-										</RandomSequenceContainer>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Walk_random_roche" ID="{D1FFE94B-2EFD-4FDD-8F6A-AE6B73815C2F}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Walk_random_herbe" ID="{3C0CE951-8EE3-4C9A-8B37-BFF404391392}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Walk_random_terrain" ID="{BA4A7ED2-308C-47EA-A290-7704F4BFCAAC}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Walk_random_bois" ID="{3FD2B4FC-9708-4102-B781-D5B4303AD6C0}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="herbe" ID="{0AF2A320-151E-4A07-A0D1-F56B6FA832B4}"/>
+														<ItemList>
+															<ItemRef Name="Walk_random_herbe" ID="{3C0CE951-8EE3-4C9A-8B37-BFF404391392}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="rocher" ID="{EC76DB2F-6CF0-46AD-BE49-E9AD7D10D2D5}"/>
+														<ItemList>
+															<ItemRef Name="Walk_random_roche" ID="{D1FFE94B-2EFD-4FDD-8F6A-AE6B73815C2F}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="terrain" ID="{A1956A61-67E1-4C5B-BE1E-00484CDD5496}"/>
+														<ItemList>
+															<ItemRef Name="Walk_random_terrain" ID="{BA4A7ED2-308C-47EA-A290-7704F4BFCAAC}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="bois" ID="{7A1E46E9-3932-48EE-B36B-39CFA8B51BAC}"/>
+														<ItemList>
+															<ItemRef Name="Walk_random_bois" ID="{3FD2B4FC-9708-4102-B781-D5B4303AD6C0}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
 									</ChildrenList>
 									<ObjectLists/>
 								</ActorMixer>
@@ -4391,6 +4449,43 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</ActorMixer>
+								<Sound Name="coeur_battement1" ID="{70E06FED-F276-4807-A509-30D33C0BE3DA}" ShortID="809223518">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="coeur_battement1" ID="{65540B83-DD7E-4CA2-9363-27473E0CF781}">
+											<Language>SFX</Language>
+											<AudioFile>coeur_battement1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="905260821"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="coeur_battement1" ID="{65540B83-DD7E-4CA2-9363-27473E0CF781}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

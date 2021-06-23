@@ -210,7 +210,7 @@ public class PlayersController : MonoBehaviour
                         stb.UseStamina(true);
                         if (stb.use)
                         {
-                            moveSpeed = moveSpeed * 1.4f;
+                            moveSpeed = oldMoveSpeed * 1.4f;
                         }
 
                     }

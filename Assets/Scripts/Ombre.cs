@@ -16,7 +16,8 @@ public class Ombre : MonoBehaviour
     public bool idleOne = false, canTouch;
     private bool canHurt = false;
 
-    private bool follow = true, see = false;
+    private bool follow = true;
+    public static bool see = false;
 
     public int degat = 10;
     public float MaxDist = 0.1f;

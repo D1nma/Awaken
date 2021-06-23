@@ -304,7 +304,15 @@ public class PlayerStress : MonoBehaviour
     {
         if (currentStress < maxStress)
         {
-            currentStress += AugmentationStress * Time.deltaTime;
+            if (Ombre.see)
+            {
+                currentStress += AugmentationStress * 2 * Time.deltaTime;
+            }
+            else
+            {
+                currentStress += AugmentationStress * Time.deltaTime;
+            }
+            
             stressBar.SetStress(currentStress);
         }
 

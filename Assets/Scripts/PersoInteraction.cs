@@ -8,6 +8,7 @@ public class PersoInteraction : MonoBehaviour
     public GameObject InteragirText, player;
     private bool fait = false, canInteract = false, startTiming = false, bouge = false, setup = false;
     float time = 0f, oldDistance = 0f;
+    public static bool JoueurPasser;
     CharacterController cc;
     public UIManager ui;
     private Vector3 target;
@@ -163,6 +164,7 @@ public class PersoInteraction : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            
             if (InteragirText != null && !fait && invent.Keyvolee && Appat.fait)
             {
                 InteragirText.gameObject.GetComponent<Text>().text = "Appuie sur E pour intéragir (" + this.gameObject.name + ")";
@@ -181,6 +183,10 @@ public class PersoInteraction : MonoBehaviour
             }
             else if (invent.Keyvolee && Appat.fait == false && !invent.boite)
             {
+                if (!JoueurPasser)
+                {
+                    JoueurPasser = true;
+                }
                 InteragirText.gameObject.GetComponent<Text>().text = "Il faut quelque chose pour récupèrer la clé d'ici";
                 InteragirText.SetActive(true);
             }
