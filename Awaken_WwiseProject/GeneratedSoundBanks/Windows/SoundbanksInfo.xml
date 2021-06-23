@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="436743010" Language="SFX" Hash="1215860921">
+		<SoundBank Id="436743010" Language="SFX" Hash="1426676649">
 			<ObjectPath>\SoundBanks\Default Work Unit\Character</ObjectPath>
 			<ShortName>Character</ShortName>
 			<Path>Character.bnk</Path>
@@ -37,6 +37,14 @@
 						<File Id="682655082" Language="SFX">
 							<ShortName>20 Une canne à pèche\une canne à peche 2_Sparky-St.wav</ShortName>
 							<Path>SFX\20 Une canne à pèche\une canne à peche 2_Sparky-St_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2785112809" Name="Coeur" ObjectPath="\Events\Default Work Unit\Character\Alyx\Coeur">
+					<IncludedMemoryFiles>
+						<File Id="905260821" Language="SFX">
+							<ShortName>coeur_battement1.wav</ShortName>
+							<Path>SFX\coeur_battement1_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -552,19 +560,86 @@
 				</Event>
 				<Event Id="2108779966" Name="Walk" ObjectPath="\Events\Default Work Unit\Character\Alyx\Walk">
 					<IncludedMemoryFiles>
+						<File Id="25119440" Language="SFX">
+							<ShortName>pas bois 1_marche3.wav</ShortName>
+							<Path>SFX\pas bois 1_marche3_3F75BDB9.wem</Path>
+						</File>
 						<File Id="108488477" Language="SFX">
 							<ShortName>pas roche_marche2.wav</ShortName>
 							<Path>SFX\pas roche_marche2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="214719174" Language="SFX">
+							<ShortName>pas terre_marche3.wav</ShortName>
+							<Path>SFX\pas terre_marche3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="456228350" Language="SFX">
+							<ShortName>pas terre_marche2.wav</ShortName>
+							<Path>SFX\pas terre_marche2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="465999486" Language="SFX">
+							<ShortName>pas herbe 1_marche2.wav</ShortName>
+							<Path>SFX\pas herbe 1_marche2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="507585069" Language="SFX">
+							<ShortName>pas bois 1_marche2.wav</ShortName>
+							<Path>SFX\pas bois 1_marche2_3F75BDB9.wem</Path>
 						</File>
 						<File Id="589709640" Language="SFX">
 							<ShortName>pas roche_marche1.wav</ShortName>
 							<Path>SFX\pas roche_marche1_3F75BDB9.wem</Path>
 						</File>
+						<File Id="598412214" Language="SFX">
+							<ShortName>pas terre_marche1.wav</ShortName>
+							<Path>SFX\pas terre_marche1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="608025529" Language="SFX">
+							<ShortName>pas herbe 1_marche3.wav</ShortName>
+							<Path>SFX\pas herbe 1_marche3_3F75BDB9.wem</Path>
+						</File>
 						<File Id="704634299" Language="SFX">
 							<ShortName>pas roche_marche3.wav</ShortName>
 							<Path>SFX\pas roche_marche3_3F75BDB9.wem</Path>
 						</File>
+						<File Id="939560047" Language="SFX">
+							<ShortName>pas herbe 1_marche1.wav</ShortName>
+							<Path>SFX\pas herbe 1_marche1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="957828448" Language="SFX">
+							<ShortName>pas bois 1_marche1.wav</ShortName>
+							<Path>SFX\pas bois 1_marche1_3F75BDB9.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{EC76DB2F-6CF0-46AD-BE49-E9AD7D10D2D5}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{EC76DB2F-6CF0-46AD-BE49-E9AD7D10D2D5}">
+							<Media>
+								<File Id="108488477"/>
+								<File Id="589709640"/>
+								<File Id="704634299"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0AF2A320-151E-4A07-A0D1-F56B6FA832B4}">
+							<Media>
+								<File Id="465999486"/>
+								<File Id="608025529"/>
+								<File Id="939560047"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{A1956A61-67E1-4C5B-BE1E-00484CDD5496}">
+							<Media>
+								<File Id="214719174"/>
+								<File Id="456228350"/>
+								<File Id="598412214"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7A1E46E9-3932-48EE-B36B-39CFA8B51BAC}">
+							<Media>
+								<File Id="25119440"/>
+								<File Id="507585069"/>
+								<File Id="957828448"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -1165,13 +1240,23 @@
 					<Path>SFX\19 Le nid a l_air d_être moins loin qu_avant\Le nid semble moins loin 1_Sparky-St_3F75BDB9.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
+			<SwitchGroups>
+				<SwitchGroup Id="1866025847" Name="footstep" ObjectPath="\Switches\Default Work Unit\footstep">
+					<Switches>
+						<Switch Id="1660835248" Name="bois" ObjectPath="\Switches\Default Work Unit\footstep\bois"/>
+						<Switch Id="354267144" Name="terrain" ObjectPath="\Switches\Default Work Unit\footstep\terrain"/>
+						<Switch Id="539550984" Name="rocher" ObjectPath="\Switches\Default Work Unit\footstep\rocher"/>
+						<Switch Id="2495190089" Name="herbe" ObjectPath="\Switches\Default Work Unit\footstep\herbe"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX" Hash="77614780">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2530157555" Language="SFX" Hash="2440755675">
+		<SoundBank Id="2530157555" Language="SFX" Hash="2782400010">
 			<ObjectPath>\SoundBanks\Default Work Unit\Environnement</ObjectPath>
 			<ShortName>Environnement</ShortName>
 			<Path>Environnement.bnk</Path>
@@ -1194,17 +1279,9 @@
 							<ShortName>corbeau 2.wav</ShortName>
 							<Path>SFX\corbeau 2_3F75BDB9.wem</Path>
 						</File>
-						<File Id="238427749" Language="SFX">
-							<ShortName>oiseau 8_cuicui.wav</ShortName>
-							<Path>SFX\oiseau 8_cuicui_3F75BDB9.wem</Path>
-						</File>
 						<File Id="336679914" Language="SFX">
 							<ShortName>corbeau 4.wav</ShortName>
 							<Path>SFX\corbeau 4_3F75BDB9.wem</Path>
-						</File>
-						<File Id="346162389" Language="SFX">
-							<ShortName>oiseau 9_cuicui.wav</ShortName>
-							<Path>SFX\oiseau 9_cuicui_3F75BDB9.wem</Path>
 						</File>
 						<File Id="372090329" Language="SFX">
 							<ShortName>oiseau 13_cuicui.wav</ShortName>
@@ -1213,10 +1290,6 @@
 						<File Id="408059349" Language="SFX">
 							<ShortName>corbeau 3.wav</ShortName>
 							<Path>SFX\corbeau 3_3F75BDB9.wem</Path>
-						</File>
-						<File Id="542705106" Language="SFX">
-							<ShortName>oiseau 12_cuicui.wav</ShortName>
-							<Path>SFX\oiseau 12_cuicui_3F75BDB9.wem</Path>
 						</File>
 						<File Id="721879130" Language="SFX">
 							<ShortName>oiseau 17_cuicui.wav</ShortName>
@@ -1237,44 +1310,6 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="544687890" Name="Birds_Stop" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Birds_Stop"/>
-				<Event Id="384109318" Name="Chant_Bird_1_Start" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Bird_1_Start"/>
-				<Event Id="1026565830" Name="Chant_Bird_1_Stop" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Bird_1_Stop"/>
-				<Event Id="3244540270" Name="Chant_Corbeau_1_Start" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_1_Start">
-					<IncludedMemoryFiles>
-						<File Id="791093738" Language="SFX">
-							<ShortName>corbeau 1.wav</ShortName>
-							<Path>SFX\corbeau 1_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2861096014" Name="Chant_Corbeau_1_Stop" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_1_Stop"/>
-				<Event Id="2675815885" Name="Chant_Corbeau_2_Start" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_2_Start">
-					<IncludedMemoryFiles>
-						<File Id="235868969" Language="SFX">
-							<ShortName>corbeau 2.wav</ShortName>
-							<Path>SFX\corbeau 2_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="4179501455" Name="Chant_Corbeau_2_Stop" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_2_Stop"/>
-				<Event Id="3648403224" Name="Chant_Corbeau_3_Start" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_3_Start">
-					<IncludedMemoryFiles>
-						<File Id="408059349" Language="SFX">
-							<ShortName>corbeau 3.wav</ShortName>
-							<Path>SFX\corbeau 3_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1025265060" Name="Chant_Corbeau_3_Stop" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_3_Stop"/>
-				<Event Id="2018654895" Name="Chant_Corbeau_4_Start" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_4_Start">
-					<IncludedMemoryFiles>
-						<File Id="336679914" Language="SFX">
-							<ShortName>corbeau 4.wav</ShortName>
-							<Path>SFX\corbeau 4_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3823094709" Name="Chant_Corbeau_4_Stop" ObjectPath="\Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_4_Stop"/>
 				<Event Id="106254192" Name="Riviere_Start" ObjectPath="\Events\Default Work Unit\Environnement\Riviere_Start">
 					<IncludedMemoryFiles>
 						<File Id="176432756" Language="SFX">
@@ -1319,10 +1354,6 @@
 					<ShortName>corbeau 2.wav</ShortName>
 					<Path>SFX\corbeau 2_3F75BDB9.wem</Path>
 				</File>
-				<File Id="238427749" Language="SFX">
-					<ShortName>oiseau 8_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 8_cuicui_3F75BDB9.wem</Path>
-				</File>
 				<File Id="260624337" Language="SFX">
 					<ShortName>Environnement\Wind\vent 1.wav</ShortName>
 					<Path>SFX\Environnement\Wind\vent 1_9EDFC787.wem</Path>
@@ -1331,10 +1362,6 @@
 					<ShortName>corbeau 4.wav</ShortName>
 					<Path>SFX\corbeau 4_3F75BDB9.wem</Path>
 				</File>
-				<File Id="346162389" Language="SFX">
-					<ShortName>oiseau 9_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 9_cuicui_3F75BDB9.wem</Path>
-				</File>
 				<File Id="372090329" Language="SFX">
 					<ShortName>oiseau 13_cuicui.wav</ShortName>
 					<Path>SFX\oiseau 13_cuicui_3F75BDB9.wem</Path>
@@ -1342,10 +1369,6 @@
 				<File Id="408059349" Language="SFX">
 					<ShortName>corbeau 3.wav</ShortName>
 					<Path>SFX\corbeau 3_3F75BDB9.wem</Path>
-				</File>
-				<File Id="542705106" Language="SFX">
-					<ShortName>oiseau 12_cuicui.wav</ShortName>
-					<Path>SFX\oiseau 12_cuicui_3F75BDB9.wem</Path>
 				</File>
 				<File Id="721879130" Language="SFX">
 					<ShortName>oiseau 17_cuicui.wav</ShortName>

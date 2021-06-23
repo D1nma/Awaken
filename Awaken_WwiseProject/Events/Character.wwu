@@ -22,10 +22,10 @@
 						</Event>
 						<Event Name="Walk" ID="{CD0EDF5F-102E-4F56-BBB5-D0A688D9139E}">
 							<ChildrenList>
-								<Action Name="" ID="{40296575-CA0C-467E-B22C-055FC801D746}" ShortID="229946002">
+								<Action Name="" ID="{D125AAE3-AC7C-46EF-A52B-C6DC8CCCD39C}" ShortID="843311982">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Walk_random_roche" ID="{D1FFE94B-2EFD-4FDD-8F6A-AE6B73815C2F}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+											<ObjectRef Name="Walk_Switch" ID="{5AB6C8DA-6FD3-4EDC-B94A-D5AF4F1B196A}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -60,6 +60,9 @@
 										<Event Name="Cris_Start" ID="{3F178DE9-5DD3-417F-B2AC-B7DAF790B4C6}">
 											<ChildrenList>
 												<Action Name="" ID="{15FC5567-171D-4AC6-83F7-F670C0C5E938}" ShortID="503242035">
+													<PropertyList>
+														<Property Name="Probability" Type="Real64" Value="50"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Mix_Cris" ID="{7B89267F-AB35-4CFA-BDDC-153A6F049101}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
@@ -110,6 +113,9 @@
 										<Event Name="Frisson_Start" ID="{A054E7B1-B89C-4EFE-A2DF-FFEC350270FA}">
 											<ChildrenList>
 												<Action Name="" ID="{F24400CE-1979-4FD5-895F-4B0549AE2BFD}" ShortID="670530083">
+													<PropertyList>
+														<Property Name="Probability" Type="Real64" Value="50"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Random_Frisson" ID="{7E7856D3-07F2-4E97-BC17-1E67915D0775}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
@@ -135,6 +141,9 @@
 										<Event Name="Soufflement_Start" ID="{BA589E1F-6F20-4A37-9BA6-3659E0DD496E}">
 											<ChildrenList>
 												<Action Name="" ID="{EA2B1E6F-7D7A-401C-94A6-522739E870E8}" ShortID="1062284509">
+													<PropertyList>
+														<Property Name="Probability" Type="Real64" Value="50"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="Random_Soufflement" ID="{BC554D43-F93A-4949-A1CB-F39ACECB450E}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
@@ -521,6 +530,17 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Coeur" ID="{FC895B65-F38F-4217-8676-B1250EBBDE70}">
+							<ChildrenList>
+								<Action Name="" ID="{5FD5B0FC-2442-4657-8C54-1228444DB4F7}" ShortID="306737090">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="coeur_battement1" ID="{70E06FED-F276-4807-A509-30D33C0BE3DA}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
