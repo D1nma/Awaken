@@ -16,13 +16,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{D79F9ECA-A08C-4111-B4F2-06BEA045657C}" ShortID="46547458">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Menu" ID="{A7C02393-D39A-4977-B8D2-E8FF6C19D0F2}" WorkUnitID="{B2002B48-84B3-44E9-A30E-6AB42ADE9597}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Menu_Stop" ID="{5F3597E4-6E3B-4785-8816-55D21493ABC8}">
@@ -35,17 +28,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Menu(loops)" ID="{D4BD0E0D-A79E-4886-9483-052B91FC16C5}" WorkUnitID="{B2002B48-84B3-44E9-A30E-6AB42ADE9597}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{03141EAD-7026-4B16-BD6C-A92B4E464EF0}" ShortID="370511307">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Menu" ID="{A7C02393-D39A-4977-B8D2-E8FF6C19D0F2}" WorkUnitID="{B2002B48-84B3-44E9-A30E-6AB42ADE9597}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

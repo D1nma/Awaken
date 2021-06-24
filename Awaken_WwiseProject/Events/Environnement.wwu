@@ -11,20 +11,17 @@
 					<ChildrenList>
 						<Event Name="Wind_loop_start" ID="{200DE210-2989-49A0-845D-C1C6D35BE074}">
 							<ChildrenList>
-								<Action Name="" ID="{9A3145E1-6417-494E-891C-2E33D88275FC}" ShortID="425076183">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="10"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="vent 1" ID="{15A1D4E5-FE79-408D-AC2B-59B82793CABD}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{3D0C3C83-306F-40C7-8678-9137902C92B4}" ShortID="113506137">
+								<Action Name="" ID="{876A9FA0-6359-4B0E-823A-6C016B5E3A5A}" ShortID="862649699">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Wind" ID="{64D0C0D9-5241-48CF-B967-DC2B71B1ADAB}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8CF0AD07-D59E-4AE9-9963-F8709E97CE51}" ShortID="194076471">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="vent 1" ID="{15A1D4E5-FE79-408D-AC2B-59B82793CABD}" WorkUnitID="{591B94A3-5334-4A97-A1C6-21143DB977F6}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -32,10 +29,9 @@
 						</Event>
 						<Event Name="Wind_loop_stop" ID="{92CDE42A-C93F-49B8-B690-95D9C8B7168C}">
 							<ChildrenList>
-								<Action Name="" ID="{8F0B363C-9BDC-47ED-B8A7-1C1344F0E3FF}" ShortID="1046065977">
+								<Action Name="" ID="{04A994F7-5D6C-4DD6-900F-4C10BA2A4B22}" ShortID="95749718">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -43,11 +39,9 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{2B1A0997-71B2-42D2-82BD-B3DA1712A7D7}" ShortID="991746627">
+								<Action Name="" ID="{DDE4FE44-F592-4A96-813F-C2F37F19538D}" ShortID="182057592">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.3"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">

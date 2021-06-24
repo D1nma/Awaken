@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 6969c8fd94c09d4a900b961222f728e4
     GuidInternal: 
-    m_lastTime: -8585772961148739745
+    m_lastTime: -8585781166299159409
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 6e0fffe3b857cd48b495bd14c3507860
     GuidInternal: 
-    m_lastTime: -8585772961207105904
+    m_lastTime: -8585770769451314623
     List:
     - name: Ambiance
       guid: cb3db2323f563448a7a52222fb1c21ab
@@ -160,7 +160,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 03af6ba4ede5bf4b92d25d6e7e04562f
     GuidInternal: 
-    m_lastTime: -8585772961148769751
+    m_lastTime: -8585781166299179341
     List:
     - name: Ambiance
       guid: a4ce707e55f43244bae967df0e6a9861
@@ -233,7 +233,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Ambiance
     guid: 02301d76802f4f47b7f34e89fdd14607
     GuidInternal: 
-    m_lastTime: -8585772961215051334
+    m_lastTime: -8585770802895487760
     List:
     - name: Explo_Start
       guid: 49c13a888c0c7a4386f43c3c505a1978
@@ -449,11 +449,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Character
     guid: d1b726b7b62bbc4d87a56d25ac596348
     GuidInternal: 
-<<<<<<< Updated upstream
-    m_lastTime: -8585772961214895069
-=======
-    m_lastTime: -8585772397513415313
->>>>>>> Stashed changes
+    m_lastTime: -8585771648673614275
     List:
     - name: Alyx
       guid: 49e60b0de728324e87421b4870014945
@@ -559,6 +555,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: b1efe2bebfd8ba4aa800542f43e729cb
       Path: Events\Default Work Unit\Character\Alyx\Voix\Dialogues\CanneFound
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Coeur
+      guid: 655b89fc8ff317428676b1250ebbde70
+      id: 2785112809
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Character
+        ObjectType: 12
+        guid: d1b726b7b62bbc4d87a56d25ac596348
+      - ElementName: Alyx
+        ObjectType: 4
+        guid: 49e60b0de728324e87421b4870014945
+      - ElementName: Coeur
+        ObjectType: 3
+        guid: 655b89fc8ff317428676b1250ebbde70
+      Path: Events\Default Work Unit\Character\Alyx\Coeur
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1868,7 +1887,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 524bd7222bf7d84284d7b0a1a9071dee
     GuidInternal: 
-    m_lastTime: -8585772961214895069
+    m_lastTime: -8585781166330314845
     List:
     - name: Test
       guid: 8d4576a49c590543bc0ed24c040d5ad3
@@ -1901,7 +1920,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Environnement
     guid: 0b9c659094c6ed43bece16702a7786fc
     GuidInternal: 
-    m_lastTime: -8585772961214895069
+    m_lastTime: -8585770752573377137
     List:
     - name: Birds
       guid: 45adc77911e337418336100430199307
@@ -1966,236 +1985,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: d57228e756fb0f4bbd5e7beb423fc0b7
       Path: Events\Default Work Unit\Environnement\Birds\Birds_Stop
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Chant_Bird_1_Start
-      guid: e099be3df5a81e49850088709746fb1d
-      id: 384109318
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 524bd7222bf7d84284d7b0a1a9071dee
-      - ElementName: Environnement
-        ObjectType: 12
-        guid: 0b9c659094c6ed43bece16702a7786fc
-      - ElementName: Birds
-        ObjectType: 4
-        guid: 45adc77911e337418336100430199307
-      - ElementName: Chant_Bird_1_Start
-        ObjectType: 3
-        guid: e099be3df5a81e49850088709746fb1d
-      Path: Events\Default Work Unit\Environnement\Birds\Chant_Bird_1_Start
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Chant_Bird_1_Stop
-      guid: 2c7e44b8105de14689a5b09b62f2452b
-      id: 1026565830
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 524bd7222bf7d84284d7b0a1a9071dee
-      - ElementName: Environnement
-        ObjectType: 12
-        guid: 0b9c659094c6ed43bece16702a7786fc
-      - ElementName: Birds
-        ObjectType: 4
-        guid: 45adc77911e337418336100430199307
-      - ElementName: Chant_Bird_1_Stop
-        ObjectType: 3
-        guid: 2c7e44b8105de14689a5b09b62f2452b
-      Path: Events\Default Work Unit\Environnement\Birds\Chant_Bird_1_Stop
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Chant_Corbeau_1_Start
-      guid: 8f34103e6c7a954f9fc70a55b88dc389
-      id: 3244540270
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 524bd7222bf7d84284d7b0a1a9071dee
-      - ElementName: Environnement
-        ObjectType: 12
-        guid: 0b9c659094c6ed43bece16702a7786fc
-      - ElementName: Birds
-        ObjectType: 4
-        guid: 45adc77911e337418336100430199307
-      - ElementName: Chant_Corbeau_1_Start
-        ObjectType: 3
-        guid: 8f34103e6c7a954f9fc70a55b88dc389
-      Path: Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_1_Start
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Chant_Corbeau_1_Stop
-      guid: 20095cb981d64a43b6f9758c129ee028
-      id: 2861096014
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 524bd7222bf7d84284d7b0a1a9071dee
-      - ElementName: Environnement
-        ObjectType: 12
-        guid: 0b9c659094c6ed43bece16702a7786fc
-      - ElementName: Birds
-        ObjectType: 4
-        guid: 45adc77911e337418336100430199307
-      - ElementName: Chant_Corbeau_1_Stop
-        ObjectType: 3
-        guid: 20095cb981d64a43b6f9758c129ee028
-      Path: Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_1_Stop
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Chant_Corbeau_2_Start
-      guid: c040d70e643b8b42995518719329daab
-      id: 2675815885
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 524bd7222bf7d84284d7b0a1a9071dee
-      - ElementName: Environnement
-        ObjectType: 12
-        guid: 0b9c659094c6ed43bece16702a7786fc
-      - ElementName: Birds
-        ObjectType: 4
-        guid: 45adc77911e337418336100430199307
-      - ElementName: Chant_Corbeau_2_Start
-        ObjectType: 3
-        guid: c040d70e643b8b42995518719329daab
-      Path: Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_2_Start
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Chant_Corbeau_2_Stop
-      guid: 9814889d2286e84dbbc8ded40c882a3f
-      id: 4179501455
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 524bd7222bf7d84284d7b0a1a9071dee
-      - ElementName: Environnement
-        ObjectType: 12
-        guid: 0b9c659094c6ed43bece16702a7786fc
-      - ElementName: Birds
-        ObjectType: 4
-        guid: 45adc77911e337418336100430199307
-      - ElementName: Chant_Corbeau_2_Stop
-        ObjectType: 3
-        guid: 9814889d2286e84dbbc8ded40c882a3f
-      Path: Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_2_Stop
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Chant_Corbeau_3_Start
-      guid: af07f7cb5d5445458daf6cf7f53f3562
-      id: 3648403224
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 524bd7222bf7d84284d7b0a1a9071dee
-      - ElementName: Environnement
-        ObjectType: 12
-        guid: 0b9c659094c6ed43bece16702a7786fc
-      - ElementName: Birds
-        ObjectType: 4
-        guid: 45adc77911e337418336100430199307
-      - ElementName: Chant_Corbeau_3_Start
-        ObjectType: 3
-        guid: af07f7cb5d5445458daf6cf7f53f3562
-      Path: Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_3_Start
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Chant_Corbeau_3_Stop
-      guid: 1f84171f6b4c1e40a086674fd51b97a8
-      id: 1025265060
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 524bd7222bf7d84284d7b0a1a9071dee
-      - ElementName: Environnement
-        ObjectType: 12
-        guid: 0b9c659094c6ed43bece16702a7786fc
-      - ElementName: Birds
-        ObjectType: 4
-        guid: 45adc77911e337418336100430199307
-      - ElementName: Chant_Corbeau_3_Stop
-        ObjectType: 3
-        guid: 1f84171f6b4c1e40a086674fd51b97a8
-      Path: Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_3_Stop
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Chant_Corbeau_4_Start
-      guid: 8c5126b1d4a0fd4b9f348b20f1e40eb9
-      id: 2018654895
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 524bd7222bf7d84284d7b0a1a9071dee
-      - ElementName: Environnement
-        ObjectType: 12
-        guid: 0b9c659094c6ed43bece16702a7786fc
-      - ElementName: Birds
-        ObjectType: 4
-        guid: 45adc77911e337418336100430199307
-      - ElementName: Chant_Corbeau_4_Start
-        ObjectType: 3
-        guid: 8c5126b1d4a0fd4b9f348b20f1e40eb9
-      Path: Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_4_Start
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Chant_Corbeau_4_Stop
-      guid: 5042930ecc721e4cb6af020031db09ff
-      id: 3823094709
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 524bd7222bf7d84284d7b0a1a9071dee
-      - ElementName: Environnement
-        ObjectType: 12
-        guid: 0b9c659094c6ed43bece16702a7786fc
-      - ElementName: Birds
-        ObjectType: 4
-        guid: 45adc77911e337418336100430199307
-      - ElementName: Chant_Corbeau_4_Stop
-        ObjectType: 3
-        guid: 5042930ecc721e4cb6af020031db09ff
-      Path: Events\Default Work Unit\Environnement\Birds\Chant_Corbeau_4_Stop
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2317,7 +2106,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: f5c10839ff254846884ab8034a3f90c2
     GuidInternal: 
-    m_lastTime: -8585772961214895069
+    m_lastTime: -8585781166330314845
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -2331,8 +2120,74 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 6eabdb87f97eee44b0bdf0e79973d564
     GuidInternal: 
-    m_lastTime: -8585772961148759751
-    List: []
+    m_lastTime: -8585770752572847171
+    List:
+    - name: Maison
+      guid: af4aad3e9ba8b141962803bc0ae507dc
+      id: 855482704
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6eabdb87f97eee44b0bdf0e79973d564
+      - ElementName: Maison
+        ObjectType: 9
+        guid: af4aad3e9ba8b141962803bc0ae507dc
+      Path: States\Default Work Unit\Maison
+      values:
+      - name: In
+        guid: 9a327bca8ea25a4dbad4fe81d030c812
+        id: 1752637612
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6eabdb87f97eee44b0bdf0e79973d564
+        - ElementName: Maison
+          ObjectType: 9
+          guid: af4aad3e9ba8b141962803bc0ae507dc
+        - ElementName: In
+          ObjectType: 8
+          guid: 9a327bca8ea25a4dbad4fe81d030c812
+      - name: None
+        guid: 84244e7dce8f7740bbf098454f6e5870
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6eabdb87f97eee44b0bdf0e79973d564
+        - ElementName: Maison
+          ObjectType: 9
+          guid: af4aad3e9ba8b141962803bc0ae507dc
+        - ElementName: None
+          ObjectType: 8
+          guid: 84244e7dce8f7740bbf098454f6e5870
+      - name: Out
+        guid: 92776c40f792184ba849adaaa1ccf0ac
+        id: 645492555
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 6eabdb87f97eee44b0bdf0e79973d564
+        - ElementName: Maison
+          ObjectType: 9
+          guid: af4aad3e9ba8b141962803bc0ae507dc
+        - ElementName: Out
+          ObjectType: 8
+          guid: 92776c40f792184ba849adaaa1ccf0ac
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -2345,8 +2200,90 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 041b7b71aa813b459421ff7cf0a30963
     GuidInternal: 
-    m_lastTime: -8585772961148749747
-    List: []
+    m_lastTime: -8585771657370373823
+    List:
+    - name: footstep
+      guid: 462c95b08329fc479dcbdce58734fe9c
+      id: 1866025847
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 041b7b71aa813b459421ff7cf0a30963
+      - ElementName: footstep
+        ObjectType: 11
+        guid: 462c95b08329fc479dcbdce58734fe9c
+      Path: Switches\Default Work Unit\footstep
+      values:
+      - name: bois
+        guid: e9461e7a3239ee48b36b39cfa8b51bac
+        id: 1660835248
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 041b7b71aa813b459421ff7cf0a30963
+        - ElementName: footstep
+          ObjectType: 11
+          guid: 462c95b08329fc479dcbdce58734fe9c
+        - ElementName: bois
+          ObjectType: 10
+          guid: e9461e7a3239ee48b36b39cfa8b51bac
+      - name: herbe
+        guid: 20a3f20a1e15074aa0d1f56b6fa832b4
+        id: 2495190089
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 041b7b71aa813b459421ff7cf0a30963
+        - ElementName: footstep
+          ObjectType: 11
+          guid: 462c95b08329fc479dcbdce58734fe9c
+        - ElementName: herbe
+          ObjectType: 10
+          guid: 20a3f20a1e15074aa0d1f56b6fa832b4
+      - name: rocher
+        guid: 2fdb76ecf06cad46be49e9ad7d10d2d5
+        id: 539550984
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 041b7b71aa813b459421ff7cf0a30963
+        - ElementName: footstep
+          ObjectType: 11
+          guid: 462c95b08329fc479dcbdce58734fe9c
+        - ElementName: rocher
+          ObjectType: 10
+          guid: 2fdb76ecf06cad46be49e9ad7d10d2d5
+      - name: terrain
+        guid: 616a95a1e1675b4cbe1e00484cdd5496
+        id: 354267144
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 041b7b71aa813b459421ff7cf0a30963
+        - ElementName: footstep
+          ObjectType: 11
+          guid: 462c95b08329fc479dcbdce58734fe9c
+        - ElementName: terrain
+          ObjectType: 10
+          guid: 616a95a1e1675b4cbe1e00484cdd5496
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -2359,10 +2296,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 496c3ba64024d448bedccd8c60b65132
     GuidInternal: 
-    m_lastTime: -8585772961148749747
+    m_lastTime: -8585781166299159409
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000d0000000e0000000f0000002500000026000000290000002e0000002f0000003300000040000000430000008379110084791100
+  ExpandedWaapiItemIds: 0b0000000c0000000d0000000e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

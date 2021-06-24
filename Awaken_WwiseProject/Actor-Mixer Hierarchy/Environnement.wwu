@@ -125,6 +125,28 @@
 									</ChildrenList>
 								</Position>
 							</PositioningInfo>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Maison" ID="{3EAD4AAF-A89B-41B1-9628-03BC0AE507DC}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Out" ID="{406C7792-92F7-4B18-A849-ADAAA1CCF0AC}"/>
+										<CustomState Name="" ID="{A13DBB2B-4961-44C0-999B-095CBA56D256}" ShortID="149462743"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="In" ID="{CA7B329A-A28E-4D5A-BAD4-FE81D030C812}"/>
+										<CustomState Name="" ID="{86A3B963-A31D-4B67-925F-0587EDEC5F57}" ShortID="935846237">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="49"/>
+												<Property Name="Volume" Type="Real64" Value="-10"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists/>
 						</RandomSequenceContainer>
 						<Sound Name="vent 1" ID="{15A1D4E5-FE79-408D-AC2B-59B82793CABD}" ShortID="1050753470">
@@ -145,6 +167,11 @@
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-19</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -205,6 +232,23 @@
 									</ChildrenList>
 								</Position>
 							</PositioningInfo>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Maison" ID="{3EAD4AAF-A89B-41B1-9628-03BC0AE507DC}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Out" ID="{406C7792-92F7-4B18-A849-ADAAA1CCF0AC}"/>
+										<CustomState Name="" ID="{D6689A9A-29C3-42B6-AB56-F5C76B3962C6}" ShortID="77997096"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="In" ID="{CA7B329A-A28E-4D5A-BAD4-FE81D030C812}"/>
+										<CustomState Name="" ID="{81F2C1B1-F2A8-4127-A281-F57694EA1D0A}" ShortID="180999413"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="vent 1" ID="{923C0899-B13B-4245-8C9D-CA124985116D}" Platform="Linked"/>

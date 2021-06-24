@@ -6,6 +6,17 @@ Event	ID	Name			Wwise Object Path	Notes
 	1930681820	Riviere_Stop			\Default Work Unit\Environnement\Riviere_Stop	
 	2814713645	Wind_loop_start			\Default Work Unit\Environnement\Wind\Wind_loop_start	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	855482704	Maison			\Default Work Unit\Maison	
+
+State	ID	Name	State Group			Notes
+	645492555	Out	Maison			
+	748895195	None	Maison			
+	1752637612	In	Maison			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	935846237	In	Maison	\Actor-Mixer Hierarchy\Default Work Unit\Environnement\Mixer_Environnement_Wind\Wind		
+
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 

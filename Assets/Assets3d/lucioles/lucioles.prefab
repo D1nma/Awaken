@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4980840961509332611}
   - component: {fileID: 4980840961509332608}
   - component: {fileID: 7374946554876685519}
+  - component: {fileID: 263268591169728197}
   m_Layer: 0
   m_Name: lucioles
   m_TagString: Untagged
@@ -4831,3 +4832,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39eb024959a8efa44a967ec2dab80f16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &263268591169728197
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4980840961509332609}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.68
+  m_Center: {x: -0.058866143, y: 0.30008304, z: -0.3987632}

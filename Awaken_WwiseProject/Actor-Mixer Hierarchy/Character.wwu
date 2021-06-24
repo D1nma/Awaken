@@ -2293,19 +2293,6 @@
 												</Sound>
 											</ChildrenList>
 										</Folder>
-										<Folder Name="21 Bonne idée" ID="{54A3678B-41C1-45ED-A3E7-75DE96519299}" ShortID="356222190"/>
-										<Folder Name="22 Je n_y avais pas pensé" ID="{EFF2F3A3-A7CE-4733-BA48-3FFB07C213AF}" ShortID="198142329"/>
-										<Folder Name="23 dis moi jeune fille" ID="{D44C0F06-65A7-4A1B-B676-4A81A1D3A94A}" ShortID="620501133"/>
-										<Folder Name="24 bien sûr que non" ID="{CD453FA7-88C1-47B5-AE68-6EEC35F07ED1}" ShortID="536670957"/>
-										<Folder Name="25 Peut être qu_il en reste" ID="{D063FBAE-BF7E-4182-9BBE-9B45F60B0D0C}" ShortID="591915734"/>
-										<Folder Name="26 Le coin de pèche d_un amateur de poisson" ID="{CD473678-5E7D-44CA-9A0F-F70027485CC0}" ShortID="1052592841"/>
-										<Folder Name="27 prend là" ID="{EE061A46-022C-4008-8714-053DA139FF0C}" ShortID="919200888"/>
-										<Folder Name="28 Fais un effort" ID="{DC23B830-3F19-474F-B235-B816DFA934D7}" ShortID="158953161"/>
-										<Folder Name="29 Tu peux placer l_appat" ID="{520C6DA0-2F28-491E-92CC-3EF34A18BDD2}" ShortID="747316682"/>
-										<Folder Name="30 C_est le moment d_attraper la clef" ID="{3912FAEC-1E61-4188-BD0E-734EC60F80E3}" ShortID="122598628"/>
-										<Folder Name="31 Joli lancer" ID="{779958DD-842F-4AE9-B069-C4F881AF2CEB}" ShortID="489639492"/>
-										<Folder Name="32 tu ne me reconnais pas" ID="{CEEE2C94-9A75-425B-A501-3856801A2C8B}" ShortID="591493329"/>
-										<Folder Name="33 Ton guide favori" ID="{7BE9BB22-CEAF-4083-A654-309624E359A0}" ShortID="182520680"/>
 										<Folder Name="34 Je ne t_ai jamais vu ici" ID="{D12325AB-88B5-49D3-BE92-4A3EF192ED5C}" ShortID="449904426">
 											<ChildrenList>
 												<Sound Name="je ne t_ai jamais vu ici" ID="{9B269296-B86E-423C-A220-607CF71774AD}" ShortID="424097060">
@@ -2524,7 +2511,7 @@
 										</Folder>
 										<Folder Name="42 A MODIF Ecoute Alyx" ID="{4D91F644-1B13-4C18-B0E7-7768AB39139C}" ShortID="919342650">
 											<ChildrenList>
-												<Sound Name="Ombre et leur maitre_Sparky-St" ID="{A9016814-5EC4-47CD-807B-5EB908841BD3}" ShortID="195259543">
+												<Sound Name="Ombres et leur maitre V3_Sparky-St" ID="{6E85FEB3-DAC1-481C-A6B4-76AC496F012D}" ShortID="827843008">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
@@ -2534,17 +2521,17 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Ombre et leur maitre_Sparky-St" ID="{1990D3C7-95E1-4C43-99ED-063B794EED48}">
+														<AudioFileSource Name="Ombres et leur maitre V3_Sparky-St" ID="{EEBF33B1-BF74-4155-BF4A-DBDD8A95CD20}">
 															<Language>SFX</Language>
-															<AudioFile>42 A MODIF Ecoute Alyx\Ombre et leur maitre_Sparky-St.wav</AudioFile>
+															<AudioFile>Ombres et leur maitre V3_Sparky-St.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="811736565"/>
+																<MediaID ID="233613568"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="Ombre et leur maitre_Sparky-St" ID="{1990D3C7-95E1-4C43-99ED-063B794EED48}" Platform="Linked"/>
+														<ActiveSource Name="Ombres et leur maitre V3_Sparky-St" ID="{EEBF33B1-BF74-4155-BF4A-DBDD8A95CD20}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -3989,7 +3976,7 @@
 													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
 												</Reference>
 												<Reference Name="DefaultSwitchOrState">
-													<ObjectRef Name="rocher" ID="{EC76DB2F-6CF0-46AD-BE49-E9AD7D10D2D5}" WorkUnitID="{717B1B04-81AA-453B-9421-FF7CF0A30963}"/>
+													<ObjectRef Name="terrain" ID="{A1956A61-67E1-4C5B-BE1E-00484CDD5496}" WorkUnitID="{717B1B04-81AA-453B-9421-FF7CF0A30963}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
