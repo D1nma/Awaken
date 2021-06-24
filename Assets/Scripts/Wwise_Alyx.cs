@@ -5,7 +5,6 @@ using UnityEngine;
 public class Wwise_Alyx : MonoBehaviour
 {
     public AK.Wwise.Event footstep,jump,lever,dead;
-    // Start is called before the first frame update
     public void PlayFootStep()
     {
         footstep.Post(gameObject);
