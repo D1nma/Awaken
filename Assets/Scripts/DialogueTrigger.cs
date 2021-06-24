@@ -110,7 +110,7 @@ public class DialogueTrigger : MonoBehaviour
     //When the Primitive exits the collision, it will change Color
     private void OnTriggerExit(Collider other)
     {
-        if (InteragirText != null)
+        if (InteragirText != null&& Interagir)
         {
             InteragirText.SetActive(false);
         }
