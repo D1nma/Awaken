@@ -8,6 +8,7 @@ public class Warning : MonoBehaviour
     public string warning;
     GameManager gm;
     public GameObject warningText;
+    bool startTime;
     public static float oldValue;
     public float fogEndValue = 60f;
     public static bool StartFog;
@@ -70,9 +71,14 @@ public class Warning : MonoBehaviour
             if (warningText != null)
             {
                 warningText.SetActive(true);
+                startTime = true;
                 //Debug.Log("warning");
             }
 
+           
+        }
+        if (startTime)
+        {
             time += Time.deltaTime;
         }
         /*else if(!show)
@@ -86,6 +92,7 @@ public class Warning : MonoBehaviour
         if (time >= 3)
         {
             show = false;
+            startTime = false;
             if (warningText)
             {
                 warningText.SetActive(false);
