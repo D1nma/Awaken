@@ -7,6 +7,7 @@ public class Inventaire : MonoBehaviour
 {
     public GameObject bird,cle,pates;
     public GameObject DialogueClé, DialoguePeche, DialoguePeche2,DialogueAppat;
+    public GameObject perdu;
     private static Inventaire instance;
 
     [HideInInspector]
@@ -30,6 +31,7 @@ public class Inventaire : MonoBehaviour
     {
         //this.gameObject.SetActive(false);
         keyEmptyUI.SetActive(false);
+        perdu.SetActive(false);
         canneUI.SetActive(false);
         boiteUI.SetActive(false);
         champiUI.SetActive(false);
@@ -62,6 +64,10 @@ public class Inventaire : MonoBehaviour
         {
             bird = GameObject.Find("Bird");
         }
+        if (!perdu)
+        {
+            perdu = GameObject.Find("Perdu");
+        }
         if (canne)
         {
             canneUI.SetActive(true);          
@@ -80,6 +86,7 @@ public class Inventaire : MonoBehaviour
                     bird.gameObject.SetActive(true);
                     Bird.vol = true;
                 }
+                perdu.SetActive(true);
                 Debug.Log("La clé va se faire prendre!");
                 keyUI.SetActive(true);
                 PlayersController.canControl = false;

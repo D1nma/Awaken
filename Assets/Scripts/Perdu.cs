@@ -18,6 +18,8 @@ public class Perdu : MonoBehaviour
             invent = GameObject.Find("Inventaire").GetComponent<Inventaire>();
         }
         DT.enabled = false;
+        invent.perdu = this.gameObject;
+        this.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
