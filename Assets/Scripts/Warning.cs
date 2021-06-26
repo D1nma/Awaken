@@ -38,6 +38,7 @@ public class Warning : MonoBehaviour
         else if (!warningText)
         {
             warningText = gm.TextWarning;
+            warningText.GetComponent<Text>().text = warning.ToString();
         }
         //Debug.Log(RenderSettings.fogEndDistance);
         if (StartFog)
@@ -69,7 +70,7 @@ public class Warning : MonoBehaviour
             if (warningText != null)
             {
                 warningText.SetActive(true);
-                Debug.Log("warning");
+                //Debug.Log("warning");
             }
 
             time += Time.deltaTime;
@@ -90,10 +91,6 @@ public class Warning : MonoBehaviour
                 warningText.SetActive(false);
             }
             time = 0;
-        }
-        if (!show)
-        {
-            warningText.SetActive(false);
         }
     }
 
