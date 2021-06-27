@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8931669266479379337}
   - component: {fileID: 5502398693485706284}
   - component: {fileID: 7762100453132273894}
+  - component: {fileID: -3969376139467424022}
   m_Layer: 0
   m_Name: buissons_ronces2
   m_TagString: Untagged
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-3969376139467424022
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8122375298197399859}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8965069529549233981, guid: 6f2b2877f7c12f5429b7b495ca4df0f5, type: 3}
