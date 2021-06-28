@@ -68,6 +68,7 @@ public class Appat : MonoBehaviour
                     Tips.SetActive(true);
                     InteragirText.SetActive(false);
                     Tips.gameObject.GetComponent<Text>().text = "C'est en place!";
+                    Bird.picore = true;
                     Instantiate(boiteAppat, transform.position, transform.rotation);
                 }
                 else

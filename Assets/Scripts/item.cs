@@ -136,7 +136,7 @@ public class item : MonoBehaviour
                     }
                 }else if(objectType == ObjectType.Appat && Appat.fait)
                 {
-                    InteragirText.gameObject.GetComponent<Text>().text = this.gameObject.name;
+                    InteragirText.gameObject.GetComponent<Text>().text = "Boite d'appat";
                     InteragirText.SetActive(true);
                 }
                 else
