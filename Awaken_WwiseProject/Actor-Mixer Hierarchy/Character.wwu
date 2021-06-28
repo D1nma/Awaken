@@ -1838,6 +1838,451 @@
 												<ActiveSource Name="Ton guide favori" ID="{5FB9846F-DA18-43CC-9FAF-0A7F38AD62B4}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="je ne t_ai jamais vu ici" ID="{9B269296-B86E-423C-A220-607CF71774AD}" ShortID="424097060">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom>
+														<Effect Name="Wwise Pitch Shifter (Custom)" ID="{E30E2691-AC37-4B2B-9F72-82B0821E0A48}" ShortID="793156425" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+															<PropertyList>
+																<Property Name="DelayTime" Type="Real32" Value="10"/>
+																<Property Name="Pitch" Type="Real32" Value="200"/>
+																<Property Name="SyncDry" Type="bool" Value="True"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="je ne t_ai jamais vu ici" ID="{08EF5CA9-0826-48AF-87E6-0D9959DE9FD2}">
+													<Language>SFX</Language>
+													<AudioFile>34 Je ne t_ai jamais vu ici\je ne t_ai jamais vu ici.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="151420454"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="je ne t_ai jamais vu ici" ID="{08EF5CA9-0826-48AF-87E6-0D9959DE9FD2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Une nouvelle arrivante 3_Alyx-St" ID="{1B8D96B9-92D1-426D-9B79-F5F90AE6C5CF}" ShortID="1062468968">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Une nouvelle arrivante 3_Alyx-St" ID="{930F5D6F-ED31-4579-85AB-0F9664B01734}">
+													<Language>SFX</Language>
+													<AudioFile>30 Une nouvelle arrivante\Une nouvelle arrivante 3_Alyx-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="38126315"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Une nouvelle arrivante 3_Alyx-St" ID="{930F5D6F-ED31-4579-85AB-0F9664B01734}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ame égarée 1_Sparky-St" ID="{ED131354-C760-4746-A0C5-85CE6F5C9E26}" ShortID="134316310">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ame égarée 1_Sparky-St" ID="{9E61929F-8CF6-463C-96C9-F5A1201398B4}">
+													<Language>SFX</Language>
+													<AudioFile>35 Ame égarée\Ame égarée 1_Sparky-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="514277934"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ame égarée 1_Sparky-St" ID="{9E61929F-8CF6-463C-96C9-F5A1201398B4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Tu m_as appelé par mon prénom 1_Alyx-St" ID="{1DB72FCC-DB89-4846-A627-CB96CA0A60A0}" ShortID="174540032">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Tu m_as appelé par mon prénom 1_Alyx-St" ID="{2090A1C0-E1CB-4D96-85EA-ABE5AB7436E2}">
+													<Language>SFX</Language>
+													<AudioFile>31 Tu m_as appelé par mon prénom\Tu m_as appelé par mon prénom 1_Alyx-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="684718457"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Tu m_as appelé par mon prénom 1_Alyx-St" ID="{2090A1C0-E1CB-4D96-85EA-ABE5AB7436E2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Je ne me rappelle de rien 2_Sparky-St" ID="{021A19F3-2A3A-43C3-AAB9-D4E0DC6E6C18}" ShortID="710258756">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Je ne me rappelle de rien 2_Sparky-St" ID="{992708C6-00B4-451F-A2E1-15C85DBDFC67}">
+													<Language>SFX</Language>
+													<AudioFile>36 Ca ne me dis rien\Je ne me rappelle de rien 2_Sparky-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="870497141"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Je ne me rappelle de rien 2_Sparky-St" ID="{992708C6-00B4-451F-A2E1-15C85DBDFC67}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="La voix était plus douce 1_Alyx-St" ID="{C8B0CB42-C8F0-4837-BDEA-8CD105F885EF}" ShortID="284421017">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="La voix était plus douce 1_Alyx-St" ID="{A1A511C0-D10A-44BA-8B8F-848416D6DCE3}">
+													<Language>SFX</Language>
+													<AudioFile>32 La voix dans mon rêve était plus douce\La voix était plus douce 1_Alyx-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1053441028"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="La voix était plus douce 1_Alyx-St" ID="{A1A511C0-D10A-44BA-8B8F-848416D6DCE3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ne te torture pas" ID="{D69AD620-7DCF-43B5-80EA-6DB55AE4C72B}" ShortID="790530345">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom>
+														<Effect Name="Wwise Pitch Shifter (Custom)" ID="{3EF67E23-54AC-4819-9C90-A837053C65E8}" ShortID="426010879" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+															<PropertyList>
+																<Property Name="DelayTime" Type="Real32" Value="10"/>
+																<Property Name="FilterType" Type="int32" Value="3"/>
+																<Property Name="Pitch" Type="Real32" Value="200"/>
+																<Property Name="SyncDry" Type="bool" Value="True"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ne te torture pas" ID="{E8E26F84-015A-422A-9324-5304BA75B6AF}">
+													<Language>SFX</Language>
+													<AudioFile>37 Ne te torture pas\ne te torture pas.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="699227908"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="ne te torture pas" ID="{E8E26F84-015A-422A-9324-5304BA75B6AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Je veux rentrer chez moi 1_Alyx-St" ID="{327DE573-60BE-4503-8D4B-3E8009F3557A}" ShortID="1061132758">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="SFX" ID="{CB76D6CA-EAEA-4AB8-9B52-6FE062E9BB7A}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Je veux rentrer chez moi 1_Alyx-St" ID="{083DA108-9676-48FE-8526-3C67E7FDCCD7}">
+													<Language>SFX</Language>
+													<AudioFile>33 Je veux rentrer chez moi\Je veux rentrer chez moi 1_Alyx-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="478464127"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Je veux rentrer chez moi 1_Alyx-St" ID="{083DA108-9676-48FE-8526-3C67E7FDCCD7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Si tu veux rentrer  2_Sparky-St" ID="{9DEADB78-CC4A-4D13-929B-AB735E075AC7}" ShortID="736676381">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Si tu veux rentrer  2_Sparky-St" ID="{7DF431C6-E954-454B-9B74-8635FECD365C}">
+													<Language>SFX</Language>
+													<AudioFile>38 Si tu veux rentrer chez toi\Si tu veux rentrer  2_Sparky-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="255723720"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Si tu veux rentrer  2_Sparky-St" ID="{7DF431C6-E954-454B-9B74-8635FECD365C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Une épreuve 1_Alyx-St" ID="{1D0C37A5-F37D-4789-B207-A66C6F0773A3}" ShortID="951451941">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Une épreuve 1_Alyx-St" ID="{A4D9C3D3-ECFE-4AC8-8146-520CEBEDC136}">
+													<Language>SFX</Language>
+													<AudioFile>34 Une épreuve\Une épreuve 1_Alyx-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="879725568"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Une épreuve 1_Alyx-St" ID="{A4D9C3D3-ECFE-4AC8-8146-520CEBEDC136}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Regarde un peu 1_Sparky-St" ID="{E8FD234E-D7B6-4092-A634-D46B16A76EF5}" ShortID="28425294">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Regarde un peu 1_Sparky-St" ID="{97A4D0E9-553B-4A9E-8823-D93667ED110A}">
+													<Language>SFX</Language>
+													<AudioFile>39 regarde un peu par là\Regarde un peu 1_Sparky-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="240838301"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Regarde un peu 1_Sparky-St" ID="{97A4D0E9-553B-4A9E-8823-D93667ED110A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Aura brillante _Sparky-St" ID="{74666839-5B25-4F33-9B73-9472B4ED41DE}" ShortID="748671874">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Aura brillante _Sparky-St" ID="{B4E2B6CE-DDED-42C4-964A-4139A1DC7B89}">
+													<Language>SFX</Language>
+													<AudioFile>40 l_aura bruillante\Aura brillante _Sparky-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="303051765"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Aura brillante _Sparky-St" ID="{B4E2B6CE-DDED-42C4-964A-4139A1DC7B89}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Le maitre des lieux 2_Alyx-St" ID="{0899E65A-BF5B-4C0E-959F-884963B8209D}" ShortID="519057301">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Le maitre des lieux 2_Alyx-St" ID="{E6DE0D20-1EDD-4CFE-8B1E-E8A008246F96}">
+													<Language>SFX</Language>
+													<AudioFile>35 Le maitre des lieux\Le maitre des lieux 2_Alyx-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="200197841"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Le maitre des lieux 2_Alyx-St" ID="{E6DE0D20-1EDD-4CFE-8B1E-E8A008246F96}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Tu le rencontrera_Sparky-St" ID="{6F0FBBBA-636A-452F-85A1-185D8E2AA214}" ShortID="78474293">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Tu le rencontrera_Sparky-St" ID="{07518880-6825-43DE-A51B-9A82D48A5E49}">
+													<Language>SFX</Language>
+													<AudioFile>41 Tu le rencontrera\Tu le rencontrera_Sparky-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="581120105"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Tu le rencontrera_Sparky-St" ID="{07518880-6825-43DE-A51B-9A82D48A5E49}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="des ombres… 1_Alyx-St" ID="{7338AFC8-D4F1-4D18-8132-7890884D189E}" ShortID="724842764">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="des ombres… 1_Alyx-St" ID="{C5216A0A-B737-4CEB-AD6F-8E84F9C667BD}">
+													<Language>SFX</Language>
+													<AudioFile>36 Des ombres\des ombres… 1_Alyx-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="818488492"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="des ombres… 1_Alyx-St" ID="{C5216A0A-B737-4CEB-AD6F-8E84F9C667BD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ombres et leur maitre V3_Sparky-St" ID="{6E85FEB3-DAC1-481C-A6B4-76AC496F012D}" ShortID="827843008">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ombres et leur maitre V3_Sparky-St" ID="{EEBF33B1-BF74-4155-BF4A-DBDD8A95CD20}">
+													<Language>SFX</Language>
+													<AudioFile>Ombres et leur maitre V3_Sparky-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="233613568"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Ombres et leur maitre V3_Sparky-St" ID="{EEBF33B1-BF74-4155-BF4A-DBDD8A95CD20}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
 									<Playlist>
@@ -1845,6 +2290,22 @@
 										<ItemRef Name="Tu ne me reconnais pas 2`_Sparky-St" ID="{DA383BCF-D032-403D-AECC-363A0A9B7D63}"/>
 										<ItemRef Name="C_est toi la voix 1_Alyx-St" ID="{C85CD600-02A9-4105-AEF1-8A5F2C36E693}"/>
 										<ItemRef Name="Ton guide favori" ID="{C3CFA9E5-65E9-4733-927F-FD55B6E53AB3}"/>
+										<ItemRef Name="je ne t_ai jamais vu ici" ID="{9B269296-B86E-423C-A220-607CF71774AD}"/>
+										<ItemRef Name="Une nouvelle arrivante 3_Alyx-St" ID="{1B8D96B9-92D1-426D-9B79-F5F90AE6C5CF}"/>
+										<ItemRef Name="Ame égarée 1_Sparky-St" ID="{ED131354-C760-4746-A0C5-85CE6F5C9E26}"/>
+										<ItemRef Name="Tu m_as appelé par mon prénom 1_Alyx-St" ID="{1DB72FCC-DB89-4846-A627-CB96CA0A60A0}"/>
+										<ItemRef Name="Je ne me rappelle de rien 2_Sparky-St" ID="{021A19F3-2A3A-43C3-AAB9-D4E0DC6E6C18}"/>
+										<ItemRef Name="La voix était plus douce 1_Alyx-St" ID="{C8B0CB42-C8F0-4837-BDEA-8CD105F885EF}"/>
+										<ItemRef Name="ne te torture pas" ID="{D69AD620-7DCF-43B5-80EA-6DB55AE4C72B}"/>
+										<ItemRef Name="Je veux rentrer chez moi 1_Alyx-St" ID="{327DE573-60BE-4503-8D4B-3E8009F3557A}"/>
+										<ItemRef Name="Si tu veux rentrer  2_Sparky-St" ID="{9DEADB78-CC4A-4D13-929B-AB735E075AC7}"/>
+										<ItemRef Name="Une épreuve 1_Alyx-St" ID="{1D0C37A5-F37D-4789-B207-A66C6F0773A3}"/>
+										<ItemRef Name="Regarde un peu 1_Sparky-St" ID="{E8FD234E-D7B6-4092-A634-D46B16A76EF5}"/>
+										<ItemRef Name="Aura brillante _Sparky-St" ID="{74666839-5B25-4F33-9B73-9472B4ED41DE}"/>
+										<ItemRef Name="Le maitre des lieux 2_Alyx-St" ID="{0899E65A-BF5B-4C0E-959F-884963B8209D}"/>
+										<ItemRef Name="Tu le rencontrera_Sparky-St" ID="{6F0FBBBA-636A-452F-85A1-185D8E2AA214}"/>
+										<ItemRef Name="des ombres… 1_Alyx-St" ID="{7338AFC8-D4F1-4D18-8132-7890884D189E}"/>
+										<ItemRef Name="Ombres et leur maitre V3_Sparky-St" ID="{6E85FEB3-DAC1-481C-A6B4-76AC496F012D}"/>
 									</Playlist>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Sequencer_14" ID="{1E274C3E-4181-4FEF-9315-1B69C28F2DAB}" ShortID="170786923">
@@ -1862,7 +2323,263 @@
 											<ObjectRef Name="Character" ID="{ACA2B646-B7C8-4839-B79B-2D247A65B8E4}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Je vais vers la montagne 1_Alyx-St" ID="{3C2B7F8A-CE20-4065-9E09-16FE2CE4EF79}" ShortID="453009262">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Je vais vers la montagne 1_Alyx-St" ID="{107AD3A0-263F-4A05-91CA-FFAB41957211}">
+													<Language>SFX</Language>
+													<AudioFile>39 Je vais vers la montagne\Je vais vers la montagne 1_Alyx-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="56442698"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Je vais vers la montagne 1_Alyx-St" ID="{107AD3A0-263F-4A05-91CA-FFAB41957211}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="C_est de la folie 2_Sparky-St" ID="{5C8CC7BE-2089-45B6-A69D-9809D26B8C2A}" ShortID="640932946">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="C_est de la folie 2_Sparky-St" ID="{02CE1746-D6F8-4436-ABE9-6AC3B9AAC01E}">
+													<Language>SFX</Language>
+													<AudioFile>45 tu as à écouté ce que j_ais dis\C_est de la folie 2_Sparky-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="982561632"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="C_est de la folie 2_Sparky-St" ID="{02CE1746-D6F8-4436-ABE9-6AC3B9AAC01E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="C_est le seul moyen 1_Alyx-St" ID="{3814B746-6BC1-489A-A2CB-91A32725778A}" ShortID="1002225733">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="C_est le seul moyen 1_Alyx-St" ID="{9539ED0F-2974-4A24-B87F-0CC721DC9463}">
+													<Language>SFX</Language>
+													<AudioFile>40 C_est le seul moyen\C_est le seul moyen 1_Alyx-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="613747721"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="C_est le seul moyen 1_Alyx-St" ID="{9539ED0F-2974-4A24-B87F-0CC721DC9463}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="je m_attendais à cette réponse" ID="{02E1497B-03C0-4A63-B8F5-C2EDE35C9D04}" ShortID="405375325">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom>
+														<Effect Name="Wwise Pitch Shifter (Custom)" ID="{3E487267-AC76-4E6E-A11B-8AEC9EDCAD17}" ShortID="758698345" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+															<PropertyList>
+																<Property Name="DelayTime" Type="Real32" Value="10"/>
+																<Property Name="FilterType" Type="int32" Value="3"/>
+																<Property Name="Pitch" Type="Real32" Value="200"/>
+																<Property Name="SyncDry" Type="bool" Value="True"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="je m_attendais à cette réponse" ID="{D438C59D-12B6-4AAB-8983-201456FC73D3}">
+													<Language>SFX</Language>
+													<AudioFile>46 Je m_attendais à cette réponse\je m_attendais à cette réponse.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="159985537"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="je m_attendais à cette réponse" ID="{D438C59D-12B6-4AAB-8983-201456FC73D3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Tu es sûr 1_Alyx-St" ID="{8C36DA37-2CDB-49B2-814B-C83798ECB1FF}" ShortID="630289189">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Tu es sûr 1_Alyx-St" ID="{D2859DEA-73C1-41D9-AB1F-9B66A7629DD2}">
+													<Language>SFX</Language>
+													<AudioFile>41 tu es sûr\Tu es sûr 1_Alyx-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="160862998"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Tu es sûr 1_Alyx-St" ID="{D2859DEA-73C1-41D9-AB1F-9B66A7629DD2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="certes" ID="{5AD943BC-0B80-497D-A740-0E184D958FD6}" ShortID="527981277">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="Effect1">
+													<Custom>
+														<Effect Name="Wwise Pitch Shifter (Custom)" ID="{5D94C6D2-B244-420D-A648-57686FB3795F}" ShortID="49453440" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+															<PropertyList>
+																<Property Name="DelayTime" Type="Real32" Value="10"/>
+																<Property Name="FilterType" Type="int32" Value="3"/>
+																<Property Name="Pitch" Type="Real32" Value="200"/>
+																<Property Name="SyncDry" Type="bool" Value="True"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="certes" ID="{258C6073-B556-4580-A2A3-AA346F93CA9D}">
+													<Language>SFX</Language>
+													<AudioFile>47 Certe\certes.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="90282902"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="certes" ID="{258C6073-B556-4580-A2A3-AA346F93CA9D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="allons-y" ID="{0B127765-3A1D-4C5E-BD46-18DF1A8F7611}" ShortID="173290871">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Pitch Shifter (Custom)" ID="{E332C2BC-F23D-4C20-A8B4-822E5CAA7C8D}" ShortID="94083602" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+															<PropertyList>
+																<Property Name="DelayTime" Type="Real32" Value="10"/>
+																<Property Name="FilterType" Type="int32" Value="3"/>
+																<Property Name="Pitch" Type="Real32" Value="200"/>
+																<Property Name="SyncDry" Type="bool" Value="True"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="Effect1" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="allons-y" ID="{A26C23B3-260C-443E-AF73-CC8BC29C8DB9}">
+													<Language>SFX</Language>
+													<AudioFile>48 Allons-y\allons-y.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="394036320"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="allons-y" ID="{A26C23B3-260C-443E-AF73-CC8BC29C8DB9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Il devait se sentir seul ici 2_Alyx-St" ID="{CBE526B1-006A-41A5-AB87-B6751AC48D1D}" ShortID="199454730">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Il devait se sentir seul ici 2_Alyx-St" ID="{4C046C56-FD50-4691-A01B-F44A4B683BB5}">
+													<Language>SFX</Language>
+													<AudioFile>42 Il devait se sentir seul ici\Il devait se sentir seul ici 2_Alyx-St.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1030661899"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Il devait se sentir seul ici 2_Alyx-St" ID="{4C046C56-FD50-4691-A01B-F44A4B683BB5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="Je vais vers la montagne 1_Alyx-St" ID="{3C2B7F8A-CE20-4065-9E09-16FE2CE4EF79}"/>
+										<ItemRef Name="C_est de la folie 2_Sparky-St" ID="{5C8CC7BE-2089-45B6-A69D-9809D26B8C2A}"/>
+										<ItemRef Name="C_est le seul moyen 1_Alyx-St" ID="{3814B746-6BC1-489A-A2CB-91A32725778A}"/>
+										<ItemRef Name="je m_attendais à cette réponse" ID="{02E1497B-03C0-4A63-B8F5-C2EDE35C9D04}"/>
+										<ItemRef Name="Tu es sûr 1_Alyx-St" ID="{8C36DA37-2CDB-49B2-814B-C83798ECB1FF}"/>
+										<ItemRef Name="certes" ID="{5AD943BC-0B80-497D-A740-0E184D958FD6}"/>
+										<ItemRef Name="allons-y" ID="{0B127765-3A1D-4C5E-BD46-18DF1A8F7611}"/>
+										<ItemRef Name="Il devait se sentir seul ici 2_Alyx-St" ID="{CBE526B1-006A-41A5-AB87-B6751AC48D1D}"/>
+									</Playlist>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Appat5mins" ID="{0D4DEBA0-66E2-4C7D-9859-CC33695B849A}" ShortID="171270077">
 									<PropertyList>
@@ -2293,255 +3010,18 @@
 												</Sound>
 											</ChildrenList>
 										</Folder>
-										<Folder Name="34 Je ne t_ai jamais vu ici" ID="{D12325AB-88B5-49D3-BE92-4A3EF192ED5C}" ShortID="449904426">
-											<ChildrenList>
-												<Sound Name="je ne t_ai jamais vu ici" ID="{9B269296-B86E-423C-A220-607CF71774AD}" ShortID="424097060">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="je ne t_ai jamais vu ici" ID="{08EF5CA9-0826-48AF-87E6-0D9959DE9FD2}">
-															<Language>SFX</Language>
-															<AudioFile>34 Je ne t_ai jamais vu ici\je ne t_ai jamais vu ici.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="151420454"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="je ne t_ai jamais vu ici" ID="{08EF5CA9-0826-48AF-87E6-0D9959DE9FD2}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="35 Ame égarée" ID="{EE408F36-8B95-4BCC-B420-DBAE09A590B2}" ShortID="674957694">
-											<ChildrenList>
-												<Sound Name="Ame égarée 1_Sparky-St" ID="{ED131354-C760-4746-A0C5-85CE6F5C9E26}" ShortID="134316310">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Ame égarée 1_Sparky-St" ID="{9E61929F-8CF6-463C-96C9-F5A1201398B4}">
-															<Language>SFX</Language>
-															<AudioFile>35 Ame égarée\Ame égarée 1_Sparky-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="514277934"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Ame égarée 1_Sparky-St" ID="{9E61929F-8CF6-463C-96C9-F5A1201398B4}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="36 Ca ne me dis rien" ID="{E739DBA8-559C-49DB-82BA-9F35BF6B0978}" ShortID="1072522849">
-											<ChildrenList>
-												<Sound Name="Je ne me rappelle de rien 2_Sparky-St" ID="{021A19F3-2A3A-43C3-AAB9-D4E0DC6E6C18}" ShortID="710258756">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Je ne me rappelle de rien 2_Sparky-St" ID="{992708C6-00B4-451F-A2E1-15C85DBDFC67}">
-															<Language>SFX</Language>
-															<AudioFile>36 Ca ne me dis rien\Je ne me rappelle de rien 2_Sparky-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="870497141"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Je ne me rappelle de rien 2_Sparky-St" ID="{992708C6-00B4-451F-A2E1-15C85DBDFC67}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="37 Ne te torture pas" ID="{8053FD11-FCA0-4373-ACA3-CC1525C3FCD7}" ShortID="840673679">
-											<ChildrenList>
-												<Sound Name="ne te torture pas" ID="{D69AD620-7DCF-43B5-80EA-6DB55AE4C72B}" ShortID="790530345">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="ne te torture pas" ID="{E8E26F84-015A-422A-9324-5304BA75B6AF}">
-															<Language>SFX</Language>
-															<AudioFile>37 Ne te torture pas\ne te torture pas.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="699227908"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="ne te torture pas" ID="{E8E26F84-015A-422A-9324-5304BA75B6AF}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="38 Si tu veux rentrer chez toi" ID="{97CA8E50-39B8-48D1-ABE2-922E848635E0}" ShortID="178268179">
-											<ChildrenList>
-												<Sound Name="Si tu veux rentrer  2_Sparky-St" ID="{9DEADB78-CC4A-4D13-929B-AB735E075AC7}" ShortID="736676381">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Si tu veux rentrer  2_Sparky-St" ID="{7DF431C6-E954-454B-9B74-8635FECD365C}">
-															<Language>SFX</Language>
-															<AudioFile>38 Si tu veux rentrer chez toi\Si tu veux rentrer  2_Sparky-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="255723720"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Si tu veux rentrer  2_Sparky-St" ID="{7DF431C6-E954-454B-9B74-8635FECD365C}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="39 regarde un peu par là" ID="{52A37FD1-BEEB-458E-AD86-039EC6B32009}" ShortID="429794376">
-											<ChildrenList>
-												<Sound Name="Regarde un peu 1_Sparky-St" ID="{E8FD234E-D7B6-4092-A634-D46B16A76EF5}" ShortID="28425294">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Regarde un peu 1_Sparky-St" ID="{97A4D0E9-553B-4A9E-8823-D93667ED110A}">
-															<Language>SFX</Language>
-															<AudioFile>39 regarde un peu par là\Regarde un peu 1_Sparky-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="240838301"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Regarde un peu 1_Sparky-St" ID="{97A4D0E9-553B-4A9E-8823-D93667ED110A}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="40 l_aura bruillante" ID="{238F0F84-4A0B-4619-B5DE-FC9653692097}" ShortID="659007673">
-											<ChildrenList>
-												<Sound Name="Aura brillante _Sparky-St" ID="{74666839-5B25-4F33-9B73-9472B4ED41DE}" ShortID="748671874">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Aura brillante _Sparky-St" ID="{B4E2B6CE-DDED-42C4-964A-4139A1DC7B89}">
-															<Language>SFX</Language>
-															<AudioFile>40 l_aura bruillante\Aura brillante _Sparky-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="303051765"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Aura brillante _Sparky-St" ID="{B4E2B6CE-DDED-42C4-964A-4139A1DC7B89}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="41 Tu le rencontrera" ID="{701599A5-1ACF-44DA-B296-524ADC02D0D7}" ShortID="203413782">
-											<ChildrenList>
-												<Sound Name="Tu le rencontrera_Sparky-St" ID="{6F0FBBBA-636A-452F-85A1-185D8E2AA214}" ShortID="78474293">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Tu le rencontrera_Sparky-St" ID="{07518880-6825-43DE-A51B-9A82D48A5E49}">
-															<Language>SFX</Language>
-															<AudioFile>41 Tu le rencontrera\Tu le rencontrera_Sparky-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="581120105"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Tu le rencontrera_Sparky-St" ID="{07518880-6825-43DE-A51B-9A82D48A5E49}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="42 A MODIF Ecoute Alyx" ID="{4D91F644-1B13-4C18-B0E7-7768AB39139C}" ShortID="919342650">
-											<ChildrenList>
-												<Sound Name="Ombres et leur maitre V3_Sparky-St" ID="{6E85FEB3-DAC1-481C-A6B4-76AC496F012D}" ShortID="827843008">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Ombres et leur maitre V3_Sparky-St" ID="{EEBF33B1-BF74-4155-BF4A-DBDD8A95CD20}">
-															<Language>SFX</Language>
-															<AudioFile>Ombres et leur maitre V3_Sparky-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="233613568"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Ombres et leur maitre V3_Sparky-St" ID="{EEBF33B1-BF74-4155-BF4A-DBDD8A95CD20}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
 										<Folder Name="43 D_autres questions" ID="{827B4D37-7C69-4F51-A084-8CD3FA22CE61}" ShortID="1001033506">
 											<ChildrenList>
 												<Sound Name="D_autres question 2_Sparky-St" ID="{096844BD-2C9B-440D-BD76-2A40BBED374F}" ShortID="778813281">
+													<PropertyList>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
@@ -2566,9 +3046,15 @@
 										<Folder Name="44 Parfait" ID="{8740968A-10A6-4C55-8B7F-D0F1D71F1FA7}" ShortID="449742650">
 											<ChildrenList>
 												<Sound Name="Parfait 2_Sparky-St" ID="{A4C265D9-5D72-444B-90B7-EE106E2C1BC1}" ShortID="365240389">
+													<PropertyList>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
@@ -2586,114 +3072,6 @@
 													<ObjectLists/>
 													<ActiveSourceList>
 														<ActiveSource Name="Parfait 2_Sparky-St" ID="{7CFBB003-CD52-4906-A2C3-AFA3B9E54D4E}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="45 tu as à écouté ce que j_ais dis" ID="{B5BF223C-45B2-4C9D-B7A3-667DFA6098EE}" ShortID="88084664">
-											<ChildrenList>
-												<Sound Name="C_est de la folie 2_Sparky-St" ID="{5C8CC7BE-2089-45B6-A69D-9809D26B8C2A}" ShortID="640932946">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="C_est de la folie 2_Sparky-St" ID="{02CE1746-D6F8-4436-ABE9-6AC3B9AAC01E}">
-															<Language>SFX</Language>
-															<AudioFile>45 tu as à écouté ce que j_ais dis\C_est de la folie 2_Sparky-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="982561632"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="C_est de la folie 2_Sparky-St" ID="{02CE1746-D6F8-4436-ABE9-6AC3B9AAC01E}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="46 Je m_attendais à cette réponse" ID="{B37FC953-FDB7-48B7-AF4C-C563775F3A9D}" ShortID="847919543">
-											<ChildrenList>
-												<Sound Name="je m_attendais à cette réponse" ID="{02E1497B-03C0-4A63-B8F5-C2EDE35C9D04}" ShortID="405375325">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="je m_attendais à cette réponse" ID="{D438C59D-12B6-4AAB-8983-201456FC73D3}">
-															<Language>SFX</Language>
-															<AudioFile>46 Je m_attendais à cette réponse\je m_attendais à cette réponse.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="159985537"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="je m_attendais à cette réponse" ID="{D438C59D-12B6-4AAB-8983-201456FC73D3}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="47 Certe" ID="{BA626332-9684-43D9-B328-AC4E4C279348}" ShortID="373365541">
-											<ChildrenList>
-												<Sound Name="certes" ID="{5AD943BC-0B80-497D-A740-0E184D958FD6}" ShortID="527981277">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="certes" ID="{258C6073-B556-4580-A2A3-AA346F93CA9D}">
-															<Language>SFX</Language>
-															<AudioFile>47 Certe\certes.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="90282902"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="certes" ID="{258C6073-B556-4580-A2A3-AA346F93CA9D}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="48 Allons-y" ID="{217A8F8E-B769-4456-BC06-5D039A73567A}" ShortID="657758049">
-											<ChildrenList>
-												<Sound Name="allons-y" ID="{0B127765-3A1D-4C5E-BD46-18DF1A8F7611}" ShortID="173290871">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="allons-y" ID="{A26C23B3-260C-443E-AF73-CC8BC29C8DB9}">
-															<Language>SFX</Language>
-															<AudioFile>48 Allons-y\allons-y.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="394036320"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="allons-y" ID="{A26C23B3-260C-443E-AF73-CC8BC29C8DB9}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -3086,168 +3464,7 @@
 								</Folder>
 								<Folder Name="Alyx" ID="{A8A32929-8787-425A-A5A4-7CBB9DA307E6}" ShortID="580889541">
 									<ChildrenList>
-										<Folder Name="40 C_est le seul moyen" ID="{426AD4EB-D35E-4A1E-9142-B0909B14EBB4}" ShortID="408697479">
-											<ChildrenList>
-												<Sound Name="C_est le seul moyen 1_Alyx-St" ID="{3814B746-6BC1-489A-A2CB-91A32725778A}" ShortID="1002225733">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="C_est le seul moyen 1_Alyx-St" ID="{9539ED0F-2974-4A24-B87F-0CC721DC9463}">
-															<Language>SFX</Language>
-															<AudioFile>40 C_est le seul moyen\C_est le seul moyen 1_Alyx-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="613747721"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="C_est le seul moyen 1_Alyx-St" ID="{9539ED0F-2974-4A24-B87F-0CC721DC9463}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="30 Une nouvelle arrivante" ID="{52E8B283-63DF-49F5-B0F5-BEF97543F9DD}" ShortID="105833104">
-											<ChildrenList>
-												<Sound Name="Une nouvelle arrivante 3_Alyx-St" ID="{1B8D96B9-92D1-426D-9B79-F5F90AE6C5CF}" ShortID="1062468968">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Une nouvelle arrivante 3_Alyx-St" ID="{930F5D6F-ED31-4579-85AB-0F9664B01734}">
-															<Language>SFX</Language>
-															<AudioFile>30 Une nouvelle arrivante\Une nouvelle arrivante 3_Alyx-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="38126315"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Une nouvelle arrivante 3_Alyx-St" ID="{930F5D6F-ED31-4579-85AB-0F9664B01734}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="31 Tu m_as appelé par mon prénom" ID="{DA911E9D-5B9A-4A57-959A-846B0A848375}" ShortID="200245945">
-											<ChildrenList>
-												<Sound Name="Tu m_as appelé par mon prénom 1_Alyx-St" ID="{1DB72FCC-DB89-4846-A627-CB96CA0A60A0}" ShortID="174540032">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Tu m_as appelé par mon prénom 1_Alyx-St" ID="{2090A1C0-E1CB-4D96-85EA-ABE5AB7436E2}">
-															<Language>SFX</Language>
-															<AudioFile>31 Tu m_as appelé par mon prénom\Tu m_as appelé par mon prénom 1_Alyx-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="684718457"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Tu m_as appelé par mon prénom 1_Alyx-St" ID="{2090A1C0-E1CB-4D96-85EA-ABE5AB7436E2}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="34 Une épreuve" ID="{4DBFC07A-CF2E-4376-AC06-7D787ADF27BB}" ShortID="958946339">
-											<ChildrenList>
-												<Sound Name="Une épreuve 1_Alyx-St" ID="{1D0C37A5-F37D-4789-B207-A66C6F0773A3}" ShortID="951451941">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Une épreuve 1_Alyx-St" ID="{A4D9C3D3-ECFE-4AC8-8146-520CEBEDC136}">
-															<Language>SFX</Language>
-															<AudioFile>34 Une épreuve\Une épreuve 1_Alyx-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="879725568"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Une épreuve 1_Alyx-St" ID="{A4D9C3D3-ECFE-4AC8-8146-520CEBEDC136}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="35 Le maitre des lieux" ID="{3CE7EF3E-AE15-45B1-A18E-162373F68007}" ShortID="256722703">
-											<ChildrenList>
-												<Sound Name="Le maitre des lieux 2_Alyx-St" ID="{0899E65A-BF5B-4C0E-959F-884963B8209D}" ShortID="519057301">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Le maitre des lieux 2_Alyx-St" ID="{E6DE0D20-1EDD-4CFE-8B1E-E8A008246F96}">
-															<Language>SFX</Language>
-															<AudioFile>35 Le maitre des lieux\Le maitre des lieux 2_Alyx-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="200197841"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Le maitre des lieux 2_Alyx-St" ID="{E6DE0D20-1EDD-4CFE-8B1E-E8A008246F96}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="36 Des ombres" ID="{7472083F-B4B7-4720-A28B-DF327E2B5852}" ShortID="202265352">
-											<ChildrenList>
-												<Sound Name="des ombres… 1_Alyx-St" ID="{7338AFC8-D4F1-4D18-8132-7890884D189E}" ShortID="724842764">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="des ombres… 1_Alyx-St" ID="{C5216A0A-B737-4CEB-AD6F-8E84F9C667BD}">
-															<Language>SFX</Language>
-															<AudioFile>36 Des ombres\des ombres… 1_Alyx-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="818488492"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="des ombres… 1_Alyx-St" ID="{C5216A0A-B737-4CEB-AD6F-8E84F9C667BD}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
+										<Folder Name="40 C_est le seul moyen" ID="{426AD4EB-D35E-4A1E-9142-B0909B14EBB4}" ShortID="408697479"/>
 										<Folder Name="37 Tu peux répéter" ID="{61B25C54-A617-4E11-BF82-7C9F721D0B77}" ShortID="736213006">
 											<ChildrenList>
 												<Sound Name="tu peux répéter 3_Alyx-St" ID="{8F32AC51-318A-4881-9B7D-089A630759B1}" ShortID="313709635">
@@ -3271,33 +3488,6 @@
 													<ObjectLists/>
 													<ActiveSourceList>
 														<ActiveSource Name="tu peux répéter 3_Alyx-St" ID="{65F80801-41A2-493E-B13D-F39600C5E655}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="33 Je veux rentrer chez moi" ID="{0EDCA826-5346-4D7F-88E0-824BC2810FD0}" ShortID="274568810">
-											<ChildrenList>
-												<Sound Name="Je veux rentrer chez moi 1_Alyx-St" ID="{327DE573-60BE-4503-8D4B-3E8009F3557A}" ShortID="1061132758">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Je veux rentrer chez moi 1_Alyx-St" ID="{083DA108-9676-48FE-8526-3C67E7FDCCD7}">
-															<Language>SFX</Language>
-															<AudioFile>33 Je veux rentrer chez moi\Je veux rentrer chez moi 1_Alyx-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="478464127"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Je veux rentrer chez moi 1_Alyx-St" ID="{083DA108-9676-48FE-8526-3C67E7FDCCD7}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -3329,60 +3519,7 @@
 												</Sound>
 											</ChildrenList>
 										</Folder>
-										<Folder Name="32 La voix dans mon rêve était plus douce" ID="{1C5AE509-3A00-4579-980A-03CD2643C1D5}" ShortID="876108090">
-											<ChildrenList>
-												<Sound Name="La voix était plus douce 1_Alyx-St" ID="{C8B0CB42-C8F0-4837-BDEA-8CD105F885EF}" ShortID="284421017">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="La voix était plus douce 1_Alyx-St" ID="{A1A511C0-D10A-44BA-8B8F-848416D6DCE3}">
-															<Language>SFX</Language>
-															<AudioFile>32 La voix dans mon rêve était plus douce\La voix était plus douce 1_Alyx-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1053441028"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="La voix était plus douce 1_Alyx-St" ID="{A1A511C0-D10A-44BA-8B8F-848416D6DCE3}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
-										<Folder Name="39 Je vais vers la montagne" ID="{258D9E00-0D47-4DC6-A93E-7035BA19DE1D}" ShortID="526978074">
-											<ChildrenList>
-												<Sound Name="Je vais vers la montagne 1_Alyx-St" ID="{3C2B7F8A-CE20-4065-9E09-16FE2CE4EF79}" ShortID="453009262">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Je vais vers la montagne 1_Alyx-St" ID="{107AD3A0-263F-4A05-91CA-FFAB41957211}">
-															<Language>SFX</Language>
-															<AudioFile>39 Je vais vers la montagne\Je vais vers la montagne 1_Alyx-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="56442698"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Je vais vers la montagne 1_Alyx-St" ID="{107AD3A0-263F-4A05-91CA-FFAB41957211}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
+										<Folder Name="39 Je vais vers la montagne" ID="{258D9E00-0D47-4DC6-A93E-7035BA19DE1D}" ShortID="526978074"/>
 										<Folder Name="57 oui je veux me souvenir" ID="{603493A3-FF74-420D-8E8B-1FA6B1933A41}" ShortID="66772153">
 											<ChildrenList>
 												<Sound Name="Oui je veux me souvenir 1_Alyx-St" ID="{85815F68-A0E5-4132-8151-C99F8BCB577B}" ShortID="637437014">
@@ -3653,33 +3790,7 @@
 												</Sound>
 											</ChildrenList>
 										</Folder>
-										<Folder Name="42 Il devait se sentir seul ici" ID="{CF038B28-0847-470B-88B3-0DE0A753FEA4}" ShortID="974701147">
-											<ChildrenList>
-												<Sound Name="Il devait se sentir seul ici 2_Alyx-St" ID="{CBE526B1-006A-41A5-AB87-B6751AC48D1D}" ShortID="199454730">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Il devait se sentir seul ici 2_Alyx-St" ID="{4C046C56-FD50-4691-A01B-F44A4B683BB5}">
-															<Language>SFX</Language>
-															<AudioFile>42 Il devait se sentir seul ici\Il devait se sentir seul ici 2_Alyx-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1030661899"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Il devait se sentir seul ici 2_Alyx-St" ID="{4C046C56-FD50-4691-A01B-F44A4B683BB5}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
+										<Folder Name="42 Il devait se sentir seul ici" ID="{CF038B28-0847-470B-88B3-0DE0A753FEA4}" ShortID="974701147"/>
 										<Folder Name="54 Non je peux continuer" ID="{FE97912B-573B-460D-9F0D-423450F9B100}" ShortID="344652829">
 											<ChildrenList>
 												<Sound Name="Non je peux continuer 3_Alyx-St" ID="{29E6462C-7CE3-41DE-B3F5-7B4B3A5D2EF0}" ShortID="953471219">
@@ -3734,33 +3845,7 @@
 												</Sound>
 											</ChildrenList>
 										</Folder>
-										<Folder Name="41 tu es sûr" ID="{08248AF4-7B92-4C88-8EB1-AD0D720FC011}" ShortID="531608443">
-											<ChildrenList>
-												<Sound Name="Tu es sûr 1_Alyx-St" ID="{8C36DA37-2CDB-49B2-814B-C83798ECB1FF}" ShortID="630289189">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Tu es sûr 1_Alyx-St" ID="{D2859DEA-73C1-41D9-AB1F-9B66A7629DD2}">
-															<Language>SFX</Language>
-															<AudioFile>41 tu es sûr\Tu es sûr 1_Alyx-St.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="160862998"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Tu es sûr 1_Alyx-St" ID="{D2859DEA-73C1-41D9-AB1F-9B66A7629DD2}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</Folder>
+										<Folder Name="41 tu es sûr" ID="{08248AF4-7B92-4C88-8EB1-AD0D720FC011}" ShortID="531608443"/>
 										<Folder Name="56 Je crois que si" ID="{441FFA34-921E-418A-89EA-69C303DAEFEC}" ShortID="108323515">
 											<ChildrenList>
 												<Sound Name="Je crois que si 2_Alyx-St" ID="{CB9B2EA9-B152-4CA4-B4EE-2ADB4E39B6A1}" ShortID="859759439">
