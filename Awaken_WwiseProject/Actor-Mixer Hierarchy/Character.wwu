@@ -4527,6 +4527,7 @@
 								</ActorMixer>
 								<Sound Name="coeur_battement1" ID="{70E06FED-F276-4807-A509-30D33C0BE3DA}" ShortID="809223518">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
@@ -4534,6 +4535,7 @@
 												<Value>1</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>

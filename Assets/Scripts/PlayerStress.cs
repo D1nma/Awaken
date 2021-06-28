@@ -64,6 +64,10 @@ public class PlayerStress : MonoBehaviour
     }
     void Update()
     {
+        if (!gm)
+        {
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        }
         if (!Sun)
         {
             Sun = GameObject.Find("Directional Light");
@@ -306,11 +310,14 @@ public class PlayerStress : MonoBehaviour
         {
             if (Ombre.see)
             {
-                currentStress += AugmentationStress * 2 * Time.deltaTime;
+                currentStress += AugmentationStress * 3 * Time.deltaTime;
+                AkSoundEngine.PostEvent("Coeur", gameObject);
+
             }
             else
             {
                 currentStress += AugmentationStress * Time.deltaTime;
+                AkSoundEngine.PostEvent("Coeur_Stop", gameObject);
             }
             
             stressBar.SetStress(currentStress);
