@@ -15,7 +15,7 @@ public class Ombre : MonoBehaviour
 
     public bool idleOne = false, canTouch;
     private bool canHurt = false;
-
+    bool doOnce;
     private bool follow = true;
     public static bool see = false;
 
@@ -33,6 +33,7 @@ public class Ombre : MonoBehaviour
 
     void Start()
     {
+
         _animator = GetComponent<Animator>();
         StartCoroutine(AfterInstance());
         enemy = GetComponent<NavMeshAgent>();
@@ -72,6 +73,11 @@ public class Ombre : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!doOnce)
+        {
+            AkSoundEngine.PostEvent("Ombre", gameObject);
+            doOnce = true;
+        }
         if (player && GameManager.gameOver != true)
         {
             if (PlayersController.canControl == false || PlayersController.wakeUp == true)
