@@ -65,6 +65,7 @@ public class PlayersController : MonoBehaviour
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         pivot = GameObject.Find("pivot");
         SUPERUSER = gm.testeur;
+        animator.SetBool("Dead", false);
         if (!SUPERUSER)
         {
             transform.position = gm.lastCheckPointPos;
@@ -122,6 +123,10 @@ public class PlayersController : MonoBehaviour
         if (GameManager.gameOver == true)
         {
             animator.SetBool("Dead", true);
+        }
+        else
+        {
+            animator.SetBool("Dead", false);
         }
         if (SUPERUSER)
         {

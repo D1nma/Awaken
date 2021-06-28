@@ -8,23 +8,36 @@ public class Serrure : MonoBehaviour
     public GameObject InteragirText;
     public GameObject Tips;
     public Inventaire invent;
+    GameManager gm;
     float time;
     private bool open = false, canInteract = false, startTiming = false;
     // Start is called before the first frame update
     void Start()
     {
-        if (!Tips || !InteragirText)
+        if (!gm)
         {
-            Debug.LogWarning("Ajouter les parametres necessaires au fonctionnement dans l'inspecteur..");
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!invent)
+        if (!gm)
+        {
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        }
+        else if (!invent)
         {
             invent = GameObject.Find("Inventaire").GetComponent<Inventaire>();
+        }
+        else if (InteragirText == null)
+        {
+            InteragirText = gm.InteragirText;
+        }
+        else if (Tips == null)
+        {
+            Tips = gm.Tips;
         }
         if (canInteract)
         {
@@ -32,17 +45,17 @@ public class Serrure : MonoBehaviour
             {
                 if (invent.key == true)
                 {
-                    invent.key=false;
+                    invent.key = false;
                     open = true;
                     Portail.open = true;
-                    startTiming=true;
+                    startTiming = true;
                     Tips.SetActive(true);
                     InteragirText.SetActive(false);
                     Tips.gameObject.GetComponent<Text>().text = "C'est ouvert!";
                 }
                 else
                 {
-                    startTiming=true;
+                    startTiming = true;
                     Tips.SetActive(true);
                     Tips.gameObject.GetComponent<Text>().text = "Vous avez besoin d'une clé!";
                     invent.keyEmpty = true;

@@ -4562,6 +4562,305 @@
 										<ActiveSource Name="coeur_battement1" ID="{65540B83-DD7E-4CA2-9363-27473E0CF781}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="ailes oiseau_WINGBird_Envol pigeon (ID 0840)_LS" ID="{227E008C-FF29-491A-BB24-35AF486C2CA2}" ShortID="16811157">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ailes oiseau_WINGBird_Envol pigeon (ID 0840)_LS" ID="{FEDBA4B5-D680-411C-815F-93639A29BF85}">
+											<Language>SFX</Language>
+											<AudioFile>ailes oiseau_WINGBird_Envol pigeon (ID 0840)_LS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="267175999"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="ailes oiseau_WINGBird_Envol pigeon (ID 0840)_LS" ID="{FEDBA4B5-D680-411C-815F-93639A29BF85}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Folder Name="Sauts-20210628T111823Z-001" ID="{8B165A10-2FD8-4689-888D-D439F25C3054}" ShortID="18182056">
+									<ChildrenList>
+										<Folder Name="Sauts" ID="{00475DF7-9984-44F4-8FF6-74644688FA07}" ShortID="578941100">
+											<ChildrenList>
+												<Sound Name="1_saut" ID="{C4A8A206-DB21-4FEB-8025-8CD3984CAEAE}" ShortID="127688554">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="1_saut" ID="{90B8B0B9-E528-418D-B011-6D60F1073B8A}">
+															<Language>SFX</Language>
+															<AudioFile>Sauts-20210628T111823Z-001\Sauts\1_saut.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="676618964"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="1_saut" ID="{90B8B0B9-E528-418D-B011-6D60F1073B8A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="2_saut" ID="{ADF6396B-46DF-4D83-A38C-DAA6D53D39E2}" ShortID="1033639575">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="2_saut" ID="{60C81D94-FF95-4A60-B2F7-D4A8ED6DE068}">
+															<Language>SFX</Language>
+															<AudioFile>Sauts-20210628T111823Z-001\Sauts\2_saut.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="696551074"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="2_saut" ID="{60C81D94-FF95-4A60-B2F7-D4A8ED6DE068}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</Folder>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="son interface-20210628T111842Z-001" ID="{B4E3B18B-FC8F-4C8A-93DC-C68318CB989F}" ShortID="92332387">
+									<ChildrenList>
+										<Folder Name="son interface" ID="{020812B4-A3D1-47AC-917B-FCF0B0D40E21}" ShortID="214875593">
+											<ChildrenList>
+												<Sound Name="clic 1_CMPTKey_Apple magic mouse simple clic (ID 1742)_LS" ID="{A7422E5E-0CF9-4D77-A8C5-64DA5D6CBD8A}" ShortID="5001972">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="clic 1_CMPTKey_Apple magic mouse simple clic (ID 1742)_LS" ID="{AF653809-6274-4B1B-A21C-5B192F4CF42B}">
+															<Language>SFX</Language>
+															<AudioFile>son interface-20210628T111842Z-001\son interface\clic 1_CMPTKey_Apple magic mouse simple clic (ID 1742)_LS.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1050343846"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="clic 1_CMPTKey_Apple magic mouse simple clic (ID 1742)_LS" ID="{AF653809-6274-4B1B-A21C-5B192F4CF42B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="clic 2_clic" ID="{430A81A1-0857-4BDD-A728-492F5D496F21}" ShortID="263904179">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="clic 2_clic" ID="{00D83000-5CAA-4753-BEFC-78A6FEEC8635}">
+															<Language>SFX</Language>
+															<AudioFile>son interface-20210628T111842Z-001\son interface\clic 2_clic.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="17451677"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="clic 2_clic" ID="{00D83000-5CAA-4753-BEFC-78A6FEEC8635}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="clic 3_MECHClik_Thermostat 1 (ID 2191)_LS" ID="{968D3D09-E04A-4C3B-AF7B-F30DFECFE70D}" ShortID="258977070">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="clic 3_MECHClik_Thermostat 1 (ID 2191)_LS" ID="{BA8A9FC4-9DC0-4CFC-86DD-8D7014BAC671}">
+															<Language>SFX</Language>
+															<AudioFile>son interface-20210628T111842Z-001\son interface\clic 3_MECHClik_Thermostat 1 (ID 2191)_LS.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="54466017"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="clic 3_MECHClik_Thermostat 1 (ID 2191)_LS" ID="{BA8A9FC4-9DC0-4CFC-86DD-8D7014BAC671}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</Folder>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="son ombre-20210628T112230Z-001" ID="{C01C82B0-3994-4CDD-ACD1-7613A4B25973}" ShortID="1021039434">
+									<ChildrenList>
+										<Folder Name="son ombre" ID="{7F5FD362-A7DD-4630-A07D-7F504EFE1930}" ShortID="137871298">
+											<ChildrenList>
+												<Sound Name="son_Ombre" ID="{8860744C-EC98-4285-85B9-16EC362F907F}" ShortID="1063193130">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="son_Ombre" ID="{AB285221-20ED-4D7D-A489-5383FC6453F1}">
+															<Language>SFX</Language>
+															<AudioFile>son ombre-20210628T112230Z-001\son ombre\son_Ombre.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="868562485"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="son_Ombre" ID="{AB285221-20ED-4D7D-A489-5383FC6453F1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="son_Ombre 2" ID="{0AFC4608-6AF3-4131-BCB8-AFAD859A8FA4}" ShortID="555188632">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<Custom>
+																<Attenuation Name="Attenuation (Custom)" ID="{227D6084-1A15-47D0-B9D0-6B8744A48699}" ShortID="792011799">
+																	<PropertyList>
+																		<Property Name="RadiusMax" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<CurveUsageInfoList>
+																		<VolumeDryUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="VolumeDry" ID="{E1F38D83-56AD-4157-84C5-63EAF5AF7607}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="3"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>10</XPos>
+																							<YPos>-200</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</VolumeDryUsage>
+																		<VolumeWetGameUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetGameUsage>
+																		<VolumeWetUserUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetUserUsage>
+																		<LowPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</LowPassFilterUsage>
+																		<HighPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</HighPassFilterUsage>
+																		<SpreadUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</SpreadUsage>
+																		<FocusUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</FocusUsage>
+																	</CurveUsageInfoList>
+																</Attenuation>
+															</Custom>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42FE2D01-C318-43F0-82C5-5AC52919471C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E3FF0F6E-57B8-48CD-B495-BD14C3507860}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="son_Ombre 2" ID="{244ED563-2C83-4CDB-B4FF-75FEB0AEA58A}">
+															<Language>SFX</Language>
+															<AudioFile>son_Ombre 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="255207050"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="son_Ombre 2" ID="{244ED563-2C83-4CDB-B4FF-75FEB0AEA58A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</Folder>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

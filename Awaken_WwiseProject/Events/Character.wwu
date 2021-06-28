@@ -541,8 +541,44 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Coeur_Stop" ID="{3312F664-2C18-462D-A845-5A1A622D9011}">
+							<ChildrenList>
+								<Action Name="" ID="{652E32AB-940B-48E9-95A3-D4E26890E68A}" ShortID="794154576">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="coeur_battement1" ID="{70E06FED-F276-4807-A509-30D33C0BE3DA}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Ombre" ID="{6E3E2D1B-B513-4095-BA2A-5350458232E4}">
+					<ChildrenList>
+						<Action Name="" ID="{83AAB0A7-85C6-4122-B41F-2432869819AF}" ShortID="641971836">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="son_Ombre 2" ID="{0AFC4608-6AF3-4131-BCB8-AFAD859A8FA4}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Vol_Bird" ID="{9805DBD0-D8D2-46E6-8BA1-6F176505E710}">
+					<ChildrenList>
+						<Action Name="" ID="{B9EBA0EC-CBEE-4473-93F2-6A3523708713}" ShortID="935095855">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ailes oiseau_WINGBird_Envol pigeon (ID 0840)_LS" ID="{227E008C-FF29-491A-BB24-35AF486C2CA2}" WorkUnitID="{79E5A918-3C01-41C3-A99C-B0DCD6FD818A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
