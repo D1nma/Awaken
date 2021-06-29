@@ -940,7 +940,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102698040993713290}
-    m_Position: {x: 410, y: -320, z: 0}
+    m_Position: {x: 420, y: -320, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102614452920038488}
     m_Position: {x: 1090, y: 130, z: 0}
@@ -970,7 +970,7 @@ AnimatorStateMachine:
     m_Position: {x: 620, y: -520, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4998822257542435360}
-    m_Position: {x: 1060, y: -650, z: 0}
+    m_Position: {x: 1090, y: -620, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -1144,7 +1144,10 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Accroupi
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4998822257542435360}
   m_Solo: 0
@@ -1267,7 +1270,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Accroupi
-  m_Speed: 0.2
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -7868338727358194092}
@@ -1283,7 +1286,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: bb3e3aa889ee8c945bbb8ecac66d7f9b, type: 2}
+  m_Motion: {fileID: 7400000, guid: a98438498cff55e46960ddca99be723a, type: 2}
   m_Tag: 
   m_SpeedParameter: SpeedMultiplier
   m_MirrorParameter: 
