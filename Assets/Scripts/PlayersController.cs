@@ -254,7 +254,7 @@ public class PlayersController : MonoBehaviour
             }
 
         }
-        if (accroupir)
+        if (accroupir|| cacher)
         {
             if (h == 0 && v == 0 || direction.magnitude < 0.1f)
             {
