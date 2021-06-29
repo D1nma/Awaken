@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 8562420651354639879}
   - component: {fileID: 4718663699034358178}
   - component: {fileID: 7392932480043038056}
+  - component: {fileID: 8864617766535478772}
   m_Layer: 0
-  m_Name: tronc 03 1
+  m_Name: tronc 03 lvl 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9049988518855972029}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 492.18152, y: 168.4856, z: 442.78775}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -82,3 +83,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8864617766535478772
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9049988518855972029}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.9182596, y: 0.9470226, z: 0.7}
+  m_Center: {x: -0.13065654, y: 0.26642162, z: 0.08}

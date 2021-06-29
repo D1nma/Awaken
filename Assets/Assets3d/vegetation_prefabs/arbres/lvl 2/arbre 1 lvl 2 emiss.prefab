@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1050390755781886101}
   - component: {fileID: 4124284911386677040}
   - component: {fileID: 2222684812045728762}
+  - component: {fileID: 9075850487191531442}
   m_Layer: 0
   m_Name: arbre 1 lvl 2 emiss
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 421205859403274799}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 393.74893, y: 159.23242, z: 368.43698}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -82,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &9075850487191531442
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421205859403274799}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.0945754
+  m_Height: 12
+  m_Direction: 1
+  m_Center: {x: -0.161345, y: 5, z: 0.32999992}
