@@ -151,7 +151,6 @@ public class Ombre : MonoBehaviour
         }
 
         time += Time.deltaTime;
-        attaque = Random.Range(0, 2);
         if (LifeTime > 0 && !immortal) { LifeTime -= time; }
         if (idleOne && follow)
         {
@@ -188,6 +187,7 @@ public class Ombre : MonoBehaviour
                     if (canHurt && GameManager.gameOver == false)
                     {
                         AkSoundEngine.PostEvent("Dead", gameObject);
+                        attaque = Random.Range(0, 2);
                         _animator.SetInteger("Attaque", attaque);
                         Debug.Log("touché");
                         _animator.SetBool("Chasing", true);
