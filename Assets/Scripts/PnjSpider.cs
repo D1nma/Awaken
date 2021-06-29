@@ -11,7 +11,7 @@ public class PnjSpider : MonoBehaviour
     public float PnjDistanceRun = 4f;
     float oldSpeed, x, z, time, timeAlea;
     float speedNav,oldSpeedNav;
-    private bool PowerOn;
+    private bool PowerOn,walk;
     bool timeGo,Destination, setTime = false;
     Vector3 randomPosition;
     // Start is called before the first frame update
@@ -45,6 +45,16 @@ public class PnjSpider : MonoBehaviour
     {
         if (PowerOn)
         {
+            if (_agent.velocity.magnitude < 0.15f)
+            {
+                _animator.SetBool("Walk", false);
+                walk = false;
+            }
+            else
+            {
+                _animator.SetBool("Walk", true);
+                walk = true;
+            }
             /*var ray = new Ray(this.transform.position, this.transform.forward/2);
        Debug.DrawRay(this.transform.position, this.transform.forward/2, Color.white);
        RaycastHit hit;
@@ -60,13 +70,13 @@ public class PnjSpider : MonoBehaviour
             //Debug.Log(_agent.isStopped);
             if (player)
             {
+                
                 float distance = Vector3.Distance(transform.position, player.transform.position);
 
                 if (distance < PnjDistanceRun)
                 {
                     _agent.speed = _agent.speed * 2;
                     _animator.SetFloat("Speed", speedNav * 2);
-                    _animator.SetBool("Walk", true);
                     Vector3 dirToPlayer = transform.position - player.transform.position;
                     Vector3 newPos = transform.position + dirToPlayer;
 
@@ -121,20 +131,22 @@ public class PnjSpider : MonoBehaviour
                 randomPosition = new Vector3(x, transform.position.y, z);
                 _agent.SetDestination(randomPosition);
                 _agent.isStopped = false;
-                _animator.SetBool("Walk", true);
                 Destination = false;
             }
-            if (_agent.remainingDistance > 0.1f)
+            if (_agent.remainingDistance >= 0.1f)
             {
                 //_animator.SetBool("Walk", true);
                 //Debug.Log(_agent.remainingDistance);
             }
-            else
+            else if (_agent.remainingDistance < 0.1f)
             {
                 //Debug.Log("Je suis proche");
                 _animator.SetBool("Walk", false);
                 _agent.isStopped = true;
             }
+        }else
+        {
+            _animator.SetBool("Walk", false);
         }
        
     }

@@ -43,17 +43,28 @@ public class PnjGrenouille : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (PowerOn)
         {
+            if (_agent.velocity.magnitude < 0.15f)
+            {
+                _animator.SetBool("Walk", false);
+            }
+            else
+            {
+                _animator.SetBool("Walk", true);
+            }
+
             if (player)
             {
+                
+                
                 float distance = Vector3.Distance(transform.position, player.transform.position);
 
                 if (distance < PnjDistanceRun)
                 {
                     _agent.speed = _agent.speed * 2;
                     _animator.SetFloat("Speed", speedNav * 2);
-                    _animator.SetBool("Walk", true);
                     Vector3 dirToPlayer = transform.position - player.transform.position;
                     Vector3 newPos = transform.position + dirToPlayer;
 
@@ -65,6 +76,8 @@ public class PnjGrenouille : MonoBehaviour
                     _agent.speed = oldSpeed;
                     speedNav = oldSpeedNav;
                     _animator.SetFloat("Speed", speedNav);
+                    _animator.SetBool("Walk", false);
+                    _agent.isStopped = true;
                 }
                 if (distance < PnjDistanceRun / 2)
                 {
@@ -108,20 +121,25 @@ public class PnjGrenouille : MonoBehaviour
                 randomPosition = new Vector3(x, transform.position.y, z);
                 _agent.SetDestination(randomPosition);
                 _agent.isStopped = false;
-                _animator.SetBool("Walk", true);
                 Destination = false;
             }
-            if (_agent.remainingDistance > 0.1f)
+            if (_agent.remainingDistance >= 0.1f)
             {
                 //_animator.SetBool("Walk", true);
                 //Debug.Log(_agent.remainingDistance);
             }
-            else
+            else if (_agent.remainingDistance < 0.1f)
             {
                 //Debug.Log("Je suis proche");
                 _animator.SetBool("Walk", false);
                 _agent.isStopped = true;
             }
+
+
+        }
+        else
+        {
+            _animator.SetBool("Walk", false);
         }
     }
     void TempsAlea()
