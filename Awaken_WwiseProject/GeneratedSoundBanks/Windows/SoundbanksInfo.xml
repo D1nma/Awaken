@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="436743010" Language="SFX" Hash="670834072">
+		<SoundBank Id="436743010" Language="SFX" Hash="2818363994">
 			<ObjectPath>\SoundBanks\Default Work Unit\Character</ObjectPath>
 			<ShortName>Character</ShortName>
 			<Path>Character.bnk</Path>
@@ -771,10 +771,6 @@
 					<ShortName>8 Il y a des ronces partout\Il y a des ronces partout 2_Alyx-St.wav</ShortName>
 					<Path>SFX\8 Il y a des ronces partout\Il y a des ronces partout 2_Alyx-St_3F75BDB9.wem</Path>
 				</File>
-				<File Id="17451677" Language="SFX">
-					<ShortName>son interface-20210628T111842Z-001\son interface\clic 2_clic.wav</ShortName>
-					<Path>SFX\son interface-20210628T111842Z-001\son interface\clic 2_clic_3F75BDB9.wem</Path>
-				</File>
 				<File Id="25119440" Language="SFX">
 					<ShortName>pas bois 1_marche3.wav</ShortName>
 					<Path>SFX\pas bois 1_marche3_3F75BDB9.wem</Path>
@@ -794,10 +790,6 @@
 				<File Id="48176805" Language="SFX">
 					<ShortName>53 C_est bizzare\C_est bizarre 2_Alyx-St.wav</ShortName>
 					<Path>SFX\53 C_est bizzare\C_est bizarre 2_Alyx-St_3F75BDB9.wem</Path>
-				</File>
-				<File Id="54466017" Language="SFX">
-					<ShortName>son interface-20210628T111842Z-001\son interface\clic 3_MECHClik_Thermostat 1 (ID 2191)_LS.wav</ShortName>
-					<Path>SFX\son interface-20210628T111842Z-001\son interface\clic 3_MECHClik_Thermostat 1 (ID 2191)_LS_3F75BDB9.wem</Path>
 				</File>
 				<File Id="56442698" Language="SFX">
 					<ShortName>39 Je vais vers la montagne\Je vais vers la montagne 1_Alyx-St.wav</ShortName>
@@ -1363,10 +1355,6 @@
 					<ShortName>58 Oui il faut que je me souvienne\Oui il faut que je me souvienne 2_Alyx-St.wav</ShortName>
 					<Path>SFX\58 Oui il faut que je me souvienne\Oui il faut que je me souvienne 2_Alyx-St_3F75BDB9.wem</Path>
 				</File>
-				<File Id="1050343846" Language="SFX">
-					<ShortName>son interface-20210628T111842Z-001\son interface\clic 1_CMPTKey_Apple magic mouse simple clic (ID 1742)_LS.wav</ShortName>
-					<Path>SFX\son interface-20210628T111842Z-001\son interface\clic 1_CMPTKey_Apple magic mouse simple clic (ID 1742)_LS_3F75BDB9.wem</Path>
-				</File>
 				<File Id="1053441028" Language="SFX">
 					<ShortName>32 La voix dans mon rêve était plus douce\La voix était plus douce 1_Alyx-St.wav</ShortName>
 					<Path>SFX\32 La voix dans mon rêve était plus douce\La voix était plus douce 1_Alyx-St_3F75BDB9.wem</Path>
@@ -1540,11 +1528,19 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="2981377429" Language="SFX" Hash="693451744">
+		<SoundBank Id="2981377429" Language="SFX" Hash="3742030635">
 			<ObjectPath>\SoundBanks\Default Work Unit\Ambiance</ObjectPath>
 			<ShortName>Ambiance</ShortName>
 			<Path>Ambiance.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1584507803" Name="Click" ObjectPath="\Events\Default Work Unit\Ambiance\Click">
+					<IncludedMemoryFiles>
+						<File Id="54466017" Language="SFX">
+							<ShortName>son interface-20210628T111842Z-001\son interface\clic 3_MECHClik_Thermostat 1 (ID 2191)_LS.wav</ShortName>
+							<Path>SFX\son interface-20210628T111842Z-001\son interface\clic 3_MECHClik_Thermostat 1 (ID 2191)_LS_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1190810872" Name="Explo_Start" ObjectPath="\Events\Default Work Unit\Ambiance\Explo_Start">
 					<IncludedMemoryFiles>
 						<File Id="888294628" Language="SFX">
@@ -1563,6 +1559,14 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="4147157480" Name="GameOver_Stop" ObjectPath="\Events\Default Work Unit\Ambiance\GameOver_Stop"/>
+				<Event Id="3753593413" Name="Hover" ObjectPath="\Events\Default Work Unit\Ambiance\Hover">
+					<IncludedMemoryFiles>
+						<File Id="17451677" Language="SFX">
+							<ShortName>son interface-20210628T111842Z-001\son interface\clic 2_clic.wav</ShortName>
+							<Path>SFX\son interface-20210628T111842Z-001\son interface\clic 2_clic_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="267820003" Name="Lvl1_Start" ObjectPath="\Events\Default Work Unit\Ambiance\Lvl1_Start">
 					<IncludedMemoryFiles>
 						<File Id="141012042" Language="SFX">
@@ -1592,6 +1596,14 @@
 				<Event Id="2696506367" Name="Menu_Stop" ObjectPath="\Events\Default Work Unit\Ambiance\Menu_Stop"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="17451677" Language="SFX">
+					<ShortName>son interface-20210628T111842Z-001\son interface\clic 2_clic.wav</ShortName>
+					<Path>SFX\son interface-20210628T111842Z-001\son interface\clic 2_clic_10C4C929.wem</Path>
+				</File>
+				<File Id="54466017" Language="SFX">
+					<ShortName>son interface-20210628T111842Z-001\son interface\clic 3_MECHClik_Thermostat 1 (ID 2191)_LS.wav</ShortName>
+					<Path>SFX\son interface-20210628T111842Z-001\son interface\clic 3_MECHClik_Thermostat 1 (ID 2191)_LS_10C4C929.wem</Path>
+				</File>
 				<File Id="95440876" Language="SFX">
 					<ShortName>Ambiance\Menu\Menu 2 (loops).wav</ShortName>
 					<Path>SFX\Ambiance\Menu\Menu 2 (loops)_9EDFC787.wem</Path>
@@ -1619,6 +1631,10 @@
 				<File Id="888294628" Language="SFX">
 					<ShortName>Explo add.wav</ShortName>
 					<Path>SFX\Explo add_3F75BDB9.wem</Path>
+				</File>
+				<File Id="1050343846" Language="SFX">
+					<ShortName>son interface-20210628T111842Z-001\son interface\clic 1_CMPTKey_Apple magic mouse simple clic (ID 1742)_LS.wav</ShortName>
+					<Path>SFX\son interface-20210628T111842Z-001\son interface\clic 1_CMPTKey_Apple magic mouse simple clic (ID 1742)_LS_10C4C929.wem</Path>
 				</File>
 				<File Id="1051092675" Language="SFX">
 					<ShortName>Lvl 2 Loops.wav</ShortName>

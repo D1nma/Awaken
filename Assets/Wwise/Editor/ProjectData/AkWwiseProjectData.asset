@@ -233,8 +233,28 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Ambiance
     guid: 02301d76802f4f47b7f34e89fdd14607
     GuidInternal: 
-    m_lastTime: -8585769625853940774
+    m_lastTime: -8585766512633509318
     List:
+    - name: Click
+      guid: 6ac7f91db2e7ba47a5d1e58063373b3e
+      id: 1584507803
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 02301d76802f4f47b7f34e89fdd14607
+      - ElementName: Click
+        ObjectType: 3
+        guid: 6ac7f91db2e7ba47a5d1e58063373b3e
+      Path: Events\Default Work Unit\Ambiance\Click
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Explo_Start
       guid: 49c13a888c0c7a4386f43c3c505a1978
       id: 1190810872
@@ -312,6 +332,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 64e755bfff6fbc438b15d13d0158dc2a
       Path: Events\Default Work Unit\Ambiance\GameOver_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Hover
+      guid: e9b09fd7c1c1844aac70d63bea4bdf05
+      id: 3753593413
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 524bd7222bf7d84284d7b0a1a9071dee
+      - ElementName: Ambiance
+        ObjectType: 12
+        guid: 02301d76802f4f47b7f34e89fdd14607
+      - ElementName: Hover
+        ObjectType: 3
+        guid: e9b09fd7c1c1844aac70d63bea4bdf05
+      Path: Events\Default Work Unit\Ambiance\Hover
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2362,7 +2402,7 @@ MonoBehaviour:
     m_lastTime: -8585772961148749747
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0b0000000c0000000d0000000e000000
+  ExpandedWaapiItemIds: 050000000600000007000000080000000b0000000c0000000d0000000e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

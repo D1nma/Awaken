@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class Inventaire : MonoBehaviour
 {
-    public GameObject bird,cle,pates;
-    public GameObject DialogueClé, DialoguePeche, DialoguePeche2,DialogueAppat;
+    public GameObject bird, cle, pates;
+    public GameObject DialogueClé, DialoguePeche, DialoguePeche2, DialogueAppat;
     public GameObject perdu;
     private static Inventaire instance;
 
     [HideInInspector]
-    public bool Keyvolee=false, ApresRocher=false, First = false,canne = false, boite = false, keyEmpty = false, key = false;
+    public bool Keyvolee = false, ApresRocher = false, First = false, canne = false, boite = false, keyEmpty = false, key = false;
 
 
     public GameObject canneUI, boiteUI, keyEmptyUI, keyUI, champiUI;
@@ -31,7 +31,6 @@ public class Inventaire : MonoBehaviour
     {
         //this.gameObject.SetActive(false);
         keyEmptyUI.SetActive(false);
-        perdu.SetActive(false);
         canneUI.SetActive(false);
         boiteUI.SetActive(false);
         champiUI.SetActive(false);
@@ -70,7 +69,7 @@ public class Inventaire : MonoBehaviour
         }
         if (canne)
         {
-            canneUI.SetActive(true);          
+            canneUI.SetActive(true);
         }
         if (boite)
         {
@@ -102,10 +101,10 @@ public class Inventaire : MonoBehaviour
                 {
                     DialogueClé.SetActive(true);
                 }
-                
+
                 keyEmpty = false;
             }
-            
+
         }
         else if (keyEmpty && !key)
         {
@@ -135,7 +134,7 @@ public class Inventaire : MonoBehaviour
         cle.transform.parent = pates.transform;
         cle.transform.position = pates.transform.position;
     }
-        private IEnumerator BirdKey(float duree)
+    private IEnumerator BirdKey(float duree)
     {
         //animator.SetBool("Bird", true);
         yield return new WaitForSeconds(duree);
@@ -144,7 +143,7 @@ public class Inventaire : MonoBehaviour
         keyUI.SetActive(false);
         keyEmpty = true;
         keyEmptyUI.SetActive(true);
-        PlayersController.canControl= true;
+        PlayersController.canControl = true;
         First = true;
     }
 }
