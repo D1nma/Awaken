@@ -55,7 +55,6 @@ public class PnjSpider : MonoBehaviour
                 _animator.SetBool("Walk", true);
                 walk = true;
             }
-            Debug.Log(walk);
             /*var ray = new Ray(this.transform.position, this.transform.forward/2);
        Debug.DrawRay(this.transform.position, this.transform.forward/2, Color.white);
        RaycastHit hit;

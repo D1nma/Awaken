@@ -46,6 +46,14 @@ public class PnjGrenouille : MonoBehaviour
 
         if (PowerOn)
         {
+            if (_agent.velocity.magnitude < 0.15f)
+            {
+                _animator.SetBool("Walk", false);
+            }
+            else
+            {
+                _animator.SetBool("Walk", true);
+            }
 
             if (player)
             {
@@ -125,14 +133,6 @@ public class PnjGrenouille : MonoBehaviour
                 //Debug.Log("Je suis proche");
                 _animator.SetBool("Walk", false);
                 _agent.isStopped = true;
-            }
-            if (_agent.velocity.magnitude < 0.15f)
-            {
-                _animator.SetBool("Walk", false);
-            }
-            else
-            {
-                _animator.SetBool("Walk", true);
             }
 
 
