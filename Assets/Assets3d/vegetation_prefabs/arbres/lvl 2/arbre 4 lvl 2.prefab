@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 5469666228598080497}
   - component: {fileID: 7785843310942943035}
   m_Layer: 0
-  m_Name: 4
+  m_Name: arbre 4 lvl 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8955394535324978260
 Transform:
@@ -25,9 +25,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8578270205182301934}
-  m_LocalRotation: {x: -0, y: 0.9911786, z: -0, w: 0.13253309}
+  m_LocalRotation: {x: 0, y: 0.9911786, z: 0, w: 0.13253324}
   m_LocalPosition: {x: 16.52, y: 0.08, z: 2.77}
-  m_LocalScale: {x: 0.12508395, y: 0.12508395, z: 0.12508395}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -51,6 +51,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
