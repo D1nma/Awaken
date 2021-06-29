@@ -16,7 +16,7 @@ public class screenshot : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Equals))
         {
             Debug.Log("screen");
-            ScreenCapture.CaptureScreenshot("SomeLevel");
+            ScreenCapture.CaptureScreenshot("SomeLevel",4);
         }
     }
 }
