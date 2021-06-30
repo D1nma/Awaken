@@ -200,7 +200,7 @@ public class PlayersController : MonoBehaviour
         if (direction.magnitude >= 0.1)
         {
             animator.SetBool("IsWalking", true);
-            if (Input.GetButtonDown("Sprint") && !accroupir && canControl)
+            if (Input.GetButtonDown("Sprint") && !accroupir && canControl && !cacher)
             {
 
                 animator.SetBool("IsRunning", true);

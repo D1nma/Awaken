@@ -120,19 +120,37 @@ public class Ombre : MonoBehaviour
 
                         if (hitinfo.transform.gameObject.tag == "Player")
                         {
-
-                            //Debug.Log("Alyx c'est mon 4h");
-                            if (Physics.Raycast(ray, out hit, 30f) && angle < 160 || distance < 2f)
+                            if (PlayersController.cacher)
                             {
-                                see = true;
-                                canHurt = true;
-                                //Debug.Log("Alyx c'est mon 6h");
+                                //Debug.Log("Alyx c'est mon 4h");
+                                if (Physics.Raycast(ray, out hit, 20f) && angle < 120 || distance < 2f)
+                                {
+                                    see = true;
+                                    canHurt = true;
+                                    //Debug.Log("Alyx c'est mon 6h");
+                                }
+                                else
+                                {
+                                    canHurt = false;
+
+                                }
                             }
                             else
                             {
-                                canHurt = false;
+                                //Debug.Log("Alyx c'est mon 4h");
+                                if (Physics.Raycast(ray, out hit, 30f) && angle < 160 || distance < 2f)
+                                {
+                                    see = true;
+                                    canHurt = true;
+                                    //Debug.Log("Alyx c'est mon 6h");
+                                }
+                                else
+                                {
+                                    canHurt = false;
 
+                                }
                             }
+                            
                         }
                     }
                     else
