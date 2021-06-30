@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 6571789502683515203}
   - component: {fileID: 7826257995932141286}
   - component: {fileID: 5438241030367900204}
+  - component: {fileID: 278619214685585344}
   m_Layer: 0
-  m_Name: 1
+  m_Name: arbre 1 lvl 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5798524258152338425}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.424911, y: -0.0000038146973, z: 3.0804138}
   m_LocalScale: {x: 1.4665, y: 1.4665, z: 1.4665}
   m_Children: []
@@ -51,6 +52,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -81,3 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &278619214685585344
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5798524258152338425}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.0945754
+  m_Height: 12
+  m_Direction: 1
+  m_Center: {x: -0.161345, y: 5, z: 0.32999992}
