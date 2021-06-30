@@ -9,10 +9,10 @@ public class FeuFollet : MonoBehaviour
     public static bool pieger = true,follow, canInteract, done;
     public GameObject player, spotPNJ;
     public GameObject InteragirText;
+    GameManager gm;
     NavMeshAgent ff;
     public Transform InitialSpawn;
     //public GameObject TheNPC;
-    public float FollowSpeed;
     public RaycastHit shot;
     Vector3 trait;
     public float offsetRay = 0.5f;
@@ -43,6 +43,13 @@ public class FeuFollet : MonoBehaviour
 
     void Update()
     {
+        if (!gm)
+        {
+            gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        }else if (!InteragirText)
+        {
+            InteragirText = gm.InteragirText;
+        }
         if (!player)
         {
             player = GameObject.FindGameObjectWithTag("Player");
