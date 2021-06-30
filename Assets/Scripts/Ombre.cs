@@ -65,7 +65,7 @@ public class Ombre : MonoBehaviour
     IEnumerator Mort()
     {
         AkSoundEngine.PostEvent("Frisson_Start", gameObject);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         float distance = Vector3.Distance(player.transform.position, transform.position);
         if (distance <= enemy.stoppingDistance && canHurt)
             GameManager.gameOver = true;
@@ -112,6 +112,7 @@ public class Ombre : MonoBehaviour
                         && hitinfo.transform.gameObject.tag != null
                         && hitinfo.transform.gameObject.tag != "Spawn"
                         && hitinfo.transform.gameObject.tag != "Decors"
+                        && hitinfo.transform.gameObject.tag != "Ground"
                         && hitinfo.transform.gameObject.tag != "UI"
                         && hitinfo.transform.gameObject.tag != "GM"
                         && hitinfo.transform.gameObject.tag != "Invisible")

@@ -257,6 +257,19 @@ public class UIManager : MonoBehaviour
         gm.cc.enabled = true;
         PlayersController.canControl = true;
     }
+    public void ReloadGo()
+    {
+        AkSoundEngine.PostEvent("GameOver_Stop", gameObject);
+        if (deadPanel != null)
+            deadPanel.SetActive(false);
+        Time.timeScale = 1f;
+        GameManager.gameOver = false;
+        gm.ReplaceGO();
+        gm.SpawnPlayer();
+        Resume();
+        gm.cc.enabled = true;
+        PlayersController.canControl = true;
+    }
     public void DeadMenu()
     {
         AkSoundEngine.PostEvent("Lvl1_Stop", gameObject);

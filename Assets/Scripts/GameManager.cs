@@ -114,6 +114,27 @@ public class GameManager : MonoBehaviour
             Player.transform.position = lastCheckPointPos;
         }
     }
+    public void ReplaceGO()
+    {
+        
+        if (Player.transform.position == lastCheckPointPos)
+        {
+            PlayersController.canControl = true;
+            cc.enabled = true;
+            OutOfPosition.enter = false;
+            ui.transition.SetTrigger("End");
+            RenderSettings.fogEndDistance = Warning.oldValue;
+            Warning.StartFog = false;
+            if (warning.warningText)
+                warning.warningText.SetActive(false);
+        }
+        else
+        {
+            ui.transition.SetTrigger("Start");
+            cc.enabled = false;
+            Player.transform.position = lastCheckPointPos;
+        }
+    }
 
 
     void Update()
