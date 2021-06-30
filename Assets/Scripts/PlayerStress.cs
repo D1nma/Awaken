@@ -21,7 +21,7 @@ public class PlayerStress : MonoBehaviour
     float time;
     bool useTime;
     public GameObject Sun;
-    public float DiminutionStress = 0.1f,AugmentationStress = 0.5f;
+    public float DiminutionStress = 0.1f,AugmentationStress = 1f;
     public float minRandom, maxRandom,LaValeur,speed=0.2f;
 
     void Start()
@@ -310,7 +310,7 @@ public class PlayerStress : MonoBehaviour
         {
             if (Ombre.see)
             {
-                currentStress += AugmentationStress * 3 * Time.deltaTime;
+                currentStress += AugmentationStress * 5 * Time.deltaTime;
                 AkSoundEngine.PostEvent("Coeur", gameObject);
 
             }

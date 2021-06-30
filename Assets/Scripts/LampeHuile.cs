@@ -27,7 +27,7 @@ public class LampeHuile : MonoBehaviour
     public float FogStartDistance = 50f;
     public float currentHuile = 50;
     private int tipInt = 0;
-    private float consume = 0.05f;
+    private float consume = 0.1f;
     [HideInInspector]
     public bool use;
     float time;

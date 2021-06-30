@@ -26,7 +26,6 @@ public class Bird : MonoBehaviour
                 animator.SetTrigger("vol");
                 doOnce = false;
             }
-            animator.SetTrigger("vol");
             vol = false;
         }
         if (picore)
